@@ -8,12 +8,10 @@ package buisness.Encounter;
  *
  * @author vishwa
  */
-public class EncounterCounsellor {
+public class EncounterCounsellor { 
       private String en;
     private String minutes;
     private String name;
-    
-    
     public EncounterCounsellor(){
          
     }

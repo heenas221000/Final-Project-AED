@@ -13,7 +13,7 @@ public class EncounterCaretaker {
     private String minutes;
     private String name;
     
-    public EncounterCaretaker(){
+    public EncounterCaretaker (){
     
     }
 

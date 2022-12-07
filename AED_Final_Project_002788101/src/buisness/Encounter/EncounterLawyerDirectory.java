@@ -14,8 +14,7 @@ import java.util.HashMap;
 public class EncounterLawyerDirectory {
     private ArrayList<EncounterLawyer> Encounters;
     private HashMap<String,ArrayList<EncounterLawyer>> EncounterDirectory;
-
-    public EncounterLawyerDirectory() {
+ public EncounterLawyerDirectory() {
        EncounterDirectory=new HashMap<String,ArrayList<EncounterLawyer>>();
        Encounters=new ArrayList<EncounterLawyer>();
     }

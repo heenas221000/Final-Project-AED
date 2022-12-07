@@ -11,7 +11,9 @@ import java.util.HashMap;
  *
  * @author vishwa
  */
-public class EncounterCounsellorDirectory {private ArrayList<EncounterCounsellor> Encounters;
+public class EncounterCounsellorDirectory {
+    
+    private ArrayList<EncounterCounsellor> Encounters;
     private HashMap<String,ArrayList<EncounterCounsellor>> EncounterDirectory;
 
     public EncounterCounsellorDirectory() {

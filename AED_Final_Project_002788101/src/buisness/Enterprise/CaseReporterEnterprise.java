@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class CaseReporterEnterprise {
     
      public CaseReporterEnterprise(String name){
-        super(name,EnterpriseType.CaseReporter);
+        super(name,EnterpriseType.CaseReporter)  ;
     }
     @Override
     public ArrayList<Role> getSupportedRole() {

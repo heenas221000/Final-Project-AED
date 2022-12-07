@@ -12,8 +12,9 @@ import java.util.HashMap;
  * @author vishwa
  */
 public class EncounterCaretakerDirectory {
+    
     private ArrayList<business.Encounter.EncounterCaretaker> Encounters;
-    private HashMap<String,ArrayList<business.Encounter.EncounterCaretaker>> EncounterDirectory;
+    private HashMap<String,ArrayList<business.Encounter.EncounterCaretaker>> EncounterDirectory ;
 
     public EncounterCaretakerDirectory() {
        EncounterDirectory=new HashMap<String,ArrayList<business.Encounter.EncounterCaretaker>>();

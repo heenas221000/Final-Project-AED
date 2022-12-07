@@ -12,9 +12,8 @@ public class EncounterLawyer {
     private String encounter;
     private String minutes;
     private String name;
-    
     public EncounterLawyer(){
-    
+   
     }
 
 public String getEncounter() {
