@@ -5,6 +5,11 @@
 package ui.sysadmin;
 
 import business.EcoSystem;
+import business.Employee.Employee;
+import business.Enterprise.Enterprise;
+import business.Network.Network;
+import business.Role.NGOAdminRole;
+import business.UserAccount.UserAccount;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
@@ -13,16 +18,16 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author heenashah
  */
-public class ManageAdminsJPanel extends javax.swing.JPanel {
+public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
 
     /**
-     * Creates new form ManageAdminsJPanel
+     * Creates new form ManageEnterpriseAdminJPanel
      */
     
     private JPanel userProcessContainer;
     private EcoSystem system;
     
-    public ManageAdminsJPanel() {
+    public ManageEnterpriseAdminJPanel() {
         
         initComponents();
         

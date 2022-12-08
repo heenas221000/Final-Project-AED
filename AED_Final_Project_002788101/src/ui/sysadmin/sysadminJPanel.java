@@ -4,6 +4,8 @@
  */
 package ui.sysadmin;
 
+import java.awt.Color;
+
 /**
  *
  * @author heenashah
@@ -43,14 +45,6 @@ public class sysadminJPanel extends javax.swing.JPanel {
         bt_ManageNetworks.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         bt_ManageNetworks.setBorderPainted(false);
         bt_ManageNetworks.setContentAreaFilled(false);
-        bt_ManageNetworks.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                bt_ManageNetworksMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                bt_ManageNetworksMouseExited(evt);
-            }
-        });
         bt_ManageNetworks.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt_ManageNetworksActionPerformed(evt);
@@ -155,14 +149,6 @@ public class sysadminJPanel extends javax.swing.JPanel {
             .addComponent(jSplitPane1)
         );
     }// </editor-fold>//GEN-END:initComponents
-
-    private void bt_ManageNetworksMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageNetworksMouseEntered
-        bt_ManageNetworks.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_ManageNetworksMouseEntered
-
-    private void bt_ManageNetworksMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageNetworksMouseExited
-        bt_ManageNetworks.setForeground(Color.white);        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_ManageNetworksMouseExited
 
     private void bt_ManageNetworksActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_ManageNetworksActionPerformed
         // TODO add your handling code here:

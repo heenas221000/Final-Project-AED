@@ -4,9 +4,15 @@
  */
 package business;
 
+<<<<<<< Updated upstream
 import business.Network.Network; 
 import business.Organization.Organization;
 import business.Role.Role; 
+=======
+import business.Network.Network;
+import business.Organization.Organization;
+import business.Role.Role;
+>>>>>>> Stashed changes
 import business.Role.SystemAdminRole;
 import java.util.ArrayList;
 
@@ -16,7 +22,10 @@ import java.util.ArrayList;
  */
 public class EcoSystem extends Organization {
     
+<<<<<<< Updated upstream
     
+=======
+>>>>>>> Stashed changes
     private static EcoSystem business;
     private ArrayList<Network> networkList;
     public static EcoSystem getInstance(){
@@ -60,7 +69,10 @@ public class EcoSystem extends Organization {
         return true;
     }
     
+<<<<<<< Updated upstream
     
     
     
+=======
+>>>>>>> Stashed changes
 }

@@ -4,21 +4,55 @@
  */
 package ui.sysadmin;
 
+import business.EcoSystem;
+import business.Enterprise.Enterprise;
+import business.Network.Network;
+import business.Organization.CaseVolunteerOrganization;
+import business.Organization.Organization;
+import java.awt.Color;
+import java.util.HashMap;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
  * @author heenashah
  */
 public class ManageNetworkJPanel extends javax.swing.JPanel {
-
+    
+    private JPanel userProcessContainer;
+    private EcoSystem system;
+    private HashMap<String, Integer> chart;
+    int bostoncases,seattlecases;
+   
+    private HashMap<String, Integer> piechartsea;
+    
     /**
      * Creates new form ManageNetworkJPanel
      */
-    public ManageNetworkJPanel() {
+    public ManageNetworkJPanel(JPanel userProcessContainer, EcoSystem system) {
         initComponents();
-    }
+        this.userProcessContainer = userProcessContainer;
+        this.system = system;
+        chart= new HashMap<String,Integer>();
+        //piechartbos=new HashMap<String,Integer>();
+        piechartsea=new HashMap<String,Integer>();
 
+        populateNetworkTable();
+    }
+    
+    private void populateNetworkTable() {
+        DefaultTableModel model = (DefaultTableModel) tb_network.getModel();
+
+        model.setRowCount(0);
+        for (Network network : system.getNetworkList()) {
+            Object[] row = new Object[1];
+            row[0] = network;
+            model.addRow(row);
+        }
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
