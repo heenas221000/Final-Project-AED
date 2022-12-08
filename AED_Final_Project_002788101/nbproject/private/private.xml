@@ -2,6 +2,7 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+<<<<<<< HEAD
         <group>
             <file>file:/Users/vishwa/Documents/GitHub/Final-Project-AED/AED_Final_Project_002788101/src/buisness/Encounter/EncounterCaretaker.java</file>
             <file>file:/Users/vishwa/Documents/GitHub/Final-Project-AED/AED_Final_Project_002788101/src/buisness/Encounter/EncounterCounsellorDirectory.java</file>
@@ -12,5 +13,8 @@
             <file>file:/Users/vishwa/Documents/GitHub/Final-Project-AED/AED_Final_Project_002788101/src/buisness/Encounter/EncounterCaretakerDirectory.java</file>
             <file>file:/Users/vishwa/Documents/GitHub/Final-Project-AED/AED_Final_Project_002788101/src/buisness/Encounter/EncounterLawyer.java</file>
         </group>
+=======
+        <group/>
+>>>>>>> main
     </open-files>
 </project-private>
