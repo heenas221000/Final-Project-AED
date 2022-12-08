@@ -57,7 +57,7 @@ public Organization createOrganization(Type type){
             organizationList.add(organization);
         }
          else if (type.getValue().equals(Type.RehabilitationOrganization.getValue())){
-            organization = new RehabilitationOrganization();
+            organization = new RehabOrganization();
             organizationList.add(organization);
         }
         return organization;

@@ -33,7 +33,7 @@ public  abstract class Organization {
     public enum Type{
         CaseReporter("CaseReporterOrganization"),Hospital("HospitalOrganization"),Forensic("ForensicOrganization"),
         CounsellingOrganization("CounsellingOrganization"), Legal("LegalOrganization"), CaseVolunteer("CaseVolunteer"),
-        PsychiatricOrganization("PsychiatricOrganization"),Pharmacy("PharmacyOrganization"),RehabilitationOrganization("Rehabilitation");
+        PsychiatricOrganization("PsychiatricOrganization"),Pharmacy("PharmacyOrganization"),Rehab("Rehabilitation");
         private String value;
         private Type(String value) {
             this.value = value;
