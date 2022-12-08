@@ -4,6 +4,8 @@
  */
 package business.Network;
 
+import business.Enterprise.EnterpriseDirectory;
+
 /**
  *
  * @author vishwa
