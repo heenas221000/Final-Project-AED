@@ -4,14 +4,15 @@
  */
 package business.UserAccount;
 
-import buisness.Employee.Employee;
+import business.Employee.Employee;
 import business.Role.Role;
+import business.WorkQueue.WorkQueue;
 
 /**
  *
  * @author vishwa
  */
-public class UserAccount {{
+public class UserAccount {
     
     private String username;
     private String pwd;
