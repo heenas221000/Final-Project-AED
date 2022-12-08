@@ -2,37 +2,38 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package buisness.Organisation;
-import buisness.Employee.EmployeeDirectory;
-import buisness.Encounter.EncounterCaretakerDirectory;
-import buisness.Encounter.EncounterCounsellorDirectory;
-import buisness.Encounter.EncounterLawyerDirectory;
-import buisness.Encounter.EncounterPsychiatristDirectory;
+package business.Organization;
+
+import business.Employee.EmployeeDirectory;
+import business.Encounter.EncounterCounsellor;
+import business.Encounter.EncounterCounsellorDir;
+import business.Encounter.EncounterLawyer;
+import business.Encounter.EncounterPsychiatrist;
+import business.Encounter.EncounterPsychiatristDir;
+import business.Encounter.EncounterLawyerDir;
 import business.Role.Role;
 import business.UserAccount.UserAccountDirectory;
 import business.WorkQueue.WorkQueue;
-
 import java.util.ArrayList;
-
 /**
  *
- * @author vishwa
+ * @author heenashah
  */
-public class Organization {
+public  abstract class Organization {
+    
     private String name;
     private WorkQueue workQueue;
     private EmployeeDirectory employeeDirectory;
     private UserAccountDirectory userAccountDirectory;
     private int organizationID;
     private static int counter=0;
-    private EncounterCounsellorDirectory counsellorencounterdirectory;
-    private EncounterLawyerDirectory lawyerencounterdirectory;
-    private EncounterCaretakerDirectory caretakerencounterdirectory;
-    private EncounterPsychiatristDirectory Psychiatricencounterdirectory;
+    private EncounterCounsellorDir counsellorencounterdir;
+    private EncounterLawyerDir lawyerencounterdir;
+    private EncounterPsychiatristDir Psychiatricencounterdir;
     public enum Type{
         CaseReporter("CaseReporterOrganization"),Hospital("HospitalOrganization"),Forensic("ForensicOrganization"),
         CounsellingOrganization("CounsellingOrganization"), Legal("LegalOrganization"), CaseVolunteer("CaseVolunteer"),
-        PsychiatricOrganization("PsychiatricOrganization"),Pharmacy("PharmacyOrganization");//,Rehab("RehabOrganization")
+        PsychiatricOrganization("PsychiatricOrganization"),Pharmacy("PharmacyOrganization"),RehabilitationOrganization("Rehabilitation");
         private String value;
         private Type(String value) {
             this.value = value;
@@ -45,10 +46,9 @@ public class Organization {
     public Organization(String name) {
         this.name = name;
         workQueue = new WorkQueue();
-        counsellorencounterdirectory=new EncounterCounsellorDirectory();
-        lawyerencounterdirectory = new EncounterLawyerDirectory();
-        caretakerencounterdirectory = new EncounterCaretakerDirectory();
-        Psychiatricencounterdirectory=new EncounterPsychiatristDirectory();
+        counsellorencounterdir=new EncounterCounsellorDir();
+        lawyerencounterdir = new EncounterLawyerDir();
+        Psychiatricencounterdir=new EncounterPsychiatristDir();
         employeeDirectory = new EmployeeDirectory();
         userAccountDirectory = new UserAccountDirectory();
         organizationID = counter;
@@ -60,20 +60,16 @@ public class Organization {
     public UserAccountDirectory getUserAccountDirectory() {
         return userAccountDirectory;
     }
-    public EncounterPsychiatristDirectory getPsychiatricencounterdir() {
-        return Psychiatricencounterdirectory;
+    public EncounterPsychiatristDir getPsychiatricencounterdir() {
+        return Psychiatricencounterdir;
     }
 
-    public EncounterCounsellorDirectory getCounsellorencounterdir() {
-        return counsellorencounterdirectory;
+    public EncounterCounsellorDir getCounsellorencounterdir() {
+        return counsellorencounterdir;
     } 
 
-    public EncounterLawyerDirectory getLawyerencounterdir() {
-        return lawyerencounterdirectory;
-    }
-    
-     public EncounterCaretakerDirectory getCaretakerencounterdir() {
-        return caretakerencounterdirectory;
+    public EncounterLawyerDir getLawyerencounterdir() {
+        return lawyerencounterdir;
     }
     
     public int getOrganizationID() {
@@ -105,4 +101,7 @@ public class Organization {
         return name;
     }
     
+    
 }
+
+
