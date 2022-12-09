@@ -19,6 +19,12 @@ import business.WorkQueue.WorkRequest;
 import java.awt.CardLayout;
 import java.awt.Color;
 import java.util.Properties;
+import javax.mail.Message;
+import javax.mail.PasswordAuthentication;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
@@ -237,7 +243,7 @@ public class CaretakerRequestJPanel extends javax.swing.JPanel {
                 return;
             }
 
-            WorkRequest request = (CaretakerWorkRequest)tblCaretakerManageRequest.getValueAt(selectedRow, 2);
+            CaretakerWorkRequest request = (CaretakerWorkRequest)tblCaretakerManageRequest.getValueAt(selectedRow, 2);
 
             if (request.getReceiver()!=userAccount){
                 JOptionPane.showMessageDialog(this, "You cannot view the report of this case. Access Denied.");
