@@ -117,11 +117,17 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
         comboBoxSelectEnterprise = new javax.swing.JComboBox();
         btnDelete = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(204, 204, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblManageEnterpriseAdmins.setBackground(new java.awt.Color(255, 255, 255));
+<<<<<<< Updated upstream
+        lblManageEnterpriseAdmins.setFont(new java.awt.Font("Monaco", 1, 24)); // NOI18N
+        lblManageEnterpriseAdmins.setForeground(new java.awt.Color(230, 126, 34));
+=======
         lblManageEnterpriseAdmins.setFont(new java.awt.Font("Songti SC", 1, 24)); // NOI18N
+        lblManageEnterpriseAdmins.setForeground(new java.awt.Color(102, 102, 255));
+>>>>>>> Stashed changes
         lblManageEnterpriseAdmins.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblManageEnterpriseAdmins.setText("Manage Enterprise Administrators");
         add(lblManageEnterpriseAdmins, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 50, 687, 40));
@@ -147,31 +153,64 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tableEnterpriseAdmins);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 120, 490, 170));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 120, 490, 190));
 
+<<<<<<< Updated upstream
+        lblSelectEnterprise.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+=======
         lblSelectEnterprise.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lblSelectEnterprise.setForeground(new java.awt.Color(102, 102, 255));
+>>>>>>> Stashed changes
         lblSelectEnterprise.setText("Select Enterprise:");
-        add(lblSelectEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, -1, -1));
+        add(lblSelectEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, -1, -1));
 
+<<<<<<< Updated upstream
+        lblNetwork.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+=======
         lblNetwork.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lblNetwork.setForeground(new java.awt.Color(102, 102, 255));
+>>>>>>> Stashed changes
         lblNetwork.setText("Select Network:");
-        add(lblNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, -1));
+        add(lblNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 130, -1, -1));
 
+<<<<<<< Updated upstream
+        jLabel4.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+=======
         jLabel4.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(102, 102, 255));
+>>>>>>> Stashed changes
         jLabel4.setText("Name:");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 210, 71, -1));
-        add(txtNameOfAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 210, 130, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 210, 71, -1));
+        add(txtNameOfAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 210, 130, -1));
 
+<<<<<<< Updated upstream
+        jLabel5.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+=======
         jLabel5.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(102, 102, 255));
+>>>>>>> Stashed changes
         jLabel5.setText("Set Username:");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 110, 26));
-        add(txtUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 250, 130, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 240, 110, 26));
+        add(txtUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 240, 130, -1));
 
+<<<<<<< Updated upstream
+        jLabel6.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+=======
         jLabel6.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(102, 102, 255));
+>>>>>>> Stashed changes
         jLabel6.setText("Set Password:");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, 110, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 280, 110, -1));
 
+<<<<<<< Updated upstream
+        btnSubmit.setBackground(new java.awt.Color(51, 102, 255));
+        btnSubmit.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnSubmit.setForeground(new java.awt.Color(255, 255, 255));
+=======
+        btnSubmit.setBackground(new java.awt.Color(204, 255, 51));
         btnSubmit.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        btnSubmit.setForeground(new java.awt.Color(102, 102, 255));
+>>>>>>> Stashed changes
         btnSubmit.setText("Submit");
         btnSubmit.setBorderPainted(false);
         btnSubmit.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -187,8 +226,13 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
                 btnSubmitActionPerformed(evt);
             }
         });
-        add(btnSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 350, -1, -1));
+<<<<<<< Updated upstream
+        add(btnSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 320, -1, -1));
+        add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, 130, -1));
+=======
+        add(btnSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(91, 380, 90, 40));
         add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 290, 130, -1));
+>>>>>>> Stashed changes
 
         comboBoxSelectNetwork.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         comboBoxSelectNetwork.addActionListener(new java.awt.event.ActionListener() {
@@ -196,12 +240,20 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
                 comboBoxSelectNetworkActionPerformed(evt);
             }
         });
-        add(comboBoxSelectNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 130, 130, -1));
+        add(comboBoxSelectNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 130, 130, -1));
 
         comboBoxSelectEnterprise.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        add(comboBoxSelectEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 170, 130, -1));
+        add(comboBoxSelectEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 170, 130, -1));
 
+<<<<<<< Updated upstream
+        btnDelete.setBackground(new java.awt.Color(51, 102, 255));
+        btnDelete.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnDelete.setForeground(new java.awt.Color(255, 255, 255));
+=======
+        btnDelete.setBackground(new java.awt.Color(204, 255, 51));
         btnDelete.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        btnDelete.setForeground(new java.awt.Color(102, 102, 255));
+>>>>>>> Stashed changes
         btnDelete.setText("Delete");
         btnDelete.setBorderPainted(false);
         btnDelete.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -217,7 +269,11 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
                 btnDeleteActionPerformed(evt);
             }
         });
-        add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 350, -1, -1));
+<<<<<<< Updated upstream
+        add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 320, -1, -1));
+=======
+        add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 380, 100, 40));
+>>>>>>> Stashed changes
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSubmitMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSubmitMouseEntered
