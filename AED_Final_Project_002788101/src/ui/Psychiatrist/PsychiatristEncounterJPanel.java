@@ -75,9 +75,16 @@ public class PsychiatristEncounterJPanel extends javax.swing.JPanel {
         jScrollPane3 = new javax.swing.JScrollPane();
         txtAreaMoreDetails = new javax.swing.JTextArea();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+<<<<<<< Updated upstream
+        setBackground(new java.awt.Color(0, 204, 204));
+=======
+        setBackground(new java.awt.Color(204, 204, 255));
+        setForeground(new java.awt.Color(204, 204, 255));
+>>>>>>> Stashed changes
 
-        btnUpdate.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
+        btnUpdate.setBackground(new java.awt.Color(204, 255, 51));
+        btnUpdate.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        btnUpdate.setForeground(new java.awt.Color(102, 102, 255));
         btnUpdate.setText("Update");
         btnUpdate.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -93,7 +100,9 @@ public class PsychiatristEncounterJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnBack.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
+        btnBack.setBackground(new java.awt.Color(204, 255, 51));
+        btnBack.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        btnBack.setForeground(new java.awt.Color(102, 102, 255));
         btnBack.setText("Back");
         btnBack.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -110,17 +119,17 @@ public class PsychiatristEncounterJPanel extends javax.swing.JPanel {
         });
 
         lblAdvice.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        lblAdvice.setForeground(new java.awt.Color(61, 64, 91));
+        lblAdvice.setForeground(new java.awt.Color(102, 102, 255));
         lblAdvice.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblAdvice.setText(" Advice:");
 
         lblName.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        lblName.setForeground(new java.awt.Color(61, 64, 91));
+        lblName.setForeground(new java.awt.Color(102, 102, 255));
         lblName.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblName.setText("Name:");
 
         lblEncounterNo.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        lblEncounterNo.setForeground(new java.awt.Color(61, 64, 91));
+        lblEncounterNo.setForeground(new java.awt.Color(102, 102, 255));
         lblEncounterNo.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblEncounterNo.setText("Encounter no.:");
 
@@ -150,12 +159,12 @@ public class PsychiatristEncounterJPanel extends javax.swing.JPanel {
         jScrollPane1.setViewportView(tblPsychiatristEncounter);
 
         lblProgress.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        lblProgress.setForeground(new java.awt.Color(61, 64, 91));
+        lblProgress.setForeground(new java.awt.Color(102, 102, 255));
         lblProgress.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblProgress.setText("Progress:");
 
         lblMoreDetails.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        lblMoreDetails.setForeground(new java.awt.Color(61, 64, 91));
+        lblMoreDetails.setForeground(new java.awt.Color(102, 102, 255));
         lblMoreDetails.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblMoreDetails.setText("More Details:");
 
@@ -196,15 +205,16 @@ public class PsychiatristEncounterJPanel extends javax.swing.JPanel {
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtProgress, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(btnBack)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 71, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 492, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
                 .addGap(410, 410, 410)
                 .addComponent(btnUpdate)
-                .addGap(29, 29, 29)
-                .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -215,7 +225,9 @@ public class PsychiatristEncounterJPanel extends javax.swing.JPanel {
                         .addGap(92, 92, 92)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(99, 99, 99)
+                        .addGap(27, 27, 27)
+                        .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(50, 50, 50)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblName)
                             .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -236,10 +248,15 @@ public class PsychiatristEncounterJPanel extends javax.swing.JPanel {
                             .addComponent(txtProgress, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lblProgress))))
                 .addGap(15, 15, 15)
+<<<<<<< Updated upstream
+                .addComponent(btnUpdate)
+                .addContainerGap(34, Short.MAX_VALUE))
+=======
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnUpdate)
                     .addComponent(btnBack))
-                .addContainerGap(34, Short.MAX_VALUE))
+                .addContainerGap(31, Short.MAX_VALUE))
+>>>>>>> Stashed changes
         );
     }// </editor-fold>//GEN-END:initComponents
 
