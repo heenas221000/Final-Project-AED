@@ -54,17 +54,36 @@ public class sysadminJPanel extends javax.swing.JPanel {
 
         jSplitPane1.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
+<<<<<<< Updated upstream
         jPanel1.setBackground(new java.awt.Color(153, 204, 255));
+=======
+        jPanel1.setBackground(new java.awt.Color(204, 255, 51));
+>>>>>>> Stashed changes
         jPanel1.setToolTipText("");
         jPanel1.setInheritsPopupMenu(true);
 
         lblWelcomeSysAdmin.setBackground(java.awt.Color.white);
         lblWelcomeSysAdmin.setFont(new java.awt.Font("Songti SC", 1, 24)); // NOI18N
+<<<<<<< Updated upstream
         lblWelcomeSysAdmin.setForeground(new java.awt.Color(255, 255, 255));
         lblWelcomeSysAdmin.setText("Welcome System Admin");
 
         btnManageEnterprises.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         btnManageEnterprises.setForeground(new java.awt.Color(255, 255, 255));
+=======
+        lblWelcomeSysAdmin.setForeground(new java.awt.Color(102, 102, 255));
+        lblWelcomeSysAdmin.setText("Welcome System Admin");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(11, 18, 0, 0);
+        jPanel1.add(lblWelcomeSysAdmin, gridBagConstraints);
+
+        btnManageEnterprises.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        btnManageEnterprises.setForeground(new java.awt.Color(102, 102, 255));
+>>>>>>> Stashed changes
         btnManageEnterprises.setText("Manage Enterprises");
         btnManageEnterprises.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnManageEnterprises.setBorderPainted(false);
@@ -82,9 +101,22 @@ public class sysadminJPanel extends javax.swing.JPanel {
                 btnManageEnterprisesActionPerformed(evt);
             }
         });
+<<<<<<< Updated upstream
 
         btnManageEnterpriseAdministrator.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         btnManageEnterpriseAdministrator.setForeground(new java.awt.Color(255, 255, 255));
+=======
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.ipadx = 9;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(20, 52, 26, 0);
+        jPanel1.add(btnManageEnterprises, gridBagConstraints);
+
+        btnManageEnterpriseAdministrator.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        btnManageEnterpriseAdministrator.setForeground(new java.awt.Color(102, 102, 255));
+>>>>>>> Stashed changes
         btnManageEnterpriseAdministrator.setText("Manage Enterprise Administrators ");
         btnManageEnterpriseAdministrator.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnManageEnterpriseAdministrator.setBorderPainted(false);
@@ -102,9 +134,23 @@ public class sysadminJPanel extends javax.swing.JPanel {
                 btnManageEnterpriseAdministratorActionPerformed(evt);
             }
         });
+<<<<<<< Updated upstream
 
         btnManageNetworks.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         btnManageNetworks.setForeground(new java.awt.Color(255, 255, 255));
+=======
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.ipadx = 8;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(20, 35, 26, 38);
+        jPanel1.add(btnManageEnterpriseAdministrator, gridBagConstraints);
+
+        btnManageNetworks.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        btnManageNetworks.setForeground(new java.awt.Color(102, 102, 255));
+>>>>>>> Stashed changes
         btnManageNetworks.setText("Manage Networks");
         btnManageNetworks.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnManageNetworks.setBorderPainted(false);
@@ -155,7 +201,7 @@ public class sysadminJPanel extends javax.swing.JPanel {
 
         jSplitPane1.setTopComponent(jPanel1);
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBackground(new java.awt.Color(204, 204, 255));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
