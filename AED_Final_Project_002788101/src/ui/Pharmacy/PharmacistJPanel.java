@@ -4,6 +4,15 @@
  */
 package ui.Pharmacy;
 
+import business.EcoSystem;
+import business.Enterprise.Enterprise;
+import business.Enterprise.PharmaceuticalEnterprise;
+import business.Organization.Organization;
+import business.Organization.PharmacyOrganization;
+import business.UserAccount.UserAccount;
+import java.awt.Color;
+import javax.swing.JPanel;
+
 /**
  *
  * @author hetal
@@ -13,8 +22,21 @@ public class PharmacistJPanel extends javax.swing.JPanel {
     /**
      * Creates new form PharmistJPanel
      */
-    public PharmacistJPanel() {
+      private JPanel userProcessContainer;
+    private EcoSystem business;
+    private UserAccount userAccount;
+    private PharmacyOrganization POrganization; 
+    private PharmaceuticalEnterprise Penterprise;
+    public PharmacistJPanel(JPanel userProcessContainer, UserAccount account, Organization organization,Enterprise enterprise,EcoSystem business) {
         initComponents();
+        this.userProcessContainer = userProcessContainer;
+        this.userAccount = account;
+        this.business = business;
+        this.POrganization = (PharmacyOrganization)organization;
+        this.Penterprise = (PharmaceuticalEnterprise) enterprise;
+        jSplitPane1.setDividerSize(0);
+        jSplitPane1.setDividerLocation(100);
+        populateBottom();
     }
 
     /**
@@ -52,11 +74,11 @@ public class PharmacistJPanel extends javax.swing.JPanel {
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 641, Short.MAX_VALUE)
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 271, Short.MAX_VALUE)
+            .addGap(0, 441, Short.MAX_VALUE)
         );
 
         jSplitPane1.setRightComponent(jPanel4);
@@ -65,15 +87,15 @@ public class PharmacistJPanel extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 641, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE))
+                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 641, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 470, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE))
+                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 470, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -84,4 +106,11 @@ public class PharmacistJPanel extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JSplitPane jSplitPane1;
     // End of variables declaration//GEN-END:variables
+
+     private void populateBottom() {
+        PharmaViewRequestJPanel pvrJPanel=new PharmaViewRequestJPanel(userProcessContainer,business,POrganization,userAccount);
+        jSplitPane1.setBottomComponent(pvrJPanel);
+    }
+
+
 }

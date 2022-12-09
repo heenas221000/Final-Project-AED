@@ -4,6 +4,14 @@
  */
 package ui.Lawyer;
 
+import business.EcoSystem;
+import business.Enterprise.Enterprise;
+import business.Network.Network;
+import business.Organization.LegalOrganization;
+import business.Organization.Organization;
+import business.UserAccount.UserAccount;
+import javax.swing.JPanel;
+
 /**
  *
  * @author hetal
@@ -13,8 +21,23 @@ public class LawyerJPanel extends javax.swing.JPanel {
     /**
      * Creates new form LawyerJPanel
      */
-    public LawyerJPanel() {
+    private JPanel userProcessContainer;
+    private EcoSystem business;
+    private UserAccount userAccount;
+    private final LegalOrganization organization;
+    private Enterprise enterprise;
+    private Network network;
+    public LawyerJPanel(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise,EcoSystem business,Network network) {
         initComponents();
+        this.userProcessContainer = userProcessContainer;
+        this.userAccount = account;
+        this.organization = (LegalOrganization) organization;
+        this.business = business;
+        this.enterprise = enterprise;
+        this.network=network;
+        jSplitPane1.setDividerSize(0);
+        jSplitPane1.setDividerLocation(100);
+        populateBottom();
     }
 
     /**
@@ -64,6 +87,10 @@ public class LawyerJPanel extends javax.swing.JPanel {
             .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
+   private void populateBottom() {
+        LawyerRequestJPanel lrJPanel=new LawyerRequestJPanel(userProcessContainer,business,userAccount,organization,network);
+        jSplitPane1.setBottomComponent(lrJPanel);
+    }
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
