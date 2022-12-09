@@ -4,17 +4,31 @@
  */
 package ui.sysadmin;
 
+
+import java.awt.Color;
+import business.EcoSystem;
+import java.awt.CardLayout;
+import java.awt.Color;
+import javax.swing.JPanel;
+
+
+
 /**
  *
  * @author heenashah
  */
 public class sysadminJPanel extends javax.swing.JPanel {
-
+    JPanel userProcessContainer;
+    EcoSystem ecosystem;
     /**
      * Creates new form sysadminJPanel
      */
-    public sysadminJPanel() {
+    public sysadminJPanel(JPanel userProcessContainer,EcoSystem ecosystem) {
         initComponents();
+        this.userProcessContainer=userProcessContainer;
+        this.ecosystem=ecosystem;
+        jSplitPane1.setDividerSize(0);
+        jSplitPane1.setDividerLocation(120);
     }
 
     /**
@@ -43,14 +57,6 @@ public class sysadminJPanel extends javax.swing.JPanel {
         bt_ManageNetworks.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         bt_ManageNetworks.setBorderPainted(false);
         bt_ManageNetworks.setContentAreaFilled(false);
-        bt_ManageNetworks.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                bt_ManageNetworksMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                bt_ManageNetworksMouseExited(evt);
-            }
-        });
         bt_ManageNetworks.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt_ManageNetworksActionPerformed(evt);
@@ -62,14 +68,6 @@ public class sysadminJPanel extends javax.swing.JPanel {
         bt_ManageEnterprises.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         bt_ManageEnterprises.setBorderPainted(false);
         bt_ManageEnterprises.setContentAreaFilled(false);
-        bt_ManageEnterprises.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                bt_ManageEnterprisesMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                bt_ManageEnterprisesMouseExited(evt);
-            }
-        });
         bt_ManageEnterprises.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt_ManageEnterprisesActionPerformed(evt);
@@ -81,14 +79,6 @@ public class sysadminJPanel extends javax.swing.JPanel {
         bt_ManageEnterpriseAdministrator.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         bt_ManageEnterpriseAdministrator.setBorderPainted(false);
         bt_ManageEnterpriseAdministrator.setContentAreaFilled(false);
-        bt_ManageEnterpriseAdministrator.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                bt_ManageEnterpriseAdministratorMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                bt_ManageEnterpriseAdministratorMouseExited(evt);
-            }
-        });
         bt_ManageEnterpriseAdministrator.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt_ManageEnterpriseAdministratorActionPerformed(evt);
@@ -156,52 +146,28 @@ public class sysadminJPanel extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void bt_ManageNetworksMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageNetworksMouseEntered
-        bt_ManageNetworks.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_ManageNetworksMouseEntered
-
-    private void bt_ManageNetworksMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageNetworksMouseExited
-        bt_ManageNetworks.setForeground(Color.white);        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_ManageNetworksMouseExited
-
     private void bt_ManageNetworksActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_ManageNetworksActionPerformed
         // TODO add your handling code here:
         ManageNetworkJPanel manageNetworkJPanel=new ManageNetworkJPanel(userProcessContainer, ecosystem);
-        BottomJSplitPane.setBottomComponent(manageNetworkJPanel);
+        jSplitPane1.setBottomComponent(manageNetworkJPanel);
         /*userProcessContainer.add("manageNetworkJPanel",manageNetworkJPanel);
         CardLayout layout=(CardLayout)userProcessContainer.getLayout();
         layout.next(userProcessContainer);*/
     }//GEN-LAST:event_bt_ManageNetworksActionPerformed
 
-    private void bt_ManageEnterprisesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageEnterprisesMouseExited
-        bt_ManageEnterprises.setForeground(Color.white);        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_ManageEnterprisesMouseExited
-
-    private void bt_ManageEnterprisesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageEnterprisesMouseEntered
-        bt_ManageEnterprises.setForeground(Color.BLACK);        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_ManageEnterprisesMouseEntered
-
     private void bt_ManageEnterprisesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_ManageEnterprisesActionPerformed
         // TODO add your handling code here:
         ManageEnterpriseJPanel manageEnterpriseJPanel=new ManageEnterpriseJPanel(userProcessContainer, ecosystem);
-        BottomJSplitPane.setBottomComponent(manageEnterpriseJPanel);
+        jSplitPane1.setBottomComponent(manageEnterpriseJPanel);
         /*userProcessContainer.add("manageEnterpriseJPanel",manageEnterpriseJPanel);
         CardLayout layout=(CardLayout)userProcessContainer.getLayout();
         layout.next(userProcessContainer);*/
     }//GEN-LAST:event_bt_ManageEnterprisesActionPerformed
 
-    private void bt_ManageEnterpriseAdministratorMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageEnterpriseAdministratorMouseExited
-        bt_ManageEnterpriseAdministrator.setForeground(Color.white);        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_ManageEnterpriseAdministratorMouseExited
-
-    private void bt_ManageEnterpriseAdministratorMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageEnterpriseAdministratorMouseEntered
-        bt_ManageEnterpriseAdministrator.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_ManageEnterpriseAdministratorMouseEntered
-
     private void bt_ManageEnterpriseAdministratorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_ManageEnterpriseAdministratorActionPerformed
         // TODO add your handling code here:
         ManageEnterpriseAdminJPanel manageEnterpriseAdminJPanel=new ManageEnterpriseAdminJPanel(userProcessContainer, ecosystem);
-        BottomJSplitPane.setBottomComponent(manageEnterpriseAdminJPanel);
+        jSplitPane1.setBottomComponent(manageEnterpriseAdminJPanel);
         /*userProcessContainer.add("manageEnterpriseAdminJPanel",manageEnterpriseAdminJPanel);
         CardLayout layout=(CardLayout)userProcessContainer.getLayout();
         layout.next(userProcessContainer);*/

@@ -20,7 +20,7 @@ import ui.Counsellor.CounsellorJPanel;
  * @author vishwa
  */
 public class CounsellorRole extends Role{
-     @Override
+    @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization,Enterprise enterprise, EcoSystem business,Network network) {
         return new CounsellorJPanel(userProcessContainer, account, organization,enterprise,business,network);
     }

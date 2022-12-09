@@ -23,12 +23,6 @@ import java.awt.Component;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Properties;
-import javax.mail.Message;
-import javax.mail.PasswordAuthentication;
-import javax.mail.Session;
-import javax.mail.Transport;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeMessage;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
@@ -37,7 +31,7 @@ import ui.Caretaker.CaretakerJPanel;
 
 public class CaretakerEncounterJPanel extends javax.swing.JPanel {
 
-     JPanel userProcessContainer;
+       JPanel userProcessContainer;
     EcoSystem system;
     CaretakerWorkRequest request;
     UserAccount userAccount;
@@ -165,7 +159,7 @@ public class CaretakerEncounterJPanel extends javax.swing.JPanel {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txt_EncounterNo, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txt_Name, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE)))
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
@@ -255,7 +249,7 @@ public class CaretakerEncounterJPanel extends javax.swing.JPanel {
             populateName();
             txt_EncounterNo.setText("");
             txtAreaMinutes.setText("");
-
+        }
     }//GEN-LAST:event_bt_UpdateActionPerformed
 
 

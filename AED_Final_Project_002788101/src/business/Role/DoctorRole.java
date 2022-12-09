@@ -16,14 +16,10 @@ import ui.Hospital.DoctorJPanel;
  *
  * @author vishwa
  */
-public class DoctorRole 
-     extends Role {
+public class DoctorRole extends Role {
 
-    
-   
- @Override
+@Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business,Network network) {
         return new DoctorJPanel(userProcessContainer, account, organization, enterprise,business,network);
     }
-}
 }
