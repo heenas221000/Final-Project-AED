@@ -20,7 +20,11 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
+<<<<<<< Updated upstream
  * @author heenashah
+=======
+ * @author shah0
+>>>>>>> Stashed changes
  */
 public class LabTestResultsJPanel extends javax.swing.JPanel {
 
