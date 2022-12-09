@@ -4,6 +4,15 @@
  */
 package ui.sysadmin;
 
+<<<<<<< Updated upstream
+=======
+import java.awt.Color;
+
+/**
+ *
+ * @author heenashah
+ */
+>>>>>>> Stashed changes
 import business.EcoSystem;
 import business.Employee.Employee;
 import business.Enterprise.Enterprise;

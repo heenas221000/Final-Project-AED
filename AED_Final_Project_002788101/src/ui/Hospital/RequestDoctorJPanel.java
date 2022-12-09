@@ -12,7 +12,6 @@ import business.Organization.Organization;
 import business.UserAccount.UserAccount;
 import business.WorkQueue.DrWorkRequest;
 import business.WorkQueue.CaseReporterWorkRequest;
-import business.WorkQueue.RehabilitationCaretakerWorkRequest;
 import business.WorkQueue.WorkRequest;
 import ui.CaseVolunteer.CaseReportJPanel;
 import java.awt.CardLayout;
@@ -37,7 +36,6 @@ public class RequestDoctorJPanel extends javax.swing.JPanel {
     DrWorkRequest request;
     Enterprise enterpirse;
     Network network;
-    
     public RequestDoctorJPanel(JPanel userProcessContainer, EcoSystem system, UserAccount userAccount,Organization organization,Network network) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
