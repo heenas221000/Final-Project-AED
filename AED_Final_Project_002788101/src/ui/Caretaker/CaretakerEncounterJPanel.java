@@ -70,8 +70,11 @@ public class CaretakerEncounterJPanel extends javax.swing.JPanel {
         lbl_EncounterNo = new javax.swing.JLabel();
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         lbl_Minutes.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
 =======
+=======
+>>>>>>> Stashed changes
         setBackground(new java.awt.Color(204, 204, 255));
 
         lbl_Minutes.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
@@ -84,6 +87,10 @@ public class CaretakerEncounterJPanel extends javax.swing.JPanel {
         jScrollPane2.setViewportView(txtAreaMinutes);
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+        bt_Back.setBackground(new java.awt.Color(0, 51, 204));
+>>>>>>> Stashed changes
         bt_Back.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
         bt_Back.setText("Back");
 =======
@@ -127,6 +134,10 @@ public class CaretakerEncounterJPanel extends javax.swing.JPanel {
         jScrollPane1.setViewportView(tblEncounterDetails);
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+        bt_Update.setBackground(new java.awt.Color(0, 0, 204));
+>>>>>>> Stashed changes
         bt_Update.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
         bt_Update.setText("Update");
 =======
