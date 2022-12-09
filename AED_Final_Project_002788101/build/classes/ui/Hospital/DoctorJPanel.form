@@ -22,12 +22,22 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
           <Group type="102" alignment="1" attributes="0">
               <Component id="jSplitPane1" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
 =======
           <Component id="jSplitPane1" alignment="0" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
+<<<<<<< Updated upstream
+=======
+=======
+          <Component id="jSplitPane1" alignment="1" pref="336" max="32767" attributes="0"/>
+>>>>>>> Stashed changes
 >>>>>>> Stashed changes
       </Group>
     </DimensionLayout>
@@ -40,13 +50,30 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout"/>
       <SubComponents>
+<<<<<<< Updated upstream
         <Container class="javax.swing.JPanel" name="DoctorTopJPanel">
+=======
+<<<<<<< Updated upstream
+        <Container class="javax.swing.JPanel" name="DoctorTopJPanel">
+=======
+        <Container class="javax.swing.JPanel" name="jPanel1">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="d0" green="eb" red="fd" type="rgb"/>
+            </Property>
+          </Properties>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
               <JSplitPaneConstraints position="top"/>
             </Constraint>
           </Constraints>
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
@@ -80,10 +107,20 @@
               </Group>
             </DimensionLayout>
           </Layout>
+<<<<<<< Updated upstream
+=======
+=======
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
           <SubComponents>
             <Component class="javax.swing.JLabel" name="jLabel1">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
                   <Font name="Songti SC" size="28" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="WELCOME DOCTOR"/>
@@ -92,12 +129,42 @@
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="DoctorBottomJPanel">
+<<<<<<< Updated upstream
+=======
+=======
+                  <Font name="Tahoma" size="36" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="5b" green="40" red="3d" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Welcome Doctor"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout" value="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout$GridBagConstraintsDescription">
+                  <GridBagConstraints gridX="0" gridY="0" gridWidth="1" gridHeight="1" fill="0" ipadX="0" ipadY="0" insetsTop="39" insetsLeft="137" insetsBottom="41" insetsRight="139" anchor="18" weightX="0.0" weightY="0.0"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel2">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+          </Properties>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JSplitPaneSupportLayout$JSplitPaneConstraintsDescription">
               <JSplitPaneConstraints position="right"/>
             </Constraint>
           </Constraints>
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
@@ -118,6 +185,12 @@
               </Group>
             </DimensionLayout>
           </Layout>
+<<<<<<< Updated upstream
+=======
+=======
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
         </Container>
       </SubComponents>
     </Container>
