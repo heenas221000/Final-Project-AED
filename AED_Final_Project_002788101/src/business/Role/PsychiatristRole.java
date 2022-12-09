@@ -4,10 +4,14 @@
  */
 package business.Role;
 
-import buisness.Enterprise.Enterprise;
-import business.Network.Network;
-import buisness.Organisation.Organization;
+
 import business.EcoSystem;
+import business.Enterprise.Enterprise;
+import business.Network.Network;
+import business.Organization.PsychiatricOrganization;
+import business.Organization.Organization;
+import business.UserAccount.UserAccount;
+import ui.Psychiatrist.PsychiatristJPanel;
 import javax.swing.JPanel;
 
 /**
@@ -19,5 +23,4 @@ public class PsychiatristRole extends Role{
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business,Network network) {
         return new PsychiatristJPanel(userProcessContainer, account, organization,enterprise,business,network);
     }
-    
 }
