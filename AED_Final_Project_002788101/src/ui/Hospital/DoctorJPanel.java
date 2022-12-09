@@ -40,17 +40,30 @@ public class DoctorJPanel extends javax.swing.JPanel {
         DoctorTopJPanel.setLayout(DoctorTopJPanelLayout);
         DoctorTopJPanelLayout.setHorizontalGroup(
             DoctorTopJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< Updated upstream
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DoctorTopJPanelLayout.createSequentialGroup()
                 .addContainerGap(229, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(219, 219, 219))
+=======
+            .addGroup(DoctorTopJPanelLayout.createSequentialGroup()
+                .addGap(177, 177, 177)
+                .addComponent(jLabel1)
+                .addContainerGap(179, Short.MAX_VALUE))
+>>>>>>> Stashed changes
         );
         DoctorTopJPanelLayout.setVerticalGroup(
             DoctorTopJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DoctorTopJPanelLayout.createSequentialGroup()
+<<<<<<< Updated upstream
                 .addContainerGap(32, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(28, 28, 28))
+=======
+                .addContainerGap(35, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(25, 25, 25))
+>>>>>>> Stashed changes
         );
 
         jSplitPane1.setTopComponent(DoctorTopJPanel);
@@ -59,11 +72,19 @@ public class DoctorJPanel extends javax.swing.JPanel {
         DoctorBottomJPanel.setLayout(DoctorBottomJPanelLayout);
         DoctorBottomJPanelLayout.setHorizontalGroup(
             DoctorBottomJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< Updated upstream
             .addGap(0, 720, Short.MAX_VALUE)
         );
         DoctorBottomJPanelLayout.setVerticalGroup(
             DoctorBottomJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 386, Short.MAX_VALUE)
+=======
+            .addGap(0, 628, Short.MAX_VALUE)
+        );
+        DoctorBottomJPanelLayout.setVerticalGroup(
+            DoctorBottomJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 313, Short.MAX_VALUE)
+>>>>>>> Stashed changes
         );
 
         jSplitPane1.setRightComponent(DoctorBottomJPanel);
@@ -76,9 +97,13 @@ public class DoctorJPanel extends javax.swing.JPanel {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< Updated upstream
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addComponent(jSplitPane1)
                 .addContainerGap())
+=======
+            .addComponent(jSplitPane1)
+>>>>>>> Stashed changes
         );
     }// </editor-fold>//GEN-END:initComponents
 
