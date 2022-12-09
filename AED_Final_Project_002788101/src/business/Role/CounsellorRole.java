@@ -4,11 +4,16 @@
  */
 package business.Role;
 
-import buisness.Enterprise.Enterprise;
-import business.Network.Network;
-import buisness.Organisation.Organization;
-import business.EcoSystem;
 import javax.swing.JPanel;
+import business.EcoSystem;
+import business.Enterprise.Enterprise;
+import business.Network.Network;
+import business.Organization.CounsellingOrganization;
+import business.Organization.Organization;
+import business.UserAccount.UserAccount;
+import business.WorkQueue.CaseReporterWorkRequest; 
+import javax.swing.JPanel;
+import ui.Counsellor.CounsellorJPanel;
 
 /**
  *

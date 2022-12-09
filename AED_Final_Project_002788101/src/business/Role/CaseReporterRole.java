@@ -4,10 +4,12 @@
  */
 package business.Role;
 
-import buisness.Enterprise.Enterprise;
-import business.Network.Network;
-import buisness.Organisation.Organization;
+import business.Enterprise.Enterprise;
 import business.EcoSystem;
+import business.Enterprise.Enterprise;
+import business.Network.Network;
+import business.Organization.Organization;
+import business.UserAccount.UserAccount;
 import javax.swing.JPanel;
 import ui.CaseReporter.CaseReporter;
 

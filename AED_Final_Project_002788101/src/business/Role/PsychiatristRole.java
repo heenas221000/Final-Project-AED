@@ -3,11 +3,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package business.Role;
-
-import buisness.Enterprise.Enterprise;
-import business.Network.Network;
-import buisness.Organisation.Organization;
 import business.EcoSystem;
+import business.Enterprise.Enterprise;
+import business.Network.Network;
+import business.Organization.PsychiatricOrganization;
+import business.Organization.Organization;
+import business.UserAccount.UserAccount;
+import ui.Psychiatrist.PsychiatristJPanel;
 import javax.swing.JPanel;
 
 /**
