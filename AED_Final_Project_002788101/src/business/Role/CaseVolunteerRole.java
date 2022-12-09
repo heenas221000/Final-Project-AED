@@ -16,8 +16,13 @@ import ui.CaseVolunteer.CaseVolunteerJPanel;
  *
  * @author vishwa
  */
+<<<<<<< Updated upstream
 public class CaseVolunteerRole extends Role{ 
      @Override
+=======
+public class CaseVolunteerRole extends Role{  @Override
+    @Override
+>>>>>>> Stashed changes
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business,Network network) {
         return new CaseVolunteerJPanel(userProcessContainer, account, organization,enterprise,business,network);
     }

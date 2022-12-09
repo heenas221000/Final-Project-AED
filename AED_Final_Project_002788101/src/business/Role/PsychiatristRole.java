@@ -4,27 +4,24 @@
  */
 package business.Role;
 
+
 import business.EcoSystem;
 import business.Enterprise.Enterprise;
 import business.Network.Network;
+import business.Organization.PsychiatricOrganization;
 import business.Organization.Organization;
 import business.UserAccount.UserAccount;
+import ui.Psychiatrist.PsychiatristJPanel;
 import javax.swing.JPanel;
-import javax.swing.JPanel;
-import ui.EnterpriseAdmin.EnterpriseAdminJPanel;
 
 /**
  *
  * @author vishwa
  */
-public class HealthAdminRole extends Role {
-<<<<<<< Updated upstream
-       @Override
-=======
+public class PsychiatristRole extends Role{
      @Override
->>>>>>> Stashed changes
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business,Network network) {
-        return new EnterpriseAdminJPanel(userProcessContainer, enterprise, business);
+        return new PsychiatristJPanel(userProcessContainer, account, organization,enterprise,business,network);
     }
     
 }

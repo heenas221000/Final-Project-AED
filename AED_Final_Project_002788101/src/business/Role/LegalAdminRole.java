@@ -4,10 +4,18 @@
  */
 package business.Role;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import business.Enterprise.Enterprise;
 import business.Network.Network;
 import business.Organization.Organization;
 import business.EcoSystem;
+=======
+
+import business.EcoSystem;
+import business.Enterprise.Enterprise;
+import business.Network.Network;
+import business.Organization.Organization;
+>>>>>>> Stashed changes
 =======
 
 import business.EcoSystem;
