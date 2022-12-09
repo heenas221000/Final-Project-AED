@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package buisness.Enterprise;
+import buisness.Enterprise.Enterprise.EnterpriseType;
 import business.Role.Role;
 import java.util.ArrayList;
 

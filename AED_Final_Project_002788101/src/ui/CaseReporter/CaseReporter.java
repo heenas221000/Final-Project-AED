@@ -5,26 +5,27 @@
  */
 package ui.CaseReporter;
 
-import business.EcoSystem;
-import business.Enterprise.CaseReporterEnterprise;
-import business.Enterprise.Enterprise;
+
+import buisness.Enterprise.CaseReporterEnterprise;
+import buisness.Enterprise.Enterprise;
 import business.Network.Network;
-import business.Organization.CaseReporterOrganization;
-import business.Organization.Organization;
+import buisness.Organization.CaseReporterOrganization;
+import buisness.Organization.Organization;
 import business.UserAccount.UserAccount;
+import business.EcoSystem;
 import java.awt.Color;
 import javax.swing.JPanel;
 
 /**
  *
- * @author dax98
+ * @author vishwa
  */
 public class CaseReporter extends javax.swing.JPanel {
 
     /**
      * Creates new form CaseReporter
      */
-    private JPanel userProcessContainer;
+     private JPanel userProcessContainer;
     private EcoSystem business;
     private UserAccount userAccount;
     private CaseReporterOrganization HSOrganization; 
@@ -51,7 +52,6 @@ public class CaseReporter extends javax.swing.JPanel {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-        java.awt.GridBagConstraints gridBagConstraints;
 
         jPanel7 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
@@ -73,21 +73,13 @@ public class CaseReporter extends javax.swing.JPanel {
 
         jVolunteerSplitPanel.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
-        jPanel09.setBackground(new java.awt.Color(129, 178, 154));
-        jPanel09.setLayout(new java.awt.GridBagLayout());
+        jPanel09.setBackground(new java.awt.Color(153, 204, 255));
 
-        lblCaseReporter.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
+        lblCaseReporter.setFont(new java.awt.Font("Songti SC", 1, 36)); // NOI18N
         lblCaseReporter.setForeground(new java.awt.Color(61, 64, 91));
         lblCaseReporter.setText("Welcome Case Reporter");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridwidth = 2;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(16, 112, 0, 0);
-        jPanel09.add(lblCaseReporter, gridBagConstraints);
 
-        btnViewStatus.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnViewStatus.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         btnViewStatus.setForeground(new java.awt.Color(61, 64, 91));
         btnViewStatus.setText("View Status");
         btnViewStatus.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -106,16 +98,8 @@ public class CaseReporter extends javax.swing.JPanel {
                 btnViewStatusActionPerformed(evt);
             }
         });
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.gridwidth = 3;
-        gridBagConstraints.ipadx = 29;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(11, 47, 11, 84);
-        jPanel09.add(btnViewStatus, gridBagConstraints);
 
-        btnReport.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnReport.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         btnReport.setForeground(new java.awt.Color(61, 64, 91));
         btnReport.setText("Report");
         btnReport.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -134,17 +118,37 @@ public class CaseReporter extends javax.swing.JPanel {
                 btnReportActionPerformed(evt);
             }
         });
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.ipadx = 57;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(11, 74, 11, 0);
-        jPanel09.add(btnReport, gridBagConstraints);
+
+        javax.swing.GroupLayout jPanel09Layout = new javax.swing.GroupLayout(jPanel09);
+        jPanel09.setLayout(jPanel09Layout);
+        jPanel09Layout.setHorizontalGroup(
+            jPanel09Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel09Layout.createSequentialGroup()
+                .addGap(436, 436, 436)
+                .addComponent(lblCaseReporter)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
+                .addComponent(btnReport, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(35, 35, 35)
+                .addComponent(btnViewStatus, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(17, 17, 17))
+        );
+        jPanel09Layout.setVerticalGroup(
+            jPanel09Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel09Layout.createSequentialGroup()
+                .addGap(2, 2, 2)
+                .addComponent(lblCaseReporter)
+                .addGap(40, 40, 40))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel09Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel09Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnViewStatus)
+                    .addComponent(btnReport))
+                .addGap(19, 19, 19))
+        );
 
         jVolunteerSplitPanel.setTopComponent(jPanel09);
 
-        jPanel10.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel10.setBackground(new java.awt.Color(153, 204, 255));
         jPanel10.setLayout(new java.awt.GridBagLayout());
         jVolunteerSplitPanel.setRightComponent(jPanel10);
 
@@ -165,7 +169,7 @@ public class CaseReporter extends javax.swing.JPanel {
 
     private void btnViewStatusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewStatusActionPerformed
         // TODO add your handling code here:
-        CaseReporterViewStatusJPanel reportJPanel1=new CaseReporterViewStatusJPanel(userProcessContainer,userAccount,HSOrganization,HSenterprise,business);
+        CaseReporterViewStatusJPanel reportJPanel1=new CaseReporterViewStatusJPanel(userProcessContainer,userAccount,HSOrganisation,HSenterprise,business);
         jVolunteerSplitPanel.setBottomComponent(reportJPanel1);
     }//GEN-LAST:event_btnViewStatusActionPerformed
 
@@ -178,7 +182,7 @@ public class CaseReporter extends javax.swing.JPanel {
     }//GEN-LAST:event_btnReportMouseExited
 
     private void btnReportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReportActionPerformed
-        ReportJPanel reportJPanel=new ReportJPanel(userProcessContainer,business,userAccount,HSOrganization,network);
+        ReportJPanel reportJPanel=new ReportJPanel(userProcessContainer,business,userAccount,HSOrganisation,network);
         jVolunteerSplitPanel.setBottomComponent(reportJPanel);
         //ReportJFrame r = new ReportJFrame(system,network,ua,org);
     }//GEN-LAST:event_btnReportActionPerformed

@@ -10,6 +10,9 @@ package ui.Caretaker;
  */
 
 
+import buisness.Enterprise.Enterprise;
+import business.Network.Network;
+import business.UserAccount.UserAccount;
 import business.EcoSystem;
 import business.Enterprise.Enterprise;
 import business.Network.Network;
@@ -31,7 +34,7 @@ public class CaretakerJPanel extends javax.swing.JPanel {
     private final RehabOrganization organization;
     private Enterprise enterprise;
     private Network network;
-    public CaretakerJPanel(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise,EcoSystem business,Network network) {
+    public CaretakerJPanel(JPanel userProcessContainer, UserAccount account, Enterprise enterprise, Organization organization, EcoSystem business, Network network) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = account;
