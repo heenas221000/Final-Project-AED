@@ -4,15 +4,14 @@
  */
 package ui.sysadmin;
 
-<<<<<<< Updated upstream
+
 import java.awt.Color;
-=======
 import business.EcoSystem;
 import java.awt.CardLayout;
 import java.awt.Color;
 import javax.swing.JPanel;
 
->>>>>>> Stashed changes
+
 
 /**
  *
@@ -167,7 +166,7 @@ public class sysadminJPanel extends javax.swing.JPanel {
 
     private void bt_ManageEnterpriseAdministratorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_ManageEnterpriseAdministratorActionPerformed
         // TODO add your handling code here:
-        ManageAdminsJPanel manageEnterpriseAdminJPanel=new ManageAdminsJPanel(userProcessContainer, ecosystem);
+        ManageEnterpriseAdminJPanel manageEnterpriseAdminJPanel=new ManageEnterpriseAdminJPanel(userProcessContainer, ecosystem);
         jSplitPane1.setBottomComponent(manageEnterpriseAdminJPanel);
         /*userProcessContainer.add("manageEnterpriseAdminJPanel",manageEnterpriseAdminJPanel);
         CardLayout layout=(CardLayout)userProcessContainer.getLayout();
