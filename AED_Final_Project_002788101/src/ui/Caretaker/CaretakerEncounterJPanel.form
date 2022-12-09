@@ -26,27 +26,28 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Component id="lbl_Header" alignment="0" max="32767" attributes="0"/>
           <Group type="102" alignment="0" attributes="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="lbl_Minutes" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                      <Component id="jScrollPane2" min="-2" pref="161" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="-2" pref="102" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="lbl_Name" alignment="1" min="-2" pref="72" max="-2" attributes="0"/>
                           <Component id="lbl_EncounterNo" alignment="1" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="lbl_Minutes" max="32767" attributes="0"/>
-                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="txt_EncounterNo" alignment="0" min="-2" pref="161" max="-2" attributes="0"/>
+                          <Component id="txt_Name" alignment="0" min="-2" pref="161" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="85" max="32767" attributes="0"/>
                   </Group>
               </Group>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="jScrollPane2" alignment="0" min="-2" pref="161" max="-2" attributes="0"/>
-                  <Component id="txt_EncounterNo" alignment="0" min="-2" pref="161" max="-2" attributes="0"/>
-                  <Component id="txt_Name" alignment="0" min="-2" pref="161" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace pref="85" max="32767" attributes="0"/>
               <Component id="jScrollPane1" min="-2" pref="292" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -136,20 +137,16 @@
 =======
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
           <Color blue="cc" green="0" red="0" type="rgb"/>
 =======
           <Color blue="cc" green="33" red="0" type="rgb"/>
->>>>>>> Stashed changes
-=======
-          <Color blue="33" green="ff" red="cc" type="rgb"/>
 >>>>>>> Stashed changes
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Monaco" size="14" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="66" red="66" type="rgb"/>
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="BACK"/>
 >>>>>>> Stashed changes
@@ -162,9 +159,6 @@
     </Component>
     <Component class="javax.swing.JTextField" name="txt_Name">
       <Properties>
-        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="f2" green="f2" red="f2" type="rgb"/>
-        </Property>
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
     </Component>
@@ -177,11 +171,7 @@
           <Color blue="ff" green="66" red="33" type="rgb"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
-<<<<<<< Updated upstream
         <Property name="text" type="java.lang.String" value="ENCOUNTERS"/>
-=======
-        <Property name="text" type="java.lang.String" value="ENCOUNTER"/>
->>>>>>> Stashed changes
       </Properties>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
@@ -215,17 +205,13 @@
         <Property name="text" type="java.lang.String" value="Update"/>
 =======
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-<<<<<<< Updated upstream
           <Color blue="cc" green="0" red="0" type="rgb"/>
-=======
-          <Color blue="33" green="ff" red="cc" type="rgb"/>
->>>>>>> Stashed changes
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Monaco" size="14" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="66" red="66" type="rgb"/>
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="UPDATE"/>
 >>>>>>> Stashed changes

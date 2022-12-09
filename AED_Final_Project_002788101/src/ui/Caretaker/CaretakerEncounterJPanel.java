@@ -71,11 +71,8 @@ public class CaretakerEncounterJPanel extends javax.swing.JPanel {
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
         lbl_Minutes.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
 =======
-=======
->>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
         setBackground(new java.awt.Color(204, 204, 255));
@@ -91,16 +88,10 @@ public class CaretakerEncounterJPanel extends javax.swing.JPanel {
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 =======
         bt_Back.setBackground(new java.awt.Color(0, 51, 204));
 >>>>>>> Stashed changes
         bt_Back.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-=======
-        bt_Back.setBackground(new java.awt.Color(204, 255, 51));
-        bt_Back.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        bt_Back.setForeground(new java.awt.Color(102, 102, 255));
->>>>>>> Stashed changes
         bt_Back.setText("Back");
 =======
         bt_Back.setBackground(new java.awt.Color(0, 0, 204));
@@ -122,17 +113,12 @@ public class CaretakerEncounterJPanel extends javax.swing.JPanel {
             }
         });
 
-        txt_Name.setBackground(new java.awt.Color(242, 242, 242));
         txt_Name.setEnabled(false);
 
         lbl_Header.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
         lbl_Header.setForeground(new java.awt.Color(51, 102, 255));
         lbl_Header.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-<<<<<<< Updated upstream
         lbl_Header.setText("ENCOUNTERS");
-=======
-        lbl_Header.setText("ENCOUNTER");
->>>>>>> Stashed changes
 
         tblEncounterDetails.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -149,16 +135,10 @@ public class CaretakerEncounterJPanel extends javax.swing.JPanel {
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
-<<<<<<< Updated upstream
 =======
         bt_Update.setBackground(new java.awt.Color(0, 0, 204));
 >>>>>>> Stashed changes
         bt_Update.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-=======
-        bt_Update.setBackground(new java.awt.Color(204, 255, 51));
-        bt_Update.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        bt_Update.setForeground(new java.awt.Color(102, 102, 255));
->>>>>>> Stashed changes
         bt_Update.setText("Update");
 =======
         bt_Update.setBackground(new java.awt.Color(0, 0, 204));
@@ -194,22 +174,23 @@ public class CaretakerEncounterJPanel extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(lbl_Header, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(lbl_Minutes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(39, 39, 39)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(102, 102, 102)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(lbl_Name, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lbl_EncounterNo))
-                        .addGap(39, 39, 39))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lbl_Minutes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(23, 23, 23)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txt_EncounterNo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txt_Name, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE)
+                        .addGap(39, 39, 39)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txt_EncounterNo, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txt_Name, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE)))
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
