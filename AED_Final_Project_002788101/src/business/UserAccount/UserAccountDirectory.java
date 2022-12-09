@@ -4,7 +4,7 @@
  */
 package business.UserAccount;
 
-import buisness.Employee.Employee;
+import business.Employee.Employee;
 import java.util.ArrayList;
 import javax.management.relation.Role;
 
@@ -12,7 +12,8 @@ import javax.management.relation.Role;
  *
  * @author vishwa
  */
-public class UserAccountDirectory {private ArrayList<UserAccount> userAccntList;
+public class UserAccountDirectory {
+    private ArrayList<UserAccount> userAccntList;
 
     public UserAccountDirectory() {
         userAccntList = new ArrayList<UserAccount>();
@@ -30,7 +31,7 @@ public class UserAccountDirectory {private ArrayList<UserAccount> userAccntList;
         return null;
     }
     
-    public UserAccount createUserAccnt(String username, String password, Employee employee, Role role){
+    public UserAccount createUserAccnt(String username, String password, Employee employee, business.Role.Role role){
         UserAccount userAccnt = new UserAccount();
         userAccnt.setUsername(username);
         userAccnt.setPwd(password);
