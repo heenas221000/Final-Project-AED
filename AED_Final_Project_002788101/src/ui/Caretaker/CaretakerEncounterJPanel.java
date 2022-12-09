@@ -23,12 +23,6 @@ import java.awt.Component;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Properties;
-import javax.mail.Message;
-import javax.mail.PasswordAuthentication;
-import javax.mail.Session;
-import javax.mail.Transport;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeMessage;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
@@ -37,7 +31,7 @@ import ui.Caretaker.CaretakerJPanel;
 
 public class CaretakerEncounterJPanel extends javax.swing.JPanel {
 
-     JPanel userProcessContainer;
+       JPanel userProcessContainer;
     EcoSystem system;
     CaretakerWorkRequest request;
     UserAccount userAccount;
