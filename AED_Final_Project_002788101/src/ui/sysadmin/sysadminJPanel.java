@@ -56,14 +56,6 @@ public class sysadminJPanel extends javax.swing.JPanel {
         bt_ManageEnterprises.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         bt_ManageEnterprises.setBorderPainted(false);
         bt_ManageEnterprises.setContentAreaFilled(false);
-        bt_ManageEnterprises.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                bt_ManageEnterprisesMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                bt_ManageEnterprisesMouseExited(evt);
-            }
-        });
         bt_ManageEnterprises.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt_ManageEnterprisesActionPerformed(evt);
@@ -75,14 +67,6 @@ public class sysadminJPanel extends javax.swing.JPanel {
         bt_ManageEnterpriseAdministrator.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         bt_ManageEnterpriseAdministrator.setBorderPainted(false);
         bt_ManageEnterpriseAdministrator.setContentAreaFilled(false);
-        bt_ManageEnterpriseAdministrator.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                bt_ManageEnterpriseAdministratorMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                bt_ManageEnterpriseAdministratorMouseExited(evt);
-            }
-        });
         bt_ManageEnterpriseAdministrator.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt_ManageEnterpriseAdministratorActionPerformed(evt);
@@ -159,14 +143,6 @@ public class sysadminJPanel extends javax.swing.JPanel {
         layout.next(userProcessContainer);*/
     }//GEN-LAST:event_bt_ManageNetworksActionPerformed
 
-    private void bt_ManageEnterprisesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageEnterprisesMouseExited
-        bt_ManageEnterprises.setForeground(Color.white);        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_ManageEnterprisesMouseExited
-
-    private void bt_ManageEnterprisesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageEnterprisesMouseEntered
-        bt_ManageEnterprises.setForeground(Color.BLACK);        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_ManageEnterprisesMouseEntered
-
     private void bt_ManageEnterprisesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_ManageEnterprisesActionPerformed
         // TODO add your handling code here:
         ManageEnterpriseJPanel manageEnterpriseJPanel=new ManageEnterpriseJPanel(userProcessContainer, ecosystem);
@@ -175,14 +151,6 @@ public class sysadminJPanel extends javax.swing.JPanel {
         CardLayout layout=(CardLayout)userProcessContainer.getLayout();
         layout.next(userProcessContainer);*/
     }//GEN-LAST:event_bt_ManageEnterprisesActionPerformed
-
-    private void bt_ManageEnterpriseAdministratorMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageEnterpriseAdministratorMouseExited
-        bt_ManageEnterpriseAdministrator.setForeground(Color.white);        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_ManageEnterpriseAdministratorMouseExited
-
-    private void bt_ManageEnterpriseAdministratorMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageEnterpriseAdministratorMouseEntered
-        bt_ManageEnterpriseAdministrator.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_ManageEnterpriseAdministratorMouseEntered
 
     private void bt_ManageEnterpriseAdministratorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_ManageEnterpriseAdministratorActionPerformed
         // TODO add your handling code here:

@@ -8,12 +8,36 @@ import business.EcoSystem;
 import business.Enterprise.Enterprise;
 import business.Network.Network;
 import business.Organization.CaseVolunteerOrganization;
+<<<<<<< Updated upstream
 import business.Organization.Organization;
 import java.awt.Color;
 import java.util.HashMap;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
+=======
+import business.Organization.CaseReporterOrganization;
+import business.Organization.Organization;
+import java.awt.CardLayout;
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.FlowLayout;
+import static java.time.Clock.system;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Set;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.table.DefaultTableModel;
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartFrame;
+import org.jfree.chart.JFreeChart;
+import org.jfree.chart.plot.CategoryPlot;
+import org.jfree.chart.plot.PiePlot;
+import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.data.category.DefaultCategoryDataset;
+import org.jfree.data.general.DefaultPieDataset;
+>>>>>>> Stashed changes
 
 /**
  *
@@ -302,7 +326,94 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_bt_viewcasesActionPerformed
 
+private void populateNetworkTable() {
+        DefaultTableModel model = (DefaultTableModel) tb_network.getModel();
 
+        model.setRowCount(0);
+        for (Network network : system.getNetworkList()) {
+            Object[] row = new Object[1];
+            row[0] = network;
+            model.addRow(row);
+        }
+    }
+    
+    private void updateData(){
+    for(Network n : system.getNetworkList()){
+          
+            Enterprise e = n.getEnterpriseDirectory().searchEnterprisebyType(Enterprise.EnterpriseType.NGO);
+            
+            for (Organization o : e.getOrganizationDirectory().getOrganizationList()){
+               
+                if (o instanceof CaseVolunteerOrganization){
+               
+                int count = o.getWorkQueue().getCaseReporterWorkRequestList().size();
+                System.out.println(count);
+                chart.put(n.toString(), count);
+                
+            }}
+        }    
+  }
+
+    private void updateChart() {
+  
+    DefaultCategoryDataset d=new DefaultCategoryDataset();
+        Set keys=chart.keySet();
+        Iterator it=keys.iterator();
+        
+        while(it.hasNext())
+        {
+            Object cityname=it.next().toString();
+            int casesdata= (int) chart.get(cityname);
+            d.setValue(casesdata, "No of cases", (Comparable) cityname);
+            
+        }
+        
+        JFreeChart barc=ChartFactory.createBarChart("Summary of cases", "City/Network", "No of cases", d, PlotOrientation.VERTICAL, false, true, false);
+        CategoryPlot plt=barc.getCategoryPlot();
+        //plt.setRangeGridlinePaint(Color.black);
+        
+        ChartFrame cp=new ChartFrame("No of cases by network",barc);
+        //cp.removeAll();
+        cp.setVisible(true);
+        cp.setSize(600,600);
+    }
+    
+    private void UpdatePieData(Organization org) {
+     
+ 
+      piechartsea.clear();
+      piechartsea.put("Labor",org.getWorkQueue().getcountbytypesa("Labor"));
+      piechartsea.put("Physical Abuse", org.getWorkQueue().getcountbytypesa("Physical Abuse"));
+      piechartsea.put("Sexual Abuse", org.getWorkQueue().getcountbytypesa("Sexual Abuse"));
+      piechartsea.put("Harrassment", org.getWorkQueue().getcountbytypesa("Harrassment"));
+      piechartsea.put("Other", org.getWorkQueue().getcountbytypesa("Other"));
+      //this.updateSeattlePieChart();
+        
+    }
+    
+    private void updateSeattlePieChart(Network network) {
+    
+        DefaultPieDataset ddd=new DefaultPieDataset();
+        Set keys=piechartsea.keySet();
+        Iterator it=keys.iterator();
+        keys.size();
+        System.out.print(keys.size());
+      
+        while(it.hasNext())
+        {
+            Object type=it.next().toString();
+            int caspiedata= (int) piechartsea.get(type);
+            ddd.setValue((Comparable) type, caspiedata);
+        }
+            JFreeChart seapie=ChartFactory.createPieChart(network.toString() + " cases summary.", ddd, true, true, true);
+            PiePlot p=(PiePlot) seapie.getPlot();
+            ChartFrame cp=new ChartFrame("No of cases by type in " + network.toString(),seapie);
+            cp.setVisible(true);
+            cp.setSize(600,600);
+        
+        
+    }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bt_add;
     private javax.swing.JButton bt_remove;

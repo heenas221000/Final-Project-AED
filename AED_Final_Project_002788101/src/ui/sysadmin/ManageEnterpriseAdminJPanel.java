@@ -8,7 +8,15 @@ import business.EcoSystem;
 import business.Employee.Employee;
 import business.Enterprise.Enterprise;
 import business.Network.Network;
+<<<<<<< Updated upstream:AED_Final_Project_002788101/src/ui/sysadmin/ManageEnterpriseAdminJPanel.java
 import business.Role.NGOAdminRole;
+=======
+import business.Role.HealthAdminRole;
+import business.Role.LegalAdminRole;
+import business.Role.NGOAdminRole;
+import business.Role.PharmacyAdminRole;
+import business.Role.RehabAdminRole;
+>>>>>>> Stashed changes:AED_Final_Project_002788101/src/ui/sysadmin/ManageAdminsJPanel.java
 import business.UserAccount.UserAccount;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -27,7 +35,11 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
     private JPanel userProcessContainer;
     private EcoSystem system;
     
+<<<<<<< Updated upstream:AED_Final_Project_002788101/src/ui/sysadmin/ManageEnterpriseAdminJPanel.java
     public ManageEnterpriseAdminJPanel() {
+=======
+    public ManageEnterpriseAdminJPanel(JPanel userProcessContainer, EcoSystem system) {
+>>>>>>> Stashed changes:AED_Final_Project_002788101/src/ui/sysadmin/ManageAdminsJPanel.java
         
         initComponents();
         
@@ -331,7 +343,7 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
         }
         else if(enterprise.getEnterpriseType().getValue().equalsIgnoreCase("Rehabilitation")){
             if(enterprise.getUserAccountDirectory().CheckIsValidInput(password)){
-                UserAccount userAccount=enterprise.getUserAccountDirectory().createUserAccnt(username, password, employee, new RehabilitationCaretaker());
+                UserAccount userAccount=enterprise.getUserAccountDirectory().createUserAccnt(username, password, employee, new RehabAdminRole());
             }
             else{
                 JOptionPane.showMessageDialog(null, "Password should have a minimum length of 8 and contain atleast 1 Uppercase, 1 Lowercase, 1 Special character and 1 Digit ");
