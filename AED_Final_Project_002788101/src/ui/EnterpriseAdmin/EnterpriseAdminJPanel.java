@@ -1,9 +1,11 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package ui.EnterpriseAdmin;
 
+import business.EcoSystem;
 import business.Enterprise.Enterprise;
 import java.awt.Color;
 import javax.swing.JPanel;
@@ -17,7 +19,7 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
     /**
      * Creates new form EnterpriseAdminJPanel
      */
-     JPanel userProcessContainer;
+   JPanel userProcessContainer;
     Enterprise enterprise;
     EcoSystem system;
     public EnterpriseAdminJPanel(JPanel userProcessContainer, Enterprise enterprise, EcoSystem system) {
@@ -40,6 +42,8 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
+        jPanel1 = new javax.swing.JPanel();
+        jSplitPane1 = new javax.swing.JSplitPane();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         btnManageOrg = new javax.swing.JButton();
@@ -49,7 +53,10 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
         txtFieldEnterpriseName = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
 
+        setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jSplitPane1.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
         jPanel2.setBackground(new java.awt.Color(253, 235, 208));
         jPanel2.setForeground(new java.awt.Color(51, 102, 255));
@@ -169,7 +176,7 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(11, 4, 0, 0);
         jPanel2.add(txtFieldEnterpriseName, gridBagConstraints);
 
-        add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, -1));
+        jSplitPane1.setTopComponent(jPanel2);
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -184,7 +191,20 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
             .addGap(0, 453, Short.MAX_VALUE)
         );
 
-        add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, -1));
+        jSplitPane1.setRightComponent(jPanel3);
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jSplitPane1)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jSplitPane1)
+        );
+
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(98, 57, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnManageOrgMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnManageOrgMouseExited
@@ -237,8 +257,10 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnManageOrg;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JTextField txtFieldEnterpriseName;
     // End of variables declaration//GEN-END:variables
 }
