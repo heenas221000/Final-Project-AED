@@ -17,7 +17,7 @@ import ui.CaseReporter.CaseReporter;
  * @author vishwa
  */
 public class CaseReporterRole extends Role {
-     @Override
+      @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business,Network network) {
         return new CaseReporter(userProcessContainer, account, organization,enterprise,business,network);
     }
