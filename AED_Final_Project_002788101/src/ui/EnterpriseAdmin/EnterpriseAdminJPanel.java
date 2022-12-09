@@ -62,8 +62,7 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
         jPanel2.setForeground(new java.awt.Color(51, 102, 255));
         jPanel2.setLayout(new java.awt.GridBagLayout());
 
-        jLabel1.setFont(new java.awt.Font("Monaco", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(51, 102, 255));
+        jLabel1.setFont(new java.awt.Font("Songti SC", 1, 24)); // NOI18N
         jLabel1.setText("Welcome Enterprise Admin");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -73,17 +72,17 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(11, 198, 0, 0);
         jPanel2.add(jLabel1, gridBagConstraints);
 
-        btnManageOrg.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        btnManageOrg.setForeground(new java.awt.Color(51, 102, 255));
+        btnManageOrg.setBackground(new java.awt.Color(0, 204, 204));
+        btnManageOrg.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         btnManageOrg.setText("Manage Organization(s)");
         btnManageOrg.setBorderPainted(false);
         btnManageOrg.setContentAreaFilled(false);
         btnManageOrg.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnManageOrgMouseExited(evt);
-            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnManageOrgMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnManageOrgMouseExited(evt);
             }
         });
         btnManageOrg.addActionListener(new java.awt.event.ActionListener() {
@@ -98,17 +97,17 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(6, 84, 0, 0);
         jPanel2.add(btnManageOrg, gridBagConstraints);
 
-        btnManageEmployee.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        btnManageEmployee.setForeground(new java.awt.Color(51, 102, 255));
+        btnManageEmployee.setBackground(new java.awt.Color(0, 204, 204));
+        btnManageEmployee.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         btnManageEmployee.setText("Manage Employee");
         btnManageEmployee.setBorderPainted(false);
         btnManageEmployee.setContentAreaFilled(false);
         btnManageEmployee.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnManageEmployeeMouseExited(evt);
-            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnManageEmployeeMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnManageEmployeeMouseExited(evt);
             }
         });
         btnManageEmployee.addActionListener(new java.awt.event.ActionListener() {
@@ -124,17 +123,17 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(6, 6, 0, 0);
         jPanel2.add(btnManageEmployee, gridBagConstraints);
 
-        btnManageEmployeeAccess.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        btnManageEmployeeAccess.setForeground(new java.awt.Color(51, 102, 255));
+        btnManageEmployeeAccess.setBackground(new java.awt.Color(0, 204, 204));
+        btnManageEmployeeAccess.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         btnManageEmployeeAccess.setText("Manage User");
         btnManageEmployeeAccess.setBorderPainted(false);
         btnManageEmployeeAccess.setContentAreaFilled(false);
         btnManageEmployeeAccess.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnManageEmployeeAccessMouseExited(evt);
-            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnManageEmployeeAccessMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnManageEmployeeAccessMouseExited(evt);
             }
         });
         btnManageEmployeeAccess.addActionListener(new java.awt.event.ActionListener() {
@@ -150,8 +149,7 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(6, 6, 0, 110);
         jPanel2.add(btnManageEmployeeAccess, gridBagConstraints);
 
-        jLabel2.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(51, 102, 255));
+        jLabel2.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         jLabel2.setText("Your Enterprise is : ");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;

@@ -66,8 +66,10 @@ public class LawyerRequestJPanel extends javax.swing.JPanel {
         btnEncounter = new javax.swing.JButton();
         btnCaseComplete = new javax.swing.JButton();
 
-        lblHeader.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        lblHeader.setForeground(new java.awt.Color(51, 102, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
+
+        lblHeader.setBackground(new java.awt.Color(0, 204, 204));
+        lblHeader.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         lblHeader.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblHeader.setText("Manage Requests");
 
@@ -92,7 +94,7 @@ public class LawyerRequestJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblLawyerManageRequest);
 
-        btnAssignRequest.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnAssignRequest.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         btnAssignRequest.setText("Assign Request");
         btnAssignRequest.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -108,7 +110,7 @@ public class LawyerRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnViewCaseReport.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnViewCaseReport.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         btnViewCaseReport.setText("View Case Report");
         btnViewCaseReport.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -124,7 +126,7 @@ public class LawyerRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnEncounter.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnEncounter.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         btnEncounter.setText("Ecounters");
         btnEncounter.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -140,7 +142,7 @@ public class LawyerRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnCaseComplete.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnCaseComplete.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         btnCaseComplete.setText(" Case Complete");
         btnCaseComplete.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {

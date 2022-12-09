@@ -47,14 +47,14 @@ public class ViewRequestLabTestJPanel extends javax.swing.JPanel {
         jLabel4 = new javax.swing.JLabel();
         jTextField3 = new javax.swing.JTextField();
 
-        setBackground(new java.awt.Color(244, 241, 222));
+        setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(61, 64, 91));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("View Lab Test");
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel2.setText("Name:");
 
@@ -80,8 +80,8 @@ public class ViewRequestLabTestJPanel extends javax.swing.JPanel {
         jTable1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jScrollPane1.setViewportView(jTable1);
 
-        jButton3.setBackground(new java.awt.Color(129, 178, 154));
-        jButton3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jButton3.setBackground(new java.awt.Color(102, 153, 255));
+        jButton3.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         jButton3.setText("Back");
         jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -98,7 +98,7 @@ public class ViewRequestLabTestJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         jLabel4.setText("Lab Official Sign:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -109,7 +109,7 @@ public class ViewRequestLabTestJPanel extends javax.swing.JPanel {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 22, Short.MAX_VALUE)
+                        .addGap(0, 24, Short.MAX_VALUE)
                         .addComponent(jLabel4)
                         .addGap(18, 18, 18))
                     .addGroup(layout.createSequentialGroup()
@@ -122,7 +122,7 @@ public class ViewRequestLabTestJPanel extends javax.swing.JPanel {
                     .addComponent(jTextField3, javax.swing.GroupLayout.DEFAULT_SIZE, 139, Short.MAX_VALUE)
                     .addComponent(jTextField1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 218, Short.MAX_VALUE))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 219, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -141,7 +141,7 @@ public class ViewRequestLabTestJPanel extends javax.swing.JPanel {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel4)
                             .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 107, Short.MAX_VALUE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 101, Short.MAX_VALUE))
                 .addGap(233, 233, 233))
         );
     }// </editor-fold>//GEN-END:initComponents

@@ -62,7 +62,7 @@ public class PrescribeMedicinesJPanel extends javax.swing.JPanel {
         jTextField3 = new javax.swing.JTextField();
         jButton3 = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(244, 241, 222));
+        setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(61, 64, 91));
@@ -70,13 +70,13 @@ public class PrescribeMedicinesJPanel extends javax.swing.JPanel {
         jLabel1.setText("Prescription");
         jLabel1.setAutoscrolls(true);
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         jLabel2.setText("Doctor's Name:");
         jLabel2.setAutoscrolls(true);
 
         jTextField1.setEnabled(false);
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel3.setText("Date:");
         jLabel3.setAutoscrolls(true);
@@ -98,8 +98,8 @@ public class PrescribeMedicinesJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        jButton1.setBackground(new java.awt.Color(129, 178, 154));
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jButton1.setBackground(new java.awt.Color(102, 153, 255));
+        jButton1.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         jButton1.setText("Request Pharmacist");
         jButton1.setAutoscrolls(true);
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -116,8 +116,8 @@ public class PrescribeMedicinesJPanel extends javax.swing.JPanel {
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(129, 178, 154));
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jButton2.setBackground(new java.awt.Color(102, 153, 255));
+        jButton2.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         jButton2.setText("Back");
         jButton2.setAutoscrolls(true);
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -134,13 +134,13 @@ public class PrescribeMedicinesJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         jLabel5.setText("Patient Name:");
         jLabel5.setAutoscrolls(true);
 
         jTextField4.setEnabled(false);
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         jLabel6.setText("Particulars:");
         jLabel6.setAutoscrolls(true);
 
@@ -150,7 +150,7 @@ public class PrescribeMedicinesJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         jLabel4.setText("Quantity:");
         jLabel4.setAutoscrolls(true);
 
@@ -160,8 +160,8 @@ public class PrescribeMedicinesJPanel extends javax.swing.JPanel {
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(129, 178, 154));
-        jButton3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jButton3.setBackground(new java.awt.Color(102, 153, 255));
+        jButton3.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         jButton3.setText("Add");
         jButton3.setAutoscrolls(true);
         jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -215,7 +215,7 @@ public class PrescribeMedicinesJPanel extends javax.swing.JPanel {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jButton1)
-                                .addGap(0, 50, Short.MAX_VALUE))
+                                .addGap(0, 45, Short.MAX_VALUE))
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))))
                 .addGap(235, 235, 235))
         );
@@ -252,7 +252,7 @@ public class PrescribeMedicinesJPanel extends javax.swing.JPanel {
                             .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 215, Short.MAX_VALUE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 197, Short.MAX_VALUE))
                 .addGap(80, 80, 80)
                 .addComponent(jButton1)
                 .addGap(85, 85, 85))

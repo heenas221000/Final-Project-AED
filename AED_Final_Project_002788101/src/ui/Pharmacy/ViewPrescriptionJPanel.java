@@ -55,48 +55,46 @@ public class ViewPrescriptionJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        bt_back = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        txt_Date = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tb_particulars = new javax.swing.JTable();
+        jTable1 = new javax.swing.JTable();
         jLabel4 = new javax.swing.JLabel();
-        txt_DocName = new javax.swing.JTextField();
-        bt_process = new javax.swing.JButton();
-        txt_PatientName = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jButton2 = new javax.swing.JButton();
+        jTextField4 = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(153, 204, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setFont(new java.awt.Font("Songti SC", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 204));
+        jLabel1.setForeground(new java.awt.Color(61, 64, 58));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("PRESCRIPTION");
+        jLabel1.setText("Prescription");
 
-        bt_back.setBackground(new java.awt.Color(0, 0, 204));
-        bt_back.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        bt_back.setForeground(new java.awt.Color(255, 255, 255));
-        bt_back.setText("BACK");
-        bt_back.addMouseListener(new java.awt.event.MouseAdapter() {
+        jButton1.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        jButton1.setText("Back");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                bt_backMouseEntered(evt);
+                jButton1MouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                bt_backMouseExited(evt);
+                jButton1MouseExited(evt);
             }
         });
-        bt_back.addActionListener(new java.awt.event.ActionListener() {
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bt_backActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        jLabel3.setText("DATE");
+        jLabel3.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        jLabel3.setText("Date:");
 
-        txt_Date.setEnabled(false);
+        jTextField2.setEnabled(false);
 
-        tb_particulars.setModel(new javax.swing.table.DefaultTableModel(
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
                 {null, null},
@@ -104,7 +102,7 @@ public class ViewPrescriptionJPanel extends javax.swing.JPanel {
                 {null, null}
             },
             new String [] {
-                "PARTICULARS", "QUANTITY"
+                "Particulars", "Quantity"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -115,35 +113,33 @@ public class ViewPrescriptionJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(tb_particulars);
+        jScrollPane1.setViewportView(jTable1);
 
-        jLabel4.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        jLabel4.setText("DOCTOR'S NAME");
+        jLabel4.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        jLabel4.setText("Doctor's Name:");
 
-        txt_DocName.setEnabled(false);
+        jTextField3.setEnabled(false);
 
-        bt_process.setBackground(new java.awt.Color(0, 0, 204));
-        bt_process.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        bt_process.setForeground(new java.awt.Color(255, 255, 255));
-        bt_process.setText("PROCESS");
-        bt_process.addMouseListener(new java.awt.event.MouseAdapter() {
+        jButton2.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        jButton2.setText("Process ");
+        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                bt_processMouseEntered(evt);
+                jButton2MouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                bt_processMouseExited(evt);
+                jButton2MouseExited(evt);
             }
         });
-        bt_process.addActionListener(new java.awt.event.ActionListener() {
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bt_processActionPerformed(evt);
+                jButton2ActionPerformed(evt);
             }
         });
 
-        txt_PatientName.setEnabled(false);
+        jTextField4.setEnabled(false);
 
-        jLabel5.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        jLabel5.setText("PATIENT'S NAME");
+        jLabel5.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        jLabel5.setText("Patient Name:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -151,103 +147,99 @@ public class ViewPrescriptionJPanel extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(37, 37, 37)
-                .addComponent(jLabel3)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton1)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(bt_back)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(8, 8, 8)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel4)
-                                            .addComponent(jLabel5))
-                                        .addGap(31, 31, 31)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                            .addComponent(txt_PatientName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
-                                            .addComponent(txt_Date, javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(txt_DocName)))
-                                    .addComponent(bt_process, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(48, 48, 48)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 72, Short.MAX_VALUE)))
-                .addContainerGap())
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel4))
+                        .addGap(39, 39, 39)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+                            .addComponent(jTextField4)
+                            .addComponent(jTextField3))
+                        .addGap(18, 18, 18)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(129, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(254, 254, 254))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(19, 19, 19)
-                .addComponent(bt_back, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(24, 24, 24)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txt_Date, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txt_PatientName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel4)
-                            .addComponent(txt_DocName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addComponent(bt_process))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(106, Short.MAX_VALUE))
+                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(61, 61, 61)
+                .addComponent(jButton2)
+                .addContainerGap(102, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void bt_backMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_backMouseEntered
-        bt_back.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_backMouseEntered
+    private void jButton1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseEntered
+        jButton1.setForeground(new Color(0,128,128));        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1MouseEntered
 
-    private void bt_backMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_backMouseExited
-        bt_back.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_backMouseExited
+    private void jButton1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseExited
+        jButton1.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1MouseExited
 
-    private void bt_backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_backActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         Component[] componentArray = userProcessContainer.getComponents();
         Component component = componentArray[componentArray.length - 1];
         //CaseRequestJPanel sysAdminwjp = (CaseRequestJPanel) component;
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
-    }//GEN-LAST:event_bt_backActionPerformed
+    }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void bt_processMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_processMouseEntered
-        bt_process.setForeground(new Color(0,128,128));  // TODO add your handling code here:
-    }//GEN-LAST:event_bt_processMouseEntered
+    private void jButton2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseEntered
+        jButton2.setForeground(new Color(0,128,128));  // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2MouseEntered
 
-    private void bt_processMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_processMouseExited
-        bt_process.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_processMouseExited
+    private void jButton2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseExited
+        jButton2.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2MouseExited
 
-    private void bt_processActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_processActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
         request.setStatus("Processed");
         sendInvite(request.getDoctorWorkRequest().getCaseReporterWorkRequest());
 
         //JOptionPane.showMessageDialog(null,"Medicines are ready for pick-up");
-    }//GEN-LAST:event_bt_processActionPerformed
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     private void populatereport() {
-        txt_Date.setText(request.getRequestDate().toString());
-        txt_PatientName.setText(request.getDoctorWorkRequest().getCaseReporterWorkRequest().getChildName());
-        txt_DocName.setText(request.getSender().toString());
+        jTextField2.setText(request.getRequestDate().toString());
+        jTextField4.setText(request.getDoctorWorkRequest().getCaseReporterWorkRequest().getChildName());
+        jTextField3.setText(request.getSender().toString());
         populatetable();
     }
     
     private void populatetable() {
-        DefaultTableModel model= (DefaultTableModel) tb_particulars.getModel();
+        DefaultTableModel model= (DefaultTableModel) jTable1.getModel();
         Object[] row=new Object[2];
         model.setRowCount(0);
         
@@ -300,16 +292,16 @@ public class ViewPrescriptionJPanel extends javax.swing.JPanel {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton bt_back;
-    private javax.swing.JButton bt_process;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable tb_particulars;
-    private javax.swing.JTextField txt_Date;
-    private javax.swing.JTextField txt_DocName;
-    private javax.swing.JTextField txt_PatientName;
+    private javax.swing.JTable jTable1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
     // End of variables declaration//GEN-END:variables
 }

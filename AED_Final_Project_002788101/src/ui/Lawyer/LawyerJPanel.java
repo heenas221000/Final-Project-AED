@@ -57,11 +57,10 @@ public class LawyerJPanel extends javax.swing.JPanel {
 
         jSplitPane1.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
-        jPanel1.setBackground(new java.awt.Color(253, 235, 208));
+        jPanel1.setBackground(new java.awt.Color(0, 204, 204));
         jPanel1.setLayout(new java.awt.GridBagLayout());
 
         lblHeader.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        lblHeader.setForeground(new java.awt.Color(51, 102, 255));
         lblHeader.setText("Welcome Lawyer");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;

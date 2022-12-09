@@ -72,7 +72,7 @@ public class CaseReporter extends javax.swing.JPanel {
 
         jVolunteerSplitPanel.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
-        jPanel09.setBackground(new java.awt.Color(129, 178, 154));
+        jPanel09.setBackground(new java.awt.Color(0, 204, 204));
         jPanel09.setLayout(new java.awt.GridBagLayout());
 
         lblCaseReporter.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N

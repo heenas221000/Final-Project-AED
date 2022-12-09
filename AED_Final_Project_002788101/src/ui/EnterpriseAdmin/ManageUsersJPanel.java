@@ -115,8 +115,7 @@ public class ManageUsersJPanel extends javax.swing.JPanel {
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel1.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(230, 126, 34));
+        jLabel1.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Manage User");
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 6, 650, 39));
@@ -144,31 +143,31 @@ public class ManageUsersJPanel extends javax.swing.JPanel {
 
         jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 80, 240, 170));
 
-        jLabel2.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel2.setText("Select Organization:");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, -1, -1));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 170, -1));
 
-        jLabel3.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel3.setText("Select Employee:");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 160, -1));
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 170, -1));
 
-        jLabel4.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel4.setText("Select Role:");
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 160, -1));
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 170, -1));
 
-        jLabel5.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel5.setText("Set Username:");
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 160, -1));
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 170, -1));
         jPanel2.add(txtUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(233, 180, 140, -1));
 
-        jLabel6.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel6.setText("Set Password:");
-        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, 160, -1));
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 160, -1));
 
         btnCreate.setBackground(new java.awt.Color(51, 102, 255));
         btnCreate.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N

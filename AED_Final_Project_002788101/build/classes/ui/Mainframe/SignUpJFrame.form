@@ -41,7 +41,7 @@
     <Container class="javax.swing.JPanel" name="detailsjPanel">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="8f" green="cc" red="f2" type="rgb"/>
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
       </Properties>
       <Constraints>
@@ -55,10 +55,7 @@
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monaco" size="18" style="1"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="5f" green="7a" red="e0" type="rgb"/>
+              <Font name="Songti SC" size="18" style="1"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="Enter your details below "/>
@@ -72,7 +69,7 @@
         <Component class="javax.swing.JLabel" name="fnamejLabel">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monaco" size="18" style="1"/>
+              <Font name="Songti SC" size="18" style="1"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="5b" green="40" red="3d" type="rgb"/>
@@ -88,7 +85,7 @@
         <Component class="javax.swing.JLabel" name="contactjLabel">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monaco" size="18" style="1"/>
+              <Font name="Songti SC" size="18" style="1"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="5b" green="40" red="3d" type="rgb"/>
@@ -104,7 +101,7 @@
         <Component class="javax.swing.JLabel" name="usernamejLabel">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monaco" size="18" style="1"/>
+              <Font name="Songti SC" size="18" style="1"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="5b" green="40" red="3d" type="rgb"/>
@@ -120,7 +117,7 @@
         <Component class="javax.swing.JLabel" name="passwordjLabel">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monaco" size="18" style="1"/>
+              <Font name="Songti SC" size="18" style="1"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="5b" green="40" red="3d" type="rgb"/>
@@ -159,9 +156,6 @@
         </Component>
         <Component class="javax.swing.JButton" name="signupjButton">
           <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="9a" green="b2" red="81" type="rgb"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Monaco" size="18" style="1"/>
             </Property>
@@ -214,7 +208,7 @@
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monaco" size="18" style="1"/>
+              <Font name="Songti SC" size="18" style="1"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="5b" green="40" red="3d" type="rgb"/>
@@ -266,7 +260,7 @@
     <Container class="javax.swing.JPanel" name="jPanel2">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="de" green="f1" red="f4" type="rgb"/>
+          <Color blue="cc" green="cc" red="0" type="rgb"/>
         </Property>
       </Properties>
       <Constraints>
@@ -282,7 +276,7 @@
         <Component class="javax.swing.JButton" name="jButton1">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monaco" size="36" style="1"/>
+              <Font name="Songti SC" size="36" style="1"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="5b" green="40" red="3d" type="rgb"/>

@@ -43,7 +43,7 @@
     <Container class="javax.swing.JPanel" name="jPanel1">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="8f" green="cc" red="f2" type="rgb"/>
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
       </Properties>
       <Constraints>
@@ -59,7 +59,7 @@
         <Container class="javax.swing.JPanel" name="lblDate">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="8f" green="cc" red="f2" type="rgb"/>
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
           <Constraints>
@@ -156,7 +156,7 @@
             <Component class="javax.swing.JLabel" name="lblVictimName">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Monaco" size="14" style="1"/>
+                  <Font name="Songti SC" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Victim name : "/>
               </Properties>
@@ -164,7 +164,7 @@
             <Component class="javax.swing.JLabel" name="lblRelation">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Monaco" size="14" style="1"/>
+                  <Font name="Songti SC" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Relation/ Volunteer name: "/>
               </Properties>
@@ -172,7 +172,7 @@
             <Component class="javax.swing.JLabel" name="lblTypeofAssault">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Monaco" size="14" style="1"/>
+                  <Font name="Songti SC" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Type of  Assault : "/>
               </Properties>
@@ -180,7 +180,7 @@
             <Component class="javax.swing.JLabel" name="lblLocation">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Monaco" size="14" style="1"/>
+                  <Font name="Songti SC" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Location of Incident :"/>
               </Properties>
@@ -188,7 +188,7 @@
             <Component class="javax.swing.JLabel" name="timejLabel">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Monaco" size="14" style="1"/>
+                  <Font name="Songti SC" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Date of Incident :"/>
               </Properties>
@@ -196,7 +196,7 @@
             <Component class="javax.swing.JLabel" name="lblMoreDetail">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Monaco" size="14" style="1"/>
+                  <Font name="Songti SC" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="More Details : "/>
               </Properties>
@@ -204,7 +204,7 @@
             <Component class="javax.swing.JLabel" name="lblSuspect">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Monaco" size="14" style="1"/>
+                  <Font name="Songti SC" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Suspect :"/>
               </Properties>
@@ -212,7 +212,7 @@
             <Component class="javax.swing.JLabel" name="lblNameSuspect">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Monaco" size="14" style="1"/>
+                  <Font name="Songti SC" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Name of Suspect : "/>
               </Properties>
@@ -275,7 +275,7 @@
         <Component class="javax.swing.JLabel" name="lblVictimInfo">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monaco" size="18" style="1"/>
+              <Font name="Songti SC" size="18" style="1"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="5b" green="40" red="3d" type="rgb"/>
@@ -296,7 +296,7 @@
           <Color blue="9a" green="b2" red="81" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Monaco" size="14" style="1"/>
+          <Font name="Songti SC" size="14" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="5b" green="40" red="3d" type="rgb"/>
@@ -321,7 +321,7 @@
           <Color blue="9a" green="b2" red="81" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Monaco" size="14" style="1"/>
+          <Font name="Songti SC" size="14" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="5b" green="40" red="3d" type="rgb"/>
@@ -346,7 +346,7 @@
           <Color blue="9a" green="b2" red="81" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Monaco" size="14" style="1"/>
+          <Font name="Songti SC" size="14" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="5b" green="40" red="3d" type="rgb"/>
@@ -371,7 +371,7 @@
           <Color blue="9a" green="b2" red="81" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Monaco" size="14" style="1"/>
+          <Font name="Songti SC" size="14" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="5b" green="40" red="3d" type="rgb"/>
@@ -396,7 +396,7 @@
           <Color blue="9a" green="b2" red="81" type="rgb"/>
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Monaco" size="14" style="1"/>
+          <Font name="Songti SC" size="14" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="5b" green="40" red="3d" type="rgb"/>

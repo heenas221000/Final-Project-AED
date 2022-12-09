@@ -15,9 +15,7 @@ import business.Network.Network;
 import business.Organization.Organization;
 import business.Role.CaseReporterRole;
 import business.UserAccount.UserAccount;
-import java.awt.CardLayout;
 import java.awt.Color;
-import java.awt.Component;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -72,7 +70,6 @@ public class SignUpJFrame extends javax.swing.JFrame {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
-        Back = new javax.swing.JButton();
         detailsjPanel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         fnamejLabel = new javax.swing.JLabel();
@@ -87,27 +84,18 @@ public class SignUpJFrame extends javax.swing.JFrame {
         networkJComboBox = new javax.swing.JComboBox();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        btn_Back = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
-
-        Back.setText("Back");
-        Back.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BackActionPerformed(evt);
-            }
-        });
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        detailsjPanel.setBackground(new java.awt.Color(242, 204, 143));
+        detailsjPanel.setBackground(new java.awt.Color(255, 255, 255));
         detailsjPanel.setLayout(new java.awt.GridBagLayout());
 
-        jLabel1.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(224, 122, 95));
+        jLabel1.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Enter your details below ");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -120,7 +108,7 @@ public class SignUpJFrame extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(21, 142, 0, 0);
         detailsjPanel.add(jLabel1, gridBagConstraints);
 
-        fnamejLabel.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
+        fnamejLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         fnamejLabel.setForeground(new java.awt.Color(61, 64, 91));
         fnamejLabel.setText("Full Name");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -132,7 +120,7 @@ public class SignUpJFrame extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(14, 142, 0, 0);
         detailsjPanel.add(fnamejLabel, gridBagConstraints);
 
-        contactjLabel.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
+        contactjLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         contactjLabel.setForeground(new java.awt.Color(61, 64, 91));
         contactjLabel.setText("Contact Number");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -144,7 +132,7 @@ public class SignUpJFrame extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(21, 142, 0, 0);
         detailsjPanel.add(contactjLabel, gridBagConstraints);
 
-        usernamejLabel.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
+        usernamejLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         usernamejLabel.setForeground(new java.awt.Color(61, 64, 91));
         usernamejLabel.setText("Username");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -156,7 +144,7 @@ public class SignUpJFrame extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(29, 142, 0, 0);
         detailsjPanel.add(usernamejLabel, gridBagConstraints);
 
-        passwordjLabel.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
+        passwordjLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         passwordjLabel.setForeground(new java.awt.Color(61, 64, 91));
         passwordjLabel.setText("Password");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -201,16 +189,15 @@ public class SignUpJFrame extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(26, 27, 0, 0);
         detailsjPanel.add(usernameJTextField, gridBagConstraints);
 
-        signupjButton.setBackground(new java.awt.Color(129, 178, 154));
         signupjButton.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
         signupjButton.setForeground(new java.awt.Color(61, 64, 91));
         signupjButton.setText("Sign Up");
         signupjButton.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                signupjButtonMouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 signupjButtonMouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                signupjButtonMouseEntered(evt);
             }
         });
         signupjButton.addActionListener(new java.awt.event.ActionListener() {
@@ -258,7 +245,7 @@ public class SignUpJFrame extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(27, 27, 0, 0);
         detailsjPanel.add(networkJComboBox, gridBagConstraints);
 
-        jLabel2.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(61, 64, 91));
         jLabel2.setText("City");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -277,24 +264,16 @@ public class SignUpJFrame extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(20, 10, 0, 106);
         detailsjPanel.add(jLabel3, gridBagConstraints);
 
-        btn_Back.setText("Back");
-        btn_Back.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_BackActionPerformed(evt);
-            }
-        });
-        detailsjPanel.add(btn_Back, new java.awt.GridBagConstraints());
-
         getContentPane().add(detailsjPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 1380, 560));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new java.awt.GridBagLayout());
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 826, -1));
 
-        jPanel2.setBackground(new java.awt.Color(244, 241, 222));
+        jPanel2.setBackground(new java.awt.Color(0, 204, 204));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setFont(new java.awt.Font("Monaco", 1, 36)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Songti SC", 1, 36)); // NOI18N
         jButton1.setForeground(new java.awt.Color(61, 64, 91));
         jButton1.setText("Women Rescue Volunteer");
         jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -460,19 +439,6 @@ public class SignUpJFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_contactTextFieldActionPerformed
 
-    private void BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackActionPerformed
-        // TODO add your handling code here:
-      
-        
-    }//GEN-LAST:event_BackActionPerformed
-
-    private void btn_BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_BackActionPerformed
-        // TODO add your handling code here:
-         dB4OUtil.storeSystem(system);
-            MainJFrame s = new MainJFrame();
-            s.setVisible(true);
-    }//GEN-LAST:event_btn_BackActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -520,8 +486,6 @@ public static boolean isNumber(String price){
         }  
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Back;
-    private javax.swing.JButton btn_Back;
     private javax.swing.JTextField contactTextField;
     private javax.swing.JLabel contactjLabel;
     private javax.swing.JPanel detailsjPanel;

@@ -78,37 +78,37 @@ public class ReportJFrame extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         ReportjLabel.setBackground(new java.awt.Color(253, 235, 208));
-        ReportjLabel.setFont(new java.awt.Font("Monaco", 1, 24)); // NOI18N
+        ReportjLabel.setFont(new java.awt.Font("Songti SC", 1, 24)); // NOI18N
         ReportjLabel.setForeground(new java.awt.Color(51, 102, 255));
         ReportjLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ReportjLabel.setText("Register Report");
         ReportjLabel.setOpaque(true);
 
-        namesurvivorjLabel.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        namesurvivorjLabel.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         namesurvivorjLabel.setText("Name of Survivor: ");
 
-        relationjLabel.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        relationjLabel.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         relationjLabel.setText("Relation with Survivor: ");
 
-        typejLabel.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        typejLabel.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         typejLabel.setText("Type of Sexual Assault: ");
 
-        locationjLabel.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        locationjLabel.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         locationjLabel.setText("Location of Incident:");
         locationjLabel.setToolTipText("");
 
-        timejLabel.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        timejLabel.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         timejLabel.setText("Date of Incident:");
 
-        detailsjLabel.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        detailsjLabel.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         detailsjLabel.setText("More Details: ");
         detailsjLabel.setToolTipText("");
 
-        suspecttypejLabel.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        suspecttypejLabel.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         suspecttypejLabel.setText("Suspect:");
         suspecttypejLabel.setToolTipText("");
 
-        namesuspectjLabel.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        namesuspectjLabel.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         namesuspectjLabel.setText("Name of Suspect : ");
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
@@ -117,10 +117,10 @@ public class ReportJFrame extends javax.swing.JFrame {
             }
         });
 
-        friendRadioButton.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        friendRadioButton.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         friendRadioButton.setText("Friend");
 
-        parentRadioButton.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        parentRadioButton.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         parentRadioButton.setText("Parent");
         parentRadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -128,7 +128,7 @@ public class ReportJFrame extends javax.swing.JFrame {
             }
         });
 
-        knownRadioButton.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        knownRadioButton.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         knownRadioButton.setText("Known");
         knownRadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -136,17 +136,16 @@ public class ReportJFrame extends javax.swing.JFrame {
             }
         });
 
-        unknownRadioButton.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        unknownRadioButton.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         unknownRadioButton.setText("Unknown");
 
-        Colleagueradiobutton.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        Colleagueradiobutton.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         Colleagueradiobutton.setText("Self");
 
-        otherRadioButton.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        otherRadioButton.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         otherRadioButton.setText("Other");
 
-        ReportjButton.setBackground(new java.awt.Color(255, 0, 51));
-        ReportjButton.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        ReportjButton.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         ReportjButton.setText("Report");
         ReportjButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -157,7 +156,7 @@ public class ReportJFrame extends javax.swing.JFrame {
         jComboBox1.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select one", "Rape", "Marital Rape", "Child Sexual Abuse", "Unwanted Sexual Touching", "Incest" }));
 
-        jLabel1.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         jLabel1.setText("Email:");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -188,7 +187,7 @@ public class ReportJFrame extends javax.swing.JFrame {
                                 .addComponent(jLabel1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 42, Short.MAX_VALUE))))
+                                .addGap(0, 85, Short.MAX_VALUE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -247,7 +246,7 @@ public class ReportJFrame extends javax.swing.JFrame {
                     .addComponent(friendRadioButton)
                     .addComponent(parentRadioButton)
                     .addComponent(Colleagueradiobutton)
-                    .addComponent(otherRadioButton))
+                    .addComponent(otherRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(typejLabel)
@@ -264,7 +263,7 @@ public class ReportJFrame extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(detailsjLabel))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(knownRadioButton)
                     .addComponent(unknownRadioButton)
