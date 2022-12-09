@@ -11,6 +11,7 @@ import business.Organization.PsychiatricOrganization;
 import business.Organization.HospitalOrganization;
 import business.Organization.LegalOrganization;
 import business.Organization.Organization;
+import business.Organization.RehabOrganization;
 import business.UserAccount.UserAccount;
 import business.WorkQueue.CounsellorWorkRequest;
 import business.WorkQueue.DrWorkRequest;
@@ -561,7 +562,7 @@ public class CaseReportJPanel extends javax.swing.JPanel {
         Enterprise e= network.getEnterpriseDirectory().searchEnterprisebyType(Enterprise.EnterpriseType.Rehabilitation);
         Organization org = null;
         for (Organization organization : e.getOrganizationDirectory().getOrganizationList()){
-            if (organization instanceof LegalOrganization){
+            if (organization instanceof RehabOrganization){
                 org = organization;
                 break;
             }

@@ -32,7 +32,7 @@ import org.jfree.data.general.DefaultPieDataset;
 
 /**
  *
- * @author shah0
+ * @author heenashah
  */
 public class ManageNetworkJPanel extends javax.swing.JPanel {
 
