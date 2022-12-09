@@ -5,10 +5,7 @@
 package business.Organization;
 
 import business.Employee.EmployeeDirectory;
-import business.Encounter.EncounterCounsellor;
 import business.Encounter.EncounterCounsellorDir;
-import business.Encounter.EncounterLawyer;
-import business.Encounter.EncounterPsychiatrist;
 import business.Encounter.EncounterPsychiatristDir;
 import business.Encounter.EncounterLawyerDir;
 import business.Role.Role;

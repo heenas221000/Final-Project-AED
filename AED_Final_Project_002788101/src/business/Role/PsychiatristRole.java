@@ -8,7 +8,6 @@ package business.Role;
 import business.EcoSystem;
 import business.Enterprise.Enterprise;
 import business.Network.Network;
-import business.Organization.PsychiatricOrganization;
 import business.Organization.Organization;
 import business.UserAccount.UserAccount;
 import ui.Psychiatrist.PsychiatristJPanel;
