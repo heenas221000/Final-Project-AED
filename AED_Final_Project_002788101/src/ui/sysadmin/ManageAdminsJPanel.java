@@ -5,24 +5,59 @@
 package ui.sysadmin;
 
 import business.EcoSystem;
+import business.Employee.Employee;
+import business.Enterprise.Enterprise;
+import business.Network.Network;
+<<<<<<< Updated upstream:AED_Final_Project_002788101/src/ui/sysadmin/ManageEnterpriseAdminJPanel.java
+<<<<<<< Updated upstream:AED_Final_Project_002788101/src/ui/sysadmin/ManageEnterpriseAdminJPanel.java
+import business.Role.NGOAdminRole;
+=======
+import business.Role.HealthAdminRole;
+import business.Role.LegalAdminRole;
+import business.Role.NGOAdminRole;
+import business.Role.PharmacyAdminRole;
+import business.Role.RehabAdminRole;
+>>>>>>> Stashed changes:AED_Final_Project_002788101/src/ui/sysadmin/ManageAdminsJPanel.java
+import business.UserAccount.UserAccount;
+=======
+import business.Role.HealthAdminRole;
+import business.Role.LegalAdminRole;
+import business.Role.RehabAdminRole;
+import business.Role.NGOAdminRole;
+import business.Role.PharmacyAdminRole;
+import business.Role.PsychiatristRole;
+import business.UserAccount.UserAccount;
+import java.awt.CardLayout;
+import java.awt.Component;
+>>>>>>> Stashed changes:AED_Final_Project_002788101/src/ui/sysadmin/ManageAdminsJPanel.java
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import javax.swing.table.DefaultTableModel;
 
 /**
  *
  * @author heenashah
  */
-public class ManageAdminsJPanel extends javax.swing.JPanel {
+public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
 
     /**
-     * Creates new form ManageAdminsJPanel
+     * Creates new form ManageEnterpriseAdminJPanel
      */
     
     private JPanel userProcessContainer;
     private EcoSystem system;
     
-    public ManageAdminsJPanel() {
+<<<<<<< Updated upstream:AED_Final_Project_002788101/src/ui/sysadmin/ManageEnterpriseAdminJPanel.java
+<<<<<<< Updated upstream:AED_Final_Project_002788101/src/ui/sysadmin/ManageEnterpriseAdminJPanel.java
+    public ManageEnterpriseAdminJPanel() {
+=======
+    public ManageEnterpriseAdminJPanel(JPanel userProcessContainer, EcoSystem system) {
+>>>>>>> Stashed changes:AED_Final_Project_002788101/src/ui/sysadmin/ManageAdminsJPanel.java
+=======
+    public ManageAdminsJPanel(JPanel userProcessContainer, EcoSystem system) {
+>>>>>>> Stashed changes:AED_Final_Project_002788101/src/ui/sysadmin/ManageAdminsJPanel.java
         
         initComponents();
         
@@ -326,7 +361,7 @@ public class ManageAdminsJPanel extends javax.swing.JPanel {
         }
         else if(enterprise.getEnterpriseType().getValue().equalsIgnoreCase("Rehabilitation")){
             if(enterprise.getUserAccountDirectory().CheckIsValidInput(password)){
-                UserAccount userAccount=enterprise.getUserAccountDirectory().createUserAccnt(username, password, employee, new RehabilitationCaretaker());
+                UserAccount userAccount=enterprise.getUserAccountDirectory().createUserAccnt(username, password, employee, new RehabAdminRole());
             }
             else{
                 JOptionPane.showMessageDialog(null, "Password should have a minimum length of 8 and contain atleast 1 Uppercase, 1 Lowercase, 1 Special character and 1 Digit ");
