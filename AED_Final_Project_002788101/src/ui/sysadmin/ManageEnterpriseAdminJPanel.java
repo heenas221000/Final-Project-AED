@@ -9,6 +9,7 @@ import business.Employee.Employee;
 import business.Enterprise.Enterprise;
 import business.Network.Network;
 <<<<<<< Updated upstream:AED_Final_Project_002788101/src/ui/sysadmin/ManageEnterpriseAdminJPanel.java
+<<<<<<< Updated upstream:AED_Final_Project_002788101/src/ui/sysadmin/ManageEnterpriseAdminJPanel.java
 import business.Role.NGOAdminRole;
 =======
 import business.Role.HealthAdminRole;
@@ -18,8 +19,21 @@ import business.Role.PharmacyAdminRole;
 import business.Role.RehabAdminRole;
 >>>>>>> Stashed changes:AED_Final_Project_002788101/src/ui/sysadmin/ManageAdminsJPanel.java
 import business.UserAccount.UserAccount;
+=======
+import business.Role.HealthAdminRole;
+import business.Role.LegalAdminRole;
+import business.Role.RehabAdminRole;
+import business.Role.NGOAdminRole;
+import business.Role.PharmacyAdminRole;
+import business.Role.PsychiatristRole;
+import business.UserAccount.UserAccount;
+import java.awt.CardLayout;
+import java.awt.Component;
+>>>>>>> Stashed changes:AED_Final_Project_002788101/src/ui/sysadmin/ManageAdminsJPanel.java
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -36,9 +50,13 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
     private EcoSystem system;
     
 <<<<<<< Updated upstream:AED_Final_Project_002788101/src/ui/sysadmin/ManageEnterpriseAdminJPanel.java
+<<<<<<< Updated upstream:AED_Final_Project_002788101/src/ui/sysadmin/ManageEnterpriseAdminJPanel.java
     public ManageEnterpriseAdminJPanel() {
 =======
     public ManageEnterpriseAdminJPanel(JPanel userProcessContainer, EcoSystem system) {
+>>>>>>> Stashed changes:AED_Final_Project_002788101/src/ui/sysadmin/ManageAdminsJPanel.java
+=======
+    public ManageAdminsJPanel(JPanel userProcessContainer, EcoSystem system) {
 >>>>>>> Stashed changes:AED_Final_Project_002788101/src/ui/sysadmin/ManageAdminsJPanel.java
         
         initComponents();

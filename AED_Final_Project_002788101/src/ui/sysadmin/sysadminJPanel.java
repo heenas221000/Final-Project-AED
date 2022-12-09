@@ -4,19 +4,32 @@
  */
 package ui.sysadmin;
 
+<<<<<<< Updated upstream
 import java.awt.Color;
+=======
+import business.EcoSystem;
+import java.awt.CardLayout;
+import java.awt.Color;
+import javax.swing.JPanel;
+
+>>>>>>> Stashed changes
 
 /**
  *
  * @author heenashah
  */
 public class sysadminJPanel extends javax.swing.JPanel {
-
+    JPanel userProcessContainer;
+    EcoSystem ecosystem;
     /**
      * Creates new form sysadminJPanel
      */
-    public sysadminJPanel() {
+    public sysadminJPanel(JPanel userProcessContainer,EcoSystem ecosystem) {
         initComponents();
+        this.userProcessContainer=userProcessContainer;
+        this.ecosystem=ecosystem;
+        jSplitPane1.setDividerSize(0);
+        jSplitPane1.setDividerLocation(120);
     }
 
     /**
@@ -137,7 +150,7 @@ public class sysadminJPanel extends javax.swing.JPanel {
     private void bt_ManageNetworksActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_ManageNetworksActionPerformed
         // TODO add your handling code here:
         ManageNetworkJPanel manageNetworkJPanel=new ManageNetworkJPanel(userProcessContainer, ecosystem);
-        BottomJSplitPane.setBottomComponent(manageNetworkJPanel);
+        jSplitPane1.setBottomComponent(manageNetworkJPanel);
         /*userProcessContainer.add("manageNetworkJPanel",manageNetworkJPanel);
         CardLayout layout=(CardLayout)userProcessContainer.getLayout();
         layout.next(userProcessContainer);*/
@@ -146,7 +159,7 @@ public class sysadminJPanel extends javax.swing.JPanel {
     private void bt_ManageEnterprisesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_ManageEnterprisesActionPerformed
         // TODO add your handling code here:
         ManageEnterpriseJPanel manageEnterpriseJPanel=new ManageEnterpriseJPanel(userProcessContainer, ecosystem);
-        BottomJSplitPane.setBottomComponent(manageEnterpriseJPanel);
+        jSplitPane1.setBottomComponent(manageEnterpriseJPanel);
         /*userProcessContainer.add("manageEnterpriseJPanel",manageEnterpriseJPanel);
         CardLayout layout=(CardLayout)userProcessContainer.getLayout();
         layout.next(userProcessContainer);*/
@@ -154,8 +167,8 @@ public class sysadminJPanel extends javax.swing.JPanel {
 
     private void bt_ManageEnterpriseAdministratorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_ManageEnterpriseAdministratorActionPerformed
         // TODO add your handling code here:
-        ManageEnterpriseAdminJPanel manageEnterpriseAdminJPanel=new ManageEnterpriseAdminJPanel(userProcessContainer, ecosystem);
-        BottomJSplitPane.setBottomComponent(manageEnterpriseAdminJPanel);
+        ManageAdminsJPanel manageEnterpriseAdminJPanel=new ManageAdminsJPanel(userProcessContainer, ecosystem);
+        jSplitPane1.setBottomComponent(manageEnterpriseAdminJPanel);
         /*userProcessContainer.add("manageEnterpriseAdminJPanel",manageEnterpriseAdminJPanel);
         CardLayout layout=(CardLayout)userProcessContainer.getLayout();
         layout.next(userProcessContainer);*/
