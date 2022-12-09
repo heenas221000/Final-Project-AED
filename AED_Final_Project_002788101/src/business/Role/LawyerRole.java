@@ -17,7 +17,7 @@ import ui.Lawyer.LawyerJPanel;
  */
 public class LawyerRole extends Role{
     
-     @Override
+    @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise,EcoSystem business,Network network) {
         return new LawyerJPanel(userProcessContainer, account, organization,enterprise,business,network);
     }

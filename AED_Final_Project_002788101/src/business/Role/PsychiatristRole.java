@@ -19,8 +19,9 @@ import javax.swing.JPanel;
  * @author vishwa
  */
 public class PsychiatristRole extends Role{
-      @Override
+     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business,Network network) {
         return new PsychiatristJPanel(userProcessContainer, account, organization,enterprise,business,network);
     }
+    
 }
