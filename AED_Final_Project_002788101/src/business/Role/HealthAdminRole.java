@@ -18,11 +18,7 @@ import ui.EnterpriseAdmin.EnterpriseAdminJPanel;
  * @author vishwa
  */
 public class HealthAdminRole extends Role {
-<<<<<<< Updated upstream
-       @Override
-=======
-     @Override
->>>>>>> Stashed changes
+
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, EcoSystem business,Network network) {
         return new EnterpriseAdminJPanel(userProcessContainer, enterprise, business);
     }
