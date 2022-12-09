@@ -5,9 +5,15 @@
 package business;
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import business.Network.Network; 
 import business.Organization.Organization;
 import business.Role.Role; 
+=======
+import business.Network.Network;
+import business.Organization.Organization;
+import business.Role.Role;
+>>>>>>> Stashed changes
 =======
 import business.Network.Network;
 import business.Organization.Organization;
@@ -23,7 +29,10 @@ import java.util.ArrayList;
 public class EcoSystem extends Organization {
     
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     private static EcoSystem business;
@@ -68,11 +77,14 @@ public class EcoSystem extends Organization {
         }
         return true;
     }
+<<<<<<< Updated upstream
     
 <<<<<<< Updated upstream
     
     
     
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 }
