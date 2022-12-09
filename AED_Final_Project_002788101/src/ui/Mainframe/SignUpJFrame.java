@@ -103,13 +103,13 @@ public class SignUpJFrame extends javax.swing.JFrame {
         setBackground(new java.awt.Color(255, 255, 255));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        detailsjPanel.setBackground(new java.awt.Color(242, 204, 143));
+        detailsjPanel.setBackground(new java.awt.Color(204, 204, 255));
         detailsjPanel.setLayout(new java.awt.GridBagLayout());
 
         jLabel1.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(224, 122, 95));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Enter your details below ");
+        jLabel1.setText("ENTER YOUR DETAILS HERE");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -122,7 +122,7 @@ public class SignUpJFrame extends javax.swing.JFrame {
 
         fnamejLabel.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
         fnamejLabel.setForeground(new java.awt.Color(61, 64, 91));
-        fnamejLabel.setText("Full Name");
+        fnamejLabel.setText("NAME");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 1;
@@ -134,7 +134,7 @@ public class SignUpJFrame extends javax.swing.JFrame {
 
         contactjLabel.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
         contactjLabel.setForeground(new java.awt.Color(61, 64, 91));
-        contactjLabel.setText("Contact Number");
+        contactjLabel.setText("PHONE NUMBER");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 3;
@@ -146,7 +146,7 @@ public class SignUpJFrame extends javax.swing.JFrame {
 
         usernamejLabel.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
         usernamejLabel.setForeground(new java.awt.Color(61, 64, 91));
-        usernamejLabel.setText("Username");
+        usernamejLabel.setText("USERNAME");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 9;
@@ -158,7 +158,7 @@ public class SignUpJFrame extends javax.swing.JFrame {
 
         passwordjLabel.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
         passwordjLabel.setForeground(new java.awt.Color(61, 64, 91));
-        passwordjLabel.setText("Password");
+        passwordjLabel.setText("PASSWORD");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 11;
@@ -260,7 +260,7 @@ public class SignUpJFrame extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(61, 64, 91));
-        jLabel2.setText("City");
+        jLabel2.setText("CITY");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 7;
@@ -277,7 +277,7 @@ public class SignUpJFrame extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(20, 10, 0, 106);
         detailsjPanel.add(jLabel3, gridBagConstraints);
 
-        btn_Back.setText("Back");
+        btn_Back.setText("BACK");
         btn_Back.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_BackActionPerformed(evt);
@@ -291,7 +291,7 @@ public class SignUpJFrame extends javax.swing.JFrame {
         jPanel1.setLayout(new java.awt.GridBagLayout());
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 826, -1));
 
-        jPanel2.setBackground(new java.awt.Color(244, 241, 222));
+        jPanel2.setBackground(new java.awt.Color(153, 204, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton1.setFont(new java.awt.Font("Monaco", 1, 36)); // NOI18N

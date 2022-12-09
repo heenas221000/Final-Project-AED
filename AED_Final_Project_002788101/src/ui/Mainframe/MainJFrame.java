@@ -52,17 +52,17 @@ public class MainJFrame extends javax.swing.JFrame {
         setBackground(new java.awt.Color(255, 255, 255));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        TopPanel.setBackground(new java.awt.Color(129, 178, 154));
+        TopPanel.setBackground(new java.awt.Color(153, 204, 255));
         TopPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        NamejLabel.setFont(new java.awt.Font("Monaco", 1, 48)); // NOI18N
-        NamejLabel.setForeground(new java.awt.Color(61, 64, 91));
-        NamejLabel.setText("Women Abuse Reporting System");
-        TopPanel.add(NamejLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 10, 780, 80));
+        NamejLabel.setFont(new java.awt.Font("Songti SC", 1, 48)); // NOI18N
+        NamejLabel.setForeground(new java.awt.Color(0, 0, 204));
+        NamejLabel.setText("#SPEAKOUT AT WORKPLACE");
+        TopPanel.add(NamejLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 10, 780, 80));
 
         getContentPane().add(TopPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 4, 1410, 110));
 
-        jPanel1.setBackground(new java.awt.Color(244, 241, 222));
+        jPanel1.setBackground(new java.awt.Color(0, 102, 204));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setBackground(new java.awt.Color(244, 241, 222));
