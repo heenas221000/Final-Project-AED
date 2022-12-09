@@ -39,7 +39,11 @@
         <Container class="javax.swing.JPanel" name="jPanel1">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+<<<<<<< Updated upstream
               <Color blue="cc" green="cc" red="0" type="rgb"/>
+=======
+              <Color blue="33" green="ff" red="cc" type="rgb"/>
+>>>>>>> Stashed changes
             </Property>
           </Properties>
           <Constraints>
@@ -53,10 +57,17 @@
             <Component class="javax.swing.JLabel" name="lblHeader">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+<<<<<<< Updated upstream
                   <Font name="Songti SC" size="36" style="1"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="5b" green="40" red="3d" type="rgb"/>
+=======
+                  <Font name="Songti SC" size="24" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="66" red="66" type="rgb"/>
+>>>>>>> Stashed changes
                 </Property>
                 <Property name="text" type="java.lang.String" value="Welcome Help Provider"/>
               </Properties>
@@ -71,7 +82,11 @@
         <Container class="javax.swing.JPanel" name="jPanel2">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+<<<<<<< Updated upstream
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
+=======
+              <Color blue="ff" green="cc" red="cc" type="rgb"/>
+>>>>>>> Stashed changes
             </Property>
           </Properties>
           <Constraints>

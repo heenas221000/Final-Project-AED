@@ -63,10 +63,14 @@ public class PsychiatristRequestJPanel extends javax.swing.JPanel {
         btnEncounters = new javax.swing.JButton();
         btnCaseComplete = new javax.swing.JButton();
 
+<<<<<<< Updated upstream
         setBackground(new java.awt.Color(0, 204, 204));
+=======
+        setBackground(new java.awt.Color(204, 204, 255));
+>>>>>>> Stashed changes
 
-        lblHeader.setFont(new java.awt.Font("Songti SC", 1, 36)); // NOI18N
-        lblHeader.setForeground(new java.awt.Color(61, 64, 91));
+        lblHeader.setFont(new java.awt.Font("Songti SC", 1, 24)); // NOI18N
+        lblHeader.setForeground(new java.awt.Color(102, 102, 255));
         lblHeader.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblHeader.setText("Manage Requests");
 
@@ -91,7 +95,9 @@ public class PsychiatristRequestJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblPsychiatristRequestDetails);
 
+        btnAssignRequest.setBackground(new java.awt.Color(204, 255, 51));
         btnAssignRequest.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        btnAssignRequest.setForeground(new java.awt.Color(102, 102, 255));
         btnAssignRequest.setText("Assign Request");
         btnAssignRequest.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -107,7 +113,9 @@ public class PsychiatristRequestJPanel extends javax.swing.JPanel {
             }
         });
 
+        btnEncounters.setBackground(new java.awt.Color(204, 255, 51));
         btnEncounters.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        btnEncounters.setForeground(new java.awt.Color(102, 102, 255));
         btnEncounters.setText("Encounters");
         btnEncounters.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -115,7 +123,9 @@ public class PsychiatristRequestJPanel extends javax.swing.JPanel {
             }
         });
 
+        btnCaseComplete.setBackground(new java.awt.Color(204, 255, 51));
         btnCaseComplete.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        btnCaseComplete.setForeground(new java.awt.Color(102, 102, 255));
         btnCaseComplete.setText("Case Complete");
         btnCaseComplete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -153,7 +163,7 @@ public class PsychiatristRequestJPanel extends javax.swing.JPanel {
                         .addComponent(btnEncounters)
                         .addGap(18, 18, 18)
                         .addComponent(btnCaseComplete)))
-                .addContainerGap(27, Short.MAX_VALUE))
+                .addContainerGap(44, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

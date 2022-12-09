@@ -58,6 +58,7 @@ public class PsychiatristJPanel extends javax.swing.JPanel {
 
         jSplitPane1.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
+<<<<<<< Updated upstream
         jPanel1.setBackground(new java.awt.Color(0, 204, 204));
         jPanel1.setLayout(new java.awt.GridBagLayout());
 
@@ -74,6 +75,19 @@ public class PsychiatristJPanel extends javax.swing.JPanel {
         jSplitPane1.setTopComponent(jPanel1);
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+=======
+        jPanel1.setBackground(new java.awt.Color(204, 255, 51));
+        jPanel1.setLayout(new java.awt.GridBagLayout());
+
+        lblHeader.setFont(new java.awt.Font("Songti SC", 1, 24)); // NOI18N
+        lblHeader.setForeground(new java.awt.Color(102, 102, 255));
+        lblHeader.setText("WELCOME  PSYCHIATRIST");
+        jPanel1.add(lblHeader, new java.awt.GridBagConstraints());
+
+        jSplitPane1.setTopComponent(jPanel1);
+
+        jPanel2.setBackground(new java.awt.Color(204, 204, 255));
+>>>>>>> Stashed changes
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
