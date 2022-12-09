@@ -5,15 +5,13 @@
  */
 package ui.sysadmin;
 
-<<<<<<< Updated upstream
-=======
 import java.awt.Color;
 import business.EcoSystem;
 import business.Enterprise.Enterprise;
 import business.Network.Network;
 import java.awt.CardLayout;
 import java.awt.Component;
->>>>>>> Stashed changes
+
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
