@@ -56,7 +56,8 @@ public Organization createOrganization(Type type){
             organization = new PharmacyOrganization();
             organizationList.add(organization);
         }
-         else if (type.getValue().equals(Type.RehabilitationOrganization.getValue())){
+
+         else if (type.getValue().equals(Type.Rehab.getValue())){
             organization = new RehabOrganization();
             organizationList.add(organization);
         }

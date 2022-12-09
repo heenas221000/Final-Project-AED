@@ -255,7 +255,7 @@ public class CaretakerEncounterJPanel extends javax.swing.JPanel {
             populateName();
             txt_EncounterNo.setText("");
             txtAreaMinutes.setText("");
-
+        }
     }//GEN-LAST:event_bt_UpdateActionPerformed
 
 
