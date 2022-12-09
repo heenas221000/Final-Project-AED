@@ -69,10 +69,16 @@ public class CaretakerRequestJPanel extends javax.swing.JPanel {
         btnEncounter = new javax.swing.JButton();
         btnCaseComplete = new javax.swing.JButton();
 
+<<<<<<< Updated upstream
         lblHeader.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
         lblHeader.setForeground(new java.awt.Color(51, 102, 255));
+=======
+        setBackground(new java.awt.Color(204, 204, 255));
+
+        lblHeader.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+>>>>>>> Stashed changes
         lblHeader.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblHeader.setText("Manage Requests");
+        lblHeader.setText("MANAGE REQUESTS");
 
         tblCaretakerManageRequest.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -95,7 +101,13 @@ public class CaretakerRequestJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblCaretakerManageRequest);
 
+<<<<<<< Updated upstream
         btnAssignRequest.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+=======
+        btnAssignRequest.setBackground(new java.awt.Color(204, 255, 51));
+        btnAssignRequest.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btnAssignRequest.setForeground(new java.awt.Color(102, 102, 255));
+>>>>>>> Stashed changes
         btnAssignRequest.setText("Assign Request");
         btnAssignRequest.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -111,7 +123,13 @@ public class CaretakerRequestJPanel extends javax.swing.JPanel {
             }
         });
 
+<<<<<<< Updated upstream
         btnViewCaseReport.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+=======
+        btnViewCaseReport.setBackground(new java.awt.Color(204, 255, 51));
+        btnViewCaseReport.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btnViewCaseReport.setForeground(new java.awt.Color(102, 102, 255));
+>>>>>>> Stashed changes
         btnViewCaseReport.setText("View Case Report");
         btnViewCaseReport.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -127,7 +145,13 @@ public class CaretakerRequestJPanel extends javax.swing.JPanel {
             }
         });
 
+<<<<<<< Updated upstream
         btnEncounter.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+=======
+        btnEncounter.setBackground(new java.awt.Color(204, 255, 51));
+        btnEncounter.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btnEncounter.setForeground(new java.awt.Color(102, 102, 255));
+>>>>>>> Stashed changes
         btnEncounter.setText("Ecounters");
         btnEncounter.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -143,7 +167,13 @@ public class CaretakerRequestJPanel extends javax.swing.JPanel {
             }
         });
 
+<<<<<<< Updated upstream
         btnCaseComplete.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+=======
+        btnCaseComplete.setBackground(new java.awt.Color(204, 255, 51));
+        btnCaseComplete.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btnCaseComplete.setForeground(new java.awt.Color(102, 102, 255));
+>>>>>>> Stashed changes
         btnCaseComplete.setText(" Case Complete");
         btnCaseComplete.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -181,9 +211,9 @@ public class CaretakerRequestJPanel extends javax.swing.JPanel {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(62, 62, 62)
+                .addGap(30, 30, 30)
                 .addComponent(lblHeader, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(33, 33, 33)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

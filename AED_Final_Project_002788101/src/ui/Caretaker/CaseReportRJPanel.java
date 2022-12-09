@@ -79,8 +79,17 @@ public class CaseReportRJPanel extends javax.swing.JPanel {
         txtSuspectType = new javax.swing.JTextField();
         btnSendInvite = new javax.swing.JButton();
 
+<<<<<<< Updated upstream
         btnBack.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
         btnBack.setText("Back");
+=======
+        setBackground(new java.awt.Color(204, 204, 255));
+
+        btnBack.setBackground(new java.awt.Color(204, 255, 51));
+        btnBack.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btnBack.setForeground(new java.awt.Color(102, 102, 255));
+        btnBack.setText("BACK");
+>>>>>>> Stashed changes
         btnBack.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnBackMouseEntered(evt);
@@ -95,7 +104,7 @@ public class CaseReportRJPanel extends javax.swing.JPanel {
             }
         });
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(204, 204, 255));
         jPanel1.setLayout(new java.awt.GridBagLayout());
 
         lblName.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
@@ -249,8 +258,15 @@ public class CaseReportRJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(16, 0, 0, 82);
         jPanel1.add(txtSuspectType, gridBagConstraints);
 
+<<<<<<< Updated upstream
         btnSendInvite.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
         btnSendInvite.setText("Send Invite");
+=======
+        btnSendInvite.setBackground(new java.awt.Color(204, 255, 51));
+        btnSendInvite.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btnSendInvite.setForeground(new java.awt.Color(102, 102, 255));
+        btnSendInvite.setText("SEND INVITE");
+>>>>>>> Stashed changes
         btnSendInvite.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnSendInviteMouseEntered(evt);
@@ -272,25 +288,29 @@ public class CaseReportRJPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(307, 307, 307)
-                        .addComponent(btnSendInvite))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(32, 32, 32)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 730, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnBack))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(307, 307, 307)
+                                .addComponent(btnSendInvite))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(32, 32, 32)
+                                .addComponent(btnBack)))
+                        .addGap(0, 334, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 730, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addComponent(btnBack)
-                .addGap(43, 43, 43)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
+                .addGap(18, 18, 18)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(btnSendInvite)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(31, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

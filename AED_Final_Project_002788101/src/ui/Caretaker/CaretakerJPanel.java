@@ -61,7 +61,11 @@ public class CaretakerJPanel extends javax.swing.JPanel {
 
         jSplitPane1.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
+<<<<<<< Updated upstream
         jPanel2.setBackground(new java.awt.Color(253, 235, 208));
+=======
+        jPanel2.setBackground(new java.awt.Color(204, 204, 255));
+>>>>>>> Stashed changes
         jPanel2.setLayout(new java.awt.GridBagLayout());
 
         lblHeader.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
