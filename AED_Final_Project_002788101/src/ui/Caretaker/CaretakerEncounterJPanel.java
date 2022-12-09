@@ -69,16 +69,7 @@ public class CaretakerEncounterJPanel extends javax.swing.JPanel {
         lbl_Name = new javax.swing.JLabel();
         lbl_EncounterNo = new javax.swing.JLabel();
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
         lbl_Minutes.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-=======
-=======
->>>>>>> Stashed changes
-        setBackground(new java.awt.Color(204, 204, 255));
-
-        lbl_Minutes.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
->>>>>>> Stashed changes
         lbl_Minutes.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lbl_Minutes.setText("Minutes of Encounter");
 
@@ -86,19 +77,8 @@ public class CaretakerEncounterJPanel extends javax.swing.JPanel {
         txtAreaMinutes.setRows(5);
         jScrollPane2.setViewportView(txtAreaMinutes);
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-        bt_Back.setBackground(new java.awt.Color(0, 51, 204));
->>>>>>> Stashed changes
         bt_Back.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
         bt_Back.setText("Back");
-=======
-        bt_Back.setBackground(new java.awt.Color(0, 0, 204));
-        bt_Back.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        bt_Back.setForeground(new java.awt.Color(255, 255, 255));
-        bt_Back.setText("BACK");
->>>>>>> Stashed changes
         bt_Back.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 bt_BackMouseEntered(evt);
@@ -118,7 +98,7 @@ public class CaretakerEncounterJPanel extends javax.swing.JPanel {
         lbl_Header.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
         lbl_Header.setForeground(new java.awt.Color(51, 102, 255));
         lbl_Header.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbl_Header.setText("ENCOUNTERS");
+        lbl_Header.setText("Encounters");
 
         tblEncounterDetails.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -133,19 +113,8 @@ public class CaretakerEncounterJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblEncounterDetails);
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-        bt_Update.setBackground(new java.awt.Color(0, 0, 204));
->>>>>>> Stashed changes
         bt_Update.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
         bt_Update.setText("Update");
-=======
-        bt_Update.setBackground(new java.awt.Color(0, 0, 204));
-        bt_Update.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        bt_Update.setForeground(new java.awt.Color(255, 255, 255));
-        bt_Update.setText("UPDATE");
->>>>>>> Stashed changes
         bt_Update.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 bt_UpdateMouseEntered(evt);
