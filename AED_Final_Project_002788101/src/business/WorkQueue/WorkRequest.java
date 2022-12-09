@@ -11,15 +11,19 @@ import java.util.Date;
  *
  * @author hetal
  */
-public class WorkRequest {
-    
-     private String message;
+public abstract class WorkRequest {
+
+    private String message;
     private UserAccount sender;
     private UserAccount receiver;
     private String status;
     private Date requestDate;
     private Date resolveDate;
        private int requestid;
+    
+    public WorkRequest(){
+        requestDate = new Date();
+    }
 
     public String getMessage() {
         return message;
@@ -28,7 +32,16 @@ public class WorkRequest {
     public void setMessage(String message) {
         this.message = message;
     }
+ 
 
+    public int getRequestid() {
+        return requestid;
+    }
+
+    public void setRequestid(int requestid) {
+        this.requestid = requestid;
+    }
+    
     public UserAccount getSender() {
         return sender;
     }
@@ -68,19 +81,11 @@ public class WorkRequest {
     public void setResolveDate(Date resolveDate) {
         this.resolveDate = resolveDate;
     }
-
-    public int getRequestid() {
-        return requestid;
-    }
-
-    public void setRequestid(int requestid) {
-        this.requestid = requestid;
-    }
     
-       @Override
+    @Override
     
     public String toString(){
         return this.message;
     }
-    
+            
 }
