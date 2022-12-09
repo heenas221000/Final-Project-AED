@@ -58,77 +58,81 @@ public class PsychiatristEncounterJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnUpdate = new javax.swing.JButton();
-        btnBack = new javax.swing.JButton();
+        bt_Update = new javax.swing.JButton();
+        bt_Back = new javax.swing.JButton();
         lblAdvice = new javax.swing.JLabel();
         lblName = new javax.swing.JLabel();
-        txtEncounterNo = new javax.swing.JTextField();
+        txt_EncounterNo = new javax.swing.JTextField();
         lblEncounterNo = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        txtAreaAdvice = new javax.swing.JTextArea();
+        txt_AreaAdvice = new javax.swing.JTextArea();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tblPsychiatristEncounter = new javax.swing.JTable();
+        tb_PsychiatristEncounter = new javax.swing.JTable();
         lblProgress = new javax.swing.JLabel();
-        txtProgress = new javax.swing.JTextField();
+        txt_Progress = new javax.swing.JTextField();
         lblMoreDetails = new javax.swing.JLabel();
-        txtName = new javax.swing.JTextField();
+        txt_Name = new javax.swing.JTextField();
         jScrollPane3 = new javax.swing.JScrollPane();
-        txtAreaMoreDetails = new javax.swing.JTextArea();
+        txt_MoreDetails = new javax.swing.JTextArea();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(153, 204, 255));
 
-        btnUpdate.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        btnUpdate.setText("Update");
-        btnUpdate.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_Update.setBackground(new java.awt.Color(0, 0, 204));
+        bt_Update.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        bt_Update.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Update.setText("UPDATE");
+        bt_Update.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnUpdateMouseEntered(evt);
+                bt_UpdateMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnUpdateMouseExited(evt);
+                bt_UpdateMouseExited(evt);
             }
         });
-        btnUpdate.addActionListener(new java.awt.event.ActionListener() {
+        bt_Update.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnUpdateActionPerformed(evt);
+                bt_UpdateActionPerformed(evt);
             }
         });
 
-        btnBack.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        btnBack.setText("Back");
-        btnBack.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_Back.setBackground(new java.awt.Color(0, 0, 204));
+        bt_Back.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        bt_Back.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Back.setText("BACK");
+        bt_Back.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnBackMouseEntered(evt);
+                bt_BackMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnBackMouseExited(evt);
+                bt_BackMouseExited(evt);
             }
         });
-        btnBack.addActionListener(new java.awt.event.ActionListener() {
+        bt_Back.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBackActionPerformed(evt);
+                bt_BackActionPerformed(evt);
             }
         });
 
-        lblAdvice.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        lblAdvice.setForeground(new java.awt.Color(61, 64, 91));
-        lblAdvice.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        lblAdvice.setText(" Advice:");
+        lblAdvice.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblAdvice.setForeground(new java.awt.Color(0, 0, 204));
+        lblAdvice.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lblAdvice.setText("ADVICE");
 
-        lblName.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        lblName.setForeground(new java.awt.Color(61, 64, 91));
-        lblName.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        lblName.setText("Name:");
+        lblName.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblName.setForeground(new java.awt.Color(0, 0, 204));
+        lblName.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lblName.setText("NAME");
 
-        lblEncounterNo.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        lblEncounterNo.setForeground(new java.awt.Color(61, 64, 91));
+        lblEncounterNo.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblEncounterNo.setForeground(new java.awt.Color(0, 0, 204));
         lblEncounterNo.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        lblEncounterNo.setText("Encounter no.:");
+        lblEncounterNo.setText("ENCOUNTER NO");
 
-        txtAreaAdvice.setColumns(20);
-        txtAreaAdvice.setRows(5);
-        jScrollPane2.setViewportView(txtAreaAdvice);
+        txt_AreaAdvice.setColumns(20);
+        txt_AreaAdvice.setRows(5);
+        jScrollPane2.setViewportView(txt_AreaAdvice);
 
-        tblPsychiatristEncounter.setModel(new javax.swing.table.DefaultTableModel(
+        tb_PsychiatristEncounter.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
                 {null, null, null},
@@ -136,7 +140,7 @@ public class PsychiatristEncounterJPanel extends javax.swing.JPanel {
                 {null, null, null}
             },
             new String [] {
-                "Encounter no.", "Advice", "Progress"
+                "ENCOUNTER NO", "ADVICE", "PROGRESS"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -147,160 +151,153 @@ public class PsychiatristEncounterJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(tblPsychiatristEncounter);
+        jScrollPane1.setViewportView(tb_PsychiatristEncounter);
 
-        lblProgress.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        lblProgress.setForeground(new java.awt.Color(61, 64, 91));
+        lblProgress.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblProgress.setForeground(new java.awt.Color(0, 0, 204));
         lblProgress.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        lblProgress.setText("Progress:");
+        lblProgress.setText("PROGRESS");
 
-        lblMoreDetails.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        lblMoreDetails.setForeground(new java.awt.Color(61, 64, 91));
+        lblMoreDetails.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblMoreDetails.setForeground(new java.awt.Color(0, 0, 204));
         lblMoreDetails.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        lblMoreDetails.setText("More Details:");
+        lblMoreDetails.setText("MORE DETAILS");
 
-        txtName.setEnabled(false);
-        txtName.addActionListener(new java.awt.event.ActionListener() {
+        txt_Name.setEnabled(false);
+        txt_Name.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNameActionPerformed(evt);
+                txt_NameActionPerformed(evt);
             }
         });
 
-        txtAreaMoreDetails.setColumns(20);
-        txtAreaMoreDetails.setRows(5);
-        txtAreaMoreDetails.setEnabled(false);
-        jScrollPane3.setViewportView(txtAreaMoreDetails);
+        txt_MoreDetails.setColumns(20);
+        txt_MoreDetails.setRows(5);
+        txt_MoreDetails.setEnabled(false);
+        jScrollPane3.setViewportView(txt_MoreDetails);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(48, 48, 48)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblName, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblMoreDetails)
+                    .addComponent(lblEncounterNo)
+                    .addComponent(lblAdvice, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblProgress))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(bt_Update)
+                        .addComponent(txt_Progress, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(28, 28, 28)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblMoreDetails, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblName, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblEncounterNo))
-                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtEncounterNo, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblAdvice, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblProgress, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtProgress, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(btnBack)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 71, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 492, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txt_EncounterNo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txt_Name, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(37, 37, 37)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 470, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(37, 37, 37))
             .addGroup(layout.createSequentialGroup()
-                .addGap(410, 410, 410)
-                .addComponent(btnUpdate)
+                .addGap(21, 21, 21)
+                .addComponent(bt_Back)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addComponent(bt_Back)
+                .addGap(50, 50, 50)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(92, 92, 92)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(50, 50, 50)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblName)
-                            .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblMoreDetails, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txt_Name, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblName))
                         .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblEncounterNo)
-                            .addComponent(txtEncounterNo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(30, 30, 30)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblAdvice, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblMoreDetails, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txt_EncounterNo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblEncounterNo))
+                .addGap(43, 43, 43)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(lblAdvice, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(97, 97, 97)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txtProgress, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblProgress))))
-                .addGap(15, 15, 15)
-                .addComponent(btnUpdate)
-                .addContainerGap(34, Short.MAX_VALUE))
+                            .addComponent(lblProgress)
+                            .addComponent(txt_Progress, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
+                .addComponent(bt_Update)
+                .addGap(25, 25, 25))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnUpdateMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnUpdateMouseEntered
-        btnUpdate.setForeground(new Color(0,128,128));  // TODO add your handling code here:
-    }//GEN-LAST:event_btnUpdateMouseEntered
+    private void bt_UpdateMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_UpdateMouseEntered
+        bt_Update.setForeground(new Color(0,128,128));  // TODO add your handling code here:
+    }//GEN-LAST:event_bt_UpdateMouseEntered
 
-    private void btnUpdateMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnUpdateMouseExited
-        btnUpdate.setForeground(Color.black);       // TODO add your handling code here:
-    }//GEN-LAST:event_btnUpdateMouseExited
+    private void bt_UpdateMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_UpdateMouseExited
+        bt_Update.setForeground(Color.black);       // TODO add your handling code here:
+    }//GEN-LAST:event_bt_UpdateMouseExited
 
-    private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
-        if(txtEncounterNo.getText().equalsIgnoreCase("") && txtAreaAdvice.getText().equalsIgnoreCase("")
-            && txtProgress.getText().equalsIgnoreCase(""))
+    private void bt_UpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_UpdateActionPerformed
+        if(txt_EncounterNo.getText().equalsIgnoreCase("") && txt_AreaAdvice.getText().equalsIgnoreCase("")
+            && txt_Progress.getText().equalsIgnoreCase(""))
         {
             JOptionPane.showMessageDialog(null, "Please fill out the necessary fields");
         }
         else{
             EncounterPsychiatrist hpe=new EncounterPsychiatrist();
-            hpe.setEncounter(txtEncounterNo.getText());
-            hpe.setGuidance(txtAreaAdvice.getText());
-            hpe.setProgress(txtProgress.getText());
+            hpe.setEncounter(txt_EncounterNo.getText());
+            hpe.setGuidance(txt_AreaAdvice.getText());
+            hpe.setProgress(txt_Progress.getText());
             request.getHPEncounter().add(hpe);
             //organization.getHPencounterdir().getHPEncounters().add(hpe);
             //organization.getHPencounterdir().getHPEncounterDirectory().put(request.CaseReporterWorkRequest().getNameofvictim(), organization.getHPencounterdir().getHPEncounters());
             populate();
-            txtEncounterNo.setText("");
-            txtProgress.setText("");
-            txtAreaAdvice.setText("");
+            txt_EncounterNo.setText("");
+            txt_Progress.setText("");
+            txt_AreaAdvice.setText("");
 
        
         }
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnUpdateActionPerformed
+    }//GEN-LAST:event_bt_UpdateActionPerformed
 
-    private void btnBackMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackMouseEntered
-        btnBack.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBackMouseEntered
+    private void bt_BackMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_BackMouseEntered
+        bt_Back.setForeground(new Color(0,128,128));        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_BackMouseEntered
 
-    private void btnBackMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackMouseExited
-        btnBack.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBackMouseExited
+    private void bt_BackMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_BackMouseExited
+        bt_Back.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_BackMouseExited
 
-    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+    private void bt_BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_BackActionPerformed
         PsychiatristRequestJPanel hreqJPanel = new PsychiatristRequestJPanel(userProcessContainer,system,userAccount,organization,network);
         userProcessContainer.add("caseReportJPanel", hreqJPanel);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBackActionPerformed
+    }//GEN-LAST:event_bt_BackActionPerformed
 
-    private void txtNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameActionPerformed
+    private void txt_NameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_NameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtNameActionPerformed
+    }//GEN-LAST:event_txt_NameActionPerformed
 
 private void populate() {
     
-        txtName.setText(request.getCaseReporterWorkRequest().getChildName());
-        txtAreaMoreDetails.setText(request.getCaseReporterWorkRequest().getMoredetails());
+        txt_Name.setText(request.getCaseReporterWorkRequest().getChildName());
+        txt_MoreDetails.setText(request.getCaseReporterWorkRequest().getMoredetails());
         
-        DefaultTableModel model= (DefaultTableModel) tblPsychiatristEncounter.getModel();
+        DefaultTableModel model= (DefaultTableModel) tb_PsychiatristEncounter.getModel();
         Object[] row=new Object[3];
         model.setRowCount(0);
         for (EncounterPsychiatrist HPE: request.getHPEncounter()){
@@ -311,8 +308,8 @@ private void populate() {
         }
 }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBack;
-    private javax.swing.JButton btnUpdate;
+    private javax.swing.JButton bt_Back;
+    private javax.swing.JButton bt_Update;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
@@ -321,11 +318,11 @@ private void populate() {
     private javax.swing.JLabel lblMoreDetails;
     private javax.swing.JLabel lblName;
     private javax.swing.JLabel lblProgress;
-    private javax.swing.JTable tblPsychiatristEncounter;
-    private javax.swing.JTextArea txtAreaAdvice;
-    private javax.swing.JTextArea txtAreaMoreDetails;
-    private javax.swing.JTextField txtEncounterNo;
-    private javax.swing.JTextField txtName;
-    private javax.swing.JTextField txtProgress;
+    private javax.swing.JTable tb_PsychiatristEncounter;
+    private javax.swing.JTextArea txt_AreaAdvice;
+    private javax.swing.JTextField txt_EncounterNo;
+    private javax.swing.JTextArea txt_MoreDetails;
+    private javax.swing.JTextField txt_Name;
+    private javax.swing.JTextField txt_Progress;
     // End of variables declaration//GEN-END:variables
 }

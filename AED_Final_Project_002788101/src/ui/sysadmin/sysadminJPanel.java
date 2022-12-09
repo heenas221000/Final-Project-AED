@@ -41,12 +41,12 @@ public class sysadminJPanel extends javax.swing.JPanel {
         jLabel2 = new javax.swing.JLabel();
         jCheckBox1 = new javax.swing.JCheckBox();
         jSplitPane1 = new javax.swing.JSplitPane();
+        jPanel2 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         lblWelcomeSysAdmin = new javax.swing.JLabel();
-        btnManageEnterprises = new javax.swing.JButton();
-        btnManageEnterpriseAdministrator = new javax.swing.JButton();
-        btnManageNetworks = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
+        bt_ManageEnterprises = new javax.swing.JButton();
+        bt_ManageEnterpriseAdministrator = new javax.swing.JButton();
+        bt_ManageNetworks = new javax.swing.JButton();
 
         jLabel2.setText("jLabel2");
 
@@ -54,72 +54,87 @@ public class sysadminJPanel extends javax.swing.JPanel {
 
         jSplitPane1.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
+        jPanel2.setBackground(new java.awt.Color(153, 204, 255));
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 836, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 308, Short.MAX_VALUE)
+        );
+
+        jSplitPane1.setRightComponent(jPanel2);
+
         jPanel1.setBackground(new java.awt.Color(153, 204, 255));
         jPanel1.setToolTipText("");
         jPanel1.setInheritsPopupMenu(true);
 
-        lblWelcomeSysAdmin.setBackground(java.awt.Color.white);
+        lblWelcomeSysAdmin.setBackground(new java.awt.Color(0, 51, 204));
         lblWelcomeSysAdmin.setFont(new java.awt.Font("Songti SC", 1, 24)); // NOI18N
-        lblWelcomeSysAdmin.setForeground(new java.awt.Color(255, 255, 255));
-        lblWelcomeSysAdmin.setText("Welcome System Admin");
+        lblWelcomeSysAdmin.setForeground(new java.awt.Color(0, 0, 204));
+        lblWelcomeSysAdmin.setText("WELCOME SYSTEM ADMIN");
 
-        btnManageEnterprises.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        btnManageEnterprises.setForeground(new java.awt.Color(255, 255, 255));
-        btnManageEnterprises.setText("Manage Enterprises");
-        btnManageEnterprises.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnManageEnterprises.setBorderPainted(false);
-        btnManageEnterprises.setContentAreaFilled(false);
-        btnManageEnterprises.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_ManageEnterprises.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        bt_ManageEnterprises.setForeground(new java.awt.Color(0, 0, 204));
+        bt_ManageEnterprises.setText("MANAGE ENTERPRISES");
+        bt_ManageEnterprises.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        bt_ManageEnterprises.setBorderPainted(false);
+        bt_ManageEnterprises.setContentAreaFilled(false);
+        bt_ManageEnterprises.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnManageEnterprisesMouseEntered(evt);
+                bt_ManageEnterprisesMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnManageEnterprisesMouseExited(evt);
+                bt_ManageEnterprisesMouseExited(evt);
             }
         });
-        btnManageEnterprises.addActionListener(new java.awt.event.ActionListener() {
+        bt_ManageEnterprises.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnManageEnterprisesActionPerformed(evt);
-            }
-        });
-
-        btnManageEnterpriseAdministrator.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        btnManageEnterpriseAdministrator.setForeground(new java.awt.Color(255, 255, 255));
-        btnManageEnterpriseAdministrator.setText("Manage Enterprise Administrators ");
-        btnManageEnterpriseAdministrator.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnManageEnterpriseAdministrator.setBorderPainted(false);
-        btnManageEnterpriseAdministrator.setContentAreaFilled(false);
-        btnManageEnterpriseAdministrator.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnManageEnterpriseAdministratorMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnManageEnterpriseAdministratorMouseExited(evt);
-            }
-        });
-        btnManageEnterpriseAdministrator.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnManageEnterpriseAdministratorActionPerformed(evt);
+                bt_ManageEnterprisesActionPerformed(evt);
             }
         });
 
-        btnManageNetworks.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        btnManageNetworks.setForeground(new java.awt.Color(255, 255, 255));
-        btnManageNetworks.setText("Manage Networks");
-        btnManageNetworks.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnManageNetworks.setBorderPainted(false);
-        btnManageNetworks.setContentAreaFilled(false);
-        btnManageNetworks.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_ManageEnterpriseAdministrator.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        bt_ManageEnterpriseAdministrator.setForeground(new java.awt.Color(0, 0, 204));
+        bt_ManageEnterpriseAdministrator.setText("MANAGE ENTERPRISE ADMINS");
+        bt_ManageEnterpriseAdministrator.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        bt_ManageEnterpriseAdministrator.setBorderPainted(false);
+        bt_ManageEnterpriseAdministrator.setContentAreaFilled(false);
+        bt_ManageEnterpriseAdministrator.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnManageNetworksMouseEntered(evt);
+                bt_ManageEnterpriseAdministratorMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnManageNetworksMouseExited(evt);
+                bt_ManageEnterpriseAdministratorMouseExited(evt);
             }
         });
-        btnManageNetworks.addActionListener(new java.awt.event.ActionListener() {
+        bt_ManageEnterpriseAdministrator.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnManageNetworksActionPerformed(evt);
+                bt_ManageEnterpriseAdministratorActionPerformed(evt);
+            }
+        });
+
+        bt_ManageNetworks.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        bt_ManageNetworks.setForeground(new java.awt.Color(0, 0, 204));
+        bt_ManageNetworks.setText("MANAGE NETWORKS");
+        bt_ManageNetworks.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        bt_ManageNetworks.setBorderPainted(false);
+        bt_ManageNetworks.setContentAreaFilled(false);
+        bt_ManageNetworks.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                bt_ManageNetworksMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                bt_ManageNetworksMouseExited(evt);
+            }
+        });
+        bt_ManageNetworks.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt_ManageNetworksActionPerformed(evt);
             }
         });
 
@@ -128,17 +143,17 @@ public class sysadminJPanel extends javax.swing.JPanel {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(67, 67, 67)
-                .addComponent(btnManageNetworks, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(51, 51, 51)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(btnManageEnterprises, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(60, 60, 60)
-                        .addComponent(btnManageEnterpriseAdministrator, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(lblWelcomeSysAdmin))
-                .addGap(53, 53, 53))
+                .addGap(23, 23, 23)
+                .addComponent(bt_ManageNetworks, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(57, 57, 57)
+                .addComponent(bt_ManageEnterprises, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
+                .addComponent(bt_ManageEnterpriseAdministrator, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(19, 19, 19))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(252, 252, 252)
+                .addComponent(lblWelcomeSysAdmin)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -146,29 +161,13 @@ public class sysadminJPanel extends javax.swing.JPanel {
                 .addGap(12, 12, 12)
                 .addComponent(lblWelcomeSysAdmin)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(btnManageNetworks)
-                        .addComponent(btnManageEnterprises))
-                    .addComponent(btnManageEnterpriseAdministrator)))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(bt_ManageNetworks)
+                    .addComponent(bt_ManageEnterprises)
+                    .addComponent(bt_ManageEnterpriseAdministrator)))
         );
 
-        jSplitPane1.setTopComponent(jPanel1);
-
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 824, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 296, Short.MAX_VALUE)
-        );
-
-        jSplitPane1.setRightComponent(jPanel2);
+        jSplitPane1.setLeftComponent(jPanel1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -178,66 +177,66 @@ public class sysadminJPanel extends javax.swing.JPanel {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jSplitPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 404, Short.MAX_VALUE)
+            .addComponent(jSplitPane1, javax.swing.GroupLayout.Alignment.TRAILING)
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnManageEnterprisesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnManageEnterprisesMouseEntered
-              btnManageEnterprises.setForeground(Color.BLACK);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnManageEnterprisesMouseEntered
+    private void bt_ManageEnterprisesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageEnterprisesMouseEntered
+              bt_ManageEnterprises.setForeground(Color.BLACK);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_ManageEnterprisesMouseEntered
 
-    private void btnManageEnterpriseAdministratorMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnManageEnterpriseAdministratorMouseEntered
-             btnManageEnterpriseAdministrator.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnManageEnterpriseAdministratorMouseEntered
+    private void bt_ManageEnterpriseAdministratorMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageEnterpriseAdministratorMouseEntered
+             bt_ManageEnterpriseAdministrator.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_ManageEnterpriseAdministratorMouseEntered
 
-    private void btnManageNetworksMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnManageNetworksMouseEntered
-                  btnManageNetworks.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnManageNetworksMouseEntered
+    private void bt_ManageNetworksMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageNetworksMouseEntered
+                  bt_ManageNetworks.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_ManageNetworksMouseEntered
 
-    private void btnManageNetworksMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnManageNetworksMouseExited
-                 btnManageNetworks.setForeground(Color.white);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnManageNetworksMouseExited
+    private void bt_ManageNetworksMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageNetworksMouseExited
+                 bt_ManageNetworks.setForeground(Color.white);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_ManageNetworksMouseExited
 
-    private void btnManageEnterprisesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnManageEnterprisesMouseExited
-              btnManageEnterprises.setForeground(Color.white);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnManageEnterprisesMouseExited
+    private void bt_ManageEnterprisesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageEnterprisesMouseExited
+              bt_ManageEnterprises.setForeground(Color.white);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_ManageEnterprisesMouseExited
 
-    private void btnManageEnterpriseAdministratorMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnManageEnterpriseAdministratorMouseExited
-               btnManageEnterpriseAdministrator.setForeground(Color.white);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnManageEnterpriseAdministratorMouseExited
+    private void bt_ManageEnterpriseAdministratorMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageEnterpriseAdministratorMouseExited
+               bt_ManageEnterpriseAdministrator.setForeground(Color.white);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_ManageEnterpriseAdministratorMouseExited
 
-    private void btnManageNetworksActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageNetworksActionPerformed
+    private void bt_ManageNetworksActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_ManageNetworksActionPerformed
         // TODO add your handling code here:
         ManageNetworkJPanel manageNetworkJPanel=new ManageNetworkJPanel(userProcessContainer, ecosystem);
         jSplitPane1.setBottomComponent(manageNetworkJPanel);
         /*userProcessContainer.add("manageNetworkJPanel",manageNetworkJPanel);
         CardLayout layout=(CardLayout)userProcessContainer.getLayout();
         layout.next(userProcessContainer);*/
-    }//GEN-LAST:event_btnManageNetworksActionPerformed
+    }//GEN-LAST:event_bt_ManageNetworksActionPerformed
 
-    private void btnManageEnterprisesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageEnterprisesActionPerformed
+    private void bt_ManageEnterprisesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_ManageEnterprisesActionPerformed
         // TODO add your handling code here:
         ManageEnterpriseJPanel manageEnterpriseJPanel=new ManageEnterpriseJPanel(userProcessContainer, ecosystem);
         jSplitPane1.setBottomComponent(manageEnterpriseJPanel);
         /*userProcessContainer.add("manageEnterpriseJPanel",manageEnterpriseJPanel);
         CardLayout layout=(CardLayout)userProcessContainer.getLayout();
         layout.next(userProcessContainer);*/
-    }//GEN-LAST:event_btnManageEnterprisesActionPerformed
+    }//GEN-LAST:event_bt_ManageEnterprisesActionPerformed
 
-    private void btnManageEnterpriseAdministratorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageEnterpriseAdministratorActionPerformed
+    private void bt_ManageEnterpriseAdministratorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_ManageEnterpriseAdministratorActionPerformed
         // TODO add your handling code here:
         ManageEnterpriseAdminJPanel manageEnterpriseAdminJPanel=new ManageEnterpriseAdminJPanel(userProcessContainer, ecosystem);
         jSplitPane1.setBottomComponent(manageEnterpriseAdminJPanel);
         /*userProcessContainer.add("manageEnterpriseAdminJPanel",manageEnterpriseAdminJPanel);
         CardLayout layout=(CardLayout)userProcessContainer.getLayout();
         layout.next(userProcessContainer);*/
-    }//GEN-LAST:event_btnManageEnterpriseAdministratorActionPerformed
+    }//GEN-LAST:event_bt_ManageEnterpriseAdministratorActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnManageEnterpriseAdministrator;
-    private javax.swing.JButton btnManageEnterprises;
-    private javax.swing.JButton btnManageNetworks;
+    private javax.swing.JButton bt_ManageEnterpriseAdministrator;
+    private javax.swing.JButton bt_ManageEnterprises;
+    private javax.swing.JButton bt_ManageNetworks;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;

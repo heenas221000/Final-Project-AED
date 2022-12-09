@@ -58,19 +58,19 @@ public class PsychiatristRequestJPanel extends javax.swing.JPanel {
 
         lblHeader = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tblPsychiatristRequestDetails = new javax.swing.JTable();
-        btnAssignRequest = new javax.swing.JButton();
-        btnEncounters = new javax.swing.JButton();
-        btnCaseComplete = new javax.swing.JButton();
+        tb_PsychiatrisDetails = new javax.swing.JTable();
+        bt_AssignRequest = new javax.swing.JButton();
+        bt_Encounters = new javax.swing.JButton();
+        bt_CaseComplete = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(153, 204, 255));
 
-        lblHeader.setFont(new java.awt.Font("Songti SC", 1, 36)); // NOI18N
-        lblHeader.setForeground(new java.awt.Color(61, 64, 91));
+        lblHeader.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N
+        lblHeader.setForeground(new java.awt.Color(0, 0, 204));
         lblHeader.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblHeader.setText("Manage Requests");
+        lblHeader.setText("MANAGE REQUESTS");
 
-        tblPsychiatristRequestDetails.setModel(new javax.swing.table.DefaultTableModel(
+        tb_PsychiatrisDetails.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -78,7 +78,7 @@ public class PsychiatristRequestJPanel extends javax.swing.JPanel {
                 {null, null, null, null}
             },
             new String [] {
-                "Name", "Type", "Status", "Assigned to"
+                "NAME", "TYPE", "STATUS", "ASSIGNED TO "
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -89,37 +89,43 @@ public class PsychiatristRequestJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(tblPsychiatristRequestDetails);
+        jScrollPane1.setViewportView(tb_PsychiatrisDetails);
 
-        btnAssignRequest.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        btnAssignRequest.setText("Assign Request");
-        btnAssignRequest.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_AssignRequest.setBackground(new java.awt.Color(0, 0, 204));
+        bt_AssignRequest.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        bt_AssignRequest.setForeground(new java.awt.Color(255, 255, 255));
+        bt_AssignRequest.setText("ASSIGN REQUEST");
+        bt_AssignRequest.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnAssignRequestMouseEntered(evt);
+                bt_AssignRequestMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnAssignRequestMouseExited(evt);
+                bt_AssignRequestMouseExited(evt);
             }
         });
-        btnAssignRequest.addActionListener(new java.awt.event.ActionListener() {
+        bt_AssignRequest.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAssignRequestActionPerformed(evt);
-            }
-        });
-
-        btnEncounters.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        btnEncounters.setText("Encounters");
-        btnEncounters.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEncountersActionPerformed(evt);
+                bt_AssignRequestActionPerformed(evt);
             }
         });
 
-        btnCaseComplete.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        btnCaseComplete.setText("Case Complete");
-        btnCaseComplete.addActionListener(new java.awt.event.ActionListener() {
+        bt_Encounters.setBackground(new java.awt.Color(0, 0, 204));
+        bt_Encounters.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        bt_Encounters.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Encounters.setText("ENCOUNTERS");
+        bt_Encounters.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCaseCompleteActionPerformed(evt);
+                bt_EncountersActionPerformed(evt);
+            }
+        });
+
+        bt_CaseComplete.setBackground(new java.awt.Color(0, 0, 204));
+        bt_CaseComplete.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        bt_CaseComplete.setForeground(new java.awt.Color(255, 255, 255));
+        bt_CaseComplete.setText("CASE COMPLETE");
+        bt_CaseComplete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt_CaseCompleteActionPerformed(evt);
             }
         });
 
@@ -127,48 +133,52 @@ public class PsychiatristRequestJPanel extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblHeader, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addGap(56, 56, 56)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnAssignRequest, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnEncounters, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnCaseComplete, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(71, 71, 71)
+                    .addComponent(bt_AssignRequest, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(bt_Encounters, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(bt_CaseComplete, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(128, Short.MAX_VALUE))
+                .addGap(77, 77, 77))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblHeader, javax.swing.GroupLayout.DEFAULT_SIZE, 835, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(72, 72, 72)
+                .addGap(29, 29, 29)
                 .addComponent(lblHeader)
-                .addGap(59, 59, 59)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(btnAssignRequest)
+                        .addGap(126, 126, 126)
+                        .addComponent(bt_AssignRequest)
                         .addGap(18, 18, 18)
-                        .addComponent(btnEncounters)
+                        .addComponent(bt_Encounters)
                         .addGap(18, 18, 18)
-                        .addComponent(btnCaseComplete)))
-                .addContainerGap(27, Short.MAX_VALUE))
+                        .addComponent(bt_CaseComplete))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(102, 102, 102)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(166, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnAssignRequestMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAssignRequestMouseEntered
-        btnAssignRequest.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAssignRequestMouseEntered
+    private void bt_AssignRequestMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_AssignRequestMouseEntered
+        bt_AssignRequest.setForeground(new Color(0,128,128));        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_AssignRequestMouseEntered
 
-    private void btnAssignRequestMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAssignRequestMouseExited
-        btnAssignRequest.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAssignRequestMouseExited
+    private void bt_AssignRequestMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_AssignRequestMouseExited
+        bt_AssignRequest.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_AssignRequestMouseExited
 
-    private void btnAssignRequestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAssignRequestActionPerformed
+    private void bt_AssignRequestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_AssignRequestActionPerformed
 
-        int selectedRow = tblPsychiatristRequestDetails.getSelectedRow();
-        PsychiatristWorkRequest request = (PsychiatristWorkRequest)tblPsychiatristRequestDetails.getValueAt(selectedRow, 2);
+        int selectedRow = tb_PsychiatrisDetails.getSelectedRow();
+        PsychiatristWorkRequest request = (PsychiatristWorkRequest)tb_PsychiatrisDetails.getValueAt(selectedRow, 2);
         if (CheckOpenCases(userAccount) == 0){
             request.setReceiver(userAccount);
             request.setStatus("Accepted");
@@ -180,14 +190,14 @@ public class PsychiatristRequestJPanel extends javax.swing.JPanel {
         }
 
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnAssignRequestActionPerformed
+    }//GEN-LAST:event_bt_AssignRequestActionPerformed
 
-    private void btnEncountersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEncountersActionPerformed
+    private void bt_EncountersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_EncountersActionPerformed
 
-        int selectedRow = tblPsychiatristRequestDetails.getSelectedRow();
+        int selectedRow = tb_PsychiatrisDetails.getSelectedRow();
 
-        DefaultTableModel model=(DefaultTableModel) tblPsychiatristRequestDetails.getModel();
-        String s= tblPsychiatristRequestDetails.getValueAt(selectedRow, 2).toString();
+        DefaultTableModel model=(DefaultTableModel) tb_PsychiatrisDetails.getModel();
+        String s= tb_PsychiatrisDetails.getValueAt(selectedRow, 2).toString();
         String status="Waiting";
         if(status.equalsIgnoreCase(s))
         {
@@ -197,7 +207,7 @@ public class PsychiatristRequestJPanel extends javax.swing.JPanel {
             if (selectedRow < 0){
                 return;
             }
-            PsychiatristWorkRequest request = (PsychiatristWorkRequest)tblPsychiatristRequestDetails.getValueAt(selectedRow, 2);
+            PsychiatristWorkRequest request = (PsychiatristWorkRequest)tb_PsychiatrisDetails.getValueAt(selectedRow, 2);
 
             if (request.getReceiver()!=userAccount){
                 JOptionPane.showMessageDialog(this, "You cannot view the report of this case. Access Denied.");
@@ -210,22 +220,22 @@ public class PsychiatristRequestJPanel extends javax.swing.JPanel {
             }
         }
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnEncountersActionPerformed
+    }//GEN-LAST:event_bt_EncountersActionPerformed
 
-    private void btnCaseCompleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCaseCompleteActionPerformed
-        int selectedRow = tblPsychiatristRequestDetails.getSelectedRow();
+    private void bt_CaseCompleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_CaseCompleteActionPerformed
+        int selectedRow = tb_PsychiatrisDetails.getSelectedRow();
 
         if (selectedRow < 0){
             return;
         }
 
-        WorkRequest request = (PsychiatristWorkRequest)tblPsychiatristRequestDetails.getValueAt(selectedRow, 2);
+        WorkRequest request = (PsychiatristWorkRequest)tb_PsychiatrisDetails.getValueAt(selectedRow, 2);
         request.setReceiver(userAccount);
         request.setStatus("Case Completed");
         populateTable();
-    }//GEN-LAST:event_btnCaseCompleteActionPerformed
+    }//GEN-LAST:event_bt_CaseCompleteActionPerformed
 private void populateTable() {
-        DefaultTableModel model= (DefaultTableModel) tblPsychiatristRequestDetails.getModel();
+        DefaultTableModel model= (DefaultTableModel) tb_PsychiatrisDetails.getModel();
         Object[] row=new Object[4];
         model.setRowCount(0);
         
@@ -295,11 +305,11 @@ private void populateTable() {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAssignRequest;
-    private javax.swing.JButton btnCaseComplete;
-    private javax.swing.JButton btnEncounters;
+    private javax.swing.JButton bt_AssignRequest;
+    private javax.swing.JButton bt_CaseComplete;
+    private javax.swing.JButton bt_Encounters;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblHeader;
-    private javax.swing.JTable tblPsychiatristRequestDetails;
+    private javax.swing.JTable tb_PsychiatrisDetails;
     // End of variables declaration//GEN-END:variables
 }
