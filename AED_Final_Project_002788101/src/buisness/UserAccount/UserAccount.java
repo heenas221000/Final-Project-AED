@@ -6,12 +6,13 @@ package buisness.UserAccount;
 
 import buisness.Employee.Employee;
 import buisness.Role.Role;
+import business.WorkQueue.WorkQueue;
 
 /**
  *
  * @author vishwa
  */
-public class UserAccount {{
+public class UserAccount {
     
     private String username;
     private String pwd;
