@@ -1,6 +1,6 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package business.WorkQueue;
 
@@ -11,7 +11,7 @@ import java.util.ArrayList;
  * @author hetal
  */
 public class WorkQueue {
-    
+
     private ArrayList<CaseReporterWorkRequest> caseReporterWorkRequestList;
     private ArrayList<LawyerWorkRequest> LawyerworkRequestList;
     private ArrayList<CaretakerWorkRequest> CaretakerworkRequestList;
@@ -20,8 +20,8 @@ public class WorkQueue {
     private ArrayList<DrWorkRequest> DoctorworkRequestList;
     private ArrayList<LabAssistantWorkRequest> LabAssistanceWorkRequest;
     private ArrayList<PharmacistWorkRequest> PharmacistWorkRequest;
-    
-    
+
+
     public WorkQueue() {
         caseReporterWorkRequestList = new ArrayList<CaseReporterWorkRequest>();
         LawyerworkRequestList=new ArrayList<LawyerWorkRequest>();
@@ -32,7 +32,7 @@ public class WorkQueue {
         LabAssistanceWorkRequest = new ArrayList<LabAssistantWorkRequest>();
         PharmacistWorkRequest = new ArrayList<PharmacistWorkRequest>();
     }
-    
+
     public ArrayList<CaseReporterWorkRequest> getCaseReporterWorkRequestList() {
         return caseReporterWorkRequestList;
     }
@@ -111,4 +111,5 @@ public class WorkQueue {
         }
         return count;
     }
+
 }

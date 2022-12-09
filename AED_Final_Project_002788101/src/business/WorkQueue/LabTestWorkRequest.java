@@ -1,6 +1,6 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
  */
 package business.WorkQueue;
 
@@ -8,9 +8,9 @@ package business.WorkQueue;
  *
  * @author hetal
  */
-public class LabTestWorkRequest extends WorkRequest {
+public class LabTestWorkRequest extends WorkRequest{
     
-     private String testResult;
+    private String testResult;
 
     public String getTestResult() {
         return testResult;
@@ -19,7 +19,6 @@ public class LabTestWorkRequest extends WorkRequest {
     public void setTestResult(String testResult) {
         this.testResult = testResult;
     }
-
- 
+    
     
 }
