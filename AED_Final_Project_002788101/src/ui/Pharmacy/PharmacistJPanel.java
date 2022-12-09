@@ -55,20 +55,21 @@ public class PharmacistJPanel extends javax.swing.JPanel {
 
         jSplitPane1.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
-        jPanel3.setBackground(new java.awt.Color(129, 178, 154));
+        jPanel3.setBackground(new java.awt.Color(153, 204, 255));
+        jPanel3.setForeground(new java.awt.Color(0, 0, 204));
         jPanel3.setToolTipText("");
         jPanel3.setLayout(new java.awt.GridBagLayout());
 
-        jLabel2.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(61, 64, 91));
+        jLabel2.setFont(new java.awt.Font("Monaco", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 204));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Welcome Pharmacist");
+        jLabel2.setText("WELCOME PHARMACIST");
         jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanel3.add(jLabel2, new java.awt.GridBagConstraints());
 
         jSplitPane1.setTopComponent(jPanel3);
 
-        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel4.setBackground(new java.awt.Color(153, 204, 255));
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -89,13 +90,13 @@ public class PharmacistJPanel extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 641, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 641, Short.MAX_VALUE))
+                .addComponent(jSplitPane1))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 470, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 470, Short.MAX_VALUE))
+                .addComponent(jSplitPane1))
         );
     }// </editor-fold>//GEN-END:initComponents
 
