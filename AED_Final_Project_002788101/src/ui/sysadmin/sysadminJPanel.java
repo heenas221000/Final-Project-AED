@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author heenashah
+ * @author shah0
  */
 public class sysadminJPanel extends javax.swing.JPanel {
 
@@ -37,6 +37,7 @@ public class sysadminJPanel extends javax.swing.JPanel {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
 
         jLabel2 = new javax.swing.JLabel();
         jCheckBox1 = new javax.swing.JCheckBox();
@@ -57,24 +58,32 @@ public class sysadminJPanel extends javax.swing.JPanel {
         jPanel1.setBackground(new java.awt.Color(0, 204, 204));
         jPanel1.setToolTipText("");
         jPanel1.setInheritsPopupMenu(true);
+        jPanel1.setLayout(new java.awt.GridBagLayout());
 
         lblWelcomeSysAdmin.setBackground(java.awt.Color.white);
-        lblWelcomeSysAdmin.setFont(new java.awt.Font("Songti SC", 1, 24)); // NOI18N
+        lblWelcomeSysAdmin.setFont(new java.awt.Font("Monaco", 1, 24)); // NOI18N
         lblWelcomeSysAdmin.setForeground(new java.awt.Color(255, 255, 255));
         lblWelcomeSysAdmin.setText("Welcome System Admin");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(11, 18, 0, 0);
+        jPanel1.add(lblWelcomeSysAdmin, gridBagConstraints);
 
-        btnManageEnterprises.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        btnManageEnterprises.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
         btnManageEnterprises.setForeground(new java.awt.Color(255, 255, 255));
         btnManageEnterprises.setText("Manage Enterprises");
         btnManageEnterprises.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnManageEnterprises.setBorderPainted(false);
         btnManageEnterprises.setContentAreaFilled(false);
         btnManageEnterprises.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnManageEnterprisesMouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 btnManageEnterprisesMouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnManageEnterprisesMouseEntered(evt);
             }
         });
         btnManageEnterprises.addActionListener(new java.awt.event.ActionListener() {
@@ -82,8 +91,15 @@ public class sysadminJPanel extends javax.swing.JPanel {
                 btnManageEnterprisesActionPerformed(evt);
             }
         });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.ipadx = 9;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(20, 52, 26, 0);
+        jPanel1.add(btnManageEnterprises, gridBagConstraints);
 
-        btnManageEnterpriseAdministrator.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        btnManageEnterpriseAdministrator.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
         btnManageEnterpriseAdministrator.setForeground(new java.awt.Color(255, 255, 255));
         btnManageEnterpriseAdministrator.setText("Manage Enterprise Administrators ");
         btnManageEnterpriseAdministrator.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -102,8 +118,16 @@ public class sysadminJPanel extends javax.swing.JPanel {
                 btnManageEnterpriseAdministratorActionPerformed(evt);
             }
         });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 2;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.ipadx = 8;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(20, 35, 26, 38);
+        jPanel1.add(btnManageEnterpriseAdministrator, gridBagConstraints);
 
-        btnManageNetworks.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        btnManageNetworks.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
         btnManageNetworks.setForeground(new java.awt.Color(255, 255, 255));
         btnManageNetworks.setText("Manage Networks");
         btnManageNetworks.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -122,36 +146,13 @@ public class sysadminJPanel extends javax.swing.JPanel {
                 btnManageNetworksActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(67, 67, 67)
-                .addComponent(btnManageNetworks, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(51, 51, 51)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(btnManageEnterprises, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(60, 60, 60)
-                        .addComponent(btnManageEnterpriseAdministrator, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(lblWelcomeSysAdmin))
-                .addGap(53, 53, 53))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addComponent(lblWelcomeSysAdmin)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(btnManageNetworks)
-                        .addComponent(btnManageEnterprises))
-                    .addComponent(btnManageEnterpriseAdministrator)))
-        );
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.ipadx = 9;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(20, 52, 26, 0);
+        jPanel1.add(btnManageNetworks, gridBagConstraints);
 
         jSplitPane1.setTopComponent(jPanel1);
 

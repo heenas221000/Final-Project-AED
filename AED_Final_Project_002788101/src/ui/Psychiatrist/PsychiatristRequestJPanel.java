@@ -63,7 +63,7 @@ public class PsychiatristRequestJPanel extends javax.swing.JPanel {
         btnEncounters = new javax.swing.JButton();
         btnCaseComplete = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(0, 204, 204));
+        setBackground(new java.awt.Color(255, 255, 255));
 
         lblHeader.setFont(new java.awt.Font("Songti SC", 1, 36)); // NOI18N
         lblHeader.setForeground(new java.awt.Color(61, 64, 91));

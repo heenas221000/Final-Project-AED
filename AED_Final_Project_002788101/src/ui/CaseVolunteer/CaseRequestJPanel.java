@@ -95,7 +95,7 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
         txtCaretakerReceiver = new javax.swing.JLabel();
         txtCaretakerStatus = new javax.swing.JLabel();
 
-        jPanel1.setBackground(new java.awt.Color(244, 241, 222));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblCaseReq.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
@@ -130,7 +130,7 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 70, 490, 130));
 
         btnAssignRequest.setBackground(new java.awt.Color(129, 178, 154));
-        btnAssignRequest.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnAssignRequest.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         btnAssignRequest.setForeground(new java.awt.Color(61, 64, 91));
         btnAssignRequest.setText("Assign Request");
         btnAssignRequest.setBorderPainted(false);
@@ -148,10 +148,10 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
                 btnAssignRequestActionPerformed(evt);
             }
         });
-        jPanel1.add(btnAssignRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 89, 170, 42));
+        jPanel1.add(btnAssignRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 89, 150, 42));
 
         btnViewCaseReport.setBackground(new java.awt.Color(129, 178, 154));
-        btnViewCaseReport.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnViewCaseReport.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         btnViewCaseReport.setForeground(new java.awt.Color(61, 64, 91));
         btnViewCaseReport.setText("View Case Report");
         btnViewCaseReport.setBorderPainted(false);
@@ -169,20 +169,20 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
                 btnViewCaseReportActionPerformed(evt);
             }
         });
-        jPanel1.add(btnViewCaseReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, -1, 38));
+        jPanel1.add(btnViewCaseReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 150, 38));
 
         btnCheckStatus.setBackground(new java.awt.Color(129, 178, 154));
-        btnCheckStatus.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnCheckStatus.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         btnCheckStatus.setForeground(new java.awt.Color(61, 64, 91));
         btnCheckStatus.setText("Check Status");
         btnCheckStatus.setBorderPainted(false);
         btnCheckStatus.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnCheckStatus.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnCheckStatusMouseExited(evt);
-            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnCheckStatusMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnCheckStatusMouseExited(evt);
             }
         });
         btnCheckStatus.addActionListener(new java.awt.event.ActionListener() {
@@ -190,7 +190,7 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
                 btnCheckStatusActionPerformed(evt);
             }
         });
-        jPanel1.add(btnCheckStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, 143, 42));
+        jPanel1.add(btnCheckStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, 150, 42));
         jPanel1.add(txtPsyhDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 260, 93, 26));
         jPanel1.add(txtLawyerReceiver, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 300, 100, 24));
         jPanel1.add(txtLawyerDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 260, 94, 27));
@@ -198,49 +198,49 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
         jPanel1.add(txtCounsellarReceiver, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 310, 126, 29));
         jPanel1.add(txtCounsellarDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 270, 118, 27));
 
-        lblPsychiatrist.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        lblPsychiatrist.setForeground(new java.awt.Color(224, 122, 95));
+        lblPsychiatrist.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        lblPsychiatrist.setForeground(new java.awt.Color(0, 204, 204));
         lblPsychiatrist.setText("Psychiatrist");
         jPanel1.add(lblPsychiatrist, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 230, -1, -1));
 
-        lblDoctor.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        lblDoctor.setForeground(new java.awt.Color(224, 122, 95));
+        lblDoctor.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        lblDoctor.setForeground(new java.awt.Color(0, 204, 204));
         lblDoctor.setText("Doctor");
         jPanel1.add(lblDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 230, 103, -1));
 
-        lblLawyer.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        lblLawyer.setForeground(new java.awt.Color(224, 122, 95));
+        lblLawyer.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        lblLawyer.setForeground(new java.awt.Color(0, 204, 204));
         lblLawyer.setText("Lawyer");
         jPanel1.add(lblLawyer, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 230, 102, -1));
         jPanel1.add(txtPsychStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 350, 92, 32));
         jPanel1.add(txtLawyerStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 350, 100, 30));
 
-        lblCounsellar.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        lblCounsellar.setForeground(new java.awt.Color(224, 122, 95));
+        lblCounsellar.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        lblCounsellar.setForeground(new java.awt.Color(0, 204, 204));
         lblCounsellar.setText("Counsellar");
         jPanel1.add(lblCounsellar, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 230, 93, -1));
 
-        lblStatus.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblStatus.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         lblStatus.setForeground(new java.awt.Color(61, 64, 91));
         lblStatus.setText("Status:");
         jPanel1.add(lblStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 350, 100, 32));
 
-        lblReceiver.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblReceiver.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         lblReceiver.setForeground(new java.awt.Color(61, 64, 91));
         lblReceiver.setText("Receiver:");
         jPanel1.add(lblReceiver, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 310, 104, 28));
 
-        lblDate.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblDate.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         lblDate.setForeground(new java.awt.Color(61, 64, 91));
         lblDate.setText("Date:");
-        jPanel1.add(lblDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 270, 104, 20));
+        jPanel1.add(lblDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 270, 104, 20));
         jPanel1.add(txtPsychReceiver, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 310, 93, 28));
         jPanel1.add(txtDocStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 350, 117, 32));
         jPanel1.add(txtDocReceiver, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 310, 117, 29));
         jPanel1.add(txtDoctorDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 270, 122, 20));
 
-        lblCaretaker.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        lblCaretaker.setForeground(new java.awt.Color(224, 122, 95));
+        lblCaretaker.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        lblCaretaker.setForeground(new java.awt.Color(0, 204, 204));
         lblCaretaker.setText("Caretaker");
         jPanel1.add(lblCaretaker, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 230, 102, -1));
         jPanel1.add(txtCaretakerDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 270, 94, 27));

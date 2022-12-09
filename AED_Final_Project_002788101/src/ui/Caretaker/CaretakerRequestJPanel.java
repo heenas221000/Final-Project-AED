@@ -69,8 +69,9 @@ public class CaretakerRequestJPanel extends javax.swing.JPanel {
         btnEncounter = new javax.swing.JButton();
         btnCaseComplete = new javax.swing.JButton();
 
-        lblHeader.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        lblHeader.setForeground(new java.awt.Color(51, 102, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
+
+        lblHeader.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         lblHeader.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblHeader.setText("Manage Requests");
 
@@ -95,7 +96,9 @@ public class CaretakerRequestJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblCaretakerManageRequest);
 
-        btnAssignRequest.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnAssignRequest.setBackground(new java.awt.Color(0, 102, 102));
+        btnAssignRequest.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btnAssignRequest.setForeground(new java.awt.Color(255, 255, 255));
         btnAssignRequest.setText("Assign Request");
         btnAssignRequest.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -111,7 +114,9 @@ public class CaretakerRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnViewCaseReport.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnViewCaseReport.setBackground(new java.awt.Color(0, 102, 102));
+        btnViewCaseReport.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btnViewCaseReport.setForeground(new java.awt.Color(255, 255, 255));
         btnViewCaseReport.setText("View Case Report");
         btnViewCaseReport.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -127,7 +132,9 @@ public class CaretakerRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnEncounter.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnEncounter.setBackground(new java.awt.Color(0, 102, 102));
+        btnEncounter.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btnEncounter.setForeground(new java.awt.Color(255, 255, 255));
         btnEncounter.setText("Ecounters");
         btnEncounter.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -143,7 +150,9 @@ public class CaretakerRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnCaseComplete.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnCaseComplete.setBackground(new java.awt.Color(0, 102, 102));
+        btnCaseComplete.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btnCaseComplete.setForeground(new java.awt.Color(255, 255, 255));
         btnCaseComplete.setText(" Case Complete");
         btnCaseComplete.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {

@@ -76,7 +76,7 @@
                                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jTextField5" min="-2" pref="140" max="-2" attributes="0"/>
-                                  <EmptySpace min="0" pref="42" max="32767" attributes="0"/>
+                                  <EmptySpace min="0" pref="85" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -156,7 +156,7 @@
                       <Component id="friendRadioButton" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="parentRadioButton" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="Colleagueradiobutton" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="otherRadioButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="otherRadioButton" alignment="0" min="-2" pref="23" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -178,7 +178,7 @@
                       <Component id="jTextField3" alignment="3" min="-2" pref="51" max="-2" attributes="0"/>
                       <Component id="detailsjLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="28" max="32767" attributes="0"/>
+                  <EmptySpace pref="41" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="knownRadioButton" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="unknownRadioButton" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -203,7 +203,7 @@
               <Color blue="d0" green="eb" red="fd" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monaco" size="24" style="1"/>
+              <Font name="Songti SC" size="24" style="1"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="66" red="33" type="rgb"/>
@@ -216,7 +216,7 @@
         <Component class="javax.swing.JLabel" name="namesurvivorjLabel">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monaco" size="14" style="1"/>
+              <Font name="Songti SC" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Name of Survivor: "/>
           </Properties>
@@ -224,7 +224,7 @@
         <Component class="javax.swing.JLabel" name="relationjLabel">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monaco" size="14" style="1"/>
+              <Font name="Songti SC" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Relation with Survivor: "/>
           </Properties>
@@ -232,7 +232,7 @@
         <Component class="javax.swing.JLabel" name="typejLabel">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monaco" size="14" style="1"/>
+              <Font name="Songti SC" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Type of Sexual Assault: "/>
           </Properties>
@@ -240,7 +240,7 @@
         <Component class="javax.swing.JLabel" name="locationjLabel">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monaco" size="14" style="1"/>
+              <Font name="Songti SC" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Location of Incident:"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -249,7 +249,7 @@
         <Component class="javax.swing.JLabel" name="timejLabel">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monaco" size="14" style="1"/>
+              <Font name="Songti SC" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Date of Incident:"/>
           </Properties>
@@ -257,7 +257,7 @@
         <Component class="javax.swing.JLabel" name="detailsjLabel">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monaco" size="14" style="1"/>
+              <Font name="Songti SC" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="More Details: "/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -266,7 +266,7 @@
         <Component class="javax.swing.JLabel" name="suspecttypejLabel">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monaco" size="14" style="1"/>
+              <Font name="Songti SC" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Suspect:"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -275,7 +275,7 @@
         <Component class="javax.swing.JLabel" name="namesuspectjLabel">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monaco" size="14" style="1"/>
+              <Font name="Songti SC" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Name of Suspect : "/>
           </Properties>
@@ -288,7 +288,7 @@
         <Component class="javax.swing.JRadioButton" name="friendRadioButton">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monaco" size="14" style="1"/>
+              <Font name="Songti SC" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Friend"/>
           </Properties>
@@ -296,7 +296,7 @@
         <Component class="javax.swing.JRadioButton" name="parentRadioButton">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monaco" size="14" style="1"/>
+              <Font name="Songti SC" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Parent"/>
           </Properties>
@@ -309,7 +309,7 @@
         <Component class="javax.swing.JRadioButton" name="knownRadioButton">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monaco" size="14" style="1"/>
+              <Font name="Songti SC" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Known"/>
           </Properties>
@@ -320,7 +320,7 @@
         <Component class="javax.swing.JRadioButton" name="unknownRadioButton">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monaco" size="14" style="1"/>
+              <Font name="Songti SC" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Unknown"/>
           </Properties>
@@ -332,7 +332,7 @@
         <Component class="javax.swing.JRadioButton" name="Colleagueradiobutton">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monaco" size="14" style="1"/>
+              <Font name="Songti SC" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Self"/>
           </Properties>
@@ -340,7 +340,7 @@
         <Component class="javax.swing.JRadioButton" name="otherRadioButton">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monaco" size="14" style="1"/>
+              <Font name="Songti SC" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Other"/>
           </Properties>
@@ -349,11 +349,8 @@
         </Component>
         <Component class="javax.swing.JButton" name="ReportjButton">
           <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="33" green="0" red="ff" type="rgb"/>
-            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monaco" size="14" style="1"/>
+              <Font name="Songti SC" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Report"/>
           </Properties>
@@ -384,7 +381,7 @@
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Monaco" size="14" style="1"/>
+              <Font name="Songti SC" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Email:"/>
           </Properties>

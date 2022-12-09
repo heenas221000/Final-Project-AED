@@ -74,12 +74,12 @@ public class LawyerEncounterJPanel extends javax.swing.JPanel {
         txtAreaMinutes = new javax.swing.JTextArea();
         txtName = new javax.swing.JTextField();
 
-        lblHeader.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
+        lblHeader.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         lblHeader.setForeground(new java.awt.Color(51, 102, 255));
         lblHeader.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblHeader.setText("Encounters");
 
-        lblName.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblName.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         lblName.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblName.setText("Name");
 
@@ -96,7 +96,7 @@ public class LawyerEncounterJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblEncounterDetails);
 
-        btnUpdate.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnUpdate.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         btnUpdate.setText("Update");
         btnUpdate.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -112,7 +112,7 @@ public class LawyerEncounterJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnBack.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnBack.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         btnBack.setText("Back");
         btnBack.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -128,11 +128,11 @@ public class LawyerEncounterJPanel extends javax.swing.JPanel {
             }
         });
 
-        lblEncounterNo.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblEncounterNo.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         lblEncounterNo.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblEncounterNo.setText("Encounter no");
 
-        lblMinutes.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblMinutes.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         lblMinutes.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblMinutes.setText("Minutes of Encounter");
 

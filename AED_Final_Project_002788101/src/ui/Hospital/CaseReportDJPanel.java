@@ -91,40 +91,40 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
 
-        jPanel1.setBackground(new java.awt.Color(153, 204, 255));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new java.awt.GridBagLayout());
 
-        jPanel2.setBackground(new java.awt.Color(153, 204, 255));
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
-        namesurvivorjLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        namesurvivorjLabel.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         namesurvivorjLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         namesurvivorjLabel.setText("Name of Survivor : ");
 
-        relationjLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        relationjLabel.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         relationjLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         relationjLabel.setText("Relation with Survivor : ");
 
-        typejLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        typejLabel.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         typejLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         typejLabel.setText("Type of Sexual Assault : ");
 
-        locationjLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        locationjLabel.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         locationjLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         locationjLabel.setText("Location of Incident :");
 
-        timejLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        timejLabel.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         timejLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         timejLabel.setText("Date of Incident :");
 
-        detailsjLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        detailsjLabel.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         detailsjLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         detailsjLabel.setText("More Details : ");
 
-        suspecttypejLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        suspecttypejLabel.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         suspecttypejLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         suspecttypejLabel.setText("Suspect :");
 
-        namesuspectjLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        namesuspectjLabel.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         namesuspectjLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         namesuspectjLabel.setText("Name of Suspect : ");
 
@@ -147,7 +147,7 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
         });
 
         jButton1.setBackground(new java.awt.Color(102, 153, 255));
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         jButton1.setText("REQUEST LAB ");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -163,8 +163,8 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(153, 153, 255));
-        jButton3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton3.setBackground(new java.awt.Color(102, 153, 255));
+        jButton3.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         jButton3.setText("VIEW LAB TEST");
         jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -181,7 +181,7 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
         });
 
         jButton2.setBackground(new java.awt.Color(102, 153, 255));
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         jButton2.setText("PRESCRIBE MEDICINES");
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -197,8 +197,8 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
             }
         });
 
-        jButton4.setBackground(new java.awt.Color(0, 153, 255));
-        jButton4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton4.setBackground(new java.awt.Color(102, 153, 255));
+        jButton4.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         jButton4.setText("SEND INVITE");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -206,8 +206,8 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
             }
         });
 
-        jButton5.setBackground(new java.awt.Color(51, 153, 255));
-        jButton5.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        jButton5.setBackground(new java.awt.Color(102, 153, 255));
+        jButton5.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         jButton5.setText("BACK");
         jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -228,14 +228,14 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(0, 142, Short.MAX_VALUE)
+                .addGap(0, 101, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jButton4)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton3)
+                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton2))
                     .addGroup(jPanel2Layout.createSequentialGroup()
@@ -303,11 +303,12 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
                     .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(namesuspectjLabel))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, 86, Short.MAX_VALUE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton3)
-                    .addComponent(jButton2)
-                    .addComponent(jButton4))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jButton1)
+                        .addComponent(jButton2)
+                        .addComponent(jButton4))
+                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 

@@ -95,8 +95,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(230, 126, 34));
+        jLabel1.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Manage Employee");
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 56, 671, 37));
@@ -124,12 +123,12 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
 
         jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 120, 220, 100));
 
-        lblSelectOrg.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblSelectOrg.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         lblSelectOrg.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblSelectOrg.setText("Select Organization:");
         jPanel2.add(lblSelectOrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 120, 180, 20));
 
-        jLabel3.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel3.setText("Name:");
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, 139, 22));
@@ -142,7 +141,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         jPanel2.add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 160, 120, -1));
 
         btnCreateEmployee.setBackground(new java.awt.Color(51, 102, 255));
-        btnCreateEmployee.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnCreateEmployee.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         btnCreateEmployee.setForeground(new java.awt.Color(255, 255, 255));
         btnCreateEmployee.setText("Create Employee");
         btnCreateEmployee.setBorderPainted(false);
@@ -159,7 +158,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
                 btnCreateEmployeeActionPerformed(evt);
             }
         });
-        jPanel2.add(btnCreateEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 202, -1, -1));
+        jPanel2.add(btnCreateEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 220, -1, -1));
 
         organizationEmpJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         organizationEmpJComboBox.addActionListener(new java.awt.event.ActionListener() {
@@ -170,16 +169,16 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         jPanel2.add(organizationEmpJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 120, 20));
 
         Deletebtn.setBackground(new java.awt.Color(51, 102, 255));
-        Deletebtn.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        Deletebtn.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         Deletebtn.setForeground(new java.awt.Color(255, 255, 255));
         Deletebtn.setText("Delete Employee");
         Deletebtn.setBorderPainted(false);
         Deletebtn.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                DeletebtnMouseExited(evt);
-            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 DeletebtnMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                DeletebtnMouseExited(evt);
             }
         });
         Deletebtn.addActionListener(new java.awt.event.ActionListener() {
@@ -187,7 +186,7 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
                 DeletebtnActionPerformed(evt);
             }
         });
-        jPanel2.add(Deletebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, -1, -1));
+        jPanel2.add(Deletebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 220, -1, -1));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 490));
 

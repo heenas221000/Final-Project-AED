@@ -108,33 +108,33 @@ public class CaseReportJPanel extends javax.swing.JPanel {
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(242, 204, 143));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblDate.setBackground(new java.awt.Color(242, 204, 143));
+        lblDate.setBackground(new java.awt.Color(255, 255, 255));
 
-        lblVictimName.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblVictimName.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         lblVictimName.setText("Victim name : ");
 
-        lblRelation.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblRelation.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         lblRelation.setText("Relation/ Volunteer name: ");
 
-        lblTypeofAssault.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblTypeofAssault.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         lblTypeofAssault.setText("Type of  Assault : ");
 
-        lblLocation.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblLocation.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         lblLocation.setText("Location of Incident :");
 
-        timejLabel.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        timejLabel.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         timejLabel.setText("Date of Incident :");
 
-        lblMoreDetail.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblMoreDetail.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         lblMoreDetail.setText("More Details : ");
 
-        lblSuspect.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblSuspect.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         lblSuspect.setText("Suspect :");
 
-        lblNameSuspect.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblNameSuspect.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         lblNameSuspect.setText("Name of Suspect : ");
 
         txtVictimName.addActionListener(new java.awt.event.ActionListener() {
@@ -251,7 +251,7 @@ public class CaseReportJPanel extends javax.swing.JPanel {
         });
         jPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(29, 14, 82, -1));
 
-        lblVictimInfo.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
+        lblVictimInfo.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         lblVictimInfo.setForeground(new java.awt.Color(61, 64, 91));
         lblVictimInfo.setText("Victim Information");
         jPanel1.add(lblVictimInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(272, 14, 342, 42));
@@ -259,7 +259,7 @@ public class CaseReportJPanel extends javax.swing.JPanel {
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 35, 770, 500));
 
         btnReqLawyer.setBackground(new java.awt.Color(129, 178, 154));
-        btnReqLawyer.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnReqLawyer.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         btnReqLawyer.setForeground(new java.awt.Color(61, 64, 91));
         btnReqLawyer.setText("Request Lawyer");
         btnReqLawyer.setBorderPainted(false);
@@ -279,7 +279,7 @@ public class CaseReportJPanel extends javax.swing.JPanel {
         add(btnReqLawyer, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 90, 170, 38));
 
         btnReqCounsellar.setBackground(new java.awt.Color(129, 178, 154));
-        btnReqCounsellar.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnReqCounsellar.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         btnReqCounsellar.setForeground(new java.awt.Color(61, 64, 91));
         btnReqCounsellar.setText("Request Counsellar");
         btnReqCounsellar.setBorderPainted(false);
@@ -299,7 +299,7 @@ public class CaseReportJPanel extends javax.swing.JPanel {
         add(btnReqCounsellar, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 370, 170, 41));
 
         btnReqDoc.setBackground(new java.awt.Color(129, 178, 154));
-        btnReqDoc.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnReqDoc.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         btnReqDoc.setForeground(new java.awt.Color(61, 64, 91));
         btnReqDoc.setText("Request Doctor");
         btnReqDoc.setBorderPainted(false);
@@ -319,7 +319,7 @@ public class CaseReportJPanel extends javax.swing.JPanel {
         add(btnReqDoc, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 180, 170, 41));
 
         btnReqPsych.setBackground(new java.awt.Color(129, 178, 154));
-        btnReqPsych.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnReqPsych.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         btnReqPsych.setForeground(new java.awt.Color(61, 64, 91));
         btnReqPsych.setText("Psychiatrist");
         btnReqPsych.setBorderPainted(false);
@@ -339,7 +339,7 @@ public class CaseReportJPanel extends javax.swing.JPanel {
         add(btnReqPsych, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 280, 170, 38));
 
         btnReqCaretaker.setBackground(new java.awt.Color(129, 178, 154));
-        btnReqCaretaker.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnReqCaretaker.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         btnReqCaretaker.setForeground(new java.awt.Color(61, 64, 91));
         btnReqCaretaker.setText("Request Caretaker");
         btnReqCaretaker.setBorderPainted(false);

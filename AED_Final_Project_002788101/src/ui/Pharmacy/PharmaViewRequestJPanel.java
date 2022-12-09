@@ -54,8 +54,10 @@ public class PharmaViewRequestJPanel extends javax.swing.JPanel {
         btnAssignRequest = new javax.swing.JButton();
         btnView = new javax.swing.JButton();
 
-        lblHeader.setBackground(new java.awt.Color(129, 178, 154));
-        lblHeader.setFont(new java.awt.Font("Monaco", 1, 24)); // NOI18N
+        setBackground(new java.awt.Color(255, 255, 255));
+
+        lblHeader.setBackground(new java.awt.Color(255, 255, 255));
+        lblHeader.setFont(new java.awt.Font("Songti SC", 1, 24)); // NOI18N
         lblHeader.setForeground(new java.awt.Color(61, 64, 91));
         lblHeader.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblHeader.setText("Manage Requests");
@@ -81,9 +83,7 @@ public class PharmaViewRequestJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblPharmaViewRequest);
 
-        btnAssignRequest.setBackground(new java.awt.Color(129, 178, 154));
-        btnAssignRequest.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        btnAssignRequest.setForeground(new java.awt.Color(61, 64, 58));
+        btnAssignRequest.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         btnAssignRequest.setText("Assign Request");
         btnAssignRequest.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -99,8 +99,7 @@ public class PharmaViewRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnView.setBackground(new java.awt.Color(129, 178, 154));
-        btnView.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnView.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         btnView.setForeground(new java.awt.Color(61, 64, 58));
         btnView.setText("View");
         btnView.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -123,25 +122,23 @@ public class PharmaViewRequestJPanel extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(lblHeader, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(166, 166, 166)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(261, 261, 261)
-                        .addComponent(btnAssignRequest)
-                        .addGap(43, 43, 43)
-                        .addComponent(btnView, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addGap(154, 154, 154))
+                .addGap(261, 261, 261)
+                .addComponent(btnAssignRequest)
+                .addGap(43, 43, 43)
+                .addComponent(btnView, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(156, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 473, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(115, 115, 115))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(59, 59, 59)
+                .addGap(34, 34, 34)
                 .addComponent(lblHeader, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 156, Short.MAX_VALUE)
+                .addGap(31, 31, 31)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 179, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAssignRequest)

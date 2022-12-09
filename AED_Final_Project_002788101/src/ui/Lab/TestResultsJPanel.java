@@ -71,7 +71,7 @@ public class TestResultsJPanel extends javax.swing.JPanel {
         jLabel5 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
 
-        jPanel1.setBackground(new java.awt.Color(244, 241, 222));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(61, 64, 91));

@@ -54,7 +54,7 @@ public class CaseVolunteerPJPanel extends javax.swing.JPanel {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jCasePanel.setBackground(new java.awt.Color(244, 241, 222));
+        jCasePanel.setBackground(new java.awt.Color(255, 255, 255));
         jCasePanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         tblCaseReq.setModel(new javax.swing.table.DefaultTableModel(
@@ -81,7 +81,7 @@ public class CaseVolunteerPJPanel extends javax.swing.JPanel {
         jCasePanel.add(jCaseVolunteerPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 580, 100));
 
         btnViewReport.setBackground(new java.awt.Color(129, 178, 154));
-        btnViewReport.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnViewReport.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         btnViewReport.setForeground(new java.awt.Color(61, 64, 91));
         btnViewReport.setText("View Report");
         btnViewReport.setBorderPainted(false);
@@ -97,7 +97,7 @@ public class CaseVolunteerPJPanel extends javax.swing.JPanel {
         });
         jCasePanel.add(btnViewReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 240, 126, 44));
 
-        lblCaseReq.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
+        lblCaseReq.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         lblCaseReq.setForeground(new java.awt.Color(61, 64, 91));
         lblCaseReq.setText("Case Requests");
         jCasePanel.add(lblCaseReq, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 40, -1, -1));

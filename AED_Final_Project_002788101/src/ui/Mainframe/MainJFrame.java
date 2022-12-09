@@ -52,13 +52,13 @@ public class MainJFrame extends javax.swing.JFrame {
         setBackground(new java.awt.Color(255, 255, 255));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        TopPanel.setBackground(new java.awt.Color(129, 178, 154));
+        TopPanel.setBackground(new java.awt.Color(0, 204, 204));
         TopPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        NamejLabel.setFont(new java.awt.Font("Monaco", 1, 48)); // NOI18N
+        NamejLabel.setFont(new java.awt.Font("Songti SC", 1, 48)); // NOI18N
         NamejLabel.setForeground(new java.awt.Color(61, 64, 91));
-        NamejLabel.setText("Women Abuse Reporting System");
-        TopPanel.add(NamejLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 10, 780, 80));
+        NamejLabel.setText(" Abuse Reporting System");
+        TopPanel.add(NamejLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 10, 780, 80));
 
         getContentPane().add(TopPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 4, 1410, 110));
 
@@ -69,7 +69,7 @@ public class MainJFrame extends javax.swing.JFrame {
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -230, 1070, 830));
 
         SignupjButton.setBackground(new java.awt.Color(129, 178, 154));
-        SignupjButton.setFont(new java.awt.Font("Monaco", 1, 24)); // NOI18N
+        SignupjButton.setFont(new java.awt.Font("Songti SC", 1, 24)); // NOI18N
         SignupjButton.setForeground(new java.awt.Color(61, 64, 91));
         SignupjButton.setText("Sign Up");
         SignupjButton.setBorderPainted(false);
@@ -82,7 +82,7 @@ public class MainJFrame extends javax.swing.JFrame {
         jPanel1.add(SignupjButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 30, 140, -1));
 
         SigninjButton.setBackground(new java.awt.Color(129, 178, 154));
-        SigninjButton.setFont(new java.awt.Font("Monaco", 1, 24)); // NOI18N
+        SigninjButton.setFont(new java.awt.Font("Songti SC", 1, 24)); // NOI18N
         SigninjButton.setForeground(new java.awt.Color(61, 64, 91));
         SigninjButton.setText("Sign In");
         SigninjButton.setBorderPainted(false);
