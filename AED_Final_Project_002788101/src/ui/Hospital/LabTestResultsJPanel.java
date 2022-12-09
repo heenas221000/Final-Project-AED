@@ -5,7 +5,7 @@
  */
 package ui.Hospital;
 
-import ui.Lab.*;
+//import ui.Lab.*;
 import business.EcoSystem;
 import business.WorkQueue.LabAssistantWorkRequest;
 import business.WorkQueue.LabTest;
@@ -20,12 +20,9 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
-<<<<<<< Updated upstream
  * @author heenashah
-=======
- * @author shah0
->>>>>>> Stashed changes
  */
+
 public class LabTestResultsJPanel extends javax.swing.JPanel {
 
     /**
