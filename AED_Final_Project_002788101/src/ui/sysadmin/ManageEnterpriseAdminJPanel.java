@@ -9,7 +9,7 @@ import java.awt.Color;
 
 /**
  *
- * @author shah0
+ * @author heenashah
  */
 import business.EcoSystem;
 import business.Employee.Employee;
@@ -195,7 +195,6 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
 
         comboBoxSelectNetwork.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         comboBoxSelectNetwork.addActionListener(new java.awt.event.ActionListener() {
-<<<<<<< Updated upstream
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 comboBoxSelectNetworkActionPerformed(evt);
             }
@@ -223,35 +222,6 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
                 btnDeleteActionPerformed(evt);
             }
         });
-=======
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                comboBoxSelectNetworkActionPerformed(evt);
-            }
-        });
-        add(comboBoxSelectNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 130, 130, -1));
-
-        comboBoxSelectEnterprise.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        add(comboBoxSelectEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 170, 130, -1));
-
-        btnDelete.setBackground(new java.awt.Color(51, 102, 255));
-        btnDelete.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        btnDelete.setForeground(new java.awt.Color(255, 255, 255));
-        btnDelete.setText("Delete");
-        btnDelete.setBorderPainted(false);
-        btnDelete.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnDeleteMouseExited(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnDeleteMouseEntered(evt);
-            }
-        });
-        btnDelete.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDeleteActionPerformed(evt);
-            }
-        });
->>>>>>> Stashed changes
         add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 320, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
