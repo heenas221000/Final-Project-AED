@@ -237,7 +237,7 @@ public class CaretakerRequestJPanel extends javax.swing.JPanel {
                 return;
             }
 
-            CaretakerWorkRequest request = (CaretakerWorkRequest)tblCaretakerManageRequest.getValueAt(selectedRow, 2);
+            WorkRequest request = (CaretakerWorkRequest)tblCaretakerManageRequest.getValueAt(selectedRow, 2);
 
             if (request.getReceiver()!=userAccount){
                 JOptionPane.showMessageDialog(this, "You cannot view the report of this case. Access Denied.");
