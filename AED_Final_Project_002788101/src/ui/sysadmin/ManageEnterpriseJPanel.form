@@ -3,7 +3,7 @@
 <Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
   <Properties>
     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+      <Color blue="ff" green="cc" red="cc" type="rgb"/>
     </Property>
   </Properties>
   <AuxValues>
@@ -33,6 +33,9 @@
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="22" green="7e" red="e6" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="66" red="66" type="rgb"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="Manage Enterprises"/>
@@ -95,6 +98,9 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Monaco" size="14" style="1"/>
         </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="66" red="66" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Enterprise Type:"/>
       </Properties>
       <Constraints>
@@ -108,6 +114,9 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Monaco" size="14" style="1"/>
         </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="66" red="66" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Network:"/>
       </Properties>
       <Constraints>
@@ -119,13 +128,20 @@
     <Component class="javax.swing.JButton" name="btnSubmit">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+<<<<<<< Updated upstream
           <Color blue="ff" green="66" red="33" type="rgb"/>
+=======
+          <Color blue="33" green="ff" red="cc" type="rgb"/>
+>>>>>>> Stashed changes
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Monaco" size="14" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="66" red="66" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Submit"/>
         <Property name="borderPainted" type="boolean" value="false"/>
@@ -137,7 +153,11 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+<<<<<<< Updated upstream
           <AbsoluteConstraints x="6" y="258" width="120" height="-1"/>
+=======
+          <AbsoluteConstraints x="50" y="280" width="100" height="-1"/>
+>>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>
@@ -145,6 +165,9 @@
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Monaco" size="14" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="66" red="66" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Name:"/>
       </Properties>
@@ -157,7 +180,7 @@
     <Component class="javax.swing.JTextField" name="txtEnterpriseName">
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="200" y="200" width="120" height="-1"/>
+          <AbsoluteConstraints x="180" y="220" width="120" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -177,7 +200,7 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="200" y="120" width="120" height="-1"/>
+          <AbsoluteConstraints x="180" y="120" width="120" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -197,20 +220,27 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="200" y="160" width="120" height="-1"/>
+          <AbsoluteConstraints x="180" y="170" width="120" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JButton" name="btnDelete">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+<<<<<<< Updated upstream
           <Color blue="ff" green="66" red="33" type="rgb"/>
+=======
+          <Color blue="33" green="ff" red="cc" type="rgb"/>
+>>>>>>> Stashed changes
         </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Monaco" size="14" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="66" red="66" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Delete"/>
         <Property name="borderPainted" type="boolean" value="false"/>
@@ -222,7 +252,11 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+<<<<<<< Updated upstream
           <AbsoluteConstraints x="180" y="260" width="-1" height="-1"/>
+=======
+          <AbsoluteConstraints x="190" y="280" width="110" height="-1"/>
+>>>>>>> Stashed changes
         </Constraint>
       </Constraints>
     </Component>
