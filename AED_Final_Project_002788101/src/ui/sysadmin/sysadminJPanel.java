@@ -54,7 +54,7 @@ public class sysadminJPanel extends javax.swing.JPanel {
 
         jSplitPane1.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
-        jPanel1.setBackground(new java.awt.Color(0, 204, 204));
+        jPanel1.setBackground(new java.awt.Color(153, 204, 255));
         jPanel1.setToolTipText("");
         jPanel1.setInheritsPopupMenu(true);
 

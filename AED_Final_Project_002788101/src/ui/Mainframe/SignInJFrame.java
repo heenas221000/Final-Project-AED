@@ -55,6 +55,7 @@ public class SignInJFrame extends javax.swing.JFrame {
         passwordField = new javax.swing.JPasswordField();
         loginJButton = new javax.swing.JButton();
         logoutJButton = new javax.swing.JButton();
+        btn_SignUp = new javax.swing.JButton();
         container = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
@@ -113,6 +114,14 @@ public class SignInJFrame extends javax.swing.JFrame {
             }
         });
         jPanel1.add(logoutJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, 130, -1));
+
+        btn_SignUp.setText("Back");
+        btn_SignUp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_SignUpActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btn_SignUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 430, -1, -1));
 
         jSplitPane1.setLeftComponent(jPanel1);
 
@@ -241,6 +250,13 @@ public class SignInJFrame extends javax.swing.JFrame {
         engi.setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void btn_SignUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_SignUpActionPerformed
+        // TODO add your handling code here:
+        dB4OUtil.storeSystem(system);
+            MainJFrame s = new MainJFrame();
+            s.setVisible(true);
+    }//GEN-LAST:event_btn_SignUpActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -279,6 +295,7 @@ public class SignInJFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel PasswordjLabel;
     private javax.swing.JLabel UsernamejLabel;
+    private javax.swing.JButton btn_SignUp;
     private javax.swing.JPanel container;
     private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
