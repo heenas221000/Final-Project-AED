@@ -1,6 +1,7 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package business.WorkQueue;
 
@@ -11,6 +12,13 @@ package business.WorkQueue;
 public class Medicines {
      private String medicine;
     private int amount;
+
+    public Medicines(String med, int qty) {
+        this.medicine = med;
+        this.amount = qty;
+    }
+    
+    
 
     public String getMedicine() {
         return medicine;
@@ -27,8 +35,10 @@ public class Medicines {
     public void setAmount(int amount) {
         this.amount = amount;
     }
+
     
-     @Override
+    
+    @Override
     public String toString() {
         return this.getMedicine();
     }

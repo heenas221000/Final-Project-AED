@@ -1,34 +1,35 @@
+
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package business.WorkQueue;
 
+import business.Encounter.EncounterPsychiatrist;
 import java.util.ArrayList;
 
 /**
  *
  * @author hetal
  */
-public class PsychiatristWorkRequest {
-    
-         DrWorkRequest DoctorWorkRequest;
-    private ArrayList<Medicines> medicines = new ArrayList<Medicines>();
+public class PsychiatristWorkRequest extends WorkRequest {
+     CaseReporterWorkRequest caseReporterWorkRequest;
+    ArrayList<EncounterPsychiatrist> HPEncounter = new ArrayList<EncounterPsychiatrist>();
 
-    public DrWorkRequest getDoctorWorkRequest() {
-        return DoctorWorkRequest;
+    public CaseReporterWorkRequest getCaseReporterWorkRequest() {
+        return caseReporterWorkRequest;
     }
 
-    public void setDoctorWorkRequest(DrWorkRequest DoctorWorkRequest) {
-        this.DoctorWorkRequest = DoctorWorkRequest;
+    public void setCaseReporterWorkRequest(CaseReporterWorkRequest caseReporterWorkRequest) {
+        this.caseReporterWorkRequest = caseReporterWorkRequest;
     }
 
-    public ArrayList<Medicines> getMedicines() {
-        return medicines;
+    public ArrayList<EncounterPsychiatrist> getHPEncounter() {
+        return HPEncounter;
     }
 
-    public void setMedicines(ArrayList<Medicines> medicines) {
-        this.medicines = medicines;
+    public void setHPEncounter(ArrayList<EncounterPsychiatrist> HPEncounter) {
+        this.HPEncounter = HPEncounter;
     }
-    
 }

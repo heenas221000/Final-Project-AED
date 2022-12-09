@@ -9,11 +9,11 @@ import java.util.ArrayList;
 
 /**
  *
- * @author hetal
+ * @author dhetal
+
  */
-public class CaretakerWorkRequest {
-    
-       CaseReporterWorkRequest CaseReporterWorkRequest;
+public class CaretakerWorkRequest extends WorkRequest {
+      CaseReporterWorkRequest CaseReporterWorkRequest;
     ArrayList<EncounterCaretaker> CaretakerEncounter = new ArrayList<EncounterCaretaker>();
 
     public CaseReporterWorkRequest getCaseReporterWorkRequest() {
