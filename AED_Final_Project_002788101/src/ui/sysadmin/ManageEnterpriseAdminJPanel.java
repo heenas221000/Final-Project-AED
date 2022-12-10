@@ -121,8 +121,8 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblManageEnterpriseAdmins.setBackground(new java.awt.Color(255, 255, 255));
-        lblManageEnterpriseAdmins.setFont(new java.awt.Font("Monaco", 1, 24)); // NOI18N
-        lblManageEnterpriseAdmins.setForeground(new java.awt.Color(0, 51, 204));
+        lblManageEnterpriseAdmins.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N
+        lblManageEnterpriseAdmins.setForeground(new java.awt.Color(0, 0, 204));
         lblManageEnterpriseAdmins.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblManageEnterpriseAdmins.setText("MANAGE ENTERPRISE ADMINSTRATORS");
         add(lblManageEnterpriseAdmins, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 50, 687, 40));
@@ -150,30 +150,30 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 130, 490, 170));
 
-        lblSelectEnterprise.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblSelectEnterprise.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         lblSelectEnterprise.setForeground(new java.awt.Color(0, 51, 204));
         lblSelectEnterprise.setText("ENTERPRISE");
         add(lblSelectEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 51, 204));
         jLabel4.setText("NAME");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 210, 71, -1));
         add(txt_Admin, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 210, 130, -1));
 
-        jLabel5.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 51, 204));
         jLabel5.setText("USERNAME");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, 110, 26));
         add(txt_Username, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 250, 130, -1));
 
-        jLabel6.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(0, 51, 204));
         jLabel6.setText("PASSWORD");
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, 110, -1));
 
         bt_Submit.setBackground(new java.awt.Color(0, 0, 204));
-        bt_Submit.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        bt_Submit.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         bt_Submit.setForeground(new java.awt.Color(255, 255, 255));
         bt_Submit.setText("SUBMIT");
         bt_Submit.setBorderPainted(false);
@@ -205,7 +205,7 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
         add(cb_SelectEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 170, 130, -1));
 
         bt_Delete.setBackground(new java.awt.Color(0, 0, 204));
-        bt_Delete.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        bt_Delete.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         bt_Delete.setForeground(new java.awt.Color(255, 255, 255));
         bt_Delete.setText("DELETE");
         bt_Delete.setBorderPainted(false);
@@ -224,7 +224,7 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
         });
         add(bt_Delete, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 380, -1, 30));
 
-        lblNetwork.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblNetwork.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         lblNetwork.setForeground(new java.awt.Color(0, 51, 204));
         lblNetwork.setText("NETWORK");
         add(lblNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 130, -1, -1));

@@ -67,10 +67,10 @@ public class SignInJFrame extends javax.swing.JFrame {
         jPanel1.setMinimumSize(new java.awt.Dimension(200, 100));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        UsernamejLabel.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        UsernamejLabel.setForeground(new java.awt.Color(61, 64, 91));
+        UsernamejLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        UsernamejLabel.setForeground(new java.awt.Color(0, 0, 204));
         UsernamejLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        UsernamejLabel.setText("UserName");
+        UsernamejLabel.setText("USERNAME");
         jPanel1.add(UsernamejLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 140, 22));
 
         userNameJTextField.addActionListener(new java.awt.event.ActionListener() {
@@ -80,10 +80,10 @@ public class SignInJFrame extends javax.swing.JFrame {
         });
         jPanel1.add(userNameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 78, 140, 30));
 
-        PasswordjLabel.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        PasswordjLabel.setForeground(new java.awt.Color(61, 64, 91));
+        PasswordjLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        PasswordjLabel.setForeground(new java.awt.Color(0, 0, 204));
         PasswordjLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PasswordjLabel.setText("Password");
+        PasswordjLabel.setText("PASSWORD");
         jPanel1.add(PasswordjLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 130, 21));
 
         passwordField.addActionListener(new java.awt.event.ActionListener() {
@@ -93,35 +93,38 @@ public class SignInJFrame extends javax.swing.JFrame {
         });
         jPanel1.add(passwordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 140, 30));
 
-        loginJButton.setBackground(new java.awt.Color(129, 178, 154));
-        loginJButton.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        loginJButton.setForeground(new java.awt.Color(61, 64, 91));
-        loginJButton.setText("Sign In");
+        loginJButton.setBackground(new java.awt.Color(0, 0, 204));
+        loginJButton.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        loginJButton.setForeground(new java.awt.Color(255, 255, 255));
+        loginJButton.setText("SIGN IN");
         loginJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 loginJButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(loginJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 130, -1));
+        jPanel1.add(loginJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 110, 30));
 
-        logoutJButton.setBackground(new java.awt.Color(129, 178, 154));
-        logoutJButton.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        logoutJButton.setForeground(new java.awt.Color(61, 64, 91));
-        logoutJButton.setText("Sign Out");
+        logoutJButton.setBackground(new java.awt.Color(0, 0, 204));
+        logoutJButton.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        logoutJButton.setForeground(new java.awt.Color(255, 255, 255));
+        logoutJButton.setText("SIGN OUT");
         logoutJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 logoutJButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(logoutJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, 130, -1));
+        jPanel1.add(logoutJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, 110, 30));
 
+        btn_SignUp.setBackground(new java.awt.Color(0, 0, 204));
+        btn_SignUp.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btn_SignUp.setForeground(new java.awt.Color(255, 255, 255));
         btn_SignUp.setText("BACK");
         btn_SignUp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_SignUpActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_SignUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 430, -1, -1));
+        jPanel1.add(btn_SignUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, 110, 30));
 
         jSplitPane1.setLeftComponent(jPanel1);
 
@@ -129,7 +132,7 @@ public class SignInJFrame extends javax.swing.JFrame {
         container.setMinimumSize(new java.awt.Dimension(200, 100));
         container.setLayout(new java.awt.CardLayout());
 
-        jButton1.setBackground(new java.awt.Color(204, 204, 255));
+        jButton1.setBackground(new java.awt.Color(153, 204, 255));
         jButton1.setFont(new java.awt.Font("Monaco", 1, 36)); // NOI18N
         jButton1.setForeground(new java.awt.Color(61, 64, 91));
         jButton1.setText("Women Abuse Help");
