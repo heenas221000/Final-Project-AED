@@ -68,13 +68,13 @@ public class CaseReportLJPanel extends javax.swing.JPanel {
         lblDate = new javax.swing.JLabel();
         lblSuspectType = new javax.swing.JLabel();
         lblSuspectName = new javax.swing.JLabel();
-        txtName = new javax.swing.JTextField();
-        txtSuspectName = new javax.swing.JTextField();
-        txtlocation = new javax.swing.JTextField();
-        txtRelationwithSurvivor = new javax.swing.JTextField();
-        txtTypeofAssault = new javax.swing.JTextField();
-        txtDate = new javax.swing.JTextField();
-        txtSuspectType = new javax.swing.JTextField();
+        txt_Name = new javax.swing.JTextField();
+        txt_SusName = new javax.swing.JTextField();
+        txt_location = new javax.swing.JTextField();
+        txt_relation = new javax.swing.JTextField();
+        txt_AssaultType = new javax.swing.JTextField();
+        txt_date = new javax.swing.JTextField();
+        txt_SuspectType = new javax.swing.JTextField();
         bt_SendInvite = new javax.swing.JButton();
         bt_Back = new javax.swing.JButton();
 
@@ -106,7 +106,7 @@ public class CaseReportLJPanel extends javax.swing.JPanel {
         jPanel1.add(lblRelationwithSurvivor, gridBagConstraints);
 
         lblTypeofAssault.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        lblTypeofAssault.setText("TYPE OF SEXUAL ASSAULT");
+        lblTypeofAssault.setText("TYPE OF ASSAULT");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 5;
@@ -157,9 +157,9 @@ public class CaseReportLJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(15, 42, 0, 0);
         jPanel1.add(lblSuspectName, gridBagConstraints);
 
-        txtName.addActionListener(new java.awt.event.ActionListener() {
+        txt_Name.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNameActionPerformed(evt);
+                txt_NameActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -169,7 +169,7 @@ public class CaseReportLJPanel extends javax.swing.JPanel {
         gridBagConstraints.ipadx = 154;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(34, 0, 0, 0);
-        jPanel1.add(txtName, gridBagConstraints);
+        jPanel1.add(txt_Name, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 9;
         gridBagConstraints.gridy = 15;
@@ -178,7 +178,7 @@ public class CaseReportLJPanel extends javax.swing.JPanel {
         gridBagConstraints.ipadx = 160;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(12, 0, 0, 82);
-        jPanel1.add(txtSuspectName, gridBagConstraints);
+        jPanel1.add(txt_SusName, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 9;
         gridBagConstraints.gridy = 7;
@@ -186,11 +186,11 @@ public class CaseReportLJPanel extends javax.swing.JPanel {
         gridBagConstraints.ipadx = 154;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(34, 0, 0, 0);
-        jPanel1.add(txtlocation, gridBagConstraints);
+        jPanel1.add(txt_location, gridBagConstraints);
 
-        txtRelationwithSurvivor.addActionListener(new java.awt.event.ActionListener() {
+        txt_relation.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtRelationwithSurvivorActionPerformed(evt);
+                txt_relationActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -201,11 +201,11 @@ public class CaseReportLJPanel extends javax.swing.JPanel {
         gridBagConstraints.ipadx = 154;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(31, 2, 0, 0);
-        jPanel1.add(txtRelationwithSurvivor, gridBagConstraints);
+        jPanel1.add(txt_relation, gridBagConstraints);
 
-        txtTypeofAssault.addActionListener(new java.awt.event.ActionListener() {
+        txt_AssaultType.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtTypeofAssaultActionPerformed(evt);
+                txt_AssaultTypeActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -215,7 +215,7 @@ public class CaseReportLJPanel extends javax.swing.JPanel {
         gridBagConstraints.ipadx = 154;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(34, 0, 0, 0);
-        jPanel1.add(txtTypeofAssault, gridBagConstraints);
+        jPanel1.add(txt_AssaultType, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 9;
         gridBagConstraints.gridy = 9;
@@ -223,7 +223,7 @@ public class CaseReportLJPanel extends javax.swing.JPanel {
         gridBagConstraints.ipadx = 154;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(11, 0, 0, 0);
-        jPanel1.add(txtDate, gridBagConstraints);
+        jPanel1.add(txt_date, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 9;
         gridBagConstraints.gridy = 13;
@@ -232,7 +232,7 @@ public class CaseReportLJPanel extends javax.swing.JPanel {
         gridBagConstraints.ipadx = 160;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(16, 0, 0, 82);
-        jPanel1.add(txtSuspectType, gridBagConstraints);
+        jPanel1.add(txt_SuspectType, gridBagConstraints);
 
         bt_SendInvite.setBackground(new java.awt.Color(0, 0, 204));
         bt_SendInvite.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
@@ -298,17 +298,17 @@ public class CaseReportLJPanel extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameActionPerformed
+    private void txt_NameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_NameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtNameActionPerformed
+    }//GEN-LAST:event_txt_NameActionPerformed
 
-    private void txtRelationwithSurvivorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRelationwithSurvivorActionPerformed
+    private void txt_relationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_relationActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtRelationwithSurvivorActionPerformed
+    }//GEN-LAST:event_txt_relationActionPerformed
 
-    private void txtTypeofAssaultActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTypeofAssaultActionPerformed
+    private void txt_AssaultTypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_AssaultTypeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtTypeofAssaultActionPerformed
+    }//GEN-LAST:event_txt_AssaultTypeActionPerformed
 
     private void bt_SendInviteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_SendInviteMouseEntered
         bt_SendInvite.setForeground(new Color(0,128,128));        // TODO add your handling code here:
@@ -388,23 +388,23 @@ public class CaseReportLJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel lblSuspectType;
     private javax.swing.JLabel lblTypeofAssault;
     private javax.swing.JLabel lbllocation;
-    private javax.swing.JTextField txtDate;
-    private javax.swing.JTextField txtName;
-    private javax.swing.JTextField txtRelationwithSurvivor;
-    private javax.swing.JTextField txtSuspectName;
-    private javax.swing.JTextField txtSuspectType;
-    private javax.swing.JTextField txtTypeofAssault;
-    private javax.swing.JTextField txtlocation;
+    private javax.swing.JTextField txt_AssaultType;
+    private javax.swing.JTextField txt_Name;
+    private javax.swing.JTextField txt_SusName;
+    private javax.swing.JTextField txt_SuspectType;
+    private javax.swing.JTextField txt_date;
+    private javax.swing.JTextField txt_location;
+    private javax.swing.JTextField txt_relation;
     // End of variables declaration//GEN-END:variables
 
 private void PopulateReport() {
-        txtName.setText(request.getChildName());
-        txtRelationwithSurvivor.setText(request.getRelation());
-        txtTypeofAssault.setText(request.getAssaultType());
-        txtlocation.setText(request.getLocation());
-        txtDate.setText(request.getDoi().toString());
-        txtSuspectType.setText(request.getSuspecttype());
-        txtSuspectName.setText(request.getNameofsuspect());
+        txt_Name.setText(request.getChildName());
+        txt_relation.setText(request.getRelation());
+        txt_AssaultType.setText(request.getAssaultType());
+        txt_location.setText(request.getLocation());
+        txt_date.setText(request.getDoi().toString());
+        txt_SuspectType.setText(request.getSuspecttype());
+        txt_SusName.setText(request.getNameofsuspect());
         
         
     }

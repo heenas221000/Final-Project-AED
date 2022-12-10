@@ -71,11 +71,11 @@
                                   <EmptySpace max="32767" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
-                                  <Component id="jTextField1" min="-2" pref="161" max="-2" attributes="0"/>
+                                  <Component id="txt_Name" min="-2" pref="161" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jTextField5" min="-2" pref="140" max="-2" attributes="0"/>
+                                  <Component id="txt_email" min="-2" pref="140" max="-2" attributes="0"/>
                                   <EmptySpace min="0" pref="417" max="32767" attributes="0"/>
                               </Group>
                           </Group>
@@ -85,7 +85,7 @@
                               <Group type="102" attributes="0">
                                   <Component id="typejLabel" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jComboBox1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cb_Assault" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Component id="relationjLabel" min="-2" max="-2" attributes="0"/>
                               <Group type="102" alignment="0" attributes="0">
@@ -95,8 +95,8 @@
                                   </Group>
                                   <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="jTextField4" max="32767" attributes="0"/>
-                                      <Component id="jDateChooser1" pref="240" max="32767" attributes="0"/>
+                                      <Component id="txt_location" max="32767" attributes="0"/>
+                                      <Component id="DateChooser" pref="240" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
@@ -116,14 +116,14 @@
                                       </Group>
                                   </Group>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jTextField3" min="-2" pref="249" max="-2" attributes="0"/>
+                                      <Component id="txt_details" min="-2" pref="249" max="-2" attributes="0"/>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="knownRadioButton" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Component id="unknownRadioButton" min="-2" max="-2" attributes="0"/>
                                       </Group>
-                                      <Component id="jTextField2" alignment="0" min="-2" pref="249" max="-2" attributes="0"/>
-                                      <Component id="ReportjButton" alignment="0" min="-2" pref="109" max="-2" attributes="0"/>
+                                      <Component id="txt_Suspect" alignment="0" min="-2" pref="249" max="-2" attributes="0"/>
+                                      <Component id="bt_Report" alignment="0" min="-2" pref="109" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -146,9 +146,9 @@
                   <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="namesurvivorjLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txt_Name" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txt_email" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                   <Component id="relationjLabel" min="-2" max="-2" attributes="0"/>
@@ -162,21 +162,21 @@
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="typejLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="cb_Assault" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jTextField4" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="txt_location" alignment="1" min="-2" max="-2" attributes="0"/>
                       <Component id="locationjLabel" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Component id="timejLabel" min="-2" pref="14" max="-2" attributes="0"/>
-                      <Component id="jDateChooser1" min="-2" max="-2" attributes="0"/>
+                      <Component id="DateChooser" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jTextField3" alignment="3" min="-2" pref="51" max="-2" attributes="0"/>
+                      <Component id="txt_details" alignment="3" min="-2" pref="51" max="-2" attributes="0"/>
                       <Component id="detailsjLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="48" max="32767" attributes="0"/>
@@ -187,11 +187,11 @@
                   </Group>
                   <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txt_Suspect" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="namesuspectjLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                  <Component id="ReportjButton" min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="bt_Report" min="-2" pref="31" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -281,9 +281,9 @@
             <Property name="text" type="java.lang.String" value="Name of Suspect : "/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField1">
+        <Component class="javax.swing.JTextField" name="txt_Name">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_NameActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="friendRadioButton">
@@ -305,7 +305,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="parentRadioButtonActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField2">
+        <Component class="javax.swing.JTextField" name="txt_Suspect">
         </Component>
         <Component class="javax.swing.JRadioButton" name="knownRadioButton">
           <Properties>
@@ -326,9 +326,9 @@
             <Property name="text" type="java.lang.String" value="Unknown"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField3">
+        <Component class="javax.swing.JTextField" name="txt_details">
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField4">
+        <Component class="javax.swing.JTextField" name="txt_location">
         </Component>
         <Component class="javax.swing.JRadioButton" name="Colleagueradiobutton">
           <Properties>
@@ -346,9 +346,9 @@
             <Property name="text" type="java.lang.String" value="Other"/>
           </Properties>
         </Component>
-        <Component class="com.toedter.calendar.JDateChooser" name="jDateChooser1">
+        <Component class="com.toedter.calendar.JDateChooser" name="DateChooser">
         </Component>
-        <Component class="javax.swing.JButton" name="ReportjButton">
+        <Component class="javax.swing.JButton" name="bt_Report">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="33" green="0" red="ff" type="rgb"/>
@@ -359,10 +359,10 @@
             <Property name="text" type="java.lang.String" value="Report"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ReportjButtonActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bt_ReportActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JComboBox" name="jComboBox1">
+        <Component class="javax.swing.JComboBox" name="cb_Assault">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Monaco" size="14" style="1"/>
@@ -390,7 +390,7 @@
             <Property name="text" type="java.lang.String" value="Email:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField5">
+        <Component class="javax.swing.JTextField" name="txt_email">
         </Component>
       </SubComponents>
     </Container>
