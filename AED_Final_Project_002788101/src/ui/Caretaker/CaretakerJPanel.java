@@ -61,12 +61,13 @@ public class CaretakerJPanel extends javax.swing.JPanel {
 
         jSplitPane1.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
-        jPanel2.setBackground(new java.awt.Color(253, 235, 208));
+        jPanel2.setBackground(new java.awt.Color(153, 204, 255));
+        jPanel2.setForeground(new java.awt.Color(0, 0, 204));
         jPanel2.setLayout(new java.awt.GridBagLayout());
 
-        lblHeader.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        lblHeader.setForeground(new java.awt.Color(51, 102, 255));
-        lblHeader.setText("Welcome Caretaker");
+        lblHeader.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N
+        lblHeader.setForeground(new java.awt.Color(0, 0, 204));
+        lblHeader.setText("WELCOME CARETAKER");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -76,7 +77,7 @@ public class CaretakerJPanel extends javax.swing.JPanel {
 
         jSplitPane1.setTopComponent(jPanel2);
 
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setBackground(new java.awt.Color(204, 204, 255));
         jPanel3.setLayout(new java.awt.GridBagLayout());
         jSplitPane1.setRightComponent(jPanel3);
 
@@ -84,7 +85,7 @@ public class CaretakerJPanel extends javax.swing.JPanel {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 561, Short.MAX_VALUE)
+            .addComponent(jSplitPane1)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -95,7 +96,7 @@ public class CaretakerJPanel extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 561, Short.MAX_VALUE)
+            .addGap(0, 585, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
