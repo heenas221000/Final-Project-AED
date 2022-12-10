@@ -63,15 +63,16 @@ public class LabAssistantJPanel extends javax.swing.JPanel {
         jPanel2.setBackground(new java.awt.Color(153, 204, 255));
         jPanel2.setLayout(new java.awt.GridBagLayout());
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 204));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Welcome Lab Assistant");
+        jLabel1.setText("WELCOME LAB ASSISTANT");
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanel2.add(jLabel1, new java.awt.GridBagConstraints());
 
         jSplitPane1.setTopComponent(jPanel2);
 
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setBackground(new java.awt.Color(204, 204, 255));
         jPanel3.setLayout(new java.awt.GridBagLayout());
         jSplitPane1.setRightComponent(jPanel3);
 

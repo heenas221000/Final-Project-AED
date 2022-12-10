@@ -93,7 +93,7 @@ public class CaseReporterViewStatusJPanel extends javax.swing.JPanel {
         txtlPsychDate = new javax.swing.JLabel();
         txtPsych = new javax.swing.JLabel();
         txtPsychStatus = new javax.swing.JLabel();
-        btnCheckStatus = new javax.swing.JButton();
+        bt_CheckStatus = new javax.swing.JButton();
         lblStatus = new javax.swing.JLabel();
         lblCaretaker = new javax.swing.JLabel();
         txtCaretakerStatus = new javax.swing.JLabel();
@@ -183,25 +183,25 @@ public class CaseReporterViewStatusJPanel extends javax.swing.JPanel {
         jPanel2.add(txtPsych, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 266, 120, 30));
         jPanel2.add(txtPsychStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 320, 120, 30));
 
-        btnCheckStatus.setBackground(new java.awt.Color(0, 0, 204));
-        btnCheckStatus.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        btnCheckStatus.setForeground(new java.awt.Color(255, 255, 255));
-        btnCheckStatus.setText("CHECK STATUS");
-        btnCheckStatus.setBorderPainted(false);
-        btnCheckStatus.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_CheckStatus.setBackground(new java.awt.Color(0, 0, 204));
+        bt_CheckStatus.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_CheckStatus.setForeground(new java.awt.Color(255, 255, 255));
+        bt_CheckStatus.setText("CHECK STATUS");
+        bt_CheckStatus.setBorderPainted(false);
+        bt_CheckStatus.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnCheckStatusMouseEntered(evt);
+                bt_CheckStatusMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnCheckStatusMouseExited(evt);
+                bt_CheckStatusMouseExited(evt);
             }
         });
-        btnCheckStatus.addActionListener(new java.awt.event.ActionListener() {
+        bt_CheckStatus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCheckStatusActionPerformed(evt);
+                bt_CheckStatusActionPerformed(evt);
             }
         });
-        jPanel2.add(btnCheckStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(685, 70, -1, -1));
+        jPanel2.add(bt_CheckStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(685, 70, -1, -1));
 
         lblStatus.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         lblStatus.setForeground(new java.awt.Color(0, 0, 204));
@@ -222,21 +222,21 @@ public class CaseReporterViewStatusJPanel extends javax.swing.JPanel {
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -16, 1020, 590));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnCheckStatusMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCheckStatusMouseEntered
-        btnCheckStatus.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCheckStatusMouseEntered
+    private void bt_CheckStatusMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_CheckStatusMouseEntered
+        bt_CheckStatus.setForeground(new Color(0,128,128));        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_CheckStatusMouseEntered
 
-    private void btnCheckStatusMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCheckStatusMouseExited
-        btnCheckStatus.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCheckStatusMouseExited
+    private void bt_CheckStatusMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_CheckStatusMouseExited
+        bt_CheckStatus.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_CheckStatusMouseExited
 
-    private void btnCheckStatusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCheckStatusActionPerformed
+    private void bt_CheckStatusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_CheckStatusActionPerformed
         popStatusTable();
-    }//GEN-LAST:event_btnCheckStatusActionPerformed
+    }//GEN-LAST:event_bt_CheckStatusActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCheckStatus;
+    private javax.swing.JButton bt_CheckStatus;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
