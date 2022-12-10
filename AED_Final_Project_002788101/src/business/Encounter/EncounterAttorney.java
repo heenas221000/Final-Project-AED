@@ -8,7 +8,7 @@ package business.Encounter;
  *
  * @author hetal
  */
-public class EncounterLawyer {
+public class EncounterAttorney {
     private String encounter;
     private String name;
     private String minutes;

@@ -245,7 +245,7 @@ private void populateTable() {
          {
          
             row[0]=request.getDoctorWorkRequest().getReceiver();
-            row[1] = request.getDoctorWorkRequest().getCaseReporterWorkRequest().getChildName();
+            row[1] = request.getDoctorWorkRequest().getCaseReporterWorkRequest().getUserName();
             row[2] = request;
             if (request.getReceiver()==null){
                 row[3] = "Not Assigned";

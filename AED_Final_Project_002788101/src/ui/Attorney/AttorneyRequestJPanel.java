@@ -2,14 +2,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package ui.Lawyer;
+package ui.Attorney;
 
 import business.EcoSystem;
 import business.Network.Network;
 import business.Organization.Organization;
 import business.UserAccount.UserAccount;
 import business.WorkQueue.CaseReporterWorkRequest;
-import business.WorkQueue.LawyerWorkRequest;
+import business.WorkQueue.AttorneyWorkRequest;
 import business.WorkQueue.WorkRequest;
 import java.awt.CardLayout;
 import java.awt.Color;
@@ -28,19 +28,19 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author hetal
  */
-public class LawyerRequestJPanel extends javax.swing.JPanel {
+public class AttorneyRequestJPanel extends javax.swing.JPanel {
 
     /**
-     * Creates new form LawyerRequestJPanel
+     * Creates new form AttorneyRequestJPanel
      */
     JPanel userProcessContainer;
     EcoSystem system;
     UserAccount userAccount;
     Organization organization;
-    LawyerWorkRequest request;
+    AttorneyWorkRequest request;
     
     Network network;
-    public LawyerRequestJPanel(JPanel userProcessContainer, EcoSystem system, UserAccount userAccount,Organization organization,Network network) {
+    public AttorneyRequestJPanel(JPanel userProcessContainer, EcoSystem system, UserAccount userAccount,Organization organization,Network network) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.system = system;
@@ -60,6 +60,7 @@ public class LawyerRequestJPanel extends javax.swing.JPanel {
 
         lblHeader = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
+<<<<<<< Updated upstream:AED_Final_Project_002788101/src/ui/Lawyer/LawyerRequestJPanel.java
         tblLawyerManageRequest = new javax.swing.JTable();
         btnAssignRequest = new javax.swing.JButton();
         btnViewCaseReport = new javax.swing.JButton();
@@ -68,10 +69,27 @@ public class LawyerRequestJPanel extends javax.swing.JPanel {
 
         lblHeader.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
         lblHeader.setForeground(new java.awt.Color(51, 102, 255));
+=======
+        tb_AttorneyManageRequest = new javax.swing.JTable();
+        bt_AssignRequest = new javax.swing.JButton();
+        bt_ViewCase = new javax.swing.JButton();
+        bt_Encounter = new javax.swing.JButton();
+        bt_CaseComplete = new javax.swing.JButton();
+
+        setBackground(new java.awt.Color(153, 204, 255));
+
+        lblHeader.setBackground(new java.awt.Color(153, 204, 255));
+        lblHeader.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N
+        lblHeader.setForeground(new java.awt.Color(0, 0, 204));
+>>>>>>> Stashed changes:AED_Final_Project_002788101/src/ui/Attorney/AttorneyRequestJPanel.java
         lblHeader.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblHeader.setText("Manage Requests");
 
+<<<<<<< Updated upstream:AED_Final_Project_002788101/src/ui/Lawyer/LawyerRequestJPanel.java
         tblLawyerManageRequest.setModel(new javax.swing.table.DefaultTableModel(
+=======
+        tb_AttorneyManageRequest.setModel(new javax.swing.table.DefaultTableModel(
+>>>>>>> Stashed changes:AED_Final_Project_002788101/src/ui/Attorney/AttorneyRequestJPanel.java
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -90,7 +108,11 @@ public class LawyerRequestJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
+<<<<<<< Updated upstream:AED_Final_Project_002788101/src/ui/Lawyer/LawyerRequestJPanel.java
         jScrollPane1.setViewportView(tblLawyerManageRequest);
+=======
+        jScrollPane1.setViewportView(tb_AttorneyManageRequest);
+>>>>>>> Stashed changes:AED_Final_Project_002788101/src/ui/Attorney/AttorneyRequestJPanel.java
 
         btnAssignRequest.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
         btnAssignRequest.setText("Assign Request");
@@ -204,8 +226,13 @@ public class LawyerRequestJPanel extends javax.swing.JPanel {
 
     private void btnAssignRequestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAssignRequestActionPerformed
 
+<<<<<<< Updated upstream:AED_Final_Project_002788101/src/ui/Lawyer/LawyerRequestJPanel.java
         int selectedRow = tblLawyerManageRequest.getSelectedRow();
         WorkRequest request = (LawyerWorkRequest)tblLawyerManageRequest.getValueAt(selectedRow, 2);
+=======
+        int selectedRow = tb_AttorneyManageRequest.getSelectedRow();
+        WorkRequest request = (AttorneyWorkRequest)tb_AttorneyManageRequest.getValueAt(selectedRow, 2);
+>>>>>>> Stashed changes:AED_Final_Project_002788101/src/ui/Attorney/AttorneyRequestJPanel.java
         if (CheckOpenCases(userAccount) == 0){
             request.setReceiver(userAccount);
             request.setStatus("Accepted");
@@ -228,8 +255,13 @@ public class LawyerRequestJPanel extends javax.swing.JPanel {
 
     private void btnViewCaseReportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewCaseReportActionPerformed
 
+<<<<<<< Updated upstream:AED_Final_Project_002788101/src/ui/Lawyer/LawyerRequestJPanel.java
         int selectedRow = tblLawyerManageRequest.getSelectedRow();
         String sta=tblLawyerManageRequest.getValueAt(selectedRow, 2).toString();
+=======
+        int selectedRow = tb_AttorneyManageRequest.getSelectedRow();
+        String sta=tb_AttorneyManageRequest.getValueAt(selectedRow, 2).toString();
+>>>>>>> Stashed changes:AED_Final_Project_002788101/src/ui/Attorney/AttorneyRequestJPanel.java
         String status="Waiting";
         //        if(sta.equalsIgnoreCase(status))
         //        {
@@ -240,7 +272,11 @@ public class LawyerRequestJPanel extends javax.swing.JPanel {
                 return;
             }
 
+<<<<<<< Updated upstream:AED_Final_Project_002788101/src/ui/Lawyer/LawyerRequestJPanel.java
             LawyerWorkRequest request = (LawyerWorkRequest)tblLawyerManageRequest.getValueAt(selectedRow, 2);
+=======
+            AttorneyWorkRequest request = (AttorneyWorkRequest)tb_AttorneyManageRequest.getValueAt(selectedRow, 2);
+>>>>>>> Stashed changes:AED_Final_Project_002788101/src/ui/Attorney/AttorneyRequestJPanel.java
 
             if (request.getReceiver()!=userAccount){
                 JOptionPane.showMessageDialog(this, "You cannot view the report of this case. Access Denied.");
@@ -268,9 +304,15 @@ public class LawyerRequestJPanel extends javax.swing.JPanel {
 
     private void btnEncounterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEncounterActionPerformed
 
+<<<<<<< Updated upstream:AED_Final_Project_002788101/src/ui/Lawyer/LawyerRequestJPanel.java
         int selectedRow = tblLawyerManageRequest.getSelectedRow();
 
         String sta=tblLawyerManageRequest.getValueAt(selectedRow, 2).toString();
+=======
+        int selectedRow = tb_AttorneyManageRequest.getSelectedRow();
+
+        String sta=tb_AttorneyManageRequest.getValueAt(selectedRow, 2).toString();
+>>>>>>> Stashed changes:AED_Final_Project_002788101/src/ui/Attorney/AttorneyRequestJPanel.java
         String status="Waiting";
         //        if(sta.equalsIgnoreCase(status))
         //        {
@@ -280,13 +322,17 @@ public class LawyerRequestJPanel extends javax.swing.JPanel {
             if (selectedRow < 0){
                 return;
             }
+<<<<<<< Updated upstream:AED_Final_Project_002788101/src/ui/Lawyer/LawyerRequestJPanel.java
             LawyerWorkRequest request = (LawyerWorkRequest)tblLawyerManageRequest.getValueAt(selectedRow, 2);
+=======
+           AttorneyWorkRequest request = (AttorneyWorkRequest)tb_AttorneyManageRequest.getValueAt(selectedRow, 2);
+>>>>>>> Stashed changes:AED_Final_Project_002788101/src/ui/Attorney/AttorneyRequestJPanel.java
 
             if (request.getReceiver()!=userAccount){
                 JOptionPane.showMessageDialog(this, "You cannot view the report of this case. Access Denied.");
             }
             else{
-                LawyerEncounterJPanel lencounterJPanel = new LawyerEncounterJPanel(userProcessContainer,system,userAccount,network,organization,request);
+                AttorneyEncounterJPanel lencounterJPanel = new AttorneyEncounterJPanel(userProcessContainer,system,userAccount,network,organization,request);
                 userProcessContainer.add("caseReportJPanel", lencounterJPanel);
                 CardLayout layout = (CardLayout) userProcessContainer.getLayout();
                 layout.next(userProcessContainer);
@@ -303,11 +349,19 @@ public class LawyerRequestJPanel extends javax.swing.JPanel {
         btnCaseComplete.setForeground(Color.black);        // TODO add your handling code here:
     }//GEN-LAST:event_btnCaseCompleteMouseExited
 
+<<<<<<< Updated upstream:AED_Final_Project_002788101/src/ui/Lawyer/LawyerRequestJPanel.java
     private void btnCaseCompleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCaseCompleteActionPerformed
         int selectedRow = tblLawyerManageRequest.getSelectedRow();
 
         String sts="Waiting";
         String sta=tblLawyerManageRequest.getValueAt(selectedRow, 2).toString();
+=======
+    private void bt_CaseCompleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_CaseCompleteActionPerformed
+        int selectedRow = tb_AttorneyManageRequest.getSelectedRow();
+
+        String sts="Waiting";
+        String sta=tb_AttorneyManageRequest.getValueAt(selectedRow, 2).toString();
+>>>>>>> Stashed changes:AED_Final_Project_002788101/src/ui/Attorney/AttorneyRequestJPanel.java
         if(sts.equalsIgnoreCase(sta))
         {
             JOptionPane.showMessageDialog(null, "Access Denied");
@@ -317,7 +371,11 @@ public class LawyerRequestJPanel extends javax.swing.JPanel {
                 return;
             }
 
+<<<<<<< Updated upstream:AED_Final_Project_002788101/src/ui/Lawyer/LawyerRequestJPanel.java
             WorkRequest request = (LawyerWorkRequest)tblLawyerManageRequest.getValueAt(selectedRow, 2);
+=======
+            WorkRequest request = (AttorneyWorkRequest)tb_AttorneyManageRequest.getValueAt(selectedRow, 2);
+>>>>>>> Stashed changes:AED_Final_Project_002788101/src/ui/Attorney/AttorneyRequestJPanel.java
             request.setReceiver(userAccount);
             request.setStatus("Case Completed");
             populateTable();
@@ -325,14 +383,18 @@ public class LawyerRequestJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCaseCompleteActionPerformed
 private void populateTable() {
+<<<<<<< Updated upstream:AED_Final_Project_002788101/src/ui/Lawyer/LawyerRequestJPanel.java
         DefaultTableModel model= (DefaultTableModel) tblLawyerManageRequest.getModel();
+=======
+        DefaultTableModel model= (DefaultTableModel) tb_AttorneyManageRequest.getModel();
+>>>>>>> Stashed changes:AED_Final_Project_002788101/src/ui/Attorney/AttorneyRequestJPanel.java
         Object[] row=new Object[4];
         model.setRowCount(0);
         
-         for(LawyerWorkRequest request : organization.getWorkQueue().getLawyerworkRequestList())
+         for(AttorneyWorkRequest request : organization.getWorkQueue().getAttorneyworkRequestList())
          {
          
-            row[0]=request.getCaseReporterWorkRequest().getChildName();
+            row[0]=request.getCaseReporterWorkRequest().getUserName();
             row[1] = request.getCaseReporterWorkRequest().getDoi();
             row[2] = request;
             if (request.getReceiver()==null){
@@ -348,7 +410,7 @@ private void populateTable() {
     
     private int CheckOpenCases(UserAccount userAccount) {
         int a = 0;
-        for(LawyerWorkRequest request : organization.getWorkQueue().getLawyerworkRequestList())
+        for(AttorneyWorkRequest request : organization.getWorkQueue().getAttorneyworkRequestList())
         {
         
           if (request.getReceiver()==userAccount){
@@ -367,6 +429,10 @@ private void populateTable() {
     private javax.swing.JButton btnViewCaseReport;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblHeader;
+<<<<<<< Updated upstream:AED_Final_Project_002788101/src/ui/Lawyer/LawyerRequestJPanel.java
     private javax.swing.JTable tblLawyerManageRequest;
+=======
+    private javax.swing.JTable tb_AttorneyManageRequest;
+>>>>>>> Stashed changes:AED_Final_Project_002788101/src/ui/Attorney/AttorneyRequestJPanel.java
     // End of variables declaration//GEN-END:variables
 }

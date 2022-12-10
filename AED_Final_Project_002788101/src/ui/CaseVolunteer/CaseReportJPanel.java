@@ -17,9 +17,9 @@ import business.WorkQueue.CounsellorWorkRequest;
 import business.WorkQueue.DrWorkRequest;
 import business.WorkQueue.PsychiatristWorkRequest;
 import business.WorkQueue.CaseReporterWorkRequest;
-import business.WorkQueue.Child;
-import business.WorkQueue.Children;
-import business.WorkQueue.LawyerWorkRequest;
+import business.WorkQueue.User;
+import business.WorkQueue.Users;
+import business.WorkQueue.AttorneyWorkRequest;
 import business.WorkQueue.CaretakerWorkRequest;
 import business.WorkQueue.WorkRequest;
 import java.awt.CardLayout;
@@ -82,7 +82,7 @@ public class CaseReportJPanel extends javax.swing.JPanel {
         txtSuspect = new javax.swing.JTextField();
         btnBack = new javax.swing.JButton();
         lblVictimInfo = new javax.swing.JLabel();
-        btnReqLawyer = new javax.swing.JButton();
+        btnReqAttorney = new javax.swing.JButton();
         btnReqCounsellar = new javax.swing.JButton();
         btnReqDoc = new javax.swing.JButton();
         btnReqPsych = new javax.swing.JButton();
@@ -259,25 +259,38 @@ public class CaseReportJPanel extends javax.swing.JPanel {
 
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 35, 770, 500));
 
+<<<<<<< Updated upstream
         btnReqLawyer.setBackground(new java.awt.Color(129, 178, 154));
         btnReqLawyer.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
         btnReqLawyer.setForeground(new java.awt.Color(61, 64, 91));
         btnReqLawyer.setText("Request Lawyer");
         btnReqLawyer.setBorderPainted(false);
         btnReqLawyer.addMouseListener(new java.awt.event.MouseAdapter() {
+=======
+        btnReqAttorney.setBackground(new java.awt.Color(0, 0, 204));
+        btnReqAttorney.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnReqAttorney.setForeground(new java.awt.Color(255, 255, 255));
+        btnReqAttorney.setText("REQUEST LAWYER");
+        btnReqAttorney.setBorderPainted(false);
+        btnReqAttorney.addMouseListener(new java.awt.event.MouseAdapter() {
+>>>>>>> Stashed changes
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnReqLawyerMouseEntered(evt);
+                btnReqAttorneyMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnReqLawyerMouseExited(evt);
+                btnReqAttorneyMouseExited(evt);
             }
         });
-        btnReqLawyer.addActionListener(new java.awt.event.ActionListener() {
+        btnReqAttorney.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnReqLawyerActionPerformed(evt);
+                btnReqAttorneyActionPerformed(evt);
             }
         });
+<<<<<<< Updated upstream
         add(btnReqLawyer, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 90, 170, 38));
+=======
+        add(btnReqAttorney, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 170, 200, 40));
+>>>>>>> Stashed changes
 
         btnReqCounsellar.setBackground(new java.awt.Color(129, 178, 154));
         btnReqCounsellar.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
@@ -394,20 +407,20 @@ public class CaseReportJPanel extends javax.swing.JPanel {
         layout.previous(userProcessContainer);         // TODO add your handling code here:
     }//GEN-LAST:event_btnBackActionPerformed
 
-    private void btnReqLawyerMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnReqLawyerMouseEntered
-        btnReqLawyer.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_btnReqLawyerMouseEntered
+    private void btnReqAttorneyMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnReqAttorneyMouseEntered
+        btnReqAttorney.setForeground(new Color(0,128,128));        // TODO add your handling code here:
+    }//GEN-LAST:event_btnReqAttorneyMouseEntered
 
-    private void btnReqLawyerMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnReqLawyerMouseExited
-        btnReqLawyer.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnReqLawyerMouseExited
+    private void btnReqAttorneyMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnReqAttorneyMouseExited
+        btnReqAttorney.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_btnReqAttorneyMouseExited
 
-    private void btnReqLawyerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReqLawyerActionPerformed
-        LawyerWorkRequest legalawyerequest = new LawyerWorkRequest();
-        legalawyerequest.setStatus("Waiting");
-        legalawyerequest.setSender(userAccount);
-        legalawyerequest.setCaseReporterWorkRequest(request);
-        legalawyerequest.getCaseReporterWorkRequest().setLawyerWorkRequest(legalawyerequest);
+    private void btnReqAttorneyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReqAttorneyActionPerformed
+        AttorneyWorkRequest legaAttorneyequest = new AttorneyWorkRequest();
+        legaAttorneyequest.setStatus("Waiting");
+        legaAttorneyequest.setSender(userAccount);
+        legaAttorneyequest.setCaseReporterWorkRequest(request);
+        legaAttorneyequest.getCaseReporterWorkRequest().setAttorneyWorkRequest(legaAttorneyequest);
         Enterprise e= network.getEnterpriseDirectory().searchEnterprisebyType(Enterprise.EnterpriseType.Justice);
         Organization org = null;
         for (Organization organization : e.getOrganizationDirectory().getOrganizationList()){
@@ -417,14 +430,14 @@ public class CaseReportJPanel extends javax.swing.JPanel {
             }
         }
         if (org!=null){
-            org.getWorkQueue().getLawyerworkRequestList().add(legalawyerequest);
+            org.getWorkQueue().getAttorneyworkRequestList().add(legaAttorneyequest);
             //userAccount.getWorkQueue().CaseReporterWorkRequestList().add(request);
-            userAccount.getWrkQue().getLawyerworkRequestList().add(legalawyerequest);
+            userAccount.getWrkQue().getAttorneyworkRequestList().add(legaAttorneyequest);
         }
 
-        JOptionPane.showMessageDialog(null, "Request submitted to Lawyer.");
+        JOptionPane.showMessageDialog(null, "Request submitted to Attorney.");
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnReqLawyerActionPerformed
+    }//GEN-LAST:event_btnReqAttorneyActionPerformed
 
     private void btnReqCounsellarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnReqCounsellarMouseEntered
         btnReqCounsellar.setForeground(new Color(0,128,128));        // TODO add your handling code here:
@@ -578,7 +591,7 @@ public class CaseReportJPanel extends javax.swing.JPanel {
 
     }//GEN-LAST:event_btnReqCaretakerActionPerformed
 private void PopulateInfo() {
-        txtVictimName.setText(request.getChildName());
+        txtVictimName.setText(request.getUserName());
         txtVolunteerName.setText(request.getRelation());
         txtTypeofAssault.setText(request.getAssaultType());
         txtLocation.setText(request.getLocation());
@@ -591,10 +604,10 @@ private void PopulateInfo() {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBack;
+    private javax.swing.JButton btnReqAttorney;
     private javax.swing.JButton btnReqCaretaker;
     private javax.swing.JButton btnReqCounsellar;
     private javax.swing.JButton btnReqDoc;
-    private javax.swing.JButton btnReqLawyer;
     private javax.swing.JButton btnReqPsych;
     private javax.swing.JButton btnReqRehab;
     private javax.swing.JPanel jPanel1;

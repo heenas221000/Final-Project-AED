@@ -238,55 +238,13 @@ public class CounsellorEncounterJPanel extends javax.swing.JPanel {
             en.setEn(txtEncounterNo.getText());
             en.setMinutes(txtAreaMinutesofMeeting.getText());
             request.getConslrEncounter().add(en);
-            //organization.getCounsellorencounterdir().getEncounters().add(en);
-            // for(CounsellarWorkRequest request : organization.getWorkQueue().getCounsellarworkRequestList()){
-                //organization.getCounsellorencounterdir().getEncounterDirectory().put(request.getHelpSeekerWorkRequest().getNameofvictim(), organization.getCounsellorencounterdir().getEncounters());
-                //}
-            /* Object r=jTextField1.getText();
-            Object s=jTextArea1.getText();
-            DefaultTableModel model= (DefaultTableModel) jTable1.getModel();
-
-            model.setValueAt(r, i, 0);
-            model.setValueAt(s, i, 1);
-            i++;
-            */
             populateName();
             txtEncounterNo.setText("");
             txtAreaMinutesofMeeting.setText("");
 
-            /*String FromEmail="sexualawareness.help@gmail.com";
-            String FromEmailPass="Fin@lProject21";
-            String Subject = "Sign up successful";
-
-            Properties properties=new Properties();
-            properties.put("mail.smtp.auth", "true");
-            properties.put("mail.smtp.starttls.enable", "true");
-            properties.put("mail.smtp.host", "smtp.gmail.com");
-            properties.put("mail.smtp.port", "587");
-
-            Session session=Session.getDefaultInstance(properties, new javax.mail.Authenticator(){
-                @Override
-                protected PasswordAuthentication getPasswordAuthentication(){
-                    return new PasswordAuthentication(FromEmail,FromEmailPass);
-                }
-            });
-
-            try
-            {
-                Message msg=new MimeMessage(session);
-                msg.setFrom(new InternetAddress(FromEmail));
-                msg.addRecipients(Message.RecipientType.TO, InternetAddress.parse(request.getHelpSeekerWorkRequest().getEmail()));
-                msg.setSubject("Invitation for a session with Counselor, " + request.getHelpSeekerWorkRequest().getNameofvictim() );
-                msg.setText("Dear "+ request.getHelpSeekerWorkRequest().getNameofvictim()+"\n"+"I am here to help you. Join me through the following link for the next encounter."+"\n"+"zoom1.link"+"\n"+"Best");
-                Transport.send(msg);
-            }catch(Exception e)
-            {
-                System.out.println(""+e);
-            } */
 
         }
 
-        // TODO add your handling code here:
     }//GEN-LAST:event_btnUpdateActionPerformed
 
     private void btnBackMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackMouseEntered
@@ -313,7 +271,7 @@ public class CounsellorEncounterJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_txtEncounterNoActionPerformed
     private void populateName() {
         
-        txtName.setText(request.getHswr().getChildName());
+        txtName.setText(request.getHswr().getUserName());
        
         
         DefaultTableModel model= (DefaultTableModel) tblCounsellorEncounterDetails.getModel();

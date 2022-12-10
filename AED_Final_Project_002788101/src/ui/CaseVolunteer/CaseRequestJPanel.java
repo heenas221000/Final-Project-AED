@@ -12,7 +12,7 @@ import business.UserAccount.UserAccount;
 import business.WorkQueue.CaseReporterWorkRequest;
 import business.WorkQueue.CounsellorWorkRequest;
 import business.WorkQueue.DrWorkRequest;
-import business.WorkQueue.LawyerWorkRequest;
+import business.WorkQueue.AttorneyWorkRequest;
 import business.WorkQueue.CaretakerWorkRequest;
 import business.WorkQueue.PsychiatristWorkRequest;
 import business.WorkQueue.WorkRequest;
@@ -45,6 +45,7 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
         this.network = network;
         
         popTable();
+<<<<<<< Updated upstream
         lbl_Receiver.setVisible(false);
         lbl_Status.setVisible(false);
         lbl_Date.setVisible(false);
@@ -53,6 +54,16 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
         lbl_Lawyer.setVisible(false);
         lbl_Caretaker.setVisible(false);
         lbl_Psychiatrist.setVisible(false);
+=======
+        lblReceiver.setVisible(false);
+        lblStatus.setVisible(false);
+        lblDate.setVisible(false);
+        lblDoctor.setVisible(false);
+        lblCounsellar.setVisible(false);
+        lblAttorney.setVisible(false);
+        lblCaretaker.setVisible(false);
+        lblPsychiatrist.setVisible(false);
+>>>>>>> Stashed changes
     }
 
     /**
@@ -68,6 +79,7 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
         lbl_CaseReq = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblCaseRequest = new javax.swing.JTable();
+<<<<<<< Updated upstream
         btn_AssignRequest = new javax.swing.JButton();
         btn_ViewCaseReport = new javax.swing.JButton();
         btn_CheckStatus = new javax.swing.JButton();
@@ -96,6 +108,36 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
         txt_CaretakerStatus = new javax.swing.JLabel();
 
         jPanel1.setBackground(new java.awt.Color(244, 241, 222));
+=======
+        btnAssignRequest = new javax.swing.JButton();
+        btnViewCaseReport = new javax.swing.JButton();
+        btnCheckStatus = new javax.swing.JButton();
+        txtPsyhDate = new javax.swing.JLabel();
+        txtAttorneyReceiver = new javax.swing.JLabel();
+        txtAttorneyDate = new javax.swing.JLabel();
+        txtCousellarStatus = new javax.swing.JLabel();
+        txtCounsellarReceiver = new javax.swing.JLabel();
+        txtCounsellarDate = new javax.swing.JLabel();
+        lblPsychiatrist = new javax.swing.JLabel();
+        lblDoctor = new javax.swing.JLabel();
+        lblAttorney = new javax.swing.JLabel();
+        txtPsychStatus = new javax.swing.JLabel();
+        txtAttorneyStatus = new javax.swing.JLabel();
+        lblCounsellar = new javax.swing.JLabel();
+        lblStatus = new javax.swing.JLabel();
+        lblReceiver = new javax.swing.JLabel();
+        lblDate = new javax.swing.JLabel();
+        txtPsychReceiver = new javax.swing.JLabel();
+        txtDocStatus = new javax.swing.JLabel();
+        txtDocReceiver = new javax.swing.JLabel();
+        txtDoctorDate = new javax.swing.JLabel();
+        lblCaretaker = new javax.swing.JLabel();
+        txtCaretakerDate = new javax.swing.JLabel();
+        txtCaretakerReceiver = new javax.swing.JLabel();
+        txtCaretakerStatus = new javax.swing.JLabel();
+
+        jPanel1.setBackground(new java.awt.Color(153, 204, 255));
+>>>>>>> Stashed changes
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
 <<<<<<< Updated upstream
@@ -240,8 +282,8 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
 <<<<<<< Updated upstream
         jPanel1.add(btnCheckStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, 143, 42));
         jPanel1.add(txtPsyhDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 260, 93, 26));
-        jPanel1.add(txtLawyerReceiver, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 300, 100, 24));
-        jPanel1.add(txtLawyerDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 260, 94, 27));
+        jPanel1.add(txtAttorneyReceiver, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 300, 100, 24));
+        jPanel1.add(txtAttorneyDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 260, 94, 27));
         jPanel1.add(txtCousellarStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 350, 126, 32));
         jPanel1.add(txtCounsellarReceiver, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 310, 126, 29));
         jPanel1.add(txtCounsellarDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 270, 118, 27));
@@ -256,12 +298,19 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
         lblDoctor.setText("Doctor");
         jPanel1.add(lblDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 230, 103, -1));
 
+<<<<<<< Updated upstream
         lblLawyer.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
         lblLawyer.setForeground(new java.awt.Color(224, 122, 95));
         lblLawyer.setText("Lawyer");
         jPanel1.add(lblLawyer, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 230, 102, -1));
+=======
+        lblAttorney.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lblAttorney.setForeground(new java.awt.Color(0, 0, 204));
+        lblAttorney.setText("LAWYER");
+        jPanel1.add(lblAttorney, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 230, 102, -1));
+>>>>>>> Stashed changes
         jPanel1.add(txtPsychStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 350, 92, 32));
-        jPanel1.add(txtLawyerStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 350, 100, 30));
+        jPanel1.add(txtAttorneyStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 350, 100, 30));
 
         lblCounsellar.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
         lblCounsellar.setForeground(new java.awt.Color(224, 122, 95));
@@ -450,6 +499,7 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
             return;
         }
         if (selectedRow >= 0) {
+<<<<<<< Updated upstream
             lbl_Receiver.setVisible(true);
             lbl_Status.setVisible(true);
             lbl_Date.setVisible(true);
@@ -458,6 +508,16 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
             lbl_Lawyer.setVisible(true);
             lbl_Caretaker.setVisible(true);
             lbl_Psychiatrist.setVisible(true);
+=======
+            lblReceiver.setVisible(true);
+            lblStatus.setVisible(true);
+            lblDate.setVisible(true);
+            lblDoctor.setVisible(true);
+            lblCounsellar.setVisible(true);
+            lblAttorney.setVisible(true);
+            lblCaretaker.setVisible(true);
+            lblPsychiatrist.setVisible(true);
+>>>>>>> Stashed changes
             CaseReporterWorkRequest  CRWorkReq  = (CaseReporterWorkRequest) tblCaseRequest.getValueAt(selectedRow, 2);
 
             if(CRWorkReq.getDoctorWorkRequest()!=null){
@@ -505,6 +565,7 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
                 txt_PsychReceiver.setText("-");
             }
 
+<<<<<<< Updated upstream
             if(CRWorkReq.getLawyerWorkRequest()!=null){
                 LawyerWorkRequest L = CRWorkReq.getLawyerWorkRequest();
                 txt_LawyerDate.setText(L.getRequestDate().toString());
@@ -518,6 +579,21 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
                 txt_LawyerDate.setText("-");
                 txt_LawyerReceiver.setText("-");
                 txt_LawyerStatus.setText("-");
+=======
+            if(CRWorkReq.getAttorneyWorkRequest()!=null){
+                AttorneyWorkRequest L = CRWorkReq.getAttorneyWorkRequest();
+                txtAttorneyDate.setText(L.getRequestDate().toString());
+                if(L.getReceiver()==null){
+                    txtAttorneyReceiver.setText("Not Assigned");
+                }else{
+                    txtAttorneyReceiver.setText(L.getReceiver().toString());
+                }
+                txtAttorneyStatus.setText(L.getStatus());
+            }else{
+                txtAttorneyDate.setText("-");
+                txtAttorneyReceiver.setText("-");
+                txtAttorneyStatus.setText("-");
+>>>>>>> Stashed changes
             }
 
             if(CRWorkReq.getCaretakerWorkRequest()!=null){
@@ -548,7 +624,7 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
          for(CaseReporterWorkRequest request : organization.getWorkQueue().getCaseReporterWorkRequestList())
          {
          
-            row[0] = request.getChildName();
+            row[0] = request.getUserName();
             row[1] = request.getLocation();
             row[2] = request;
             if (request.getReceiver()==null){
@@ -568,6 +644,7 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btn_ViewCaseReport;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+<<<<<<< Updated upstream
     private javax.swing.JLabel lbl_Caretaker;
     private javax.swing.JLabel lbl_CaseReq;
     private javax.swing.JLabel lbl_Counsellar;
@@ -593,5 +670,32 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel txt_PsychDate;
     private javax.swing.JLabel txt_PsychReceiver;
     private javax.swing.JLabel txt_PsychStatus;
+=======
+    private javax.swing.JLabel lblAttorney;
+    private javax.swing.JLabel lblCaretaker;
+    private javax.swing.JLabel lblCaseReq;
+    private javax.swing.JLabel lblCounsellar;
+    private javax.swing.JLabel lblDate;
+    private javax.swing.JLabel lblDoctor;
+    private javax.swing.JLabel lblPsychiatrist;
+    private javax.swing.JLabel lblReceiver;
+    private javax.swing.JLabel lblStatus;
+    private javax.swing.JTable tblCaseRequest;
+    private javax.swing.JLabel txtAttorneyDate;
+    private javax.swing.JLabel txtAttorneyReceiver;
+    private javax.swing.JLabel txtAttorneyStatus;
+    private javax.swing.JLabel txtCaretakerDate;
+    private javax.swing.JLabel txtCaretakerReceiver;
+    private javax.swing.JLabel txtCaretakerStatus;
+    private javax.swing.JLabel txtCounsellarDate;
+    private javax.swing.JLabel txtCounsellarReceiver;
+    private javax.swing.JLabel txtCousellarStatus;
+    private javax.swing.JLabel txtDocReceiver;
+    private javax.swing.JLabel txtDocStatus;
+    private javax.swing.JLabel txtDoctorDate;
+    private javax.swing.JLabel txtPsychReceiver;
+    private javax.swing.JLabel txtPsychStatus;
+    private javax.swing.JLabel txtPsyhDate;
+>>>>>>> Stashed changes
     // End of variables declaration//GEN-END:variables
 }

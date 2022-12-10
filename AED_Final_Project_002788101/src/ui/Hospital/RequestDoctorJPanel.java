@@ -250,7 +250,7 @@ public class RequestDoctorJPanel extends javax.swing.JPanel {
         for(DrWorkRequest request : organization.getWorkQueue().getDoctorworkRequestList())
         {
         
-          row[0]=request.getCaseReporterWorkRequest().getChildName();
+          row[0]=request.getCaseReporterWorkRequest().getUserName();
           row[1] = request.getCaseReporterWorkRequest().getDoi();
           row[2] = request;  
           if (request.getReceiver()==null){

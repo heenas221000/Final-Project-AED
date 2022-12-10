@@ -13,7 +13,7 @@ import business.UserAccount.UserAccount;
 import business.WorkQueue.CaseReporterWorkRequest;
 import business.WorkQueue.CounsellorWorkRequest;
 import business.WorkQueue.DrWorkRequest;
-import business.WorkQueue.LawyerWorkRequest;
+import business.WorkQueue.AttorneyWorkRequest;
 import business.WorkQueue.CaretakerWorkRequest;
 import business.WorkQueue.PsychiatristWorkRequest;
 import java.awt.Color;
@@ -52,7 +52,7 @@ public class CaseReporterViewStatusJPanel extends javax.swing.JPanel {
        lblStatus.setVisible(false);
        lblCounsellor.setVisible(false);
        lblCaretaker.setVisible(false);
-       lblLawyer.setVisible(false);
+       lblAttorney.setVisible(false);
        lblDoc.setVisible(false);
        lblPsych.setVisible(false);
 
@@ -81,15 +81,15 @@ public class CaseReporterViewStatusJPanel extends javax.swing.JPanel {
         txtDoctorDate = new javax.swing.JLabel();
         txtDoctor = new javax.swing.JLabel();
         txtDoctorStatus = new javax.swing.JLabel();
-        lblLawyer = new javax.swing.JLabel();
+        lblAttorney = new javax.swing.JLabel();
         lblDoc = new javax.swing.JLabel();
         lblPsych = new javax.swing.JLabel();
         txtCounsellorDate = new javax.swing.JLabel();
         txtCOunsellor = new javax.swing.JLabel();
         txtCounsellorStatus = new javax.swing.JLabel();
-        txtLawyerDate = new javax.swing.JLabel();
-        txtLawyer = new javax.swing.JLabel();
-        txtLawyerStatus = new javax.swing.JLabel();
+        txtAttorneyDate = new javax.swing.JLabel();
+        txtAttorney = new javax.swing.JLabel();
+        txtAttorneyStatus = new javax.swing.JLabel();
         txtlPsychDate = new javax.swing.JLabel();
         txtPsych = new javax.swing.JLabel();
         txtPsychStatus = new javax.swing.JLabel();
@@ -149,6 +149,7 @@ public class CaseReporterViewStatusJPanel extends javax.swing.JPanel {
         jPanel2.add(txtCaseVolunteer, new org.netbeans.lib.awtextra.AbsoluteConstraints(103, 270, 125, 32));
         jPanel2.add(txtCaseVolunteerStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(103, 320, 125, 30));
 
+<<<<<<< Updated upstream
         lblCounsellor.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
         lblCounsellor.setForeground(new java.awt.Color(61, 64, 91));
         lblCounsellor.setText("Counsellor");
@@ -185,6 +186,44 @@ public class CaseReporterViewStatusJPanel extends javax.swing.JPanel {
         btnCheckStatus.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
         btnCheckStatus.setForeground(new java.awt.Color(61, 64, 91));
         btnCheckStatus.setText("Check Status");
+=======
+        lblCounsellor.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lblCounsellor.setForeground(new java.awt.Color(0, 0, 204));
+        lblCounsellor.setText("COUNSELLOR");
+        jPanel2.add(lblCounsellor, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 190, 120, -1));
+        jPanel2.add(txtDoctorDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 230, 100, 30));
+        jPanel2.add(txtDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 262, 90, 40));
+        jPanel2.add(txtDoctorStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 320, 100, 30));
+
+        lblAttorney.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lblAttorney.setForeground(new java.awt.Color(0, 0, 204));
+        lblAttorney.setText("LAWYER");
+        jPanel2.add(lblAttorney, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 190, 90, -1));
+
+        lblDoc.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lblDoc.setForeground(new java.awt.Color(0, 0, 204));
+        lblDoc.setText("DOCTOR");
+        jPanel2.add(lblDoc, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 190, 80, -1));
+
+        lblPsych.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lblPsych.setForeground(new java.awt.Color(0, 0, 204));
+        lblPsych.setText("PSYCHIATRIST");
+        jPanel2.add(lblPsych, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 190, 140, -1));
+        jPanel2.add(txtCounsellorDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 225, 120, 30));
+        jPanel2.add(txtCOunsellor, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 272, 120, 30));
+        jPanel2.add(txtCounsellorStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 320, 120, 30));
+        jPanel2.add(txtAttorneyDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 225, 101, 30));
+        jPanel2.add(txtAttorney, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 266, 103, 30));
+        jPanel2.add(txtAttorneyStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 320, 103, 30));
+        jPanel2.add(txtlPsychDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 225, 120, 30));
+        jPanel2.add(txtPsych, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 266, 120, 30));
+        jPanel2.add(txtPsychStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 320, 120, 30));
+
+        btnCheckStatus.setBackground(new java.awt.Color(0, 0, 204));
+        btnCheckStatus.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btnCheckStatus.setForeground(new java.awt.Color(255, 255, 255));
+        btnCheckStatus.setText("CHECK STATUS");
+>>>>>>> Stashed changes
         btnCheckStatus.setBorderPainted(false);
         btnCheckStatus.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -237,16 +276,19 @@ public class CaseReporterViewStatusJPanel extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblAttorney;
     private javax.swing.JLabel lblCaretaker;
     private javax.swing.JLabel lblCaseVolunteer;
     private javax.swing.JLabel lblCounsellor;
     private javax.swing.JLabel lblDate;
     private javax.swing.JLabel lblDoc;
-    private javax.swing.JLabel lblLawyer;
     private javax.swing.JLabel lblPsych;
     private javax.swing.JLabel lblReceiver;
     private javax.swing.JLabel lblStatus;
     private javax.swing.JTable tableCases;
+    private javax.swing.JLabel txtAttorney;
+    private javax.swing.JLabel txtAttorneyDate;
+    private javax.swing.JLabel txtAttorneyStatus;
     private javax.swing.JLabel txtCOunsellor;
     private javax.swing.JLabel txtCaretaker;
     private javax.swing.JLabel txtCaretakerDate;
@@ -259,9 +301,6 @@ public class CaseReporterViewStatusJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel txtDoctor;
     private javax.swing.JLabel txtDoctorDate;
     private javax.swing.JLabel txtDoctorStatus;
-    private javax.swing.JLabel txtLawyer;
-    private javax.swing.JLabel txtLawyerDate;
-    private javax.swing.JLabel txtLawyerStatus;
     private javax.swing.JLabel txtPsych;
     private javax.swing.JLabel txtPsychStatus;
     private javax.swing.JLabel txtlPsychDate;
@@ -312,7 +351,7 @@ private void popTable() {
             lblReceiver.setVisible(true);
             lblStatus.setVisible(true);
             lblCounsellor.setVisible(true);
-            lblLawyer.setVisible(true);
+            lblAttorney.setVisible(true);
             lblCaretaker.setVisible(true);
             lblDoc.setVisible(true);
             lblPsych.setVisible(true);
@@ -371,19 +410,19 @@ private void popTable() {
                             txtPsychStatus.setText("-");
                         }
                         
-                        if(CaseRepoWorkReq.getLawyerWorkRequest()!=null){
-                            LawyerWorkRequest L = CaseRepoWorkReq.getLawyerWorkRequest(); 
-                            txtLawyerDate.setText(L.getRequestDate().toString());
+                        if(CaseRepoWorkReq.getAttorneyWorkRequest()!=null){
+                            AttorneyWorkRequest L = CaseRepoWorkReq.getAttorneyWorkRequest(); 
+                            txtAttorneyDate.setText(L.getRequestDate().toString());
                         if(L.getReceiver()==null){
-                            txtLawyer.setText("Not Assigned");
+                            txtAttorney.setText("Not Assigned");
                         }else{
-                            txtLawyer.setText(L.getReceiver().toString());
+                            txtAttorney.setText(L.getReceiver().toString());
                         }
-                        txtLawyerStatus.setText(L.getStatus());
+                        txtAttorneyStatus.setText(L.getStatus());
                         }else{
-                            txtLawyerDate.setText("-");
-                            txtLawyer.setText("-");
-                            txtLawyerStatus.setText("-");
+                            txtAttorneyDate.setText("-");
+                            txtAttorney.setText("-");
+                            txtAttorneyStatus.setText("-");
                         }
                         
                         

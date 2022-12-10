@@ -5,7 +5,7 @@
  */
 package business.WorkQueue;
 
-import business.Encounter.EncounterLawyer;
+import business.Encounter.EncounterAttorney;
 import java.util.ArrayList;
 
 /**
@@ -13,9 +13,9 @@ import java.util.ArrayList;
  * @author hetal
 
  */
-public class LawyerWorkRequest extends WorkRequest {
+public class AttorneyWorkRequest extends WorkRequest {
       CaseReporterWorkRequest CaseReporterWorkRequest;
-    ArrayList<EncounterLawyer> LawyerEncounter = new ArrayList<EncounterLawyer>();
+    ArrayList<EncounterAttorney> AttorneyEncounter = new ArrayList<EncounterAttorney>();
 
     public CaseReporterWorkRequest getCaseReporterWorkRequest() {
         return CaseReporterWorkRequest;
@@ -25,12 +25,12 @@ public class LawyerWorkRequest extends WorkRequest {
         this.CaseReporterWorkRequest = CaseReporterWorkRequest;
     }
 
-    public ArrayList<EncounterLawyer> getLawyerEncounter() {
-        return LawyerEncounter;
+    public ArrayList<EncounterAttorney> getAttorneyEncounter() {
+        return AttorneyEncounter;
     }
 
-    public void setLawyerEncounter(ArrayList<EncounterLawyer> LawyerEncounter) {
-        this.LawyerEncounter = LawyerEncounter;
+    public void setAttorneyEncounter(ArrayList<EncounterAttorney> AttorneyEncounter) {
+        this.AttorneyEncounter = AttorneyEncounter;
     }
     
 }

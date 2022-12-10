@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package ui.Lawyer;
+package ui.Attorney;
 
 import business.EcoSystem;
 import business.Enterprise.Enterprise;
@@ -11,7 +11,7 @@ import business.Organization.CaseVolunteerOrganization;
 import business.Organization.HospitalOrganization;
 import business.Organization.Organization;
 import business.UserAccount.UserAccount;
-import business.WorkQueue.LawyerWorkRequest;
+import business.WorkQueue.AttorneyWorkRequest;
 import business.WorkQueue.CaseReporterWorkRequest;
 import business.WorkQueue.WorkRequest;
 import java.awt.CardLayout;
@@ -319,7 +319,7 @@ public class CaseReportLJPanel extends javax.swing.JPanel {
         String FromEmailPass="Fin@lProject21";
         String Subject = "Sign up successful";
         String ema=request.getEmail();
-        String nv=request.getChildName();
+        String nv=request.getUserName();
         Properties properties=new Properties();
         properties.put("mail.smtp.auth", "true");
         properties.put("mail.smtp.starttls.enable", "true");
@@ -338,7 +338,7 @@ public class CaseReportLJPanel extends javax.swing.JPanel {
             Message msg=new MimeMessage(session);
             msg.setFrom(new InternetAddress(FromEmail));
             msg.addRecipients(Message.RecipientType.TO, InternetAddress.parse(ema));
-            msg.setSubject("A Lawyer has been assigned.");
+            msg.setSubject("A Attorney has been assigned.");
             msg.setText("Dear "+nv +"\n"+"I am here to help you. Please schedule an appointment through the following link."+"\n"+"calendly.link"+"\n"+"Best,"+"\n"+userAccount.getEmp().getName());
             Transport.send(msg);
             JOptionPane.showMessageDialog(this, "Invitation has been sent successfully.");
@@ -363,7 +363,7 @@ public class CaseReportLJPanel extends javax.swing.JPanel {
         userProcessContainer.remove(this);
         Component[] componentArray = userProcessContainer.getComponents();
         Component component = componentArray[componentArray.length - 1];
-        LawyerJPanel sysAdminwjp = (LawyerJPanel) component;
+        AttorneyJPanel sysAdminwjp = (AttorneyJPanel) component;
         //sysAdminwjp.populateTree();
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
@@ -393,7 +393,7 @@ public class CaseReportLJPanel extends javax.swing.JPanel {
     // End of variables declaration//GEN-END:variables
 
 private void PopulateReport() {
-        txtName.setText(request.getChildName());
+        txtName.setText(request.getUserName());
         txtRelationwithSurvivor.setText(request.getRelation());
         txtTypeofAssault.setText(request.getAssaultType());
         txtlocation.setText(request.getLocation());

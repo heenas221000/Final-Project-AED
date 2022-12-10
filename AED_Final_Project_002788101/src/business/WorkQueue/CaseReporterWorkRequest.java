@@ -13,7 +13,7 @@ import java.util.Date;
  */
 public class CaseReporterWorkRequest extends WorkRequest{
       
-    private String childName;
+    private String UserName;
     private String relation;
     private String assaultType;
     private String location;
@@ -27,7 +27,7 @@ public class CaseReporterWorkRequest extends WorkRequest{
     private String email;
     private DrWorkRequest doctorWorkRequest;
     private CounsellorWorkRequest counsellorWorkRequest;
-    private LawyerWorkRequest lawyerWorkRequest;
+    private AttorneyWorkRequest attorneyWorkRequest;
     private CaretakerWorkRequest caretakerWorkRequest;
     private PsychiatristWorkRequest hpWorkRequest;
 
@@ -47,12 +47,12 @@ public class CaseReporterWorkRequest extends WorkRequest{
         this.counsellorWorkRequest = counsellorWorkRequest;
     }
 
-    public LawyerWorkRequest getLawyerWorkRequest() {
-        return lawyerWorkRequest;
+    public AttorneyWorkRequest getAttorneyWorkRequest() {
+        return attorneyWorkRequest;
     }
 
-    public void setLawyerWorkRequest(LawyerWorkRequest lawyerWorkRequest) {
-        this.lawyerWorkRequest = lawyerWorkRequest;
+    public void setAttorneyWorkRequest(AttorneyWorkRequest attorneyWorkRequest) {
+        this.attorneyWorkRequest = attorneyWorkRequest;
     }
 
     public CaretakerWorkRequest getCaretakerWorkRequest() {
@@ -83,8 +83,8 @@ public class CaseReporterWorkRequest extends WorkRequest{
         this.email = email;
     }
 
-    public String getChildName() {
-        return childName;
+    public String getUserName() {
+        return UserName;
     }
 
     public Integer getAge() {
@@ -95,8 +95,8 @@ public class CaseReporterWorkRequest extends WorkRequest{
         this.Age = Age;
     }
 
-    public void setChildName(String childName) {
-        this.childName = childName;
+    public void setUserName(String UserName) {
+        this.UserName = UserName;
     }
 
     public void setRelation(String relation) {

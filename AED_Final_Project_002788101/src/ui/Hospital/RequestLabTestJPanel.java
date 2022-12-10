@@ -308,7 +308,7 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
 
     private void populateform() {
         jTextField3.setText(labrequest.getSender().toString());
-        jTextField1.setText(labrequest.getDoctorWorkRequest().getCaseReporterWorkRequest().getChildName());
+        jTextField1.setText(labrequest.getDoctorWorkRequest().getCaseReporterWorkRequest().getUserName());
         Date date = new Date();
         jTextField2.setText(date.toString());
         

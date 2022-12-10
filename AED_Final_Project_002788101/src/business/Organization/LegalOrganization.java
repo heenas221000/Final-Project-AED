@@ -4,7 +4,7 @@
  */
 package business.Organization;
 
-import business.Role.LawyerRole;
+import business.Role.AttorneyRole;
 import business.Role.Role;
 import java.util.ArrayList;
 /**
@@ -21,7 +21,7 @@ public class LegalOrganization extends Organization {
     @Override
     public ArrayList<Role> getSupportedRole() {
         ArrayList<Role> roles = new ArrayList();
-        roles.add(new LawyerRole());
+        roles.add(new AttorneyRole());
         return roles;
     }
 }

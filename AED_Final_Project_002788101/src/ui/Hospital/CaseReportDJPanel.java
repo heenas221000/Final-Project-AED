@@ -486,7 +486,7 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
             msg.setFrom(new InternetAddress(FromEmail));
             msg.addRecipients(Message.RecipientType.TO, InternetAddress.parse(request.getEmail()));
             msg.setSubject("A Doctor has been assigned.");
-            msg.setText("Dear "+ request.getChildName()+"\n"+"I am here to help you. Please schedule an appointment through the following link."+"\n"+"calendly.link"+"\n"+"Best,"+"\n"+userAccount.getEmp().getName());
+            msg.setText("Dear "+ request.getUserName()+"\n"+"I am here to help you. Please schedule an appointment through the following link."+"\n"+"calendly.link"+"\n"+"Best,"+"\n"+userAccount.getEmp().getName());
             Transport.send(msg);
             JOptionPane.showMessageDialog(this, "Invitation has been sent successfully.");
         }catch(Exception e)
@@ -557,7 +557,7 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel typejLabel;
     // End of variables declaration//GEN-END:variables
  private void PopulateReport() {
-        jTextField1.setText(request.getChildName());
+        jTextField1.setText(request.getUserName());
         jTextField5.setText(request.getRelation());
         jTextField6.setText(request.getAssaultType());
         jTextField4.setText(request.getLocation());

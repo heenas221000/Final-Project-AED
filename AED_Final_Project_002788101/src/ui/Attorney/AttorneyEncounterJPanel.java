@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package ui.Lawyer;
+package ui.Attorney;
 import business.EcoSystem;
-import business.Encounter.EncounterLawyer;
+import business.Encounter.EncounterAttorney;
 import business.Network.Network;
 import business.Organization.Organization;
 import business.UserAccount.UserAccount;
-import business.WorkQueue.LawyerWorkRequest;
+import business.WorkQueue.AttorneyWorkRequest;
 import business.WorkQueue.CaseReporterWorkRequest;
 import java.awt.CardLayout;
 import java.awt.Color;
@@ -30,18 +30,18 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author hetal
  */
-public class LawyerEncounterJPanel extends javax.swing.JPanel {
+public class AttorneyEncounterJPanel extends javax.swing.JPanel {
 
     /**
-     * Creates new form LawyerEncounterJPanel
+     * Creates new form AttorneyEncounterJPanel
      */
     JPanel userProcessContainer;
     EcoSystem system;
-    LawyerWorkRequest request;
+    AttorneyWorkRequest request;
     UserAccount userAccount;
     Network network;
     Organization organization;
-    public LawyerEncounterJPanel(JPanel userProcessContainer, EcoSystem system,UserAccount userAccount,Network network, Organization organization, LawyerWorkRequest request) {
+    public AttorneyEncounterJPanel(JPanel userProcessContainer, EcoSystem system,UserAccount userAccount,Network network, Organization organization, AttorneyWorkRequest request) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.system = system;
@@ -222,11 +222,17 @@ public class LawyerEncounterJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "Please fill the necessary fields");
         }
         else{
+<<<<<<< Updated upstream:AED_Final_Project_002788101/src/ui/Lawyer/LawyerEncounterJPanel.java
             EncounterLawyer encounterLawyer =new EncounterLawyer();
             encounterLawyer.setEncounter(txtEncounterNo.getText());
             encounterLawyer.setMinutes(txtAreaMinutes.getText());
+=======
+            EncounterAttorney encounterAttorney =new EncounterAttorney();
+            encounterAttorney.setEncounter(txt_EncounterNo.getText());
+            encounterAttorney.setMinutes(txt_Details.getText());
+>>>>>>> Stashed changes:AED_Final_Project_002788101/src/ui/Attorney/AttorneyEncounterJPanel.java
 
-            request.getLawyerEncounter().add(encounterLawyer);
+            request.getAttorneyEncounter().add(encounterAttorney);
             populateName();
             txtEncounterNo.setText("");
             txtAreaMinutes.setText("");
@@ -247,7 +253,7 @@ public class LawyerEncounterJPanel extends javax.swing.JPanel {
         userProcessContainer.remove(this);
         Component[] componentArray = userProcessContainer.getComponents();
         Component component = componentArray[componentArray.length - 1];
-        LawyerJPanel sysAdminwjp = (LawyerJPanel) component;
+        AttorneyJPanel sysAdminwjp = (AttorneyJPanel) component;
         //sysAdminwjp.populateTree();
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
@@ -273,14 +279,18 @@ public class LawyerEncounterJPanel extends javax.swing.JPanel {
 
 private void populateName() {
 
+<<<<<<< Updated upstream:AED_Final_Project_002788101/src/ui/Lawyer/LawyerEncounterJPanel.java
         txtName.setText(request.getCaseReporterWorkRequest().getChildName());
+=======
+        txt_Name.setText(request.getCaseReporterWorkRequest().getUserName());
+>>>>>>> Stashed changes:AED_Final_Project_002788101/src/ui/Attorney/AttorneyEncounterJPanel.java
 
 
         DefaultTableModel model= (DefaultTableModel) tblEncounterDetails.getModel();
         Object[] row=new Object[2];
         model.setRowCount(0);
 
-        for (EncounterLawyer l: request.getLawyerEncounter()){
+        for (EncounterAttorney l: request.getAttorneyEncounter()){
             row[0] = l.getEncounter();
             row[1] = l.getMinutes();
             model.addRow(row);

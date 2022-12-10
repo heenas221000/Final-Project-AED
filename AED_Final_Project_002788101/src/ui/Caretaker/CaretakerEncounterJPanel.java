@@ -270,7 +270,7 @@ public class CaretakerEncounterJPanel extends javax.swing.JPanel {
 
  private void populateName() {
 
-        txt_Name.setText(request.getCaseReporterWorkRequest().getChildName());
+        txt_Name.setText(request.getCaseReporterWorkRequest().getUserName());
 
 
         DefaultTableModel model= (DefaultTableModel) tblEncounterDetails.getModel();

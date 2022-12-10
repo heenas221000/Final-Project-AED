@@ -230,9 +230,15 @@ public class ViewPrescriptionJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void populatereport() {
+<<<<<<< Updated upstream
         jTextField2.setText(request.getRequestDate().toString());
         jTextField4.setText(request.getDoctorWorkRequest().getCaseReporterWorkRequest().getChildName());
         jTextField3.setText(request.getSender().toString());
+=======
+        txt_Date.setText(request.getRequestDate().toString());
+        txt_PatientName.setText(request.getDoctorWorkRequest().getCaseReporterWorkRequest().getUserName());
+        txt_DocName.setText(request.getSender().toString());
+>>>>>>> Stashed changes
         populatetable();
     }
     
@@ -257,7 +263,7 @@ public class ViewPrescriptionJPanel extends javax.swing.JPanel {
         String FromEmailPass="Fin@lProject21";
         String Subject = "Sign up successful";
         String ema=request.getEmail();
-        String nv=request.getChildName();
+        String nv=request.getUserName();
         Properties properties=new Properties();
         properties.put("mail.smtp.auth", "true");
         properties.put("mail.smtp.starttls.enable", "true");

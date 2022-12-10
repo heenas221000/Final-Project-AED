@@ -58,7 +58,7 @@ public class ReportJPanel extends javax.swing.JPanel {
         lblDetails = new javax.swing.JLabel();
         lblSuspect = new javax.swing.JLabel();
         lblNameofSuspect = new javax.swing.JLabel();
-        txtChildName = new javax.swing.JTextField();
+        txtUserName = new javax.swing.JTextField();
         friendRadioButton = new javax.swing.JRadioButton();
         parentRadioButton = new javax.swing.JRadioButton();
         txtSuspectName = new javax.swing.JTextField();
@@ -71,7 +71,7 @@ public class ReportJPanel extends javax.swing.JPanel {
         dateOfIncident = new com.toedter.calendar.JDateChooser();
         ReportjButton = new javax.swing.JButton();
         comboBoxIncident = new javax.swing.JComboBox<>();
-        txtAgeofChild = new javax.swing.JTextField();
+        txt_AgeofUser = new javax.swing.JTextField();
         lblAgeofChild = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -171,9 +171,9 @@ public class ReportJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(6, 190, 0, 0);
         jPanel1.add(lblNameofSuspect, gridBagConstraints);
 
-        txtChildName.addActionListener(new java.awt.event.ActionListener() {
+        txtUserName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtChildNameActionPerformed(evt);
+                txtUserNameActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -183,7 +183,7 @@ public class ReportJPanel extends javax.swing.JPanel {
         gridBagConstraints.ipadx = 155;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(10, 23, 0, 0);
-        jPanel1.add(txtChildName, gridBagConstraints);
+        jPanel1.add(txtUserName, gridBagConstraints);
 
         friendRadioButton.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
         friendRadioButton.setText("Friend");
@@ -338,7 +338,7 @@ public class ReportJPanel extends javax.swing.JPanel {
         gridBagConstraints.ipadx = 155;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(1, 23, 0, 0);
-        jPanel1.add(txtAgeofChild, gridBagConstraints);
+        jPanel1.add(txt_AgeofUser, gridBagConstraints);
 
         lblAgeofChild.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
         lblAgeofChild.setText("Age :");
@@ -353,9 +353,9 @@ public class ReportJPanel extends javax.swing.JPanel {
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 844, 633));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtChildNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtChildNameActionPerformed
+    private void txtUserNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUserNameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtChildNameActionPerformed
+    }//GEN-LAST:event_txtUserNameActionPerformed
 
     private void parentRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_parentRadioButtonActionPerformed
         // TODO add your handling code here:
@@ -371,8 +371,8 @@ public class ReportJPanel extends javax.swing.JPanel {
         request.setStatus("Waiting");
         request.setSender(userAccount);
 
-        request.setChildName(txtChildName.getText());
-        request.setEmail(txtAgeofChild.getText());
+        request.setUserName(txtUserName.getText());
+        //request.setEmail(txtAgeofUser.getText());
         //for choosing relations
         if(friendRadioButton.isSelected())
         {
@@ -434,7 +434,7 @@ public class ReportJPanel extends javax.swing.JPanel {
         request.setNameofsuspect(txtSuspectName.getText());
 
         if(request.getDoi()!=null && request.getLocation()!=null && request.getRelation()!=null && request.getSuspecttype()!=null
-            && request.getChildName()!=null && request.getAssaultType()!=null)
+            && request.getUserName()!=null && request.getAssaultType()!=null)
         {
             Enterprise e= network.getEnterpriseDirectory().searchEnterprisebyType(Enterprise.EnterpriseType.NGO);
             Organization org = null;
@@ -449,11 +449,11 @@ public class ReportJPanel extends javax.swing.JPanel {
                 //userAccount.getWorkQueue().CaseReporterWorkRequestList().add(request);
             }
 
-            txtChildName.setText("");
+            txtUserName.setText("");
             txtSuspectName.setText("");
             txtMoreDetails.setText("");
             txtLocation.setText("");
-            txtAgeofChild.setText("");
+            txt_AgeofUser.setText("");
             friendRadioButton.setSelected(false);
             parentRadioButton.setSelected(false);
             Selfradiobutton.setSelected(false);
@@ -493,11 +493,11 @@ public class ReportJPanel extends javax.swing.JPanel {
     private javax.swing.JRadioButton otherRadioButton;
     private javax.swing.JRadioButton parentRadioButton;
     private javax.swing.JLabel relationjLabel;
-    private javax.swing.JTextField txtAgeofChild;
-    private javax.swing.JTextField txtChildName;
     private javax.swing.JTextField txtLocation;
     private javax.swing.JTextField txtMoreDetails;
     private javax.swing.JTextField txtSuspectName;
+    private javax.swing.JTextField txtUserName;
+    private javax.swing.JTextField txt_AgeofUser;
     private javax.swing.JRadioButton unknownRadioButton;
     // End of variables declaration//GEN-END:variables
 }

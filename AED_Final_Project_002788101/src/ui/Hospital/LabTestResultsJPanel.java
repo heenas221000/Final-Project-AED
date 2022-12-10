@@ -220,7 +220,7 @@ public class LabTestResultsJPanel extends javax.swing.JPanel {
 
     private void PopulateReport() {
         jTextField1.setText(request.getSender().toString());
-        jTextField2.setText(request.getDoctorWorkRequest().getCaseReporterWorkRequest().getChildName());
+        jTextField2.setText(request.getDoctorWorkRequest().getCaseReporterWorkRequest().getUserName());
         jTextField3.setText(request.getReceiver().toString());
         PopulateTable();
     }

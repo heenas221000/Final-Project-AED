@@ -9,6 +9,6 @@ package business.WorkQueue;
  *
  * @author hetal
  */
- abstract public class Children {
+ abstract public class Users {
    
 }

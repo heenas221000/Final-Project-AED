@@ -309,8 +309,13 @@ public class PsychiatristEncounterJPanel extends javax.swing.JPanel {
 
 private void populate() {
     
+<<<<<<< Updated upstream
         txtName.setText(request.getCaseReporterWorkRequest().getChildName());
         txtAreaMoreDetails.setText(request.getCaseReporterWorkRequest().getMoredetails());
+=======
+        txt_Name.setText(request.getCaseReporterWorkRequest().getUserName());
+        txt_MoreDetails.setText(request.getCaseReporterWorkRequest().getMoredetails());
+>>>>>>> Stashed changes
         
         DefaultTableModel model= (DefaultTableModel) tblPsychiatristEncounter.getModel();
         Object[] row=new Object[3];

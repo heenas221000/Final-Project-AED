@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package ui.Lawyer;
+package ui.Attorney;
 
 import business.EcoSystem;
 import business.Enterprise.Enterprise;
@@ -16,10 +16,10 @@ import javax.swing.JPanel;
  *
  * @author hetal
  */
-public class LawyerJPanel extends javax.swing.JPanel {
+public class AttorneyJPanel extends javax.swing.JPanel {
 
     /**
-     * Creates new form LawyerJPanel
+     * Creates new form AttorneyJPanel
      */
     private JPanel userProcessContainer;
     private EcoSystem business;
@@ -27,7 +27,7 @@ public class LawyerJPanel extends javax.swing.JPanel {
     private final LegalOrganization organization;
     private Enterprise enterprise;
     private Network network;
-    public LawyerJPanel(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise,EcoSystem business,Network network) {
+    public AttorneyJPanel(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise,EcoSystem business,Network network) {
         initComponents();
         this.userProcessContainer = userProcessContainer;
         this.userAccount = account;
@@ -88,7 +88,7 @@ public class LawyerJPanel extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
    private void populateBottom() {
-        LawyerRequestJPanel lrJPanel=new LawyerRequestJPanel(userProcessContainer,business,userAccount,organization,network);
+        AttorneyRequestJPanel lrJPanel=new AttorneyRequestJPanel(userProcessContainer,business,userAccount,organization,network);
         jSplitPane1.setBottomComponent(lrJPanel);
     }
 
