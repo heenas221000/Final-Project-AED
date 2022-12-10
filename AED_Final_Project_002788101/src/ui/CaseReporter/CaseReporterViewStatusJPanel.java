@@ -183,9 +183,8 @@ public class CaseReporterViewStatusJPanel extends javax.swing.JPanel {
         jPanel2.add(txtPsych, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 266, 120, 30));
         jPanel2.add(txtPsychStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 320, 120, 30));
 
-        bt_CheckStatus.setBackground(new java.awt.Color(0, 0, 204));
         bt_CheckStatus.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_CheckStatus.setForeground(new java.awt.Color(255, 255, 255));
+        bt_CheckStatus.setForeground(new java.awt.Color(0, 0, 204));
         bt_CheckStatus.setText("CHECK STATUS");
         bt_CheckStatus.setBorderPainted(false);
         bt_CheckStatus.addActionListener(new java.awt.event.ActionListener() {

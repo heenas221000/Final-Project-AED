@@ -73,9 +73,8 @@ public class ViewPrescriptionJPanel extends javax.swing.JPanel {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("PRESCRIPTION");
 
-        bt_back.setBackground(new java.awt.Color(0, 0, 204));
-        bt_back.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        bt_back.setForeground(new java.awt.Color(255, 255, 255));
+        bt_back.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_back.setForeground(new java.awt.Color(0, 0, 204));
         bt_back.setText("BACK");
         bt_back.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -91,7 +90,8 @@ public class ViewPrescriptionJPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 204));
         jLabel3.setText("DATE");
 
         txt_Date.setEnabled(false);
@@ -117,14 +117,14 @@ public class ViewPrescriptionJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tb_particulars);
 
-        jLabel4.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 0, 204));
         jLabel4.setText("DOCTOR'S NAME");
 
         txt_DocName.setEnabled(false);
 
-        bt_process.setBackground(new java.awt.Color(0, 0, 204));
-        bt_process.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        bt_process.setForeground(new java.awt.Color(255, 255, 255));
+        bt_process.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_process.setForeground(new java.awt.Color(0, 0, 204));
         bt_process.setText("PROCESS");
         bt_process.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -142,7 +142,8 @@ public class ViewPrescriptionJPanel extends javax.swing.JPanel {
 
         txt_PatientName.setEnabled(false);
 
-        jLabel5.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 0, 204));
         jLabel5.setText("PATIENT'S NAME");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -175,7 +176,7 @@ public class ViewPrescriptionJPanel extends javax.swing.JPanel {
                                     .addComponent(bt_process, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(48, 48, 48)
                                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 72, Short.MAX_VALUE)))
+                        .addGap(0, 67, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -202,7 +203,7 @@ public class ViewPrescriptionJPanel extends javax.swing.JPanel {
                         .addGap(18, 18, 18)
                         .addComponent(bt_process))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(106, Short.MAX_VALUE))
+                .addContainerGap(105, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

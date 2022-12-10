@@ -89,9 +89,8 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
 
         txt_date.setEnabled(false);
 
-        bt_ReqTest.setBackground(new java.awt.Color(0, 0, 204));
         bt_ReqTest.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_ReqTest.setForeground(new java.awt.Color(255, 255, 255));
+        bt_ReqTest.setForeground(new java.awt.Color(0, 0, 204));
         bt_ReqTest.setText("REQUEST LAB TEST");
         bt_ReqTest.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -133,9 +132,8 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel5.setText("TEST NAME");
 
-        bt_AddTest.setBackground(new java.awt.Color(0, 0, 204));
         bt_AddTest.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_AddTest.setForeground(new java.awt.Color(255, 255, 255));
+        bt_AddTest.setForeground(new java.awt.Color(0, 0, 204));
         bt_AddTest.setText("ADD TEST");
         bt_AddTest.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -151,9 +149,8 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
             }
         });
 
-        bt_back.setBackground(new java.awt.Color(0, 0, 204));
         bt_back.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_back.setForeground(new java.awt.Color(255, 255, 255));
+        bt_back.setForeground(new java.awt.Color(0, 0, 204));
         bt_back.setText("BACK");
         bt_back.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {

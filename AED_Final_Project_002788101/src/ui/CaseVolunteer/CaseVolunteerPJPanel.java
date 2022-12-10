@@ -81,9 +81,8 @@ public class CaseVolunteerPJPanel extends javax.swing.JPanel {
 
         jCasePanel.add(jCaseVolunteerPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, 580, 100));
 
-        bt_ViewReport.setBackground(new java.awt.Color(0, 0, 204));
         bt_ViewReport.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_ViewReport.setForeground(new java.awt.Color(255, 255, 255));
+        bt_ViewReport.setForeground(new java.awt.Color(0, 0, 204));
         bt_ViewReport.setText("VIEW REPORT");
         bt_ViewReport.setBorderPainted(false);
         bt_ViewReport.addMouseListener(new java.awt.event.MouseAdapter() {

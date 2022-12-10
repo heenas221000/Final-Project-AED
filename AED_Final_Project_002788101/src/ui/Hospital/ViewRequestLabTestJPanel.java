@@ -81,9 +81,8 @@ public class ViewRequestLabTestJPanel extends javax.swing.JPanel {
         tb_Tests.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jScrollPane1.setViewportView(tb_Tests);
 
-        jButton3.setBackground(new java.awt.Color(0, 0, 204));
         jButton3.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
+        jButton3.setForeground(new java.awt.Color(0, 0, 204));
         jButton3.setText("Back");
         jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton3.addMouseListener(new java.awt.event.MouseAdapter() {

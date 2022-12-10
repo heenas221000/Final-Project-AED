@@ -60,11 +60,11 @@ public class sysadminJPanel extends javax.swing.JPanel {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 836, Short.MAX_VALUE)
+            .addGap(0, 789, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 308, Short.MAX_VALUE)
+            .addGap(0, 360, Short.MAX_VALUE)
         );
 
         jSplitPane1.setRightComponent(jPanel2);
@@ -84,14 +84,6 @@ public class sysadminJPanel extends javax.swing.JPanel {
         bt_ManageEnterprises.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         bt_ManageEnterprises.setBorderPainted(false);
         bt_ManageEnterprises.setContentAreaFilled(false);
-        bt_ManageEnterprises.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                bt_ManageEnterprisesMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                bt_ManageEnterprisesMouseExited(evt);
-            }
-        });
         bt_ManageEnterprises.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt_ManageEnterprisesActionPerformed(evt);
@@ -104,14 +96,6 @@ public class sysadminJPanel extends javax.swing.JPanel {
         bt_ManageEnterpriseAdministrator.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         bt_ManageEnterpriseAdministrator.setBorderPainted(false);
         bt_ManageEnterpriseAdministrator.setContentAreaFilled(false);
-        bt_ManageEnterpriseAdministrator.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                bt_ManageEnterpriseAdministratorMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                bt_ManageEnterpriseAdministratorMouseExited(evt);
-            }
-        });
         bt_ManageEnterpriseAdministrator.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt_ManageEnterpriseAdministratorActionPerformed(evt);
@@ -124,14 +108,6 @@ public class sysadminJPanel extends javax.swing.JPanel {
         bt_ManageNetworks.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         bt_ManageNetworks.setBorderPainted(false);
         bt_ManageNetworks.setContentAreaFilled(false);
-        bt_ManageNetworks.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                bt_ManageNetworksMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                bt_ManageNetworksMouseExited(evt);
-            }
-        });
         bt_ManageNetworks.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt_ManageNetworksActionPerformed(evt);
@@ -143,18 +119,16 @@ public class sysadminJPanel extends javax.swing.JPanel {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(bt_ManageNetworks, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(57, 57, 57)
-                        .addComponent(bt_ManageEnterprises, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(bt_ManageEnterpriseAdministrator, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(252, 252, 252)
-                        .addComponent(lblWelcomeSysAdmin)))
-                .addContainerGap(59, Short.MAX_VALUE))
+                .addGap(252, 252, 252)
+                .addComponent(lblWelcomeSysAdmin)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addComponent(bt_ManageNetworks, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(57, 57, 57)
+                .addComponent(bt_ManageEnterprises, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
+                .addComponent(bt_ManageEnterpriseAdministrator, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -181,30 +155,6 @@ public class sysadminJPanel extends javax.swing.JPanel {
             .addComponent(jSplitPane1, javax.swing.GroupLayout.Alignment.TRAILING)
         );
     }// </editor-fold>//GEN-END:initComponents
-
-    private void bt_ManageEnterprisesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageEnterprisesMouseEntered
-              bt_ManageEnterprises.setForeground(Color.BLACK);        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_ManageEnterprisesMouseEntered
-
-    private void bt_ManageEnterpriseAdministratorMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageEnterpriseAdministratorMouseEntered
-             bt_ManageEnterpriseAdministrator.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_ManageEnterpriseAdministratorMouseEntered
-
-    private void bt_ManageNetworksMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageNetworksMouseEntered
-                  bt_ManageNetworks.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_ManageNetworksMouseEntered
-
-    private void bt_ManageNetworksMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageNetworksMouseExited
-                 bt_ManageNetworks.setForeground(Color.white);        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_ManageNetworksMouseExited
-
-    private void bt_ManageEnterprisesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageEnterprisesMouseExited
-              bt_ManageEnterprises.setForeground(Color.white);        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_ManageEnterprisesMouseExited
-
-    private void bt_ManageEnterpriseAdministratorMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageEnterpriseAdministratorMouseExited
-               bt_ManageEnterpriseAdministrator.setForeground(Color.white);        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_ManageEnterpriseAdministratorMouseExited
 
     private void bt_ManageNetworksActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_ManageNetworksActionPerformed
         // TODO add your handling code here:

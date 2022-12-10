@@ -77,9 +77,8 @@ public class PsychiatristEncounterJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(153, 204, 255));
 
-        bt_Update.setBackground(new java.awt.Color(0, 0, 204));
-        bt_Update.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        bt_Update.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Update.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_Update.setForeground(new java.awt.Color(0, 0, 204));
         bt_Update.setText("UPDATE");
         bt_Update.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -95,9 +94,8 @@ public class PsychiatristEncounterJPanel extends javax.swing.JPanel {
             }
         });
 
-        bt_Back.setBackground(new java.awt.Color(0, 0, 204));
-        bt_Back.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        bt_Back.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Back.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_Back.setForeground(new java.awt.Color(0, 0, 204));
         bt_Back.setText("BACK");
         bt_Back.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -113,17 +111,17 @@ public class PsychiatristEncounterJPanel extends javax.swing.JPanel {
             }
         });
 
-        lblAdvice.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblAdvice.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         lblAdvice.setForeground(new java.awt.Color(0, 0, 204));
         lblAdvice.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblAdvice.setText("ADVICE");
 
-        lblName.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblName.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         lblName.setForeground(new java.awt.Color(0, 0, 204));
         lblName.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblName.setText("NAME");
 
-        lblEncounterNo.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblEncounterNo.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         lblEncounterNo.setForeground(new java.awt.Color(0, 0, 204));
         lblEncounterNo.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblEncounterNo.setText("ENCOUNTER NO");
@@ -153,12 +151,12 @@ public class PsychiatristEncounterJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tb_PsychiatristEncounter);
 
-        lblProgress.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblProgress.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         lblProgress.setForeground(new java.awt.Color(0, 0, 204));
         lblProgress.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblProgress.setText("PROGRESS");
 
-        lblMoreDetails.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblMoreDetails.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         lblMoreDetails.setForeground(new java.awt.Color(0, 0, 204));
         lblMoreDetails.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblMoreDetails.setText("MORE DETAILS");
@@ -187,7 +185,7 @@ public class PsychiatristEncounterJPanel extends javax.swing.JPanel {
                     .addComponent(lblEncounterNo)
                     .addComponent(lblAdvice, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblProgress))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -235,7 +233,7 @@ public class PsychiatristEncounterJPanel extends javax.swing.JPanel {
                             .addComponent(lblProgress)
                             .addComponent(txt_Progress, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
                 .addComponent(bt_Update)
                 .addGap(25, 25, 25))
         );
