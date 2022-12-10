@@ -92,9 +92,8 @@ public class RequestDoctorJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tb_Manage);
 
-        bt_Assign.setBackground(new java.awt.Color(0, 0, 204));
         bt_Assign.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_Assign.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Assign.setForeground(new java.awt.Color(0, 0, 204));
         bt_Assign.setText("ASSIGN REQUEST");
         bt_Assign.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -110,9 +109,8 @@ public class RequestDoctorJPanel extends javax.swing.JPanel {
             }
         });
 
-        bt_ViewCase.setBackground(new java.awt.Color(0, 0, 204));
         bt_ViewCase.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_ViewCase.setForeground(new java.awt.Color(255, 255, 255));
+        bt_ViewCase.setForeground(new java.awt.Color(0, 0, 204));
         bt_ViewCase.setText("VIEW CASE REPORT");
         bt_ViewCase.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -120,9 +118,8 @@ public class RequestDoctorJPanel extends javax.swing.JPanel {
             }
         });
 
-        bt_CaseComplete.setBackground(new java.awt.Color(0, 0, 204));
         bt_CaseComplete.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_CaseComplete.setForeground(new java.awt.Color(255, 255, 255));
+        bt_CaseComplete.setForeground(new java.awt.Color(0, 0, 204));
         bt_CaseComplete.setText("CASE COMPLETE");
         bt_CaseComplete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -253,7 +250,7 @@ public class RequestDoctorJPanel extends javax.swing.JPanel {
         for(DrWorkRequest request : organization.getWorkQueue().getDoctorworkRequestList())
         {
         
-          row[0]=request.getCaseReporterWorkRequest().getChildName();
+          row[0]=request.getCaseReporterWorkRequest().getUserName();
           row[1] = request.getCaseReporterWorkRequest().getDoi();
           row[2] = request;  
           if (request.getReceiver()==null){

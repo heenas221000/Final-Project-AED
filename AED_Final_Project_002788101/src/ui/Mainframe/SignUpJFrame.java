@@ -201,18 +201,9 @@ public class SignUpJFrame extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(26, 27, 0, 0);
         detailsjPanel.add(txt_username, gridBagConstraints);
 
-        bt_signUp.setBackground(new java.awt.Color(0, 0, 204));
         bt_signUp.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        bt_signUp.setForeground(java.awt.Color.white);
+        bt_signUp.setForeground(new java.awt.Color(153, 204, 255));
         bt_signUp.setText("SIGN UP");
-        bt_signUp.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                bt_signUpMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                bt_signUpMouseExited(evt);
-            }
-        });
         bt_signUp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt_signUpActionPerformed(evt);
@@ -277,9 +268,8 @@ public class SignUpJFrame extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(20, 10, 0, 106);
         detailsjPanel.add(jLabel3, gridBagConstraints);
 
-        bt_Back.setBackground(new java.awt.Color(0, 0, 204));
         bt_Back.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        bt_Back.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Back.setForeground(new java.awt.Color(153, 204, 255));
         bt_Back.setText("BACK");
         bt_Back.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -297,9 +287,10 @@ public class SignUpJFrame extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(153, 204, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setFont(new java.awt.Font("Monaco", 1, 36)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(61, 64, 91));
-        jButton1.setText("Women Rescue Volunteer");
+        jButton1.setFont(new java.awt.Font("Songti SC", 1, 36)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 0, 204));
+        jButton1.setText("COMPLAINANT DETAILS");
+        jButton1.setToolTipText("");
         jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
@@ -314,14 +305,6 @@ public class SignUpJFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void bt_signUpMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_signUpMouseEntered
-        bt_signUp.setForeground(Color.WHITE);
-    }//GEN-LAST:event_bt_signUpMouseEntered
-
-    private void bt_signUpMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_signUpMouseExited
-        bt_signUp.setForeground(Color.BLACK);
-    }//GEN-LAST:event_bt_signUpMouseExited
 
     private void bt_signUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_signUpActionPerformed
 

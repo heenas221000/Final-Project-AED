@@ -353,7 +353,7 @@ public class CaseReportRJPanel extends javax.swing.JPanel {
         String FromEmailPass="Fin@lProject21";
         String Subject = "Sign up successful";
         String ema=request.getEmail();
-        String nv=request.getChildName();
+        String nv=request.getUserName();
         Properties properties=new Properties();
         properties.put("mail.smtp.auth", "true");
         properties.put("mail.smtp.starttls.enable", "true");
@@ -387,7 +387,7 @@ public class CaseReportRJPanel extends javax.swing.JPanel {
 
     
     private void PopulateReport() {
-        txtName.setText(request.getChildName());
+        txtName.setText(request.getUserName());
         txtRelationwithSurvivor.setText(request.getRelation());
         txtTypeofAssault.setText(request.getAssaultType());
         txtlocation.setText(request.getLocation());

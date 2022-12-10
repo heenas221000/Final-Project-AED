@@ -172,19 +172,10 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
         jLabel6.setText("PASSWORD");
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, 110, -1));
 
-        bt_Submit.setBackground(new java.awt.Color(0, 0, 204));
         bt_Submit.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_Submit.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Submit.setForeground(new java.awt.Color(0, 0, 204));
         bt_Submit.setText("SUBMIT");
         bt_Submit.setBorderPainted(false);
-        bt_Submit.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                bt_SubmitMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                bt_SubmitMouseExited(evt);
-            }
-        });
         bt_Submit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt_SubmitActionPerformed(evt);
@@ -204,19 +195,10 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
         cb_SelectEnterprise.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         add(cb_SelectEnterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 170, 130, -1));
 
-        bt_Delete.setBackground(new java.awt.Color(0, 0, 204));
         bt_Delete.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_Delete.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Delete.setForeground(new java.awt.Color(0, 0, 204));
         bt_Delete.setText("DELETE");
         bt_Delete.setBorderPainted(false);
-        bt_Delete.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                bt_DeleteMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                bt_DeleteMouseExited(evt);
-            }
-        });
         bt_Delete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt_DeleteActionPerformed(evt);
@@ -229,14 +211,6 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
         lblNetwork.setText("NETWORK");
         add(lblNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 130, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
-
-    private void bt_SubmitMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_SubmitMouseEntered
-            bt_Submit.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_SubmitMouseEntered
-
-    private void bt_SubmitMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_SubmitMouseExited
-            bt_Submit.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_SubmitMouseExited
 
     private void bt_SubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_SubmitActionPerformed
         // TODO add your handling code here:
@@ -322,14 +296,6 @@ public class ManageEnterpriseAdminJPanel extends javax.swing.JPanel {
             populateEnterpriseComboBox(network);
         }
     }//GEN-LAST:event_cb_SelectNetworkActionPerformed
-
-    private void bt_DeleteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_DeleteMouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_DeleteMouseEntered
-
-    private void bt_DeleteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_DeleteMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_DeleteMouseExited
 
     private void bt_DeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_DeleteActionPerformed
         // TODO add your handling code here:

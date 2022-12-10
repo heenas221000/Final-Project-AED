@@ -63,6 +63,7 @@ public class PrescribeMedicinesJPanel extends javax.swing.JPanel {
         bt_add = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(153, 204, 255));
+        setForeground(new java.awt.Color(0, 0, 204));
 
         jLabel1.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 204));
@@ -100,9 +101,8 @@ public class PrescribeMedicinesJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tb_particulars);
 
-        bt_ReqPharm.setBackground(new java.awt.Color(0, 0, 204));
         bt_ReqPharm.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_ReqPharm.setForeground(new java.awt.Color(255, 255, 255));
+        bt_ReqPharm.setForeground(new java.awt.Color(0, 0, 204));
         bt_ReqPharm.setText("REQUEST PHARMACIST");
         bt_ReqPharm.setAutoscrolls(true);
         bt_ReqPharm.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -119,9 +119,8 @@ public class PrescribeMedicinesJPanel extends javax.swing.JPanel {
             }
         });
 
-        bt_back.setBackground(new java.awt.Color(0, 0, 204));
         bt_back.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_back.setForeground(new java.awt.Color(255, 255, 255));
+        bt_back.setForeground(new java.awt.Color(0, 0, 204));
         bt_back.setText("BACK");
         bt_back.setAutoscrolls(true);
         bt_back.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -167,9 +166,8 @@ public class PrescribeMedicinesJPanel extends javax.swing.JPanel {
             }
         });
 
-        bt_add.setBackground(new java.awt.Color(0, 0, 204));
         bt_add.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_add.setForeground(new java.awt.Color(255, 255, 255));
+        bt_add.setForeground(new java.awt.Color(0, 0, 204));
         bt_add.setText("ADD");
         bt_add.setAutoscrolls(true);
         bt_add.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -347,7 +345,7 @@ public class PrescribeMedicinesJPanel extends javax.swing.JPanel {
         pRequest.setRequestDate(date);
         txt_date.setText(date.toString());
         txt_DName.setText(pRequest.getSender().toString());
-        txt_PName.setText(pRequest.getDoctorWorkRequest().getCaseReporterWorkRequest().getChildName());
+        txt_PName.setText(pRequest.getDoctorWorkRequest().getCaseReporterWorkRequest().getUserName());
         populatetable();
         
     }

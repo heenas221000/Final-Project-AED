@@ -66,9 +66,10 @@ public class LabRequestJPanel extends javax.swing.JPanel {
 
         jPanel1.setBackground(new java.awt.Color(153, 204, 255));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 204));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Manage Requests");
+        jLabel1.setText("MANAGE REQUESTS");
 
         tb_ManageLab.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -91,10 +92,9 @@ public class LabRequestJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tb_ManageLab);
 
-        bt_Assign.setBackground(new java.awt.Color(0, 0, 204));
-        bt_Assign.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        bt_Assign.setForeground(new java.awt.Color(255, 255, 255));
-        bt_Assign.setText("Assign Request");
+        bt_Assign.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_Assign.setForeground(new java.awt.Color(0, 0, 204));
+        bt_Assign.setText("ASSIGN REQUEST");
         bt_Assign.setBorderPainted(false);
         bt_Assign.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -110,10 +110,9 @@ public class LabRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        bt_View.setBackground(new java.awt.Color(0, 0, 204));
-        bt_View.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        bt_View.setForeground(new java.awt.Color(255, 255, 255));
-        bt_View.setText("View Request");
+        bt_View.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_View.setForeground(new java.awt.Color(0, 0, 204));
+        bt_View.setText("VIEW REQUEST");
         bt_View.setBorderPainted(false);
         bt_View.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -174,7 +173,7 @@ public class LabRequestJPanel extends javax.swing.JPanel {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 519, Short.MAX_VALUE)
+            .addGap(0, 525, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -249,7 +248,7 @@ private void populateTable() {
          {
          
             row[0]=request.getDoctorWorkRequest().getReceiver();
-            row[1] = request.getDoctorWorkRequest().getCaseReporterWorkRequest().getChildName();
+            row[1] = request.getDoctorWorkRequest().getCaseReporterWorkRequest().getUserName();
             row[2] = request;
             if (request.getReceiver()==null){
                 row[3] = "Not Assigned";

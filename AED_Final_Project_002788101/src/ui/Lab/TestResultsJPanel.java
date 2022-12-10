@@ -40,7 +40,7 @@ public class TestResultsJPanel extends javax.swing.JPanel {
     
     private void PopulateReport() {
         txt_DName.setText(request.getSender().toString());
-        txt_PName.setText(request.getDoctorWorkRequest().getCaseReporterWorkRequest().getChildName());
+        txt_PName.setText(request.getDoctorWorkRequest().getCaseReporterWorkRequest().getUserName());
         txt_OfficialName.setText(request.getReceiver().toString());
         PopulateTable();
     }
@@ -73,10 +73,10 @@ public class TestResultsJPanel extends javax.swing.JPanel {
 
         jPanel1.setBackground(new java.awt.Color(153, 204, 255));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(61, 64, 91));
+        jLabel1.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 204));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Test Report");
+        jLabel1.setText("TEST REPORT");
 
         jLabel2.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 204));
@@ -118,10 +118,9 @@ public class TestResultsJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tb_TestReport);
 
-        bt_submit.setBackground(new java.awt.Color(0, 0, 204));
-        bt_submit.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        bt_submit.setForeground(new java.awt.Color(255, 255, 255));
-        bt_submit.setText("Submit");
+        bt_submit.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_submit.setForeground(new java.awt.Color(0, 0, 204));
+        bt_submit.setText("SUBMIT");
         bt_submit.setBorderPainted(false);
         bt_submit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -135,10 +134,9 @@ public class TestResultsJPanel extends javax.swing.JPanel {
 
         txt_OfficialName.setEnabled(false);
 
-        bt_back.setBackground(new java.awt.Color(0, 0, 204));
-        bt_back.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        bt_back.setForeground(new java.awt.Color(255, 255, 255));
-        bt_back.setText("Back");
+        bt_back.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_back.setForeground(new java.awt.Color(0, 0, 204));
+        bt_back.setText("BACK");
         bt_back.setBorderPainted(false);
         bt_back.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -151,10 +149,9 @@ public class TestResultsJPanel extends javax.swing.JPanel {
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel5.setText("Update Test Result");
 
-        bt_update.setBackground(new java.awt.Color(0, 0, 204));
-        bt_update.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        bt_update.setForeground(new java.awt.Color(255, 255, 255));
-        bt_update.setText("Update");
+        bt_update.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_update.setForeground(new java.awt.Color(0, 0, 204));
+        bt_update.setText("UPDATE");
         bt_update.setBorderPainted(false);
         bt_update.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

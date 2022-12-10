@@ -86,9 +86,8 @@ public class CounsellorRequestJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblManageCounsellorRequestDetails);
 
-        bt_AssignRequest.setBackground(new java.awt.Color(0, 0, 204));
         bt_AssignRequest.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_AssignRequest.setForeground(new java.awt.Color(255, 255, 255));
+        bt_AssignRequest.setForeground(new java.awt.Color(0, 0, 204));
         bt_AssignRequest.setText("ASSIGN REQUEST");
         bt_AssignRequest.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -104,9 +103,8 @@ public class CounsellorRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        bt_ViewReport.setBackground(new java.awt.Color(0, 0, 204));
         bt_ViewReport.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_ViewReport.setForeground(new java.awt.Color(255, 255, 255));
+        bt_ViewReport.setForeground(new java.awt.Color(0, 0, 204));
         bt_ViewReport.setText("VIEW REPORT");
         bt_ViewReport.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -122,9 +120,8 @@ public class CounsellorRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        bt_Encounters.setBackground(new java.awt.Color(0, 0, 204));
         bt_Encounters.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_Encounters.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Encounters.setForeground(new java.awt.Color(0, 0, 204));
         bt_Encounters.setText("ENCOUNTER");
         bt_Encounters.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -140,9 +137,8 @@ public class CounsellorRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        bt_CaseComplete.setBackground(new java.awt.Color(0, 0, 204));
         bt_CaseComplete.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_CaseComplete.setForeground(new java.awt.Color(255, 255, 255));
+        bt_CaseComplete.setForeground(new java.awt.Color(0, 0, 204));
         bt_CaseComplete.setText("CASE COMPLETE");
         bt_CaseComplete.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -345,7 +341,7 @@ public class CounsellorRequestJPanel extends javax.swing.JPanel {
          
              //request.getHelpSeekerWorkRequest().getSender().getEmployee().getEmail();
             
-             row[0]=request.getHswr().getChildName();
+             row[0]=request.getHswr().getUserName();
             row[1] = request.getHswr().getDoi();
             row[2] = request;
             if (request.getReceiver()==null){

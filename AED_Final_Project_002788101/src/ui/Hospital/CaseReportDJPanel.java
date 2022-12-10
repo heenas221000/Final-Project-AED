@@ -154,9 +154,8 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
             }
         });
 
-        bt_ReqLab.setBackground(new java.awt.Color(0, 0, 204));
         bt_ReqLab.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_ReqLab.setForeground(new java.awt.Color(255, 255, 255));
+        bt_ReqLab.setForeground(new java.awt.Color(0, 0, 204));
         bt_ReqLab.setText("REQUEST LAB ");
         bt_ReqLab.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -172,9 +171,8 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
             }
         });
 
-        bt_ViewLab.setBackground(new java.awt.Color(0, 0, 204));
         bt_ViewLab.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_ViewLab.setForeground(new java.awt.Color(255, 255, 255));
+        bt_ViewLab.setForeground(new java.awt.Color(0, 0, 204));
         bt_ViewLab.setText("VIEW LAB TEST");
         bt_ViewLab.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -190,9 +188,8 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
             }
         });
 
-        bt_PrescribeMeds.setBackground(new java.awt.Color(0, 0, 204));
         bt_PrescribeMeds.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_PrescribeMeds.setForeground(new java.awt.Color(255, 255, 255));
+        bt_PrescribeMeds.setForeground(new java.awt.Color(0, 0, 204));
         bt_PrescribeMeds.setText("PRESCRIBE MEDICINES");
         bt_PrescribeMeds.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -208,9 +205,8 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
             }
         });
 
-        bt_SendInvite.setBackground(new java.awt.Color(0, 0, 204));
         bt_SendInvite.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_SendInvite.setForeground(new java.awt.Color(255, 255, 255));
+        bt_SendInvite.setForeground(new java.awt.Color(0, 0, 204));
         bt_SendInvite.setText("SEND INVITE");
         bt_SendInvite.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -218,9 +214,8 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
             }
         });
 
-        bt_back.setBackground(new java.awt.Color(0, 0, 204));
         bt_back.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_back.setForeground(new java.awt.Color(255, 255, 255));
+        bt_back.setForeground(new java.awt.Color(0, 0, 204));
         bt_back.setText("BACK");
         bt_back.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -500,7 +495,7 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
             msg.setFrom(new InternetAddress(FromEmail));
             msg.addRecipients(Message.RecipientType.TO, InternetAddress.parse(request.getEmail()));
             msg.setSubject("A Doctor has been assigned.");
-            msg.setText("Dear "+ request.getChildName()+"\n"+"I am here to help you. Please schedule an appointment through the following link."+"\n"+"calendly.link"+"\n"+"Best,"+"\n"+userAccount.getEmp().getName());
+            msg.setText("Dear "+ request.getUserName()+"\n"+"I am here to help you. Please schedule an appointment through the following link."+"\n"+"calendly.link"+"\n"+"Best,"+"\n"+userAccount.getEmp().getName());
             Transport.send(msg);
             JOptionPane.showMessageDialog(this, "Invitation has been sent successfully.");
         }catch(Exception e)
@@ -571,7 +566,7 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel typejLabel;
     // End of variables declaration//GEN-END:variables
  private void PopulateReport() {
-        txt_Survivor.setText(request.getChildName());
+        txt_Survivor.setText(request.getUserName());
         txt_relation.setText(request.getRelation());
         txt_AssaultType.setText(request.getAssaultType());
         txt_Location.setText(request.getLocation());
