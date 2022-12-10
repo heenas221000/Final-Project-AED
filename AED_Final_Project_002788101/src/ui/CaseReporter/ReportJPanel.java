@@ -69,7 +69,7 @@ public class ReportJPanel extends javax.swing.JPanel {
         Selfradiobutton = new javax.swing.JRadioButton();
         otherRadioButton = new javax.swing.JRadioButton();
         dateOfIncident = new com.toedter.calendar.JDateChooser();
-        ReportjButton = new javax.swing.JButton();
+        bt_Report = new javax.swing.JButton();
         comboBoxIncident = new javax.swing.JComboBox<>();
         txtAgeofChild = new javax.swing.JTextField();
         lblAgeofChild = new javax.swing.JLabel();
@@ -307,13 +307,13 @@ public class ReportJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(11, 23, 0, 0);
         jPanel1.add(dateOfIncident, gridBagConstraints);
 
-        ReportjButton.setBackground(new java.awt.Color(0, 0, 204));
-        ReportjButton.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        ReportjButton.setForeground(new java.awt.Color(255, 255, 255));
-        ReportjButton.setText("Report");
-        ReportjButton.addActionListener(new java.awt.event.ActionListener() {
+        bt_Report.setBackground(new java.awt.Color(0, 0, 204));
+        bt_Report.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        bt_Report.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Report.setText("Report");
+        bt_Report.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ReportjButtonActionPerformed(evt);
+                bt_ReportActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -323,7 +323,7 @@ public class ReportJPanel extends javax.swing.JPanel {
         gridBagConstraints.ipadx = 29;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(24, 310, 254, 0);
-        jPanel1.add(ReportjButton, gridBagConstraints);
+        jPanel1.add(bt_Report, gridBagConstraints);
 
         comboBoxIncident.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select one", "Labor", "Physical Abuse", "Sexual Abuse", "Harrassment" }));
         comboBoxIncident.addActionListener(new java.awt.event.ActionListener() {
@@ -374,7 +374,7 @@ public class ReportJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_knownRadioButtonActionPerformed
 
-    private void ReportjButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReportjButtonActionPerformed
+    private void bt_ReportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_ReportActionPerformed
 
         CaseReporterWorkRequest request = new CaseReporterWorkRequest();
         request.setStatus("Waiting");
@@ -476,7 +476,7 @@ public class ReportJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "Incident is reported successfully.");
 
         }
-    }//GEN-LAST:event_ReportjButtonActionPerformed
+    }//GEN-LAST:event_bt_ReportActionPerformed
 
     private void comboBoxIncidentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBoxIncidentActionPerformed
         // TODO add your handling code here:
@@ -484,8 +484,8 @@ public class ReportJPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton ReportjButton;
     private javax.swing.JRadioButton Selfradiobutton;
+    private javax.swing.JButton bt_Report;
     private javax.swing.JComboBox<String> comboBoxIncident;
     private com.toedter.calendar.JDateChooser dateOfIncident;
     private javax.swing.JRadioButton friendRadioButton;
