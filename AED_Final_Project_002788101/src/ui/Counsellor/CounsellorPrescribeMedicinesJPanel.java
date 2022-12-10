@@ -47,7 +47,7 @@ public class CounsellorPrescribeMedicinesJPanel extends javax.swing.JPanel {
         btnRequestPharmacist = new javax.swing.JButton();
         btnBack = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(244, 241, 222));
+        setBackground(new java.awt.Color(153, 204, 255));
 
         lblHeader.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         lblHeader.setForeground(new java.awt.Color(61, 64, 91));
@@ -81,9 +81,10 @@ public class CounsellorPrescribeMedicinesJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnRequestPharmacist.setBackground(new java.awt.Color(129, 178, 154));
-        btnRequestPharmacist.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        btnRequestPharmacist.setText("Request Pharmacist");
+        btnRequestPharmacist.setBackground(new java.awt.Color(0, 0, 204));
+        btnRequestPharmacist.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btnRequestPharmacist.setForeground(new java.awt.Color(255, 255, 255));
+        btnRequestPharmacist.setText("REQUEST PHARMACIST");
         btnRequestPharmacist.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnRequestPharmacistMouseEntered(evt);
@@ -98,8 +99,9 @@ public class CounsellorPrescribeMedicinesJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnBack.setBackground(new java.awt.Color(129, 178, 154));
-        btnBack.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btnBack.setBackground(new java.awt.Color(0, 0, 204));
+        btnBack.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btnBack.setForeground(new java.awt.Color(255, 255, 255));
         btnBack.setText("Back");
         btnBack.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -164,7 +166,7 @@ public class CounsellorPrescribeMedicinesJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtDoctorSign, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblDoctorSign))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
                 .addComponent(btnRequestPharmacist)
                 .addGap(34, 34, 34))
         );

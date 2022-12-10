@@ -81,13 +81,14 @@ public class CaseReportCJPanel extends javax.swing.JPanel {
         btnSendInvite = new javax.swing.JButton();
         btnBack = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(244, 241, 222));
+        setBackground(new java.awt.Color(153, 204, 255));
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(153, 204, 255));
         jPanel1.setLayout(new java.awt.GridBagLayout());
 
-        lblName.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        lblName.setText("Name of Survivor : ");
+        lblName.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lblName.setForeground(new java.awt.Color(0, 0, 204));
+        lblName.setText("NAME OF SURVIVOR");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 1;
@@ -97,8 +98,9 @@ public class CaseReportCJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(37, 42, 0, 0);
         jPanel1.add(lblName, gridBagConstraints);
 
-        lblRelationwithSurvivor.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        lblRelationwithSurvivor.setText("Relation with Survivor : ");
+        lblRelationwithSurvivor.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lblRelationwithSurvivor.setForeground(new java.awt.Color(0, 0, 204));
+        lblRelationwithSurvivor.setText("RELATION WITH SURVIVOR");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 3;
@@ -108,8 +110,9 @@ public class CaseReportCJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(34, 42, 0, 0);
         jPanel1.add(lblRelationwithSurvivor, gridBagConstraints);
 
-        lblTypeofAssault.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        lblTypeofAssault.setText("Type of Sexual Assault : ");
+        lblTypeofAssault.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lblTypeofAssault.setForeground(new java.awt.Color(0, 0, 204));
+        lblTypeofAssault.setText("TYPE OF ASSAULT");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 5;
@@ -118,8 +121,9 @@ public class CaseReportCJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(37, 42, 0, 0);
         jPanel1.add(lblTypeofAssault, gridBagConstraints);
 
-        lbllocation.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        lbllocation.setText("Location of Incident :");
+        lbllocation.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lbllocation.setForeground(new java.awt.Color(0, 0, 204));
+        lbllocation.setText("LOCATION OF INCIDENT");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 7;
@@ -128,8 +132,9 @@ public class CaseReportCJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(37, 42, 0, 0);
         jPanel1.add(lbllocation, gridBagConstraints);
 
-        lblDate.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        lblDate.setText("Date of Incident :");
+        lblDate.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lblDate.setForeground(new java.awt.Color(0, 0, 204));
+        lblDate.setText("DATE OF INCIDENT");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 9;
@@ -138,8 +143,9 @@ public class CaseReportCJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(14, 42, 0, 0);
         jPanel1.add(lblDate, gridBagConstraints);
 
-        lblSuspectType.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        lblSuspectType.setText("Suspect :");
+        lblSuspectType.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lblSuspectType.setForeground(new java.awt.Color(0, 0, 204));
+        lblSuspectType.setText("SUSPECT");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 13;
@@ -149,8 +155,9 @@ public class CaseReportCJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(19, 42, 0, 0);
         jPanel1.add(lblSuspectType, gridBagConstraints);
 
-        lblSuspectName.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        lblSuspectName.setText("Name of Suspect : ");
+        lblSuspectName.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lblSuspectName.setForeground(new java.awt.Color(0, 0, 204));
+        lblSuspectName.setText("NAME OF SUSPECT");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 15;
@@ -243,9 +250,10 @@ public class CaseReportCJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(16, 0, 0, 82);
         jPanel1.add(txtSuspectType, gridBagConstraints);
 
-        btnSendInvite.setBackground(new java.awt.Color(129, 178, 154));
-        btnSendInvite.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        btnSendInvite.setText("Send Invite");
+        btnSendInvite.setBackground(new java.awt.Color(0, 0, 204));
+        btnSendInvite.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btnSendInvite.setForeground(new java.awt.Color(255, 255, 255));
+        btnSendInvite.setText("SEND INVITE");
         btnSendInvite.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnSendInviteMouseEntered(evt);
@@ -260,9 +268,10 @@ public class CaseReportCJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnBack.setBackground(new java.awt.Color(129, 178, 154));
-        btnBack.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        btnBack.setText("Back");
+        btnBack.setBackground(new java.awt.Color(0, 0, 204));
+        btnBack.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btnBack.setForeground(new java.awt.Color(255, 255, 255));
+        btnBack.setText("BACK");
         btnBack.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnBackMouseEntered(evt);
@@ -281,31 +290,27 @@ public class CaseReportCJPanel extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(375, 375, 375)
-                .addComponent(btnSendInvite)
-                .addGap(671, 671, 671))
             .addGroup(layout.createSequentialGroup()
                 .addGap(32, 32, 32)
                 .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(127, 127, 127)
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(488, 488, 488))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(519, 519, 519)
+                .addComponent(btnSendInvite)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(btnBack)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap(127, Short.MAX_VALUE)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(27, 27, 27)))
+                .addGap(20, 20, 20)
+                .addComponent(btnBack)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 385, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnSendInvite)
-                .addContainerGap())
+                .addGap(21, 21, 21))
         );
     }// </editor-fold>//GEN-END:initComponents
 
