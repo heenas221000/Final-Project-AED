@@ -57,7 +57,7 @@ public class ViewRequestLabTestJPanel extends javax.swing.JPanel {
         jLabel2.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 204));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel2.setText("Name:");
+        jLabel2.setText("NAME");
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
