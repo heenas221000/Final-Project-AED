@@ -79,8 +79,12 @@ public class CaseReportRJPanel extends javax.swing.JPanel {
         txtSuspectType = new javax.swing.JTextField();
         btnSendInvite = new javax.swing.JButton();
 
-        btnBack.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        btnBack.setText("Back");
+        setBackground(new java.awt.Color(153, 204, 255));
+
+        btnBack.setBackground(new java.awt.Color(0, 0, 204));
+        btnBack.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btnBack.setForeground(new java.awt.Color(255, 255, 255));
+        btnBack.setText("BACK");
         btnBack.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnBackMouseEntered(evt);
@@ -95,11 +99,12 @@ public class CaseReportRJPanel extends javax.swing.JPanel {
             }
         });
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(153, 204, 255));
         jPanel1.setLayout(new java.awt.GridBagLayout());
 
-        lblName.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        lblName.setText("Name of Survivor : ");
+        lblName.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lblName.setForeground(new java.awt.Color(0, 0, 204));
+        lblName.setText("NAME OF SURVIVOR");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 1;
@@ -109,8 +114,9 @@ public class CaseReportRJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(37, 42, 0, 0);
         jPanel1.add(lblName, gridBagConstraints);
 
-        lblRelationwithSurvivor.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        lblRelationwithSurvivor.setText("Relation with Survivor : ");
+        lblRelationwithSurvivor.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lblRelationwithSurvivor.setForeground(new java.awt.Color(0, 0, 204));
+        lblRelationwithSurvivor.setText("RELATION WITH SURVIVOR");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 3;
@@ -120,8 +126,9 @@ public class CaseReportRJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(34, 42, 0, 0);
         jPanel1.add(lblRelationwithSurvivor, gridBagConstraints);
 
-        lblTypeofAssault.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        lblTypeofAssault.setText("Type of Sexual Assault : ");
+        lblTypeofAssault.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lblTypeofAssault.setForeground(new java.awt.Color(0, 0, 204));
+        lblTypeofAssault.setText("TYPE OF ASSAULT");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 5;
@@ -130,8 +137,9 @@ public class CaseReportRJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(37, 42, 0, 0);
         jPanel1.add(lblTypeofAssault, gridBagConstraints);
 
-        lbllocation.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        lbllocation.setText("Location of Incident :");
+        lbllocation.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lbllocation.setForeground(new java.awt.Color(0, 0, 204));
+        lbllocation.setText("LOCATION OF INCIDENT");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 7;
@@ -140,8 +148,9 @@ public class CaseReportRJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(37, 42, 0, 0);
         jPanel1.add(lbllocation, gridBagConstraints);
 
-        lblDate.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        lblDate.setText("Date of Incident :");
+        lblDate.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lblDate.setForeground(new java.awt.Color(0, 0, 204));
+        lblDate.setText("DATE OF INCIDENT");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 9;
@@ -150,8 +159,9 @@ public class CaseReportRJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(14, 42, 0, 0);
         jPanel1.add(lblDate, gridBagConstraints);
 
-        lblSuspectType.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        lblSuspectType.setText("Suspect :");
+        lblSuspectType.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lblSuspectType.setForeground(new java.awt.Color(0, 0, 204));
+        lblSuspectType.setText("SUSPECT");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 13;
@@ -161,8 +171,9 @@ public class CaseReportRJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(19, 42, 0, 0);
         jPanel1.add(lblSuspectType, gridBagConstraints);
 
-        lblSuspectName.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        lblSuspectName.setText("Name of Suspect : ");
+        lblSuspectName.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lblSuspectName.setForeground(new java.awt.Color(0, 0, 204));
+        lblSuspectName.setText("NAME OF SUSPECT");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 15;
@@ -249,8 +260,10 @@ public class CaseReportRJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(16, 0, 0, 82);
         jPanel1.add(txtSuspectType, gridBagConstraints);
 
-        btnSendInvite.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        btnSendInvite.setText("Send Invite");
+        btnSendInvite.setBackground(new java.awt.Color(0, 0, 204));
+        btnSendInvite.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btnSendInvite.setForeground(new java.awt.Color(255, 255, 255));
+        btnSendInvite.setText("SEND INVITE");
         btnSendInvite.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnSendInviteMouseEntered(evt);

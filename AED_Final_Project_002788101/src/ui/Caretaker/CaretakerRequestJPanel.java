@@ -69,10 +69,12 @@ public class CaretakerRequestJPanel extends javax.swing.JPanel {
         btnEncounter = new javax.swing.JButton();
         btnCaseComplete = new javax.swing.JButton();
 
-        lblHeader.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        lblHeader.setForeground(new java.awt.Color(51, 102, 255));
+        setBackground(new java.awt.Color(153, 204, 255));
+
+        lblHeader.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N
+        lblHeader.setForeground(new java.awt.Color(0, 0, 204));
         lblHeader.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblHeader.setText("Manage Requests");
+        lblHeader.setText("MANAGE REQUESTS");
 
         tblCaretakerManageRequest.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -95,8 +97,10 @@ public class CaretakerRequestJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblCaretakerManageRequest);
 
-        btnAssignRequest.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        btnAssignRequest.setText("Assign Request");
+        btnAssignRequest.setBackground(new java.awt.Color(0, 0, 204));
+        btnAssignRequest.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btnAssignRequest.setForeground(new java.awt.Color(255, 255, 255));
+        btnAssignRequest.setText("ASSIGN REQUEST");
         btnAssignRequest.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnAssignRequestMouseEntered(evt);
@@ -111,8 +115,10 @@ public class CaretakerRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnViewCaseReport.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        btnViewCaseReport.setText("View Case Report");
+        btnViewCaseReport.setBackground(new java.awt.Color(0, 0, 204));
+        btnViewCaseReport.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btnViewCaseReport.setForeground(new java.awt.Color(255, 255, 255));
+        btnViewCaseReport.setText("VIEW CASE REPORT");
         btnViewCaseReport.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnViewCaseReportMouseEntered(evt);
@@ -127,8 +133,10 @@ public class CaretakerRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnEncounter.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        btnEncounter.setText("Ecounters");
+        btnEncounter.setBackground(new java.awt.Color(0, 0, 204));
+        btnEncounter.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btnEncounter.setForeground(new java.awt.Color(255, 255, 255));
+        btnEncounter.setText("ENCOUNTERS");
         btnEncounter.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnEncounterMouseEntered(evt);
@@ -143,8 +151,10 @@ public class CaretakerRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnCaseComplete.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        btnCaseComplete.setText(" Case Complete");
+        btnCaseComplete.setBackground(new java.awt.Color(0, 0, 204));
+        btnCaseComplete.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btnCaseComplete.setForeground(new java.awt.Color(255, 255, 255));
+        btnCaseComplete.setText("CASE COMPLETE");
         btnCaseComplete.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnCaseCompleteMouseEntered(evt);
@@ -176,14 +186,17 @@ public class CaretakerRequestJPanel extends javax.swing.JPanel {
                             .addComponent(btnCaseComplete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnEncounter, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addGap(149, 149, 149))
-            .addComponent(lblHeader, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblHeader, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(62, 62, 62)
+                .addGap(32, 32, 32)
                 .addComponent(lblHeader, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(33, 33, 33)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

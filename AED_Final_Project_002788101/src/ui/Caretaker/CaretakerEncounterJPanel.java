@@ -69,16 +69,21 @@ public class CaretakerEncounterJPanel extends javax.swing.JPanel {
         lbl_Name = new javax.swing.JLabel();
         lbl_EncounterNo = new javax.swing.JLabel();
 
-        lbl_Minutes.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        lbl_Minutes.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        lbl_Minutes.setText("Minutes of Encounter");
+        setBackground(new java.awt.Color(153, 204, 255));
+
+        lbl_Minutes.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lbl_Minutes.setForeground(new java.awt.Color(0, 0, 204));
+        lbl_Minutes.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lbl_Minutes.setText("MINUTES OF ENCOUNTER");
 
         txtAreaMinutes.setColumns(20);
         txtAreaMinutes.setRows(5);
         jScrollPane2.setViewportView(txtAreaMinutes);
 
-        bt_Back.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        bt_Back.setText("Back");
+        bt_Back.setBackground(new java.awt.Color(0, 0, 204));
+        bt_Back.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_Back.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Back.setText("BACK");
         bt_Back.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 bt_BackMouseEntered(evt);
@@ -95,10 +100,11 @@ public class CaretakerEncounterJPanel extends javax.swing.JPanel {
 
         txt_Name.setEnabled(false);
 
-        lbl_Header.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        lbl_Header.setForeground(new java.awt.Color(51, 102, 255));
+        lbl_Header.setBackground(new java.awt.Color(0, 0, 204));
+        lbl_Header.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N
+        lbl_Header.setForeground(new java.awt.Color(0, 0, 204));
         lbl_Header.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbl_Header.setText("Encounters");
+        lbl_Header.setText("ENCOUNTERS");
 
         tblEncounterDetails.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -113,8 +119,10 @@ public class CaretakerEncounterJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblEncounterDetails);
 
-        bt_Update.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        bt_Update.setText("Update");
+        bt_Update.setBackground(new java.awt.Color(0, 0, 204));
+        bt_Update.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_Update.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Update.setText("UPDATE");
         bt_Update.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 bt_UpdateMouseEntered(evt);
@@ -129,13 +137,15 @@ public class CaretakerEncounterJPanel extends javax.swing.JPanel {
             }
         });
 
-        lbl_Name.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        lbl_Name.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        lbl_Name.setText("Name");
+        lbl_Name.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lbl_Name.setForeground(new java.awt.Color(0, 0, 204));
+        lbl_Name.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lbl_Name.setText("NAME");
 
-        lbl_EncounterNo.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        lbl_EncounterNo.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        lbl_EncounterNo.setText("Encounter no");
+        lbl_EncounterNo.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lbl_EncounterNo.setForeground(new java.awt.Color(0, 0, 204));
+        lbl_EncounterNo.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lbl_EncounterNo.setText("ENCOUNTER NO");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -143,33 +153,28 @@ public class CaretakerEncounterJPanel extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(lbl_Header, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lbl_Minutes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(39, 39, 39)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(102, 102, 102)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lbl_Name, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lbl_EncounterNo))
-                        .addGap(39, 39, 39)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txt_EncounterNo, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txt_Name, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE)))
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
                 .addGap(30, 30, 30)
                 .addComponent(bt_Back)
                 .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(325, 325, 325)
-                .addComponent(bt_Update)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(bt_Update))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(64, 64, 64)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lbl_Name, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lbl_EncounterNo)
+                            .addComponent(lbl_Minutes))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txt_EncounterNo, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txt_Name, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(49, 49, 49)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -181,10 +186,8 @@ public class CaretakerEncounterJPanel extends javax.swing.JPanel {
                 .addGap(48, 48, 48)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                        .addGap(61, 61, 61)
-                        .addComponent(bt_Update)
-                        .addGap(206, 206, 206))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 160, Short.MAX_VALUE)
+                        .addGap(279, 279, 279))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lbl_Name, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -196,8 +199,10 @@ public class CaretakerEncounterJPanel extends javax.swing.JPanel {
                         .addGap(16, 16, 16)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lbl_Minutes, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(281, 281, 281))))
+                            .addComponent(lbl_Minutes, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(33, 33, 33)
+                        .addComponent(bt_Update)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
     }// </editor-fold>//GEN-END:initComponents
 
