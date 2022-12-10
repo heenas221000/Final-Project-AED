@@ -49,12 +49,13 @@ public class CaseVolunteerPJPanel extends javax.swing.JPanel {
         btnViewReport = new javax.swing.JButton();
         lblCaseReq = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(153, 204, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(153, 204, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jCasePanel.setBackground(new java.awt.Color(244, 241, 222));
+        jCasePanel.setBackground(new java.awt.Color(153, 204, 255));
         jCasePanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         tblCaseReq.setModel(new javax.swing.table.DefaultTableModel(
@@ -78,12 +79,12 @@ public class CaseVolunteerPJPanel extends javax.swing.JPanel {
         });
         jCaseVolunteerPanel.setViewportView(tblCaseReq);
 
-        jCasePanel.add(jCaseVolunteerPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 580, 100));
+        jCasePanel.add(jCaseVolunteerPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, 580, 100));
 
-        btnViewReport.setBackground(new java.awt.Color(129, 178, 154));
-        btnViewReport.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        btnViewReport.setForeground(new java.awt.Color(61, 64, 91));
-        btnViewReport.setText("View Report");
+        btnViewReport.setBackground(new java.awt.Color(0, 0, 204));
+        btnViewReport.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btnViewReport.setForeground(new java.awt.Color(255, 255, 255));
+        btnViewReport.setText("VIEW REPORT");
         btnViewReport.setBorderPainted(false);
         btnViewReport.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -95,11 +96,11 @@ public class CaseVolunteerPJPanel extends javax.swing.JPanel {
                 btnViewReportActionPerformed(evt);
             }
         });
-        jCasePanel.add(btnViewReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 240, 126, 44));
+        jCasePanel.add(btnViewReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 240, 126, 40));
 
-        lblCaseReq.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        lblCaseReq.setForeground(new java.awt.Color(61, 64, 91));
-        lblCaseReq.setText("Case Requests");
+        lblCaseReq.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N
+        lblCaseReq.setForeground(new java.awt.Color(0, 0, 204));
+        lblCaseReq.setText("CASE REQUESTS");
         jCasePanel.add(lblCaseReq, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 40, -1, -1));
 
         jPanel1.add(jCasePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 790, 510));
