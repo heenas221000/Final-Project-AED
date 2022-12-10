@@ -45,14 +45,14 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
         this.network = network;
         
         popTable();
-        lblReceiver.setVisible(false);
-        lblStatus.setVisible(false);
-        lblDate.setVisible(false);
-        lblDoctor.setVisible(false);
-        lblCounsellar.setVisible(false);
-        lblLawyer.setVisible(false);
-        lblCaretaker.setVisible(false);
-        lblPsychiatrist.setVisible(false);
+        lbl_Receiver.setVisible(false);
+        lbl_Status.setVisible(false);
+        lbl_Date.setVisible(false);
+        lbl_Doctor.setVisible(false);
+        lbl_Counsellar.setVisible(false);
+        lbl_Lawyer.setVisible(false);
+        lbl_Caretaker.setVisible(false);
+        lbl_Psychiatrist.setVisible(false);
     }
 
     /**
@@ -65,46 +65,56 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        lblCaseReq = new javax.swing.JLabel();
+        lbl_CaseReq = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblCaseRequest = new javax.swing.JTable();
-        btnAssignRequest = new javax.swing.JButton();
-        btnViewCaseReport = new javax.swing.JButton();
-        btnCheckStatus = new javax.swing.JButton();
-        txtPsyhDate = new javax.swing.JLabel();
-        txtLawyerReceiver = new javax.swing.JLabel();
-        txtLawyerDate = new javax.swing.JLabel();
-        txtCousellarStatus = new javax.swing.JLabel();
-        txtCounsellarReceiver = new javax.swing.JLabel();
-        txtCounsellarDate = new javax.swing.JLabel();
-        lblPsychiatrist = new javax.swing.JLabel();
-        lblDoctor = new javax.swing.JLabel();
-        lblLawyer = new javax.swing.JLabel();
-        txtPsychStatus = new javax.swing.JLabel();
-        txtLawyerStatus = new javax.swing.JLabel();
-        lblCounsellar = new javax.swing.JLabel();
-        lblStatus = new javax.swing.JLabel();
-        lblReceiver = new javax.swing.JLabel();
-        lblDate = new javax.swing.JLabel();
-        txtPsychReceiver = new javax.swing.JLabel();
-        txtDocStatus = new javax.swing.JLabel();
-        txtDocReceiver = new javax.swing.JLabel();
-        txtDoctorDate = new javax.swing.JLabel();
-        lblCaretaker = new javax.swing.JLabel();
-        txtCaretakerDate = new javax.swing.JLabel();
-        txtCaretakerReceiver = new javax.swing.JLabel();
-        txtCaretakerStatus = new javax.swing.JLabel();
+        btn_AssignRequest = new javax.swing.JButton();
+        btn_ViewCaseReport = new javax.swing.JButton();
+        btn_CheckStatus = new javax.swing.JButton();
+        txt_PsychDate = new javax.swing.JLabel();
+        txt_LawyerReceiver = new javax.swing.JLabel();
+        txt_LawyerDate = new javax.swing.JLabel();
+        txt_CousellarStatus = new javax.swing.JLabel();
+        txt_CounsellarReceiver = new javax.swing.JLabel();
+        txt_CounsellarDate = new javax.swing.JLabel();
+        lbl_Psychiatrist = new javax.swing.JLabel();
+        lbl_Doctor = new javax.swing.JLabel();
+        lbl_Lawyer = new javax.swing.JLabel();
+        txt_PsychStatus = new javax.swing.JLabel();
+        txt_LawyerStatus = new javax.swing.JLabel();
+        lbl_Counsellar = new javax.swing.JLabel();
+        lbl_Status = new javax.swing.JLabel();
+        lbl_Receiver = new javax.swing.JLabel();
+        lbl_Date = new javax.swing.JLabel();
+        txt_PsychReceiver = new javax.swing.JLabel();
+        txt_DocStatus = new javax.swing.JLabel();
+        txt_DocReceiver = new javax.swing.JLabel();
+        txt_DoctorDate = new javax.swing.JLabel();
+        lbl_Caretaker = new javax.swing.JLabel();
+        txt_CaretakerDate = new javax.swing.JLabel();
+        txt_CaretakerReceiver = new javax.swing.JLabel();
+        txt_CaretakerStatus = new javax.swing.JLabel();
 
-        jPanel1.setBackground(new java.awt.Color(153, 204, 255));
+        jPanel1.setBackground(new java.awt.Color(244, 241, 222));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblCaseReq.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N
-        lblCaseReq.setForeground(new java.awt.Color(0, 0, 204));
+<<<<<<< Updated upstream
+        lblCaseReq.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
+        lblCaseReq.setForeground(new java.awt.Color(61, 64, 91));
         lblCaseReq.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblCaseReq.setText("CASE REQUESTS");
+        lblCaseReq.setText("Case Requests");
         lblCaseReq.setToolTipText("");
         lblCaseReq.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel1.add(lblCaseReq, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 879, -1));
+        jPanel1.add(lblCaseReq, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 28, 879, -1));
+=======
+        lbl_CaseReq.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N
+        lbl_CaseReq.setForeground(new java.awt.Color(0, 0, 204));
+        lbl_CaseReq.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbl_CaseReq.setText("CASE REQUESTS");
+        lbl_CaseReq.setToolTipText("");
+        lbl_CaseReq.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel1.add(lbl_CaseReq, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 879, -1));
+>>>>>>> Stashed changes
 
         tblCaseRequest.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -127,70 +137,108 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblCaseRequest);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 80, 490, 130));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 70, 490, 130));
 
-        btnAssignRequest.setBackground(new java.awt.Color(0, 0, 204));
-        btnAssignRequest.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        btnAssignRequest.setForeground(new java.awt.Color(255, 255, 255));
-        btnAssignRequest.setText("ASSIGN REQUEST");
+<<<<<<< Updated upstream
+        btnAssignRequest.setBackground(new java.awt.Color(129, 178, 154));
+        btnAssignRequest.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnAssignRequest.setForeground(new java.awt.Color(61, 64, 91));
+        btnAssignRequest.setText("Assign Request");
         btnAssignRequest.setBorderPainted(false);
         btnAssignRequest.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnAssignRequest.addMouseListener(new java.awt.event.MouseAdapter() {
+=======
+        btn_AssignRequest.setBackground(new java.awt.Color(0, 0, 204));
+        btn_AssignRequest.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btn_AssignRequest.setForeground(new java.awt.Color(255, 255, 255));
+        btn_AssignRequest.setText("ASSIGN REQUEST");
+        btn_AssignRequest.setBorderPainted(false);
+        btn_AssignRequest.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_AssignRequest.addMouseListener(new java.awt.event.MouseAdapter() {
+>>>>>>> Stashed changes
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnAssignRequestMouseEntered(evt);
+                btn_AssignRequestMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnAssignRequestMouseExited(evt);
+                btn_AssignRequestMouseExited(evt);
             }
         });
-        btnAssignRequest.addActionListener(new java.awt.event.ActionListener() {
+        btn_AssignRequest.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAssignRequestActionPerformed(evt);
+                btn_AssignRequestActionPerformed(evt);
             }
         });
-        jPanel1.add(btnAssignRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 89, 170, 40));
+<<<<<<< Updated upstream
+        jPanel1.add(btnAssignRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 89, 170, 42));
 
-        btnViewCaseReport.setBackground(new java.awt.Color(0, 0, 204));
-        btnViewCaseReport.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        btnViewCaseReport.setForeground(new java.awt.Color(255, 255, 255));
-        btnViewCaseReport.setText("VIEW CASE REPORT");
+        btnViewCaseReport.setBackground(new java.awt.Color(129, 178, 154));
+        btnViewCaseReport.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnViewCaseReport.setForeground(new java.awt.Color(61, 64, 91));
+        btnViewCaseReport.setText("View Case Report");
         btnViewCaseReport.setBorderPainted(false);
         btnViewCaseReport.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnViewCaseReport.addMouseListener(new java.awt.event.MouseAdapter() {
+=======
+        jPanel1.add(btn_AssignRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 89, 170, 40));
+
+        btn_ViewCaseReport.setBackground(new java.awt.Color(0, 0, 204));
+        btn_ViewCaseReport.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btn_ViewCaseReport.setForeground(new java.awt.Color(255, 255, 255));
+        btn_ViewCaseReport.setText("VIEW CASE REPORT");
+        btn_ViewCaseReport.setBorderPainted(false);
+        btn_ViewCaseReport.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_ViewCaseReport.addMouseListener(new java.awt.event.MouseAdapter() {
+>>>>>>> Stashed changes
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnViewCaseReportMouseEntered(evt);
+                btn_ViewCaseReportMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnViewCaseReportMouseExited(evt);
+                btn_ViewCaseReportMouseExited(evt);
             }
         });
-        btnViewCaseReport.addActionListener(new java.awt.event.ActionListener() {
+        btn_ViewCaseReport.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnViewCaseReportActionPerformed(evt);
+                btn_ViewCaseReportActionPerformed(evt);
             }
         });
-        jPanel1.add(btnViewCaseReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 170, 40));
+<<<<<<< Updated upstream
+        jPanel1.add(btnViewCaseReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, -1, 38));
 
-        btnCheckStatus.setBackground(new java.awt.Color(0, 0, 204));
-        btnCheckStatus.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        btnCheckStatus.setForeground(new java.awt.Color(255, 255, 255));
-        btnCheckStatus.setText("CHECK STATUS");
+        btnCheckStatus.setBackground(new java.awt.Color(129, 178, 154));
+        btnCheckStatus.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnCheckStatus.setForeground(new java.awt.Color(61, 64, 91));
+        btnCheckStatus.setText("Check Status");
         btnCheckStatus.setBorderPainted(false);
         btnCheckStatus.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnCheckStatus.addMouseListener(new java.awt.event.MouseAdapter() {
+=======
+        jPanel1.add(btn_ViewCaseReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 170, 40));
+
+        btn_CheckStatus.setBackground(new java.awt.Color(0, 0, 204));
+        btn_CheckStatus.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btn_CheckStatus.setForeground(new java.awt.Color(255, 255, 255));
+        btn_CheckStatus.setText("CHECK STATUS");
+        btn_CheckStatus.setBorderPainted(false);
+        btn_CheckStatus.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btn_CheckStatus.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btn_CheckStatusMouseEntered(evt);
+            }
+>>>>>>> Stashed changes
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btn_CheckStatusMouseExited(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnCheckStatusMouseEntered(evt);
             }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnCheckStatusMouseExited(evt);
-            }
         });
-        btnCheckStatus.addActionListener(new java.awt.event.ActionListener() {
+        btn_CheckStatus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCheckStatusActionPerformed(evt);
+                btn_CheckStatusActionPerformed(evt);
             }
         });
-        jPanel1.add(btnCheckStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, 170, 40));
+<<<<<<< Updated upstream
+        jPanel1.add(btnCheckStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, 143, 42));
         jPanel1.add(txtPsyhDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 260, 93, 26));
         jPanel1.add(txtLawyerReceiver, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 300, 100, 24));
         jPanel1.add(txtLawyerDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 260, 94, 27));
@@ -198,57 +246,115 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
         jPanel1.add(txtCounsellarReceiver, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 310, 126, 29));
         jPanel1.add(txtCounsellarDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 270, 118, 27));
 
-        lblPsychiatrist.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        lblPsychiatrist.setForeground(new java.awt.Color(0, 0, 204));
-        lblPsychiatrist.setText("PSYCHIATRIST");
+        lblPsychiatrist.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblPsychiatrist.setForeground(new java.awt.Color(224, 122, 95));
+        lblPsychiatrist.setText("Psychiatrist");
         jPanel1.add(lblPsychiatrist, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 230, -1, -1));
 
-        lblDoctor.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        lblDoctor.setForeground(new java.awt.Color(0, 0, 204));
-        lblDoctor.setText("DOCTOR");
+        lblDoctor.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblDoctor.setForeground(new java.awt.Color(224, 122, 95));
+        lblDoctor.setText("Doctor");
         jPanel1.add(lblDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 230, 103, -1));
 
-        lblLawyer.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        lblLawyer.setForeground(new java.awt.Color(0, 0, 204));
-        lblLawyer.setText("LAWYER");
+        lblLawyer.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblLawyer.setForeground(new java.awt.Color(224, 122, 95));
+        lblLawyer.setText("Lawyer");
         jPanel1.add(lblLawyer, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 230, 102, -1));
         jPanel1.add(txtPsychStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 350, 92, 32));
         jPanel1.add(txtLawyerStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 350, 100, 30));
 
-        lblCounsellar.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        lblCounsellar.setForeground(new java.awt.Color(0, 0, 204));
-        lblCounsellar.setText("COUNSELLOR");
-        jPanel1.add(lblCounsellar, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 230, 120, -1));
+        lblCounsellar.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblCounsellar.setForeground(new java.awt.Color(224, 122, 95));
+        lblCounsellar.setText("Counsellar");
+        jPanel1.add(lblCounsellar, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 230, 93, -1));
 
-        lblStatus.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        lblStatus.setForeground(new java.awt.Color(0, 0, 204));
-        lblStatus.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lblStatus.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblStatus.setForeground(new java.awt.Color(61, 64, 91));
         lblStatus.setText("Status:");
-        jPanel1.add(lblStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 350, 100, 32));
+        jPanel1.add(lblStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 350, 100, 32));
 
-        lblReceiver.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        lblReceiver.setForeground(new java.awt.Color(0, 0, 204));
-        lblReceiver.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lblReceiver.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblReceiver.setForeground(new java.awt.Color(61, 64, 91));
         lblReceiver.setText("Receiver:");
         jPanel1.add(lblReceiver, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 310, 104, 28));
 
-        lblDate.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        lblDate.setForeground(new java.awt.Color(0, 0, 204));
-        lblDate.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lblDate.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblDate.setForeground(new java.awt.Color(61, 64, 91));
         lblDate.setText("Date:");
-        jPanel1.add(lblDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 270, 104, 20));
+        jPanel1.add(lblDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 270, 104, 20));
         jPanel1.add(txtPsychReceiver, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 310, 93, 28));
         jPanel1.add(txtDocStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 350, 117, 32));
         jPanel1.add(txtDocReceiver, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 310, 117, 29));
         jPanel1.add(txtDoctorDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 270, 122, 20));
 
-        lblCaretaker.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        lblCaretaker.setForeground(new java.awt.Color(0, 0, 204));
-        lblCaretaker.setText("CARETAKER");
-        jPanel1.add(lblCaretaker, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 230, 110, -1));
+        lblCaretaker.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblCaretaker.setForeground(new java.awt.Color(224, 122, 95));
+        lblCaretaker.setText("Caretaker");
+        jPanel1.add(lblCaretaker, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 230, 102, -1));
         jPanel1.add(txtCaretakerDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 270, 94, 27));
         jPanel1.add(txtCaretakerReceiver, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 300, 100, 24));
         jPanel1.add(txtCaretakerStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 350, 100, 30));
+=======
+        jPanel1.add(btn_CheckStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, 170, 40));
+        jPanel1.add(txt_PsychDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 260, 93, 26));
+        jPanel1.add(txt_LawyerReceiver, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 300, 100, 24));
+        jPanel1.add(txt_LawyerDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 260, 94, 27));
+        jPanel1.add(txt_CousellarStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 350, 126, 32));
+        jPanel1.add(txt_CounsellarReceiver, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 310, 126, 29));
+        jPanel1.add(txt_CounsellarDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 270, 118, 27));
+
+        lbl_Psychiatrist.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lbl_Psychiatrist.setForeground(new java.awt.Color(0, 0, 204));
+        lbl_Psychiatrist.setText("PSYCHIATRIST");
+        jPanel1.add(lbl_Psychiatrist, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 230, -1, -1));
+
+        lbl_Doctor.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lbl_Doctor.setForeground(new java.awt.Color(0, 0, 204));
+        lbl_Doctor.setText("DOCTOR");
+        jPanel1.add(lbl_Doctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 230, 103, -1));
+
+        lbl_Lawyer.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lbl_Lawyer.setForeground(new java.awt.Color(0, 0, 204));
+        lbl_Lawyer.setText("LAWYER");
+        jPanel1.add(lbl_Lawyer, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 230, 102, -1));
+        jPanel1.add(txt_PsychStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 350, 92, 32));
+        jPanel1.add(txt_LawyerStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 350, 100, 30));
+
+        lbl_Counsellar.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lbl_Counsellar.setForeground(new java.awt.Color(0, 0, 204));
+        lbl_Counsellar.setText("COUNSELLOR");
+        jPanel1.add(lbl_Counsellar, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 230, 120, -1));
+
+        lbl_Status.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lbl_Status.setForeground(new java.awt.Color(0, 0, 204));
+        lbl_Status.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lbl_Status.setText("Status:");
+        jPanel1.add(lbl_Status, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 350, 100, 32));
+
+        lbl_Receiver.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lbl_Receiver.setForeground(new java.awt.Color(0, 0, 204));
+        lbl_Receiver.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lbl_Receiver.setText("Receiver:");
+        jPanel1.add(lbl_Receiver, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 310, 104, 28));
+
+        lbl_Date.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lbl_Date.setForeground(new java.awt.Color(0, 0, 204));
+        lbl_Date.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lbl_Date.setText("Date:");
+        jPanel1.add(lbl_Date, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 270, 104, 20));
+        jPanel1.add(txt_PsychReceiver, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 310, 93, 28));
+        jPanel1.add(txt_DocStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 350, 117, 32));
+        jPanel1.add(txt_DocReceiver, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 310, 117, 29));
+        jPanel1.add(txt_DoctorDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 270, 122, 20));
+
+        lbl_Caretaker.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lbl_Caretaker.setForeground(new java.awt.Color(0, 0, 204));
+        lbl_Caretaker.setText("CARETAKER");
+        jPanel1.add(lbl_Caretaker, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 230, 110, -1));
+        jPanel1.add(txt_CaretakerDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 270, 94, 27));
+        jPanel1.add(txt_CaretakerReceiver, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 300, 100, 24));
+        jPanel1.add(txt_CaretakerStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 350, 100, 30));
+>>>>>>> Stashed changes
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -262,15 +368,15 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnAssignRequestMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAssignRequestMouseEntered
-        btnAssignRequest.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAssignRequestMouseEntered
+    private void btn_AssignRequestMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_AssignRequestMouseEntered
+        btn_AssignRequest.setForeground(new Color(0,128,128));        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_AssignRequestMouseEntered
 
-    private void btnAssignRequestMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAssignRequestMouseExited
-        btnAssignRequest.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAssignRequestMouseExited
+    private void btn_AssignRequestMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_AssignRequestMouseExited
+        btn_AssignRequest.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_AssignRequestMouseExited
 
-    private void btnAssignRequestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAssignRequestActionPerformed
+    private void btn_AssignRequestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_AssignRequestActionPerformed
 
         int i=1;
         if(i<5)
@@ -294,17 +400,17 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
         }
 
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnAssignRequestActionPerformed
+    }//GEN-LAST:event_btn_AssignRequestActionPerformed
 
-    private void btnViewCaseReportMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnViewCaseReportMouseEntered
-        btnViewCaseReport.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_btnViewCaseReportMouseEntered
+    private void btn_ViewCaseReportMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_ViewCaseReportMouseEntered
+        btn_ViewCaseReport.setForeground(new Color(0,128,128));        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_ViewCaseReportMouseEntered
 
-    private void btnViewCaseReportMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnViewCaseReportMouseExited
-        btnViewCaseReport.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnViewCaseReportMouseExited
+    private void btn_ViewCaseReportMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_ViewCaseReportMouseExited
+        btn_ViewCaseReport.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_ViewCaseReportMouseExited
 
-    private void btnViewCaseReportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewCaseReportActionPerformed
+    private void btn_ViewCaseReportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ViewCaseReportActionPerformed
         // TODO add your handling code here:
         int selectedRow = tblCaseRequest.getSelectedRow();
 
@@ -325,17 +431,17 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
             /*CaseReportJPanel casereportJPanel=new CaseReportJPanel(userProcessContainer,system,request);
             casereportJPanel.setVisible(true);*/
         }
-    }//GEN-LAST:event_btnViewCaseReportActionPerformed
+    }//GEN-LAST:event_btn_ViewCaseReportActionPerformed
 
-    private void btnCheckStatusMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCheckStatusMouseExited
+    private void btn_CheckStatusMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_CheckStatusMouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnCheckStatusMouseExited
+    }//GEN-LAST:event_btn_CheckStatusMouseExited
 
-    private void btnCheckStatusMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCheckStatusMouseEntered
+    private void btn_CheckStatusMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_CheckStatusMouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnCheckStatusMouseEntered
+    }//GEN-LAST:event_btn_CheckStatusMouseEntered
 
-    private void btnCheckStatusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCheckStatusActionPerformed
+    private void btn_CheckStatusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_CheckStatusActionPerformed
         // TODO add your handling code here:
 
         int selectedRow = tblCaseRequest.getSelectedRow();
@@ -344,95 +450,95 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
             return;
         }
         if (selectedRow >= 0) {
-            lblReceiver.setVisible(true);
-            lblStatus.setVisible(true);
-            lblDate.setVisible(true);
-            lblDoctor.setVisible(true);
-            lblCounsellar.setVisible(true);
-            lblLawyer.setVisible(true);
-            lblCaretaker.setVisible(true);
-            lblPsychiatrist.setVisible(true);
+            lbl_Receiver.setVisible(true);
+            lbl_Status.setVisible(true);
+            lbl_Date.setVisible(true);
+            lbl_Doctor.setVisible(true);
+            lbl_Counsellar.setVisible(true);
+            lbl_Lawyer.setVisible(true);
+            lbl_Caretaker.setVisible(true);
+            lbl_Psychiatrist.setVisible(true);
             CaseReporterWorkRequest  CRWorkReq  = (CaseReporterWorkRequest) tblCaseRequest.getValueAt(selectedRow, 2);
 
             if(CRWorkReq.getDoctorWorkRequest()!=null){
                 DrWorkRequest D = CRWorkReq.getDoctorWorkRequest();
-                txtDoctorDate.setText(D.getRequestDate().toString());
+                txt_DoctorDate.setText(D.getRequestDate().toString());
                 if(D.getReceiver()==null){
-                    txtDocReceiver.setText("Not Assigned");
+                    txt_DocReceiver.setText("Not Assigned");
                 }else{
-                    txtDocReceiver.setText(D.getReceiver().toString());
+                    txt_DocReceiver.setText(D.getReceiver().toString());
                 }
-                txtDocStatus.setText(D.getStatus());
+                txt_DocStatus.setText(D.getStatus());
             }else{
-                txtDoctorDate.setText("-");
-                txtDocReceiver.setText("-");
-                txtDocStatus.setText("-");
+                txt_DoctorDate.setText("-");
+                txt_DocReceiver.setText("-");
+                txt_DocStatus.setText("-");
             }
 
             if(CRWorkReq.getCounsellorWorkRequest()!=null){
                 CounsellorWorkRequest C = CRWorkReq.getCounsellorWorkRequest();
-                txtCounsellarDate.setText(C.getRequestDate().toString());
+                txt_CounsellarDate.setText(C.getRequestDate().toString());
                 if(C.getReceiver()==null){
-                    txtCounsellarReceiver.setText("Not Assigned");
+                    txt_CounsellarReceiver.setText("Not Assigned");
                 }else{
-                    txtCounsellarReceiver.setText(C.getReceiver().toString());
+                    txt_CounsellarReceiver.setText(C.getReceiver().toString());
                 }
-                txtCousellarStatus.setText(C.getStatus());
+                txt_CousellarStatus.setText(C.getStatus());
             }else{
-                txtCounsellarDate.setText("-");
-                txtCounsellarReceiver.setText("-");
-                txtCousellarStatus.setText("-");
+                txt_CounsellarDate.setText("-");
+                txt_CounsellarReceiver.setText("-");
+                txt_CousellarStatus.setText("-");
             }
 
             if(CRWorkReq.getHpWorkRequest()!=null){
                 PsychiatristWorkRequest P = CRWorkReq.getHpWorkRequest();
-                txtPsyhDate.setText(P.getRequestDate().toString());
+                txt_PsychDate.setText(P.getRequestDate().toString());
                 if(P.getReceiver()==null){
-                    txtPsychReceiver.setText("Not Assigned");
+                    txt_PsychReceiver.setText("Not Assigned");
                 }else{
-                    txtPsychReceiver.setText(P.getReceiver().toString());
+                    txt_PsychReceiver.setText(P.getReceiver().toString());
                 }
-                txtPsychStatus.setText(P.getStatus());
+                txt_PsychStatus.setText(P.getStatus());
             }else{
-                txtPsychStatus.setText("-");
-                txtPsyhDate.setText("-");
-                txtPsychReceiver.setText("-");
+                txt_PsychStatus.setText("-");
+                txt_PsychDate.setText("-");
+                txt_PsychReceiver.setText("-");
             }
 
             if(CRWorkReq.getLawyerWorkRequest()!=null){
                 LawyerWorkRequest L = CRWorkReq.getLawyerWorkRequest();
-                txtLawyerDate.setText(L.getRequestDate().toString());
+                txt_LawyerDate.setText(L.getRequestDate().toString());
                 if(L.getReceiver()==null){
-                    txtLawyerReceiver.setText("Not Assigned");
+                    txt_LawyerReceiver.setText("Not Assigned");
                 }else{
-                    txtLawyerReceiver.setText(L.getReceiver().toString());
+                    txt_LawyerReceiver.setText(L.getReceiver().toString());
                 }
-                txtLawyerStatus.setText(L.getStatus());
+                txt_LawyerStatus.setText(L.getStatus());
             }else{
-                txtLawyerDate.setText("-");
-                txtLawyerReceiver.setText("-");
-                txtLawyerStatus.setText("-");
+                txt_LawyerDate.setText("-");
+                txt_LawyerReceiver.setText("-");
+                txt_LawyerStatus.setText("-");
             }
 
             if(CRWorkReq.getCaretakerWorkRequest()!=null){
                 CaretakerWorkRequest L = CRWorkReq.getCaretakerWorkRequest();
-                txtCaretakerDate.setText(L.getRequestDate().toString());
+                txt_CaretakerDate.setText(L.getRequestDate().toString());
                 if(L.getReceiver()==null){
-                    txtCaretakerReceiver.setText("Not Assigned");
+                    txt_CaretakerReceiver.setText("Not Assigned");
                 }else{
-                    txtCaretakerReceiver.setText(L.getReceiver().toString());
+                    txt_CaretakerReceiver.setText(L.getReceiver().toString());
                 }
-                txtCaretakerStatus.setText(L.getStatus());
+                txt_CaretakerStatus.setText(L.getStatus());
             }else{
-                txtCaretakerDate.setText("-");
-                txtCaretakerReceiver.setText("-");
-                txtCaretakerStatus.setText("-");
+                txt_CaretakerDate.setText("-");
+                txt_CaretakerReceiver.setText("-");
+                txt_CaretakerStatus.setText("-");
             }
 
         }
         
         
-    }//GEN-LAST:event_btnCheckStatusActionPerformed
+    }//GEN-LAST:event_btn_CheckStatusActionPerformed
     private void popTable() {
         
         DefaultTableModel model= (DefaultTableModel) tblCaseRequest.getModel();
@@ -457,35 +563,35 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAssignRequest;
-    private javax.swing.JButton btnCheckStatus;
-    private javax.swing.JButton btnViewCaseReport;
+    private javax.swing.JButton btn_AssignRequest;
+    private javax.swing.JButton btn_CheckStatus;
+    private javax.swing.JButton btn_ViewCaseReport;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JLabel lblCaretaker;
-    private javax.swing.JLabel lblCaseReq;
-    private javax.swing.JLabel lblCounsellar;
-    private javax.swing.JLabel lblDate;
-    private javax.swing.JLabel lblDoctor;
-    private javax.swing.JLabel lblLawyer;
-    private javax.swing.JLabel lblPsychiatrist;
-    private javax.swing.JLabel lblReceiver;
-    private javax.swing.JLabel lblStatus;
+    private javax.swing.JLabel lbl_Caretaker;
+    private javax.swing.JLabel lbl_CaseReq;
+    private javax.swing.JLabel lbl_Counsellar;
+    private javax.swing.JLabel lbl_Date;
+    private javax.swing.JLabel lbl_Doctor;
+    private javax.swing.JLabel lbl_Lawyer;
+    private javax.swing.JLabel lbl_Psychiatrist;
+    private javax.swing.JLabel lbl_Receiver;
+    private javax.swing.JLabel lbl_Status;
     private javax.swing.JTable tblCaseRequest;
-    private javax.swing.JLabel txtCaretakerDate;
-    private javax.swing.JLabel txtCaretakerReceiver;
-    private javax.swing.JLabel txtCaretakerStatus;
-    private javax.swing.JLabel txtCounsellarDate;
-    private javax.swing.JLabel txtCounsellarReceiver;
-    private javax.swing.JLabel txtCousellarStatus;
-    private javax.swing.JLabel txtDocReceiver;
-    private javax.swing.JLabel txtDocStatus;
-    private javax.swing.JLabel txtDoctorDate;
-    private javax.swing.JLabel txtLawyerDate;
-    private javax.swing.JLabel txtLawyerReceiver;
-    private javax.swing.JLabel txtLawyerStatus;
-    private javax.swing.JLabel txtPsychReceiver;
-    private javax.swing.JLabel txtPsychStatus;
-    private javax.swing.JLabel txtPsyhDate;
+    private javax.swing.JLabel txt_CaretakerDate;
+    private javax.swing.JLabel txt_CaretakerReceiver;
+    private javax.swing.JLabel txt_CaretakerStatus;
+    private javax.swing.JLabel txt_CounsellarDate;
+    private javax.swing.JLabel txt_CounsellarReceiver;
+    private javax.swing.JLabel txt_CousellarStatus;
+    private javax.swing.JLabel txt_DocReceiver;
+    private javax.swing.JLabel txt_DocStatus;
+    private javax.swing.JLabel txt_DoctorDate;
+    private javax.swing.JLabel txt_LawyerDate;
+    private javax.swing.JLabel txt_LawyerReceiver;
+    private javax.swing.JLabel txt_LawyerStatus;
+    private javax.swing.JLabel txt_PsychDate;
+    private javax.swing.JLabel txt_PsychReceiver;
+    private javax.swing.JLabel txt_PsychStatus;
     // End of variables declaration//GEN-END:variables
 }
