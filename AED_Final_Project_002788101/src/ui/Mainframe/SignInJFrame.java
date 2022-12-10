@@ -63,7 +63,11 @@ public class SignInJFrame extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+<<<<<<< Updated upstream
         jPanel1.setBackground(new java.awt.Color(242, 204, 143));
+=======
+        jPanel1.setBackground(new java.awt.Color(153, 204, 255));
+>>>>>>> Stashed changes
         jPanel1.setMinimumSize(new java.awt.Dimension(200, 100));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -129,10 +133,19 @@ public class SignInJFrame extends javax.swing.JFrame {
         container.setMinimumSize(new java.awt.Dimension(200, 100));
         container.setLayout(new java.awt.CardLayout());
 
+<<<<<<< Updated upstream
         jButton1.setBackground(new java.awt.Color(244, 241, 222));
         jButton1.setFont(new java.awt.Font("Monaco", 1, 36)); // NOI18N
         jButton1.setForeground(new java.awt.Color(61, 64, 91));
         jButton1.setText("Women Abuse Help");
+=======
+        jButton1.setBackground(new java.awt.Color(153, 204, 255));
+        jButton1.setFont(new java.awt.Font("Songti SC", 1, 48)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 0, 204));
+        jButton1.setText("Speakout At WorkPlace");
+        jButton1.setActionCommand("SpeakOut At WorkPlace");
+        jButton1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+>>>>>>> Stashed changes
         jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
         jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -149,7 +162,7 @@ public class SignInJFrame extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(129, 178, 154));
         jPanel2.setLayout(new java.awt.GridBagLayout());
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-1, 1, 1420, 70));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-1, 1, 1420, 80));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
