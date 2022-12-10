@@ -57,35 +57,35 @@ public class ReportJFrame extends javax.swing.JFrame {
         detailsjLabel = new javax.swing.JLabel();
         suspecttypejLabel = new javax.swing.JLabel();
         namesuspectjLabel = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txt_Name = new javax.swing.JTextField();
         friendRadioButton = new javax.swing.JRadioButton();
         parentRadioButton = new javax.swing.JRadioButton();
-        jTextField2 = new javax.swing.JTextField();
+        txt_Suspect = new javax.swing.JTextField();
         knownRadioButton = new javax.swing.JRadioButton();
         unknownRadioButton = new javax.swing.JRadioButton();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
+        txt_details = new javax.swing.JTextField();
+        txt_location = new javax.swing.JTextField();
         Colleagueradiobutton = new javax.swing.JRadioButton();
         otherRadioButton = new javax.swing.JRadioButton();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
-        ReportjButton = new javax.swing.JButton();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        DateChooser = new com.toedter.calendar.JDateChooser();
+        bt_Report = new javax.swing.JButton();
+        cb_Assault = new javax.swing.JComboBox<>();
         jLabel1 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
+        txt_email = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(153, 204, 255));
 
-        ReportjLabel.setBackground(new java.awt.Color(253, 235, 208));
-        ReportjLabel.setFont(new java.awt.Font("Monaco", 1, 24)); // NOI18N
-        ReportjLabel.setForeground(new java.awt.Color(51, 102, 255));
+        ReportjLabel.setBackground(new java.awt.Color(153, 204, 255));
+        ReportjLabel.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N
+        ReportjLabel.setForeground(new java.awt.Color(0, 0, 204));
         ReportjLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        ReportjLabel.setText("Register Report");
+        ReportjLabel.setText("REGISTER REPORT");
         ReportjLabel.setOpaque(true);
 
         namesurvivorjLabel.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        namesurvivorjLabel.setText("Name of Survivor: ");
+        namesurvivorjLabel.setText("NAME OF VICTIM");
 
         relationjLabel.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
         relationjLabel.setText("Relation with Survivor: ");
@@ -111,9 +111,9 @@ public class ReportJFrame extends javax.swing.JFrame {
         namesuspectjLabel.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
         namesuspectjLabel.setText("Name of Suspect : ");
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        txt_Name.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                txt_NameActionPerformed(evt);
             }
         });
 
@@ -145,17 +145,17 @@ public class ReportJFrame extends javax.swing.JFrame {
         otherRadioButton.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
         otherRadioButton.setText("Other");
 
-        ReportjButton.setBackground(new java.awt.Color(255, 0, 51));
-        ReportjButton.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        ReportjButton.setText("Report");
-        ReportjButton.addActionListener(new java.awt.event.ActionListener() {
+        bt_Report.setBackground(new java.awt.Color(255, 0, 51));
+        bt_Report.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        bt_Report.setText("Report");
+        bt_Report.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ReportjButtonActionPerformed(evt);
+                bt_ReportActionPerformed(evt);
             }
         });
 
-        jComboBox1.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select one", "Rape", "Marital Rape", "Child Sexual Abuse", "Unwanted Sexual Touching", "Incest" }));
+        cb_Assault.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        cb_Assault.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select one", "Rape", "Marital Rape", "Child Sexual Abuse", "Unwanted Sexual Touching", "Incest" }));
 
         jLabel1.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
         jLabel1.setText("Email:");
@@ -183,18 +183,18 @@ public class ReportJFrame extends javax.swing.JFrame {
                                 .addComponent(otherRadioButton)
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txt_Name, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jLabel1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 42, Short.MAX_VALUE))))
+                                .addComponent(txt_email, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 417, Short.MAX_VALUE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(typejLabel)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(cb_Assault, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(relationjLabel)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -202,8 +202,8 @@ public class ReportJFrame extends javax.swing.JFrame {
                                     .addComponent(locationjLabel))
                                 .addGap(30, 30, 30)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTextField4)
-                                    .addComponent(jDateChooser1, javax.swing.GroupLayout.DEFAULT_SIZE, 240, Short.MAX_VALUE)))
+                                    .addComponent(txt_location)
+                                    .addComponent(DateChooser, javax.swing.GroupLayout.DEFAULT_SIZE, 240, Short.MAX_VALUE)))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addGap(35, 35, 35)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -217,29 +217,30 @@ public class ReportJFrame extends javax.swing.JFrame {
                                         .addComponent(namesuspectjLabel)
                                         .addGap(18, 18, 18)))
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txt_details, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(knownRadioButton)
                                         .addGap(18, 18, 18)
                                         .addComponent(unknownRadioButton))
-                                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(ReportjButton, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(ReportjLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(188, 188, 188))))
+                                    .addComponent(txt_Suspect, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(bt_Report, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGap(0, 0, Short.MAX_VALUE))))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(158, 158, 158)
+                .addComponent(ReportjLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(14, 14, 14)
+                .addGap(16, 16, 16)
                 .addComponent(ReportjLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
+                .addGap(28, 28, 28)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(namesurvivorjLabel)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_Name, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txt_email, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15)
                 .addComponent(relationjLabel)
                 .addGap(15, 15, 15)
@@ -251,30 +252,30 @@ public class ReportJFrame extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(typejLabel)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cb_Assault, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(21, 21, 21)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_location, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(locationjLabel))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(timejLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(DateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(27, 27, 27)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_details, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(detailsjLabel))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(knownRadioButton)
                     .addComponent(unknownRadioButton)
                     .addComponent(suspecttypejLabel))
                 .addGap(28, 28, 28)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_Suspect, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(namesuspectjLabel))
                 .addGap(30, 30, 30)
-                .addComponent(ReportjButton, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(bt_Report, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(35, 35, 35))
         );
 
@@ -282,13 +283,13 @@ public class ReportJFrame extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 601, Short.MAX_VALUE)
+            .addGap(0, 944, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 598, Short.MAX_VALUE)
+            .addGap(0, 602, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -296,9 +297,9 @@ public class ReportJFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void txt_NameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_NameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_txt_NameActionPerformed
 
     private void parentRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_parentRadioButtonActionPerformed
         // TODO add your handling code here:
@@ -308,16 +309,16 @@ public class ReportJFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_knownRadioButtonActionPerformed
 
-    private void ReportjButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReportjButtonActionPerformed
+    private void bt_ReportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_ReportActionPerformed
 
         CaseReporterWorkRequest request = new CaseReporterWorkRequest();
         request.setStatus("Waiting");
         request.setSender(userAccount);
 
-        request.setUserName(jTextField1.getText());
+        request.setUserName(txt_Name.getText());
         //for choosing relations
 
-        String em=jTextField5.getText();
+        String em=txt_email.getText();
         String validate="^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@" + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
         if(1==0)
         {
@@ -342,24 +343,24 @@ public class ReportJFrame extends javax.swing.JFrame {
 
         }
         //for choosing type
-        if(jComboBox1.getSelectedItem().toString().equalsIgnoreCase("Select one"))
+        if(cb_Assault.getSelectedItem().toString().equalsIgnoreCase("Select one"))
         {
             JOptionPane.showMessageDialog(null, "Please select a type");
         }
         else{
-            request.setAssaultType(jComboBox1.getSelectedItem().toString());
+            request.setAssaultType(cb_Assault.getSelectedItem().toString());
         }
         //location
-        request.setLocation(jTextField4.getText());
+        request.setLocation(txt_location.getText());
         //date
-        if(jDateChooser1.getDate()==null)
+        if(DateChooser.getDate()==null)
         {
             JOptionPane.showMessageDialog(null, "Please select a date");
         }else{
-            request.setDoi(jDateChooser1.getDate());
+            request.setDoi(DateChooser.getDate());
         }
         //more detaisl
-        request.setMoredetails(jTextField3.getText());
+        request.setMoredetails(txt_details.getText());
         //suspect
         if(knownRadioButton.isSelected()){
             request.setSuspecttype("Known");
@@ -371,7 +372,7 @@ public class ReportJFrame extends javax.swing.JFrame {
         }
 
         //name of suspect
-        request.setNameofsuspect(jTextField2.getText());
+        request.setNameofsuspect(txt_Suspect.getText());
 
         if(request.getDoi()!=null && request.getLocation()!=null && request.getRelation()!=null && request.getSuspecttype()!=null
             && request.getUserName()!=null && request.getAssaultType()!=null){
@@ -396,7 +397,7 @@ public class ReportJFrame extends javax.swing.JFrame {
             eng.setVisible(true);
 
         }
-    }//GEN-LAST:event_ReportjButtonActionPerformed
+    }//GEN-LAST:event_bt_ReportActionPerformed
 
     /**
      * @param args the command line arguments
@@ -436,19 +437,14 @@ public class ReportJFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JRadioButton Colleagueradiobutton;
-    private javax.swing.JButton ReportjButton;
+    private com.toedter.calendar.JDateChooser DateChooser;
     private javax.swing.JLabel ReportjLabel;
+    private javax.swing.JButton bt_Report;
+    private javax.swing.JComboBox<String> cb_Assault;
     private javax.swing.JLabel detailsjLabel;
     private javax.swing.JRadioButton friendRadioButton;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
     private javax.swing.JRadioButton knownRadioButton;
     private javax.swing.JLabel locationjLabel;
     private javax.swing.JLabel namesurvivorjLabel;
@@ -458,6 +454,11 @@ public class ReportJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel relationjLabel;
     private javax.swing.JLabel suspecttypejLabel;
     private javax.swing.JLabel timejLabel;
+    private javax.swing.JTextField txt_Name;
+    private javax.swing.JTextField txt_Suspect;
+    private javax.swing.JTextField txt_details;
+    private javax.swing.JTextField txt_email;
+    private javax.swing.JTextField txt_location;
     private javax.swing.JLabel typejLabel;
     private javax.swing.JRadioButton unknownRadioButton;
     // End of variables declaration//GEN-END:variables

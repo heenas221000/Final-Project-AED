@@ -44,30 +44,30 @@ public class ManageOrganizationsJPanel extends javax.swing.JPanel {
 
     @SuppressWarnings("unchecked")
     private void populateCombo(){
-        comboBoxOrgType.removeAllItems();
+        cb_Org.removeAllItems();
         if(enterprise.getEnterpriseType().getValue().equalsIgnoreCase("NGO")){
             for (Organization.Type type : Organization.Type.values()){
                 if (type.getValue().equals(Organization.Type.CaseVolunteer.getValue()) || type.getValue().equals(Organization.Type.CounsellingOrganization.getValue())){
-                    comboBoxOrgType.addItem(type);
+                    cb_Org.addItem(type);
                 }
             }
         } else if(enterprise.getEnterpriseType().getValue().equalsIgnoreCase("Wellness")){
             for (Organization.Type type : Organization.Type.values()){
                 if (type.getValue().equals(Organization.Type.Hospital.getValue()) || type.getValue().equals(Organization.Type.Forensic.getValue())
                         || type.getValue().equals(Organization.Type.PsychiatricOrganization.getValue())){
-                    comboBoxOrgType.addItem(type);
+                    cb_Org.addItem(type);
                 }
             }
         } else if(enterprise.getEnterpriseType().getValue().equalsIgnoreCase("Justice")){
             for (Organization.Type type : Organization.Type.values()){
                 if (type.getValue().equals(Organization.Type.Legal.getValue())){
-                    comboBoxOrgType.addItem(type);
+                    cb_Org.addItem(type);
                 }
             }
         }else if(enterprise.getEnterpriseType().getValue().equalsIgnoreCase("Pharmaceutical")){
             for (Organization.Type type : Organization.Type.values()){
                 if (type.getValue().equals(Organization.Type.Pharmacy.getValue())){
-                    comboBoxOrgType.addItem(type);
+                    cb_Org.addItem(type);
                 }
             }
         }
@@ -75,7 +75,7 @@ public class ManageOrganizationsJPanel extends javax.swing.JPanel {
         else if(enterprise.getEnterpriseType().getValue().equalsIgnoreCase("Rehabilitation")){
             for (Organization.Type type : Organization.Type.values()){
                 if (type.getValue().equals(Organization.Type.Rehab.getValue())){
-                    comboBoxOrgType.addItem(type);
+                    cb_Org.addItem(type);
                 }
             }
         }
@@ -83,7 +83,7 @@ public class ManageOrganizationsJPanel extends javax.swing.JPanel {
         else if(enterprise.getEnterpriseType().getValue().equalsIgnoreCase("Psychiatrist")){
             for (Organization.Type type : Organization.Type.values()){
                 if (type.getValue().equals(Organization.Type.PsychiatricOrganization.getValue())){
-                    comboBoxOrgType.addItem(type);
+                    cb_Org.addItem(type);
                 }
             }
         }
@@ -125,22 +125,22 @@ public class ManageOrganizationsJPanel extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         tableOrg = new javax.swing.JTable();
         lblOrgType = new javax.swing.JLabel();
-        btnAddOrg = new javax.swing.JButton();
-        comboBoxOrgType = new javax.swing.JComboBox();
-        btnDltOrg = new javax.swing.JButton();
+        bt_add = new javax.swing.JButton();
+        cb_Org = new javax.swing.JComboBox();
+        bt_Delete = new javax.swing.JButton();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(153, 204, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBackground(new java.awt.Color(153, 204, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(230, 126, 34));
+        jLabel1.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 204));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Manage Organization(s)");
+        jLabel1.setText("MANAGE ORGANIZATION(S)");
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 16, 656, 41));
 
         tableOrg.setModel(new javax.swing.table.DefaultTableModel(
@@ -166,82 +166,83 @@ public class ManageOrganizationsJPanel extends javax.swing.JPanel {
 
         jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 80, 210, 98));
 
-        lblOrgType.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        lblOrgType.setText("Organization Type:");
+        lblOrgType.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lblOrgType.setForeground(new java.awt.Color(0, 0, 204));
+        lblOrgType.setText("ORGANIZATION TYPE");
         jPanel2.add(lblOrgType, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 83, -1, 26));
 
-        btnAddOrg.setBackground(new java.awt.Color(51, 102, 255));
-        btnAddOrg.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        btnAddOrg.setForeground(new java.awt.Color(255, 255, 255));
-        btnAddOrg.setText("Add Organization");
-        btnAddOrg.setBorderPainted(false);
-        btnAddOrg.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnAddOrgMouseExited(evt);
-            }
+        bt_add.setBackground(new java.awt.Color(0, 0, 204));
+        bt_add.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_add.setForeground(new java.awt.Color(255, 255, 255));
+        bt_add.setText("ADD");
+        bt_add.setBorderPainted(false);
+        bt_add.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnAddOrgMouseEntered(evt);
+                bt_addMouseEntered(evt);
             }
-        });
-        btnAddOrg.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAddOrgActionPerformed(evt);
-            }
-        });
-        jPanel2.add(btnAddOrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 140, -1, -1));
-
-        comboBoxOrgType.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel2.add(comboBoxOrgType, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 80, 155, -1));
-
-        btnDltOrg.setBackground(new java.awt.Color(51, 102, 255));
-        btnDltOrg.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        btnDltOrg.setForeground(new java.awt.Color(255, 255, 255));
-        btnDltOrg.setText("Delete Organization");
-        btnDltOrg.setBorderPainted(false);
-        btnDltOrg.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnDltOrgMouseExited(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnDltOrgMouseEntered(evt);
+                bt_addMouseExited(evt);
             }
         });
-        btnDltOrg.addActionListener(new java.awt.event.ActionListener() {
+        bt_add.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDltOrgActionPerformed(evt);
+                bt_addActionPerformed(evt);
             }
         });
-        jPanel2.add(btnDltOrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 140, -1, -1));
+        jPanel2.add(bt_add, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 140, -1, -1));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(75, 38, -1, -1));
+        cb_Org.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel2.add(cb_Org, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 80, 155, 30));
+
+        bt_Delete.setBackground(new java.awt.Color(0, 0, 204));
+        bt_Delete.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_Delete.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Delete.setText("DELETE");
+        bt_Delete.setBorderPainted(false);
+        bt_Delete.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                bt_DeleteMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                bt_DeleteMouseExited(evt);
+            }
+        });
+        bt_Delete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt_DeleteActionPerformed(evt);
+            }
+        });
+        jPanel2.add(bt_Delete, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, -1, -1));
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(75, 38, -1, 200));
 
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 880, 480));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnAddOrgMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddOrgMouseExited
-        btnAddOrg.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddOrgMouseExited
+    private void bt_addMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_addMouseExited
+        bt_add.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_addMouseExited
 
-    private void btnAddOrgMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAddOrgMouseEntered
-        btnAddOrg.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAddOrgMouseEntered
+    private void bt_addMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_addMouseEntered
+        bt_add.setForeground(new Color(0,128,128));        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_addMouseEntered
 
-    private void btnAddOrgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddOrgActionPerformed
+    private void bt_addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_addActionPerformed
         // TODO add your handling code here:
-        Organization.Type type = (Organization.Type) comboBoxOrgType.getSelectedItem();
+        Organization.Type type = (Organization.Type) cb_Org.getSelectedItem();
         directory.createOrganization(type);
         populateTable();
-    }//GEN-LAST:event_btnAddOrgActionPerformed
+    }//GEN-LAST:event_bt_addActionPerformed
 
-    private void btnDltOrgMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDltOrgMouseExited
+    private void bt_DeleteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_DeleteMouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnDltOrgMouseExited
+    }//GEN-LAST:event_bt_DeleteMouseExited
 
-    private void btnDltOrgMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDltOrgMouseEntered
+    private void bt_DeleteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_DeleteMouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnDltOrgMouseEntered
+    }//GEN-LAST:event_bt_DeleteMouseEntered
 
-    private void btnDltOrgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDltOrgActionPerformed
+    private void bt_DeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_DeleteActionPerformed
         // TODO add your handling code here:
         int selectedRow = tableOrg.getSelectedRow();
         if(selectedRow<0){
@@ -259,13 +260,13 @@ public class ManageOrganizationsJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "You have successfully deleted the account");
             populateTable();
         }
-    }//GEN-LAST:event_btnDltOrgActionPerformed
+    }//GEN-LAST:event_bt_DeleteActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAddOrg;
-    private javax.swing.JButton btnDltOrg;
-    private javax.swing.JComboBox comboBoxOrgType;
+    private javax.swing.JButton bt_Delete;
+    private javax.swing.JButton bt_add;
+    private javax.swing.JComboBox cb_Org;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;

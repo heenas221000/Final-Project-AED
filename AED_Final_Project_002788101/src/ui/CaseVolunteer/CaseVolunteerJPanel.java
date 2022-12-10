@@ -60,13 +60,13 @@ public class CaseVolunteerJPanel extends javax.swing.JPanel {
 
         CaseVolunteerSplitJPanel.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
-        jPanel2.setBackground(new java.awt.Color(129, 178, 154));
+        jPanel2.setBackground(new java.awt.Color(153, 204, 255));
         jPanel2.setForeground(new java.awt.Color(61, 64, 91));
         jPanel2.setLayout(new java.awt.GridBagLayout());
 
-        lblUpperPart.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        lblUpperPart.setForeground(new java.awt.Color(61, 64, 91));
-        lblUpperPart.setText("Welcome Case Volunteer");
+        lblUpperPart.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N
+        lblUpperPart.setForeground(new java.awt.Color(0, 0, 204));
+        lblUpperPart.setText("WELCOME CASE VOLUNTEER");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -76,7 +76,7 @@ public class CaseVolunteerJPanel extends javax.swing.JPanel {
 
         CaseVolunteerSplitJPanel.setTopComponent(jPanel2);
 
-        jPanel3.setBackground(new java.awt.Color(244, 241, 222));
+        jPanel3.setBackground(new java.awt.Color(204, 204, 255));
         jPanel3.setLayout(new java.awt.GridBagLayout());
         CaseVolunteerSplitJPanel.setRightComponent(jPanel3);
 

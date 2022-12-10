@@ -46,15 +46,16 @@ public class CaseVolunteerPJPanel extends javax.swing.JPanel {
         jCasePanel = new javax.swing.JPanel();
         jCaseVolunteerPanel = new javax.swing.JScrollPane();
         tblCaseReq = new javax.swing.JTable();
-        btnViewReport = new javax.swing.JButton();
+        bt_ViewReport = new javax.swing.JButton();
         lblCaseReq = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(153, 204, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(153, 204, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jCasePanel.setBackground(new java.awt.Color(244, 241, 222));
+        jCasePanel.setBackground(new java.awt.Color(153, 204, 255));
         jCasePanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         tblCaseReq.setModel(new javax.swing.table.DefaultTableModel(
@@ -78,28 +79,28 @@ public class CaseVolunteerPJPanel extends javax.swing.JPanel {
         });
         jCaseVolunteerPanel.setViewportView(tblCaseReq);
 
-        jCasePanel.add(jCaseVolunteerPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 580, 100));
+        jCasePanel.add(jCaseVolunteerPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, 580, 100));
 
-        btnViewReport.setBackground(new java.awt.Color(129, 178, 154));
-        btnViewReport.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        btnViewReport.setForeground(new java.awt.Color(61, 64, 91));
-        btnViewReport.setText("View Report");
-        btnViewReport.setBorderPainted(false);
-        btnViewReport.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_ViewReport.setBackground(new java.awt.Color(0, 0, 204));
+        bt_ViewReport.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_ViewReport.setForeground(new java.awt.Color(255, 255, 255));
+        bt_ViewReport.setText("VIEW REPORT");
+        bt_ViewReport.setBorderPainted(false);
+        bt_ViewReport.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnViewReportMouseEntered(evt);
+                bt_ViewReportMouseEntered(evt);
             }
         });
-        btnViewReport.addActionListener(new java.awt.event.ActionListener() {
+        bt_ViewReport.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnViewReportActionPerformed(evt);
+                bt_ViewReportActionPerformed(evt);
             }
         });
-        jCasePanel.add(btnViewReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 240, 126, 44));
+        jCasePanel.add(bt_ViewReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 240, 126, 40));
 
-        lblCaseReq.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        lblCaseReq.setForeground(new java.awt.Color(61, 64, 91));
-        lblCaseReq.setText("Case Requests");
+        lblCaseReq.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N
+        lblCaseReq.setForeground(new java.awt.Color(0, 0, 204));
+        lblCaseReq.setText("CASE REQUESTS");
         jCasePanel.add(lblCaseReq, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 40, -1, -1));
 
         jPanel1.add(jCasePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 790, 510));
@@ -107,17 +108,17 @@ public class CaseVolunteerPJPanel extends javax.swing.JPanel {
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 790, 520));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnViewReportMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnViewReportMouseEntered
+    private void bt_ViewReportMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ViewReportMouseEntered
 
-    }//GEN-LAST:event_btnViewReportMouseEntered
+    }//GEN-LAST:event_bt_ViewReportMouseEntered
 
-    private void btnViewReportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewReportActionPerformed
+    private void bt_ViewReportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_ViewReportActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnViewReportActionPerformed
+    }//GEN-LAST:event_bt_ViewReportActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnViewReport;
+    private javax.swing.JButton bt_ViewReport;
     private javax.swing.JPanel jCasePanel;
     private javax.swing.JScrollPane jCaseVolunteerPanel;
     private javax.swing.JPanel jPanel1;

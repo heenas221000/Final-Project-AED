@@ -59,19 +59,19 @@ public class RequestDoctorJPanel extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jButton1 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        tb_Manage = new javax.swing.JTable();
+        bt_Assign = new javax.swing.JButton();
+        bt_ViewCase = new javax.swing.JButton();
+        bt_CaseComplete = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(244, 241, 222));
+        setBackground(new java.awt.Color(153, 204, 255));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(61, 64, 91));
+        jLabel1.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 204));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Manage Requests");
+        jLabel1.setText("MANAGE REQUESTS");
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tb_Manage.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -90,40 +90,43 @@ public class RequestDoctorJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(tb_Manage);
 
-        jButton1.setBackground(new java.awt.Color(129, 178, 154));
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButton1.setText("Assign Request");
-        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_Assign.setBackground(new java.awt.Color(0, 0, 204));
+        bt_Assign.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_Assign.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Assign.setText("ASSIGN REQUEST");
+        bt_Assign.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton1MouseEntered(evt);
+                bt_AssignMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton1MouseExited(evt);
+                bt_AssignMouseExited(evt);
             }
         });
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        bt_Assign.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
-        jButton4.setBackground(new java.awt.Color(129, 178, 154));
-        jButton4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButton4.setText("View Case Report");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                bt_AssignActionPerformed(evt);
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(129, 178, 154));
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButton2.setText("Case Complete");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        bt_ViewCase.setBackground(new java.awt.Color(0, 0, 204));
+        bt_ViewCase.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_ViewCase.setForeground(new java.awt.Color(255, 255, 255));
+        bt_ViewCase.setText("VIEW CASE REPORT");
+        bt_ViewCase.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                bt_ViewCaseActionPerformed(evt);
+            }
+        });
+
+        bt_CaseComplete.setBackground(new java.awt.Color(0, 0, 204));
+        bt_CaseComplete.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_CaseComplete.setForeground(new java.awt.Color(255, 255, 255));
+        bt_CaseComplete.setText("CASE COMPLETE");
+        bt_CaseComplete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt_CaseCompleteActionPerformed(evt);
             }
         });
 
@@ -135,46 +138,46 @@ public class RequestDoctorJPanel extends javax.swing.JPanel {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(bt_ViewCase, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(bt_Assign, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(bt_CaseComplete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 504, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 468, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 239, Short.MAX_VALUE))
+                        .addGap(29, 29, 29)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(84, 84, 84)
-                        .addComponent(jButton1)
+                        .addGap(63, 63, 63)
+                        .addComponent(bt_Assign)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton4)
+                        .addComponent(bt_ViewCase)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton2)))
-                .addGap(224, 224, 224))
+                        .addComponent(bt_CaseComplete)))
+                .addContainerGap(251, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseEntered
-       jButton1.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1MouseEntered
+    private void bt_AssignMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_AssignMouseEntered
+       bt_Assign.setForeground(new Color(0,128,128));        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_AssignMouseEntered
 
-    private void jButton1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseExited
-          jButton1.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1MouseExited
+    private void bt_AssignMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_AssignMouseExited
+          bt_Assign.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_AssignMouseExited
    int i=1;
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void bt_AssignActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_AssignActionPerformed
 
 
-            int selectedRow = jTable1.getSelectedRow();
-            WorkRequest request = (DrWorkRequest)jTable1.getValueAt(selectedRow, 2);
+            int selectedRow = tb_Manage.getSelectedRow();
+            WorkRequest request = (DrWorkRequest)tb_Manage.getValueAt(selectedRow, 2);
             if (CheckOpenCases(userAccount) == 0){
                 request.setReceiver(userAccount);
                 request.setStatus("Accepted");
@@ -183,14 +186,14 @@ public class RequestDoctorJPanel extends javax.swing.JPanel {
             {
                 JOptionPane.showMessageDialog(null, "Only one case can be accepted at a time");
             }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_bt_AssignActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void bt_ViewCaseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_ViewCaseActionPerformed
 
         
         
-        int selectedRow = jTable1.getSelectedRow();
-        String st=jTable1.getValueAt(selectedRow, 3).toString();
+        int selectedRow = tb_Manage.getSelectedRow();
+        String st=tb_Manage.getValueAt(selectedRow, 3).toString();
         String stat="Waiting";
         if(st.equalsIgnoreCase(stat))
         {
@@ -202,7 +205,7 @@ public class RequestDoctorJPanel extends javax.swing.JPanel {
             return;
         }
 
-        DrWorkRequest request = (DrWorkRequest)jTable1.getValueAt(selectedRow, 2);
+        DrWorkRequest request = (DrWorkRequest)tb_Manage.getValueAt(selectedRow, 2);
         request.getCaseReporterWorkRequest().setDoctorWorkRequest(request);
 
         if (request.getReceiver()!=userAccount){
@@ -216,34 +219,34 @@ public class RequestDoctorJPanel extends javax.swing.JPanel {
             
         }
         }
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_bt_ViewCaseActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        int selectedRow = jTable1.getSelectedRow();
+    private void bt_CaseCompleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_CaseCompleteActionPerformed
+        int selectedRow = tb_Manage.getSelectedRow();
         
         if (selectedRow < 0){
             return;
         }
      
-        WorkRequest request = (DrWorkRequest)jTable1.getValueAt(selectedRow, 2);
+        WorkRequest request = (DrWorkRequest)tb_Manage.getValueAt(selectedRow, 2);
        // WorkRequest newReq= (RehabilitationCaretakerWorkRequest);
         request.setReceiver(userAccount);
         request.setStatus("Case Completed");
         populatetable();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_bt_CaseCompleteActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton bt_Assign;
+    private javax.swing.JButton bt_CaseComplete;
+    private javax.swing.JButton bt_ViewCase;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable tb_Manage;
     // End of variables declaration//GEN-END:variables
 
     private void populatetable() {
-        DefaultTableModel model= (DefaultTableModel) jTable1.getModel();
+        DefaultTableModel model= (DefaultTableModel) tb_Manage.getModel();
         Object[] row=new Object[4];
         model.setRowCount(0);
         

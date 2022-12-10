@@ -44,10 +44,10 @@ public class CounsellorPrescribeMedicinesJPanel extends javax.swing.JPanel {
         txtDate = new javax.swing.JTextField();
         lblDoctorSign = new javax.swing.JLabel();
         txtDoctorSign = new javax.swing.JTextField();
-        btnRequestPharmacist = new javax.swing.JButton();
-        btnBack = new javax.swing.JButton();
+        bt_RequestPharmacist = new javax.swing.JButton();
+        bt_back = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(244, 241, 222));
+        setBackground(new java.awt.Color(153, 204, 255));
 
         lblHeader.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         lblHeader.setForeground(new java.awt.Color(61, 64, 91));
@@ -81,32 +81,34 @@ public class CounsellorPrescribeMedicinesJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnRequestPharmacist.setBackground(new java.awt.Color(129, 178, 154));
-        btnRequestPharmacist.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        btnRequestPharmacist.setText("Request Pharmacist");
-        btnRequestPharmacist.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_RequestPharmacist.setBackground(new java.awt.Color(0, 0, 204));
+        bt_RequestPharmacist.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_RequestPharmacist.setForeground(new java.awt.Color(255, 255, 255));
+        bt_RequestPharmacist.setText("REQUEST PHARMACIST");
+        bt_RequestPharmacist.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnRequestPharmacistMouseEntered(evt);
+                bt_RequestPharmacistMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnRequestPharmacistMouseExited(evt);
+                bt_RequestPharmacistMouseExited(evt);
             }
         });
-        btnRequestPharmacist.addActionListener(new java.awt.event.ActionListener() {
+        bt_RequestPharmacist.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRequestPharmacistActionPerformed(evt);
+                bt_RequestPharmacistActionPerformed(evt);
             }
         });
 
-        btnBack.setBackground(new java.awt.Color(129, 178, 154));
-        btnBack.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        btnBack.setText("Back");
-        btnBack.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_back.setBackground(new java.awt.Color(0, 0, 204));
+        bt_back.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_back.setForeground(new java.awt.Color(255, 255, 255));
+        bt_back.setText("Back");
+        bt_back.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnBackMouseEntered(evt);
+                bt_backMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnBackMouseExited(evt);
+                bt_backMouseExited(evt);
             }
         });
 
@@ -119,7 +121,7 @@ public class CounsellorPrescribeMedicinesJPanel extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(49, 49, 49)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(bt_back, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(28, 28, 28)
                                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 493, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -142,14 +144,14 @@ public class CounsellorPrescribeMedicinesJPanel extends javax.swing.JPanel {
                                 .addComponent(txtDoctorSign, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(224, 224, 224)
-                        .addComponent(btnRequestPharmacist)))
+                        .addComponent(bt_RequestPharmacist)))
                 .addContainerGap(97, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(40, 40, 40)
-                .addComponent(btnBack)
+                .addComponent(bt_back)
                 .addGap(7, 7, 7)
                 .addComponent(lblHeader)
                 .addGap(18, 18, 18)
@@ -164,40 +166,40 @@ public class CounsellorPrescribeMedicinesJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtDoctorSign, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblDoctorSign))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
-                .addComponent(btnRequestPharmacist)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                .addComponent(bt_RequestPharmacist)
                 .addGap(34, 34, 34))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnRequestPharmacistMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRequestPharmacistMouseEntered
-        btnRequestPharmacist.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_btnRequestPharmacistMouseEntered
+    private void bt_RequestPharmacistMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_RequestPharmacistMouseEntered
+        bt_RequestPharmacist.setForeground(new Color(0,128,128));        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_RequestPharmacistMouseEntered
 
-    private void btnRequestPharmacistMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRequestPharmacistMouseExited
-        btnRequestPharmacist.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnRequestPharmacistMouseExited
+    private void bt_RequestPharmacistMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_RequestPharmacistMouseExited
+        bt_RequestPharmacist.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_RequestPharmacistMouseExited
 
-    private void btnBackMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackMouseEntered
-        btnBack.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBackMouseEntered
+    private void bt_backMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_backMouseEntered
+        bt_back.setForeground(new Color(0,128,128));        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_backMouseEntered
 
-    private void btnBackMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackMouseExited
-        btnBack.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBackMouseExited
+    private void bt_backMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_backMouseExited
+        bt_back.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_backMouseExited
 
     private void txtDoctorSignActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDoctorSignActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtDoctorSignActionPerformed
 
-    private void btnRequestPharmacistActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRequestPharmacistActionPerformed
+    private void bt_RequestPharmacistActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_RequestPharmacistActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnRequestPharmacistActionPerformed
+    }//GEN-LAST:event_bt_RequestPharmacistActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBack;
-    private javax.swing.JButton btnRequestPharmacist;
+    private javax.swing.JButton bt_RequestPharmacist;
+    private javax.swing.JButton bt_back;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblDate;
     private javax.swing.JLabel lblDoctorName;

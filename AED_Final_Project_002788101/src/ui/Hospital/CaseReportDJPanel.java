@@ -77,149 +77,162 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
         detailsjLabel = new javax.swing.JLabel();
         suspecttypejLabel = new javax.swing.JLabel();
         namesuspectjLabel = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        txt_Survivor = new javax.swing.JTextField();
+        txt_SusName = new javax.swing.JTextField();
+        txt_Details = new javax.swing.JTextField();
+        txt_Location = new javax.swing.JTextField();
+        txt_relation = new javax.swing.JTextField();
+        txt_AssaultType = new javax.swing.JTextField();
+        txt_Date = new javax.swing.JTextField();
+        txt_SusType = new javax.swing.JTextField();
+        bt_ReqLab = new javax.swing.JButton();
+        bt_ViewLab = new javax.swing.JButton();
+        bt_PrescribeMeds = new javax.swing.JButton();
+        bt_SendInvite = new javax.swing.JButton();
+        bt_back = new javax.swing.JButton();
 
         jPanel1.setBackground(new java.awt.Color(153, 204, 255));
         jPanel1.setLayout(new java.awt.GridBagLayout());
 
         jPanel2.setBackground(new java.awt.Color(153, 204, 255));
 
-        namesurvivorjLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        namesurvivorjLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        namesurvivorjLabel.setForeground(new java.awt.Color(0, 0, 204));
         namesurvivorjLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        namesurvivorjLabel.setText("Name of Survivor : ");
+        namesurvivorjLabel.setText("NAME OF SURVIVOR");
 
-        relationjLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        relationjLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        relationjLabel.setForeground(new java.awt.Color(0, 0, 204));
         relationjLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        relationjLabel.setText("Relation with Survivor : ");
+        relationjLabel.setText("RELATION WITH SURVIVOR");
 
-        typejLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        typejLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        typejLabel.setForeground(new java.awt.Color(0, 0, 204));
         typejLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        typejLabel.setText("Type of Sexual Assault : ");
+        typejLabel.setText("TYPE OF ASSAULT");
 
-        locationjLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        locationjLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        locationjLabel.setForeground(new java.awt.Color(0, 0, 204));
         locationjLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        locationjLabel.setText("Location of Incident :");
+        locationjLabel.setText("LOCATION OF INCIDENT");
 
-        timejLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        timejLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        timejLabel.setForeground(new java.awt.Color(0, 0, 204));
         timejLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        timejLabel.setText("Date of Incident :");
+        timejLabel.setText("DATE OF INCIDENT");
 
-        detailsjLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        detailsjLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        detailsjLabel.setForeground(new java.awt.Color(0, 0, 204));
         detailsjLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        detailsjLabel.setText("More Details : ");
+        detailsjLabel.setText("MORE DETAILS");
 
-        suspecttypejLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        suspecttypejLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        suspecttypejLabel.setForeground(new java.awt.Color(0, 0, 204));
         suspecttypejLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        suspecttypejLabel.setText("Suspect :");
+        suspecttypejLabel.setText("SUSPECT");
 
-        namesuspectjLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        namesuspectjLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        namesuspectjLabel.setForeground(new java.awt.Color(0, 0, 204));
         namesuspectjLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        namesuspectjLabel.setText("Name of Suspect : ");
+        namesuspectjLabel.setText("NAME OF SUSPECT");
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        txt_Survivor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                txt_SurvivorActionPerformed(evt);
             }
         });
 
-        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+        txt_relation.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField5ActionPerformed(evt);
+                txt_relationActionPerformed(evt);
             }
         });
 
-        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+        txt_AssaultType.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField6ActionPerformed(evt);
+                txt_AssaultTypeActionPerformed(evt);
             }
         });
 
-        jButton1.setBackground(new java.awt.Color(102, 153, 255));
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton1.setText("REQUEST LAB ");
-        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_ReqLab.setBackground(new java.awt.Color(0, 0, 204));
+        bt_ReqLab.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_ReqLab.setForeground(new java.awt.Color(255, 255, 255));
+        bt_ReqLab.setText("REQUEST LAB ");
+        bt_ReqLab.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton1MouseEntered(evt);
+                bt_ReqLabMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton1MouseExited(evt);
+                bt_ReqLabMouseExited(evt);
             }
         });
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        bt_ReqLab.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                bt_ReqLabActionPerformed(evt);
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(153, 153, 255));
-        jButton3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton3.setText("VIEW LAB TEST");
-        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_ViewLab.setBackground(new java.awt.Color(0, 0, 204));
+        bt_ViewLab.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_ViewLab.setForeground(new java.awt.Color(255, 255, 255));
+        bt_ViewLab.setText("VIEW LAB TEST");
+        bt_ViewLab.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton3MouseEntered(evt);
+                bt_ViewLabMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton3MouseExited(evt);
+                bt_ViewLabMouseExited(evt);
             }
         });
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        bt_ViewLab.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                bt_ViewLabActionPerformed(evt);
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(102, 153, 255));
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton2.setText("PRESCRIBE MEDICINES");
-        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_PrescribeMeds.setBackground(new java.awt.Color(0, 0, 204));
+        bt_PrescribeMeds.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_PrescribeMeds.setForeground(new java.awt.Color(255, 255, 255));
+        bt_PrescribeMeds.setText("PRESCRIBE MEDICINES");
+        bt_PrescribeMeds.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton2MouseEntered(evt);
+                bt_PrescribeMedsMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton2MouseExited(evt);
+                bt_PrescribeMedsMouseExited(evt);
             }
         });
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        bt_PrescribeMeds.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                bt_PrescribeMedsActionPerformed(evt);
             }
         });
 
-        jButton4.setBackground(new java.awt.Color(0, 153, 255));
-        jButton4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton4.setText("SEND INVITE");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        bt_SendInvite.setBackground(new java.awt.Color(0, 0, 204));
+        bt_SendInvite.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_SendInvite.setForeground(new java.awt.Color(255, 255, 255));
+        bt_SendInvite.setText("SEND INVITE");
+        bt_SendInvite.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                bt_SendInviteActionPerformed(evt);
             }
         });
 
-        jButton5.setBackground(new java.awt.Color(51, 153, 255));
-        jButton5.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
-        jButton5.setText("BACK");
-        jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_back.setBackground(new java.awt.Color(0, 0, 204));
+        bt_back.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_back.setForeground(new java.awt.Color(255, 255, 255));
+        bt_back.setText("BACK");
+        bt_back.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton5MouseEntered(evt);
+                bt_backMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton5MouseExited(evt);
+                bt_backMouseExited(evt);
             }
         });
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        bt_back.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                bt_backActionPerformed(evt);
             }
         });
 
@@ -231,13 +244,13 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
                 .addGap(0, 142, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jButton4)
+                        .addComponent(bt_SendInvite)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1)
+                        .addComponent(bt_ReqLab)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton3)
+                        .addComponent(bt_ViewLab)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton2))
+                        .addComponent(bt_PrescribeMeds))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(typejLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -250,64 +263,65 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
                             .addComponent(namesurvivorjLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(33, 33, 33)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txt_Survivor, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txt_Location, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txt_AssaultType, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txt_relation, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txt_SusType, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txt_SusName, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(jTextField3, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jTextField7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 161, Short.MAX_VALUE))))))
+                                .addComponent(txt_Details, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(txt_Date, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 161, Short.MAX_VALUE))))))
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jButton5)
+                .addGap(30, 30, 30)
+                .addComponent(bt_back)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addContainerGap()
+                .addComponent(bt_back, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(namesurvivorjLabel)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txt_Survivor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(12, 12, 12)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(3, 3, 3)
                         .addComponent(relationjLabel))
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txt_relation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(typejLabel)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txt_AssaultType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_Location, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(locationjLabel))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_Date, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(timejLabel))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_Details, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(detailsjLabel))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_SusType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(suspecttypejLabel))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txt_SusName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(namesuspectjLabel))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, 86, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton3)
-                    .addComponent(jButton2)
-                    .addComponent(jButton4))
+                    .addComponent(bt_ReqLab)
+                    .addComponent(bt_ViewLab)
+                    .addComponent(bt_PrescribeMeds)
+                    .addComponent(bt_SendInvite))
                 .addContainerGap())
         );
 
@@ -343,27 +357,27 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void txt_SurvivorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_SurvivorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_txt_SurvivorActionPerformed
 
-    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+    private void txt_relationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_relationActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField5ActionPerformed
+    }//GEN-LAST:event_txt_relationActionPerformed
 
-    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+    private void txt_AssaultTypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_AssaultTypeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField6ActionPerformed
+    }//GEN-LAST:event_txt_AssaultTypeActionPerformed
 
-    private void jButton1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseEntered
-        jButton1.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1MouseEntered
+    private void bt_ReqLabMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ReqLabMouseEntered
+        bt_ReqLab.setForeground(new Color(0,128,128));        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_ReqLabMouseEntered
 
-    private void jButton1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseExited
-        jButton1.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1MouseExited
+    private void bt_ReqLabMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ReqLabMouseExited
+        bt_ReqLab.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_ReqLabMouseExited
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void bt_ReqLabActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_ReqLabActionPerformed
         // TODO add your handling code here:
         LabAssistantWorkRequest labrequest = new LabAssistantWorkRequest();
         labrequest.setDoctorWorkRequest(request.getDoctorWorkRequest());
@@ -397,17 +411,17 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
         layout.next(userProcessContainer);
 
         //JOptionPane.showMessageDialog(null, "Request submitted to Forensic Department.");
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_bt_ReqLabActionPerformed
 
-    private void jButton3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseEntered
-        jButton3.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3MouseEntered
+    private void bt_ViewLabMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ViewLabMouseEntered
+        bt_ViewLab.setForeground(new Color(0,128,128));        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_ViewLabMouseEntered
 
-    private void jButton3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseExited
-        jButton3.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3MouseExited
+    private void bt_ViewLabMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ViewLabMouseExited
+        bt_ViewLab.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_ViewLabMouseExited
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void bt_ViewLabActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_ViewLabActionPerformed
         // TODO add your handling code here:
         //System.out.println("Status "+request.getDoctorWorkRequest().getLabAssistanceWorkRequest().getStatus());
         if(request.getDoctorWorkRequest().getLabAssistanceWorkRequest().getStatus().equalsIgnoreCase("Waiting")){
@@ -418,17 +432,17 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
             CardLayout layout = (CardLayout) userProcessContainer.getLayout();
             layout.next(userProcessContainer);}
 
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_bt_ViewLabActionPerformed
 
-    private void jButton2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseEntered
-        jButton2.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2MouseEntered
+    private void bt_PrescribeMedsMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_PrescribeMedsMouseEntered
+        bt_PrescribeMeds.setForeground(new Color(0,128,128));        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_PrescribeMedsMouseEntered
 
-    private void jButton2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseExited
-        jButton2.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2MouseExited
+    private void bt_PrescribeMedsMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_PrescribeMedsMouseExited
+        bt_PrescribeMeds.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_PrescribeMedsMouseExited
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void bt_PrescribeMedsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_PrescribeMedsActionPerformed
         // TODO add your handling code here:
         PharmacistWorkRequest prequest = new PharmacistWorkRequest();
         prequest.setDoctorWorkRequest(request.getDoctorWorkRequest());
@@ -460,9 +474,9 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
         userProcessContainer.add("caseReportJPanel", requestLabTestJPanel);
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_bt_PrescribeMedsActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void bt_SendInviteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_SendInviteActionPerformed
         String FromEmail="sexualawareness.help@gmail.com";
         String FromEmailPass="Fin@lProject21";
         String Subject = "Sign up successful";
@@ -495,17 +509,17 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(this, "Incorrect E-mail id.Invitation cannot be been sent.");
         }
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_bt_SendInviteActionPerformed
 
-    private void jButton5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseEntered
-        jButton5.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5MouseEntered
+    private void bt_backMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_backMouseEntered
+        bt_back.setForeground(new Color(0,128,128));        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_backMouseEntered
 
-    private void jButton5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseExited
-        jButton5.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5MouseExited
+    private void bt_backMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_backMouseExited
+        bt_back.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_backMouseExited
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void bt_backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_backActionPerformed
         // TODO add your handling code here:
 
         /*
@@ -528,43 +542,43 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.next(userProcessContainer);
 
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_bt_backActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton bt_PrescribeMeds;
+    private javax.swing.JButton bt_ReqLab;
+    private javax.swing.JButton bt_SendInvite;
+    private javax.swing.JButton bt_ViewLab;
+    private javax.swing.JButton bt_back;
     private javax.swing.JLabel detailsjLabel;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
     private javax.swing.JLabel locationjLabel;
     private javax.swing.JLabel namesurvivorjLabel;
     private javax.swing.JLabel namesuspectjLabel;
     private javax.swing.JLabel relationjLabel;
     private javax.swing.JLabel suspecttypejLabel;
     private javax.swing.JLabel timejLabel;
+    private javax.swing.JTextField txt_AssaultType;
+    private javax.swing.JTextField txt_Date;
+    private javax.swing.JTextField txt_Details;
+    private javax.swing.JTextField txt_Location;
+    private javax.swing.JTextField txt_Survivor;
+    private javax.swing.JTextField txt_SusName;
+    private javax.swing.JTextField txt_SusType;
+    private javax.swing.JTextField txt_relation;
     private javax.swing.JLabel typejLabel;
     // End of variables declaration//GEN-END:variables
  private void PopulateReport() {
-        jTextField1.setText(request.getUserName());
-        jTextField5.setText(request.getRelation());
-        jTextField6.setText(request.getAssaultType());
-        jTextField4.setText(request.getLocation());
-        jTextField7.setText(request.getDoi().toString());
-        jTextField3.setText(request.getMoredetails());
-        jTextField8.setText(request.getSuspecttype());
-        jTextField2.setText(request.getNameofsuspect());
+        txt_Survivor.setText(request.getUserName());
+        txt_relation.setText(request.getRelation());
+        txt_AssaultType.setText(request.getAssaultType());
+        txt_Location.setText(request.getLocation());
+        txt_Date.setText(request.getDoi().toString());
+        txt_Details.setText(request.getMoredetails());
+        txt_SusType.setText(request.getSuspecttype());
+        txt_SusName.setText(request.getNameofsuspect());
         
         
     }

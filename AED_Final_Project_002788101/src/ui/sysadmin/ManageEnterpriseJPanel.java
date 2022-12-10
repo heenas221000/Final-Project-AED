@@ -11,6 +11,7 @@ import business.Enterprise.Enterprise;
 import business.Network.Network;
 import java.awt.CardLayout;
 import java.awt.Component;
+
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
@@ -18,7 +19,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author shah0
+ * @author heenashah
  */
 public class ManageEnterpriseJPanel extends javax.swing.JPanel {
 
@@ -92,12 +93,12 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
         comboBoxEnterpriseType = new javax.swing.JComboBox();
         btnDelete = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(204, 204, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblManageEnterprises.setBackground(new java.awt.Color(255, 255, 255));
-        lblManageEnterprises.setFont(new java.awt.Font("Songti SC", 1, 24)); // NOI18N
-        lblManageEnterprises.setForeground(new java.awt.Color(102, 102, 255));
+        lblManageEnterprises.setFont(new java.awt.Font("Monaco", 1, 24)); // NOI18N
+        lblManageEnterprises.setForeground(new java.awt.Color(230, 126, 34));
         lblManageEnterprises.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblManageEnterprises.setText("Manage Enterprises");
         add(lblManageEnterprises, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 40, 628, 40));
@@ -125,19 +126,17 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 120, 430, 130));
 
-        jLabel2.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(102, 102, 255));
+        jLabel2.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
         jLabel2.setText("Enterprise Type:");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 162, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(102, 102, 255));
+        jLabel3.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
         jLabel3.setText("Network:");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 121, -1, -1));
 
-        btnSubmit.setBackground(new java.awt.Color(204, 255, 51));
-        btnSubmit.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        btnSubmit.setForeground(new java.awt.Color(102, 102, 255));
+        btnSubmit.setBackground(new java.awt.Color(51, 102, 255));
+        btnSubmit.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnSubmit.setForeground(new java.awt.Color(255, 255, 255));
         btnSubmit.setText("Submit");
         btnSubmit.setBorderPainted(false);
         btnSubmit.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -153,13 +152,12 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
                 btnSubmitActionPerformed(evt);
             }
         });
-        add(btnSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 280, 100, -1));
+        add(btnSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 258, 120, -1));
 
-        lblNetworkName.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        lblNetworkName.setForeground(new java.awt.Color(102, 102, 255));
+        lblNetworkName.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
         lblNetworkName.setText("Name:");
         add(lblNetworkName, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 211, -1, -1));
-        add(txtEnterpriseName, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 220, 120, -1));
+        add(txtEnterpriseName, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 200, 120, -1));
 
         comboBoxNetworkName.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         comboBoxNetworkName.addActionListener(new java.awt.event.ActionListener() {
@@ -167,7 +165,7 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
                 comboBoxNetworkNameActionPerformed(evt);
             }
         });
-        add(comboBoxNetworkName, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 120, 120, -1));
+        add(comboBoxNetworkName, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 120, 120, -1));
 
         comboBoxEnterpriseType.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         comboBoxEnterpriseType.addActionListener(new java.awt.event.ActionListener() {
@@ -175,11 +173,11 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
                 comboBoxEnterpriseTypeActionPerformed(evt);
             }
         });
-        add(comboBoxEnterpriseType, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 170, 120, -1));
+        add(comboBoxEnterpriseType, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 160, 120, -1));
 
-        btnDelete.setBackground(new java.awt.Color(204, 255, 51));
-        btnDelete.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        btnDelete.setForeground(new java.awt.Color(102, 102, 255));
+        btnDelete.setBackground(new java.awt.Color(51, 102, 255));
+        btnDelete.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnDelete.setForeground(new java.awt.Color(255, 255, 255));
         btnDelete.setText("Delete");
         btnDelete.setBorderPainted(false);
         btnDelete.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -195,7 +193,7 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
                 btnDeleteActionPerformed(evt);
             }
         });
-        add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 280, 110, -1));
+        add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 260, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSubmitMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSubmitMouseEntered

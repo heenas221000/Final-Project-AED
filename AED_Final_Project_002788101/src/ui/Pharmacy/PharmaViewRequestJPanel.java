@@ -50,17 +50,19 @@ public class PharmaViewRequestJPanel extends javax.swing.JPanel {
 
         lblHeader = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tblPharmaViewRequest = new javax.swing.JTable();
-        btnAssignRequest = new javax.swing.JButton();
-        btnView = new javax.swing.JButton();
+        tb_PharmaView = new javax.swing.JTable();
+        bt_AssignRequest = new javax.swing.JButton();
+        bt_View = new javax.swing.JButton();
+
+        setBackground(new java.awt.Color(153, 204, 255));
 
         lblHeader.setBackground(new java.awt.Color(129, 178, 154));
         lblHeader.setFont(new java.awt.Font("Monaco", 1, 24)); // NOI18N
-        lblHeader.setForeground(new java.awt.Color(61, 64, 91));
+        lblHeader.setForeground(new java.awt.Color(0, 0, 204));
         lblHeader.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblHeader.setText("Manage Requests");
+        lblHeader.setText("MANAGE REQUESTS");
 
-        tblPharmaViewRequest.setModel(new javax.swing.table.DefaultTableModel(
+        tb_PharmaView.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -68,7 +70,7 @@ public class PharmaViewRequestJPanel extends javax.swing.JPanel {
                 {null, null, null, null}
             },
             new String [] {
-                "Patient's Name", "Doctor's Name", "Status", "Pharmacist"
+                "PATIENT", "DOCTOR", "STATUS", "PHARMACIST"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -79,41 +81,41 @@ public class PharmaViewRequestJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(tblPharmaViewRequest);
+        jScrollPane1.setViewportView(tb_PharmaView);
 
-        btnAssignRequest.setBackground(new java.awt.Color(129, 178, 154));
-        btnAssignRequest.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        btnAssignRequest.setForeground(new java.awt.Color(61, 64, 58));
-        btnAssignRequest.setText("Assign Request");
-        btnAssignRequest.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_AssignRequest.setBackground(new java.awt.Color(0, 0, 204));
+        bt_AssignRequest.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        bt_AssignRequest.setForeground(new java.awt.Color(255, 255, 255));
+        bt_AssignRequest.setText("ASSIGN REQUEST");
+        bt_AssignRequest.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnAssignRequestMouseEntered(evt);
+                bt_AssignRequestMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnAssignRequestMouseExited(evt);
+                bt_AssignRequestMouseExited(evt);
             }
         });
-        btnAssignRequest.addActionListener(new java.awt.event.ActionListener() {
+        bt_AssignRequest.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAssignRequestActionPerformed(evt);
+                bt_AssignRequestActionPerformed(evt);
             }
         });
 
-        btnView.setBackground(new java.awt.Color(129, 178, 154));
-        btnView.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        btnView.setForeground(new java.awt.Color(61, 64, 58));
-        btnView.setText("View");
-        btnView.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_View.setBackground(new java.awt.Color(0, 0, 204));
+        bt_View.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        bt_View.setForeground(new java.awt.Color(255, 255, 255));
+        bt_View.setText("VIEW");
+        bt_View.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnViewMouseEntered(evt);
+                bt_ViewMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnViewMouseExited(evt);
+                bt_ViewMouseExited(evt);
             }
         });
-        btnView.addActionListener(new java.awt.event.ActionListener() {
+        bt_View.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnViewActionPerformed(evt);
+                bt_ViewActionPerformed(evt);
             }
         });
 
@@ -129,66 +131,66 @@ public class PharmaViewRequestJPanel extends javax.swing.JPanel {
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(261, 261, 261)
-                        .addComponent(btnAssignRequest)
-                        .addGap(43, 43, 43)
-                        .addComponent(btnView, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(bt_AssignRequest)
+                        .addGap(59, 59, 59)
+                        .addComponent(bt_View, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(154, 154, 154))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(59, 59, 59)
+                .addGap(31, 31, 31)
                 .addComponent(lblHeader, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
+                .addGap(65, 65, 65)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 156, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnAssignRequest)
-                    .addComponent(btnView))
+                    .addComponent(bt_AssignRequest)
+                    .addComponent(bt_View))
                 .addGap(103, 103, 103))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnAssignRequestMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAssignRequestMouseEntered
-        btnAssignRequest.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAssignRequestMouseEntered
+    private void bt_AssignRequestMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_AssignRequestMouseEntered
+        bt_AssignRequest.setForeground(new Color(0,128,128));        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_AssignRequestMouseEntered
 
-    private void btnAssignRequestMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAssignRequestMouseExited
-        btnAssignRequest.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAssignRequestMouseExited
+    private void bt_AssignRequestMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_AssignRequestMouseExited
+        bt_AssignRequest.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_AssignRequestMouseExited
 
-    private void btnAssignRequestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAssignRequestActionPerformed
+    private void bt_AssignRequestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_AssignRequestActionPerformed
         // TODO add your handling code here:
-        int selectedRow = tblPharmaViewRequest.getSelectedRow();
+        int selectedRow = tb_PharmaView.getSelectedRow();
 
         if (selectedRow < 0){
             return;
         }
 
-        PharmacistWorkRequest request = (PharmacistWorkRequest)tblPharmaViewRequest.getValueAt(selectedRow, 2);
+        PharmacistWorkRequest request = (PharmacistWorkRequest)tb_PharmaView.getValueAt(selectedRow, 2);
         request.setReceiver(userAccount);
         request.setStatus("Accepted");
         populateTable();
-    }//GEN-LAST:event_btnAssignRequestActionPerformed
+    }//GEN-LAST:event_bt_AssignRequestActionPerformed
 
-    private void btnViewMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnViewMouseEntered
-        btnView.setForeground(new Color(0,128,128));         // TODO add your handling code here:
-    }//GEN-LAST:event_btnViewMouseEntered
+    private void bt_ViewMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ViewMouseEntered
+        bt_View.setForeground(new Color(0,128,128));         // TODO add your handling code here:
+    }//GEN-LAST:event_bt_ViewMouseEntered
 
-    private void btnViewMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnViewMouseExited
-        btnView.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnViewMouseExited
+    private void bt_ViewMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ViewMouseExited
+        bt_View.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_ViewMouseExited
 
-    private void btnViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewActionPerformed
+    private void bt_ViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_ViewActionPerformed
         // TODO add your handling code here:
-        int selectedRow = tblPharmaViewRequest.getSelectedRow();
+        int selectedRow = tb_PharmaView.getSelectedRow();
 
         if (selectedRow < 0){
             return;
         }
 
-        PharmacistWorkRequest request = (PharmacistWorkRequest)tblPharmaViewRequest.getValueAt(selectedRow, 2);
+        PharmacistWorkRequest request = (PharmacistWorkRequest)tb_PharmaView.getValueAt(selectedRow, 2);
         if (request.getReceiver()!=userAccount){
             JOptionPane.showMessageDialog(this, "You cannot view the report of this case. Access Denied.");
         }else{
@@ -199,11 +201,11 @@ public class PharmaViewRequestJPanel extends javax.swing.JPanel {
             layout.next(userProcessContainer);
 
         }
-    }//GEN-LAST:event_btnViewActionPerformed
+    }//GEN-LAST:event_bt_ViewActionPerformed
 
     private void populateTable() {
         
-        DefaultTableModel model= (DefaultTableModel) tblPharmaViewRequest.getModel();
+        DefaultTableModel model= (DefaultTableModel) tb_PharmaView.getModel();
         Object[] row=new Object[4];
         model.setRowCount(0);
         
@@ -225,10 +227,10 @@ public class PharmaViewRequestJPanel extends javax.swing.JPanel {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAssignRequest;
-    private javax.swing.JButton btnView;
+    private javax.swing.JButton bt_AssignRequest;
+    private javax.swing.JButton bt_View;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblHeader;
-    private javax.swing.JTable tblPharmaViewRequest;
+    private javax.swing.JTable tb_PharmaView;
     // End of variables declaration//GEN-END:variables
 }

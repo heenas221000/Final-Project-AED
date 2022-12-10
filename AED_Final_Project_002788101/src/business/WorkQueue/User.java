@@ -1,7 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package business.WorkQueue;
 
@@ -9,38 +8,37 @@ import java.util.ArrayList;
 
 /**
  *
- * @author hetal
+ * @author vishwa
  */
-public class User {
-     String UserName;
-    Integer UserAge;
-      ArrayList <User> Users= new ArrayList<User>();
-
-    public ArrayList<User> getUsers() {
-        return Users;
-    }
-
-    public void setUsers(ArrayList<User> Users) {
-        this.Users = Users;
-    }
-    public void addUser(User c)
-    {
-        Users.add(c);
-    }
+public class User {   String userName;
+    Integer userAge;
+      ArrayList <User> users= new ArrayList<User>();
 
     public String getUserName() {
-        return UserName;
+        return userName;
     }
 
-    public void setUserName(String UserName) {
-        this.UserName = UserName;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public Integer getUserAge() {
-        return UserAge;
+        return userAge;
     }
 
-    public void setUserAge(Integer UserAge) {
-        this.UserAge = UserAge;
+    public void setUserAge(Integer userAge) {
+        this.userAge = userAge;
     }
-}
+
+    public ArrayList<User> getUsers() {
+        return users;
+    }
+
+    public void setUsers(ArrayList<User> users) {
+        this.users = users;
+    }
+    public void addUser(User u)
+    {
+        users.add(u);
+    
+}}

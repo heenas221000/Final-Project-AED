@@ -32,7 +32,7 @@ import org.jfree.data.general.DefaultPieDataset;
 
 /**
  *
- * @author heenashah
+ * @author shah0
  */
 public class ManageNetworkJPanel extends javax.swing.JPanel {
 
@@ -89,12 +89,12 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(204, 204, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblManageNetworks.setBackground(new java.awt.Color(255, 255, 255));
-        lblManageNetworks.setFont(new java.awt.Font("Songti SC", 1, 24)); // NOI18N
-        lblManageNetworks.setForeground(new java.awt.Color(102, 102, 255));
+        lblManageNetworks.setFont(new java.awt.Font("Monaco", 1, 24)); // NOI18N
+        lblManageNetworks.setForeground(new java.awt.Color(230, 126, 34));
         lblManageNetworks.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblManageNetworks.setText("Manage Networks");
         add(lblManageNetworks, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 47, 805, 40));
@@ -120,11 +120,9 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tableNetworks);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 110, 340, 180));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 110, 340, 130));
 
-        jLabel2.setBackground(new java.awt.Color(102, 102, 255));
-        jLabel2.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(102, 102, 255));
+        jLabel2.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
         jLabel2.setText("Name:");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 70, -1));
 
@@ -135,16 +133,16 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
         });
         add(txtEnterNameOfNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 120, 216, -1));
 
-        btnAddNewNetwork.setBackground(new java.awt.Color(204, 255, 51));
-        btnAddNewNetwork.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        btnAddNewNetwork.setForeground(new java.awt.Color(102, 102, 255));
-        btnAddNewNetwork.setText("Add");
+        btnAddNewNetwork.setBackground(new java.awt.Color(51, 102, 255));
+        btnAddNewNetwork.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnAddNewNetwork.setForeground(new java.awt.Color(255, 255, 255));
+        btnAddNewNetwork.setText("ADD");
         btnAddNewNetwork.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnAddNewNetworkMouseEntered(evt);
-            }
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 btnAddNewNetworkMouseExited(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnAddNewNetworkMouseEntered(evt);
             }
         });
         btnAddNewNetwork.addActionListener(new java.awt.event.ActionListener() {
@@ -152,11 +150,11 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
                 btnAddNewNetworkActionPerformed(evt);
             }
         });
-        add(btnAddNewNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, 110, -1));
+        add(btnAddNewNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 190, 90, -1));
 
-        btnDeleteNetwork.setBackground(new java.awt.Color(204, 255, 51));
-        btnDeleteNetwork.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        btnDeleteNetwork.setForeground(new java.awt.Color(102, 102, 255));
+        btnDeleteNetwork.setBackground(new java.awt.Color(51, 102, 255));
+        btnDeleteNetwork.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnDeleteNetwork.setForeground(new java.awt.Color(255, 255, 255));
         btnDeleteNetwork.setText("Remove");
         btnDeleteNetwork.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
@@ -171,29 +169,29 @@ public class ManageNetworkJPanel extends javax.swing.JPanel {
                 btnDeleteNetworkActionPerformed(evt);
             }
         });
-        add(btnDeleteNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 200, 120, -1));
+        add(btnDeleteNetwork, new org.netbeans.lib.awtextra.AbsoluteConstraints(212, 190, 120, -1));
 
-        jButton2.setBackground(new java.awt.Color(204, 255, 51));
-        jButton2.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(102, 102, 255));
+        jButton2.setBackground(new java.awt.Color(51, 102, 255));
+        jButton2.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("View Cases");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 250, 120, -1));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 230, -1, -1));
 
-        jButton3.setBackground(new java.awt.Color(204, 255, 51));
-        jButton3.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(102, 102, 255));
+        jButton3.setBackground(new java.awt.Color(51, 102, 255));
+        jButton3.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Report");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
-        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 250, 110, -1));
+        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(96, 232, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtEnterNameOfNetworkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEnterNameOfNetworkActionPerformed

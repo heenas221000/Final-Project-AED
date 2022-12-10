@@ -39,18 +39,18 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         
     }
      public void populateOrganizationComboBox(){
-        organizationEmpJComboBox.removeAllItems();
+        cb_org.removeAllItems();
         
         for (Organization organization : organizationDir.getOrganizationList()){
-            organizationEmpJComboBox.addItem(organization);
+            cb_org.addItem(organization);
         }
     }
     
     public void populateOrganizationEmpComboBox(){
-        organizationEmpJComboBox.removeAllItems();
+        cb_org.removeAllItems();
         
         for (Organization organization : organizationDir.getOrganizationList()){
-            organizationEmpJComboBox.addItem(organization);
+            cb_org.addItem(organization);
         }
     }
 
@@ -82,24 +82,24 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         tableOrg = new javax.swing.JTable();
         lblSelectOrg = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        nameJTextField = new javax.swing.JTextField();
-        btnCreateEmployee = new javax.swing.JButton();
-        organizationEmpJComboBox = new javax.swing.JComboBox();
-        Deletebtn = new javax.swing.JButton();
+        txt_Name = new javax.swing.JTextField();
+        bt_CreateEmployee = new javax.swing.JButton();
+        cb_org = new javax.swing.JComboBox();
+        bt_Delete = new javax.swing.JButton();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(153, 204, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBackground(new java.awt.Color(153, 204, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(230, 126, 34));
+        jLabel1.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 204));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Manage Employee");
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 56, 671, 37));
+        jLabel1.setText("MANAGE EMPLOYEE");
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 671, 37));
 
         tableOrg.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -124,123 +124,125 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
 
         jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 120, 220, 100));
 
-        lblSelectOrg.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblSelectOrg.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lblSelectOrg.setForeground(new java.awt.Color(0, 0, 204));
         lblSelectOrg.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        lblSelectOrg.setText("Select Organization:");
+        lblSelectOrg.setText("ORGANIZATION");
         jPanel2.add(lblSelectOrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 120, 180, 20));
 
-        jLabel3.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 204));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel3.setText("Name:");
+        jLabel3.setText("NAME");
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, 139, 22));
 
-        nameJTextField.addActionListener(new java.awt.event.ActionListener() {
+        txt_Name.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nameJTextFieldActionPerformed(evt);
+                txt_NameActionPerformed(evt);
             }
         });
-        jPanel2.add(nameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 160, 120, -1));
+        jPanel2.add(txt_Name, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 160, 120, -1));
 
-        btnCreateEmployee.setBackground(new java.awt.Color(51, 102, 255));
-        btnCreateEmployee.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        btnCreateEmployee.setForeground(new java.awt.Color(255, 255, 255));
-        btnCreateEmployee.setText("Create Employee");
-        btnCreateEmployee.setBorderPainted(false);
-        btnCreateEmployee.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnCreateEmployeeMouseExited(evt);
-            }
+        bt_CreateEmployee.setBackground(new java.awt.Color(0, 0, 204));
+        bt_CreateEmployee.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_CreateEmployee.setForeground(new java.awt.Color(255, 255, 255));
+        bt_CreateEmployee.setText("CREATE EMPLOYEE");
+        bt_CreateEmployee.setBorderPainted(false);
+        bt_CreateEmployee.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnCreateEmployeeMouseEntered(evt);
+                bt_CreateEmployeeMouseEntered(evt);
             }
-        });
-        btnCreateEmployee.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCreateEmployeeActionPerformed(evt);
-            }
-        });
-        jPanel2.add(btnCreateEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 202, -1, -1));
-
-        organizationEmpJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        organizationEmpJComboBox.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                organizationEmpJComboBoxActionPerformed(evt);
-            }
-        });
-        jPanel2.add(organizationEmpJComboBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 120, 20));
-
-        Deletebtn.setBackground(new java.awt.Color(51, 102, 255));
-        Deletebtn.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        Deletebtn.setForeground(new java.awt.Color(255, 255, 255));
-        Deletebtn.setText("Delete Employee");
-        Deletebtn.setBorderPainted(false);
-        Deletebtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                DeletebtnMouseExited(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                DeletebtnMouseEntered(evt);
+                bt_CreateEmployeeMouseExited(evt);
             }
         });
-        Deletebtn.addActionListener(new java.awt.event.ActionListener() {
+        bt_CreateEmployee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                DeletebtnActionPerformed(evt);
+                bt_CreateEmployeeActionPerformed(evt);
             }
         });
-        jPanel2.add(Deletebtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, -1, -1));
+        jPanel2.add(bt_CreateEmployee, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, -1, -1));
+
+        cb_org.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cb_org.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cb_orgActionPerformed(evt);
+            }
+        });
+        jPanel2.add(cb_org, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 120, 20));
+
+        bt_Delete.setBackground(new java.awt.Color(0, 0, 204));
+        bt_Delete.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_Delete.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Delete.setText("DELETE EMPLOYEE");
+        bt_Delete.setBorderPainted(false);
+        bt_Delete.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                bt_DeleteMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                bt_DeleteMouseExited(evt);
+            }
+        });
+        bt_Delete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt_DeleteActionPerformed(evt);
+            }
+        });
+        jPanel2.add(bt_Delete, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 200, -1, -1));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 490));
 
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 930, -1));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void nameJTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameJTextFieldActionPerformed
+    private void txt_NameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_NameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_nameJTextFieldActionPerformed
+    }//GEN-LAST:event_txt_NameActionPerformed
 
-    private void btnCreateEmployeeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCreateEmployeeMouseExited
-        btnCreateEmployee.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCreateEmployeeMouseExited
+    private void bt_CreateEmployeeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_CreateEmployeeMouseExited
+        bt_CreateEmployee.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_CreateEmployeeMouseExited
 
-    private void btnCreateEmployeeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCreateEmployeeMouseEntered
-        btnCreateEmployee.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCreateEmployeeMouseEntered
+    private void bt_CreateEmployeeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_CreateEmployeeMouseEntered
+        bt_CreateEmployee.setForeground(new Color(0,128,128));        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_CreateEmployeeMouseEntered
 
-    private void btnCreateEmployeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCreateEmployeeActionPerformed
+    private void bt_CreateEmployeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_CreateEmployeeActionPerformed
         // TODO add your handling code here:
 
-        if( nameJTextField.getText().isEmpty())
+        if( txt_Name.getText().isEmpty())
         {
             JOptionPane.showMessageDialog(null, "please enter all mandatory fields");
             return;
         }
-        Organization organization = (Organization) organizationEmpJComboBox.getSelectedItem();
-        String name = nameJTextField.getText();
+        Organization organization = (Organization) cb_org.getSelectedItem();
+        String name = txt_Name.getText();
         // String email="";
         organization.getEmployeeDirectory().createEmployee(name);
         populateTable(organization);
-        nameJTextField.setText("");
-    }//GEN-LAST:event_btnCreateEmployeeActionPerformed
+        txt_Name.setText("");
+    }//GEN-LAST:event_bt_CreateEmployeeActionPerformed
 
-    private void organizationEmpJComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_organizationEmpJComboBoxActionPerformed
+    private void cb_orgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_orgActionPerformed
         // TODO add your handling code here:
-        Organization organization = (Organization) organizationEmpJComboBox.getSelectedItem();
+        Organization organization = (Organization) cb_org.getSelectedItem();
         if (organization != null){
             populateTable(organization);
         }
-    }//GEN-LAST:event_organizationEmpJComboBoxActionPerformed
+    }//GEN-LAST:event_cb_orgActionPerformed
 
-    private void DeletebtnMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DeletebtnMouseExited
+    private void bt_DeleteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_DeleteMouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_DeletebtnMouseExited
+    }//GEN-LAST:event_bt_DeleteMouseExited
 
-    private void DeletebtnMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DeletebtnMouseEntered
+    private void bt_DeleteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_DeleteMouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_DeletebtnMouseEntered
+    }//GEN-LAST:event_bt_DeleteMouseEntered
 
-    private void DeletebtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DeletebtnActionPerformed
+    private void bt_DeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_DeleteActionPerformed
         // TODO add your handling code here:
-        Organization organization = (Organization) organizationEmpJComboBox.getSelectedItem();
+        Organization organization = (Organization) cb_org.getSelectedItem();
         int selectedRow = tableOrg.getSelectedRow();
         if(selectedRow<0){
             JOptionPane.showMessageDialog(null, "Please select the row to delete the account", "Warning", JOptionPane.WARNING_MESSAGE);
@@ -257,20 +259,20 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "You have successfully deleted the account");
             populateTable(organization);
         }
-    }//GEN-LAST:event_DeletebtnActionPerformed
+    }//GEN-LAST:event_bt_DeleteActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Deletebtn;
-    private javax.swing.JButton btnCreateEmployee;
+    private javax.swing.JButton bt_CreateEmployee;
+    private javax.swing.JButton bt_Delete;
+    private javax.swing.JComboBox cb_org;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblSelectOrg;
-    private javax.swing.JTextField nameJTextField;
-    private javax.swing.JComboBox organizationEmpJComboBox;
     private javax.swing.JTable tableOrg;
+    private javax.swing.JTextField txt_Name;
     // End of variables declaration//GEN-END:variables
 }

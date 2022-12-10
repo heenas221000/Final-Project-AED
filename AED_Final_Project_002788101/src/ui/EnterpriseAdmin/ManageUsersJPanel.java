@@ -40,31 +40,31 @@ public class ManageUsersJPanel extends javax.swing.JPanel {
     }
     
     public void popOrganizationComboBox() {
-        comboOrgSel.removeAllItems();
+        cb_org.removeAllItems();
 
         for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()) {
-            comboOrgSel.addItem(organization);
+            cb_org.addItem(organization);
         }
     }
     
     public void populateEmployeeComboBox(Organization organization){
-        comboEmployeeSel.removeAllItems();
+        cb_employee.removeAllItems();
         
         for (Employee employee : organization.getEmployeeDirectory().getEmployeeList()){
-            comboEmployeeSel.addItem(employee);
+            cb_employee.addItem(employee);
         }
     }
     
     private void populateRoleComboBox(Organization organization){
-        comboRoleSel.removeAllItems();
+        cb_role.removeAllItems();
         for (Role role : organization.getSupportedRole()){
-            comboRoleSel.addItem(role);
+            cb_role.addItem(role);
         }
     }
 
     public void popData() {
 
-        DefaultTableModel model = (DefaultTableModel) tableUsers.getModel();
+        DefaultTableModel model = (DefaultTableModel) tb_users.getModel();
 
         model.setRowCount(0);
 
@@ -73,7 +73,7 @@ public class ManageUsersJPanel extends javax.swing.JPanel {
                 Object row[] = new Object[2];
                 row[0] = ua;
                 row[1] = ua.getRole();
-                ((DefaultTableModel) tableUsers.getModel()).addRow(row);
+                ((DefaultTableModel) tb_users.getModel()).addRow(row);
             }
         }
     }
@@ -91,37 +91,37 @@ public class ManageUsersJPanel extends javax.swing.JPanel {
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tableUsers = new javax.swing.JTable();
+        tb_users = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        txtUserName = new javax.swing.JTextField();
+        txt_UserName = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        btnCreate = new javax.swing.JButton();
-        comboOrgSel = new javax.swing.JComboBox();
-        comboEmployeeSel = new javax.swing.JComboBox();
-        comboRoleSel = new javax.swing.JComboBox();
-        txtPassword = new javax.swing.JPasswordField();
-        btnDelete = new javax.swing.JButton();
+        bt_Create = new javax.swing.JButton();
+        cb_org = new javax.swing.JComboBox();
+        cb_employee = new javax.swing.JComboBox();
+        cb_role = new javax.swing.JComboBox();
+        txt_Password = new javax.swing.JPasswordField();
+        bt_delete = new javax.swing.JButton();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(153, 204, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBackground(new java.awt.Color(153, 204, 255));
         jPanel2.setAutoscrolls(true);
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel1.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(230, 126, 34));
+        jLabel1.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 204));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Manage User");
+        jLabel1.setText("MANAGE USER");
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 6, 650, 39));
 
-        tableUsers.setModel(new javax.swing.table.DefaultTableModel(
+        tb_users.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
                 {null, null},
@@ -140,156 +140,161 @@ public class ManageUsersJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(tableUsers);
+        jScrollPane1.setViewportView(tb_users);
 
-        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 80, 240, 170));
+        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 120, 240, 170));
 
-        jLabel2.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel2.setText("Select Organization:");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, -1, -1));
+        jLabel2.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 204));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel2.setText("ORGANIZATION");
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel3.setText("Select Employee:");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 160, -1));
+        jLabel3.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 204));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel3.setText("EMPLOYEE");
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 160, -1));
 
-        jLabel4.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel4.setText("Select Role:");
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 160, -1));
+        jLabel4.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 0, 204));
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel4.setText("ROLE");
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 160, -1));
 
-        jLabel5.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel5.setText("Set Username:");
-        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 160, -1));
-        jPanel2.add(txtUserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(233, 180, 140, -1));
+        jLabel5.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 0, 204));
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel5.setText("USERNAME");
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 160, -1));
+        jPanel2.add(txt_UserName, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 240, 140, -1));
 
-        jLabel6.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel6.setText("Set Password:");
-        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, 160, -1));
+        jLabel6.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 0, 204));
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel6.setText("PASSWORD");
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, 160, -1));
 
-        btnCreate.setBackground(new java.awt.Color(51, 102, 255));
-        btnCreate.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        btnCreate.setForeground(new java.awt.Color(255, 255, 255));
-        btnCreate.setText("Create");
-        btnCreate.setBorderPainted(false);
-        btnCreate.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnCreateMouseExited(evt);
-            }
+        bt_Create.setBackground(new java.awt.Color(0, 0, 204));
+        bt_Create.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_Create.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Create.setText("CREATE");
+        bt_Create.setBorderPainted(false);
+        bt_Create.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnCreateMouseEntered(evt);
+                bt_CreateMouseEntered(evt);
             }
-        });
-        btnCreate.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCreateActionPerformed(evt);
-            }
-        });
-        jPanel2.add(btnCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 260, -1, -1));
-
-        comboOrgSel.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" }));
-        comboOrgSel.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                comboOrgSelActionPerformed(evt);
-            }
-        });
-        jPanel2.add(comboOrgSel, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 80, 140, 26));
-
-        comboEmployeeSel.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" }));
-        jPanel2.add(comboEmployeeSel, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 110, 140, 26));
-
-        comboRoleSel.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" }));
-        jPanel2.add(comboRoleSel, new org.netbeans.lib.awtextra.AbsoluteConstraints(233, 150, 140, -1));
-        jPanel2.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(231, 220, 140, -1));
-
-        btnDelete.setBackground(new java.awt.Color(51, 102, 255));
-        btnDelete.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        btnDelete.setForeground(new java.awt.Color(255, 255, 255));
-        btnDelete.setText("Delete");
-        btnDelete.setBorderPainted(false);
-        btnDelete.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnDeleteMouseExited(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnDeleteMouseEntered(evt);
+                bt_CreateMouseExited(evt);
             }
         });
-        btnDelete.addActionListener(new java.awt.event.ActionListener() {
+        bt_Create.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDeleteActionPerformed(evt);
+                bt_CreateActionPerformed(evt);
             }
         });
-        jPanel2.add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(239, 260, 100, -1));
+        jPanel2.add(bt_Create, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 320, -1, -1));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(86, 14, -1, -1));
+        cb_org.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" }));
+        cb_org.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cb_orgActionPerformed(evt);
+            }
+        });
+        jPanel2.add(cb_org, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 120, 140, 26));
+
+        cb_employee.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" }));
+        jPanel2.add(cb_employee, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, 140, 26));
+
+        cb_role.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" }));
+        jPanel2.add(cb_role, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 200, 140, 30));
+        jPanel2.add(txt_Password, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 280, 140, -1));
+
+        bt_delete.setBackground(new java.awt.Color(0, 0, 204));
+        bt_delete.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_delete.setForeground(new java.awt.Color(255, 255, 255));
+        bt_delete.setText("DELETE");
+        bt_delete.setBorderPainted(false);
+        bt_delete.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                bt_deleteMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                bt_deleteMouseExited(evt);
+            }
+        });
+        bt_delete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt_deleteActionPerformed(evt);
+            }
+        });
+        jPanel2.add(bt_delete, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 320, 100, -1));
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, -1, 370));
 
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 460));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnCreateMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCreateMouseExited
+    private void bt_CreateMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_CreateMouseExited
         //  jButton1.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCreateMouseExited
+    }//GEN-LAST:event_bt_CreateMouseExited
 
-    private void btnCreateMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCreateMouseEntered
+    private void bt_CreateMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_CreateMouseEntered
         //  jButton1.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCreateMouseEntered
+    }//GEN-LAST:event_bt_CreateMouseEntered
 
-    private void btnCreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCreateActionPerformed
+    private void bt_CreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_CreateActionPerformed
         // TODO add your handling code here:
 
-        if( txtUserName.getText().isEmpty()|| String.valueOf(txtPassword.getPassword()).isEmpty())
+        if( txt_UserName.getText().isEmpty()|| String.valueOf(txt_Password.getPassword()).isEmpty())
         {
             JOptionPane.showMessageDialog(null, "please enter all mandatory fields");
             return;
         }
-        String userName = txtUserName.getText();
-        String password = String.valueOf(txtPassword.getPassword());
-        Organization organization = (Organization) comboOrgSel.getSelectedItem();
-        Employee employee = (Employee) comboEmployeeSel.getSelectedItem();
-        Role role = (Role) comboRoleSel.getSelectedItem();
+        String userName = txt_UserName.getText();
+        String password = String.valueOf(txt_Password.getPassword());
+        Organization organization = (Organization) cb_org.getSelectedItem();
+        Employee employee = (Employee) cb_employee.getSelectedItem();
+        Role role = (Role) cb_role.getSelectedItem();
         if(organization.getUserAccountDirectory().CheckIsValidInput(password)){
             UserAccount userAccount=organization.getUserAccountDirectory().createUserAccnt(userName, password, employee, role);
         }
         else{
             JOptionPane.showMessageDialog(null, "Password should have a minimum length of 8 and contain atleast 1 Uppercase, 1 Lowercase, 1 Special character and 1 Digit ");
-            txtPassword.setText("");
+            txt_Password.setText("");
             return;
         }
         //organization.getUserAccountDirectory().createUserAccount(userName, password, employee, role);
 
         popData();
-        txtUserName.setText("");
-        txtPassword.setText("");
-    }//GEN-LAST:event_btnCreateActionPerformed
+        txt_UserName.setText("");
+        txt_Password.setText("");
+    }//GEN-LAST:event_bt_CreateActionPerformed
 
-    private void comboOrgSelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboOrgSelActionPerformed
-        Organization organization = (Organization) comboOrgSel.getSelectedItem();
+    private void cb_orgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_orgActionPerformed
+        Organization organization = (Organization) cb_org.getSelectedItem();
         if (organization != null){
             populateEmployeeComboBox(organization);
             populateRoleComboBox(organization);
         }
-    }//GEN-LAST:event_comboOrgSelActionPerformed
+    }//GEN-LAST:event_cb_orgActionPerformed
 
-    private void btnDeleteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteMouseExited
+    private void bt_deleteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_deleteMouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnDeleteMouseExited
+    }//GEN-LAST:event_bt_deleteMouseExited
 
-    private void btnDeleteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteMouseEntered
+    private void bt_deleteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_deleteMouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnDeleteMouseEntered
+    }//GEN-LAST:event_bt_deleteMouseEntered
 
-    private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
+    private void bt_deleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_deleteActionPerformed
         // TODO add your handling code here:
-        int selectedRow = tableUsers.getSelectedRow();
+        int selectedRow = tb_users.getSelectedRow();
         if(selectedRow<0){
             JOptionPane.showMessageDialog(null, "Please select the row to delete the account", "Warning", JOptionPane.WARNING_MESSAGE);
         }
         else{
-            UserAccount u = (UserAccount) tableUsers.getValueAt(selectedRow, 0);
+            UserAccount u = (UserAccount) tb_users.getValueAt(selectedRow, 0);
 
             for (Organization organization : enterprise.getOrganizationDirectory().getOrganizationList()) {
                 for (UserAccount ua : organization.getUserAccountDirectory().getUserAccntList()) {
@@ -303,15 +308,15 @@ public class ManageUsersJPanel extends javax.swing.JPanel {
                 popData();
             }
         }
-    }//GEN-LAST:event_btnDeleteActionPerformed
+    }//GEN-LAST:event_bt_deleteActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCreate;
-    private javax.swing.JButton btnDelete;
-    private javax.swing.JComboBox comboEmployeeSel;
-    private javax.swing.JComboBox comboOrgSel;
-    private javax.swing.JComboBox comboRoleSel;
+    private javax.swing.JButton bt_Create;
+    private javax.swing.JButton bt_delete;
+    private javax.swing.JComboBox cb_employee;
+    private javax.swing.JComboBox cb_org;
+    private javax.swing.JComboBox cb_role;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -321,8 +326,8 @@ public class ManageUsersJPanel extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable tableUsers;
-    private javax.swing.JPasswordField txtPassword;
-    private javax.swing.JTextField txtUserName;
+    private javax.swing.JTable tb_users;
+    private javax.swing.JPasswordField txt_Password;
+    private javax.swing.JTextField txt_UserName;
     // End of variables declaration//GEN-END:variables
 }

@@ -58,8 +58,8 @@ public class CaseReporter extends javax.swing.JPanel {
         jVolunteerSplitPanel = new javax.swing.JSplitPane();
         jPanel09 = new javax.swing.JPanel();
         lblCaseReporter = new javax.swing.JLabel();
-        btnViewStatus = new javax.swing.JButton();
-        btnReport = new javax.swing.JButton();
+        bt_ViewStatus = new javax.swing.JButton();
+        bt_Report = new javax.swing.JButton();
         jPanel10 = new javax.swing.JPanel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -72,12 +72,12 @@ public class CaseReporter extends javax.swing.JPanel {
 
         jVolunteerSplitPanel.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
-        jPanel09.setBackground(new java.awt.Color(129, 178, 154));
+        jPanel09.setBackground(new java.awt.Color(153, 204, 255));
         jPanel09.setLayout(new java.awt.GridBagLayout());
 
-        lblCaseReporter.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        lblCaseReporter.setForeground(new java.awt.Color(61, 64, 91));
-        lblCaseReporter.setText("Welcome Case Reporter");
+        lblCaseReporter.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N
+        lblCaseReporter.setForeground(new java.awt.Color(0, 0, 204));
+        lblCaseReporter.setText("WELCOME CASE REPORTER");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -86,23 +86,23 @@ public class CaseReporter extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(16, 112, 0, 0);
         jPanel09.add(lblCaseReporter, gridBagConstraints);
 
-        btnViewStatus.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        btnViewStatus.setForeground(new java.awt.Color(61, 64, 91));
-        btnViewStatus.setText("View Status");
-        btnViewStatus.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnViewStatus.setBorderPainted(false);
-        btnViewStatus.setContentAreaFilled(false);
-        btnViewStatus.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_ViewStatus.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        bt_ViewStatus.setForeground(new java.awt.Color(0, 0, 204));
+        bt_ViewStatus.setText("VIEW STATUS");
+        bt_ViewStatus.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        bt_ViewStatus.setBorderPainted(false);
+        bt_ViewStatus.setContentAreaFilled(false);
+        bt_ViewStatus.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnViewStatusMouseEntered(evt);
+                bt_ViewStatusMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnViewStatusMouseExited(evt);
+                bt_ViewStatusMouseExited(evt);
             }
         });
-        btnViewStatus.addActionListener(new java.awt.event.ActionListener() {
+        bt_ViewStatus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnViewStatusActionPerformed(evt);
+                bt_ViewStatusActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -112,25 +112,25 @@ public class CaseReporter extends javax.swing.JPanel {
         gridBagConstraints.ipadx = 29;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(11, 47, 11, 84);
-        jPanel09.add(btnViewStatus, gridBagConstraints);
+        jPanel09.add(bt_ViewStatus, gridBagConstraints);
 
-        btnReport.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        btnReport.setForeground(new java.awt.Color(61, 64, 91));
-        btnReport.setText("Report");
-        btnReport.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnReport.setBorderPainted(false);
-        btnReport.setContentAreaFilled(false);
-        btnReport.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_Report.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        bt_Report.setForeground(new java.awt.Color(0, 0, 204));
+        bt_Report.setText("REPORT");
+        bt_Report.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        bt_Report.setBorderPainted(false);
+        bt_Report.setContentAreaFilled(false);
+        bt_Report.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnReportMouseEntered(evt);
+                bt_ReportMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnReportMouseExited(evt);
+                bt_ReportMouseExited(evt);
             }
         });
-        btnReport.addActionListener(new java.awt.event.ActionListener() {
+        bt_Report.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnReportActionPerformed(evt);
+                bt_ReportActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -139,11 +139,11 @@ public class CaseReporter extends javax.swing.JPanel {
         gridBagConstraints.ipadx = 57;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(11, 74, 11, 0);
-        jPanel09.add(btnReport, gridBagConstraints);
+        jPanel09.add(bt_Report, gridBagConstraints);
 
         jVolunteerSplitPanel.setTopComponent(jPanel09);
 
-        jPanel10.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel10.setBackground(new java.awt.Color(204, 204, 255));
         jPanel10.setLayout(new java.awt.GridBagLayout());
         jVolunteerSplitPanel.setRightComponent(jPanel10);
 
@@ -154,38 +154,38 @@ public class CaseReporter extends javax.swing.JPanel {
         add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(-2, -5, 1110, 530));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnViewStatusMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnViewStatusMouseEntered
+    private void bt_ViewStatusMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ViewStatusMouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnViewStatusMouseEntered
+    }//GEN-LAST:event_bt_ViewStatusMouseEntered
 
-    private void btnViewStatusMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnViewStatusMouseExited
+    private void bt_ViewStatusMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ViewStatusMouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnViewStatusMouseExited
+    }//GEN-LAST:event_bt_ViewStatusMouseExited
 
-    private void btnViewStatusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewStatusActionPerformed
+    private void bt_ViewStatusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_ViewStatusActionPerformed
         // TODO add your handling code here:
         CaseReporterViewStatusJPanel reportJPanel1=new CaseReporterViewStatusJPanel(userProcessContainer,userAccount,HSOrganization,HSenterprise,business);
         jVolunteerSplitPanel.setBottomComponent(reportJPanel1);
-    }//GEN-LAST:event_btnViewStatusActionPerformed
+    }//GEN-LAST:event_bt_ViewStatusActionPerformed
 
-    private void btnReportMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnReportMouseEntered
-        btnReport.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnReportMouseEntered
+    private void bt_ReportMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ReportMouseEntered
+        bt_Report.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_ReportMouseEntered
 
-    private void btnReportMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnReportMouseExited
-        btnReport.setForeground(Color.white);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnReportMouseExited
+    private void bt_ReportMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ReportMouseExited
+        bt_Report.setForeground(Color.white);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_ReportMouseExited
 
-    private void btnReportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReportActionPerformed
+    private void bt_ReportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_ReportActionPerformed
         ReportJPanel reportJPanel=new ReportJPanel(userProcessContainer,business,userAccount,HSOrganization,network);
         jVolunteerSplitPanel.setBottomComponent(reportJPanel);
         //ReportJFrame r = new ReportJFrame(system,network,ua,org);
-    }//GEN-LAST:event_btnReportActionPerformed
+    }//GEN-LAST:event_bt_ReportActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnReport;
-    private javax.swing.JButton btnViewStatus;
+    private javax.swing.JButton bt_Report;
+    private javax.swing.JButton bt_ViewStatus;
     private javax.swing.JPanel jPanel09;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel7;

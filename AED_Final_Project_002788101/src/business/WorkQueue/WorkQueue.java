@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class WorkQueue {
 
     private ArrayList<CaseReporterWorkRequest> caseReporterWorkRequestList;
-    private ArrayList<AttorneyWorkRequest> AttorneyworkRequestList;
+    private ArrayList<LawyerWorkRequest> LawyerworkRequestList;
     private ArrayList<CaretakerWorkRequest> CaretakerworkRequestList;
     private ArrayList<PsychiatristWorkRequest> psychiatristWorkRequestList;
     private ArrayList<CounsellorWorkRequest> CounsellarworkRequestList;
@@ -24,7 +24,7 @@ public class WorkQueue {
 
     public WorkQueue() {
         caseReporterWorkRequestList = new ArrayList<CaseReporterWorkRequest>();
-        AttorneyworkRequestList=new ArrayList<AttorneyWorkRequest>();
+        LawyerworkRequestList=new ArrayList<LawyerWorkRequest>();
         CaretakerworkRequestList=new ArrayList<CaretakerWorkRequest>();
         psychiatristWorkRequestList=new ArrayList<PsychiatristWorkRequest>();
         CounsellarworkRequestList = new ArrayList<CounsellorWorkRequest>();
@@ -37,8 +37,8 @@ public class WorkQueue {
         return caseReporterWorkRequestList;
     }
 
-    public ArrayList<AttorneyWorkRequest> getAttorneyworkRequestList() {
-        return AttorneyworkRequestList;
+    public ArrayList<LawyerWorkRequest> getLawyerworkRequestList() {
+        return LawyerworkRequestList;
     }
     
     public ArrayList<CaretakerWorkRequest> getCaretakerworkRequestList() {
@@ -69,8 +69,8 @@ public class WorkQueue {
         this.caseReporterWorkRequestList = caseReporterWorkRequestList;
     }
 
-    public void setAttorneyworkRequestList(ArrayList<AttorneyWorkRequest> AttorneyworkRequestList) {
-        this.AttorneyworkRequestList = AttorneyworkRequestList;
+    public void setLawyerworkRequestList(ArrayList<LawyerWorkRequest> LawyerworkRequestList) {
+        this.LawyerworkRequestList = LawyerworkRequestList;
     }
     
     public void setCaretakerworkRequestList(ArrayList<CaretakerWorkRequest> CaretakerworkRequestList) {

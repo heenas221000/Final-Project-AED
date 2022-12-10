@@ -54,10 +54,10 @@ public class SignUpJFrame extends javax.swing.JFrame {
        // emailValidator();
     }
  private void populateNetworkComboBox(){
-        networkJComboBox.removeAllItems();
+        cb_city.removeAllItems();
         
         for (Network network : system.getNetworkList()){
-            networkJComboBox.addItem(network);
+            cb_city.addItem(network);
         }
     }
 
@@ -79,15 +79,15 @@ public class SignUpJFrame extends javax.swing.JFrame {
         contactjLabel = new javax.swing.JLabel();
         usernamejLabel = new javax.swing.JLabel();
         passwordjLabel = new javax.swing.JLabel();
-        nameJTextField = new javax.swing.JTextField();
-        contactTextField = new javax.swing.JTextField();
-        usernameJTextField = new javax.swing.JTextField();
-        signupjButton = new javax.swing.JButton();
-        passwordJPasswordField = new javax.swing.JPasswordField();
-        networkJComboBox = new javax.swing.JComboBox();
+        txt_name = new javax.swing.JTextField();
+        txt_phoneNo = new javax.swing.JTextField();
+        txt_username = new javax.swing.JTextField();
+        bt_signUp = new javax.swing.JButton();
+        txt_password = new javax.swing.JPasswordField();
+        cb_city = new javax.swing.JComboBox();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        btn_Back = new javax.swing.JButton();
+        bt_Back = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
@@ -103,13 +103,13 @@ public class SignUpJFrame extends javax.swing.JFrame {
         setBackground(new java.awt.Color(255, 255, 255));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        detailsjPanel.setBackground(new java.awt.Color(242, 204, 143));
+        detailsjPanel.setBackground(new java.awt.Color(204, 204, 255));
         detailsjPanel.setLayout(new java.awt.GridBagLayout());
 
-        jLabel1.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(224, 122, 95));
+        jLabel1.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 204));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Enter your details below ");
+        jLabel1.setText("ENTER YOUR DETAILS HERE");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -120,9 +120,9 @@ public class SignUpJFrame extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(21, 142, 0, 0);
         detailsjPanel.add(jLabel1, gridBagConstraints);
 
-        fnamejLabel.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        fnamejLabel.setForeground(new java.awt.Color(61, 64, 91));
-        fnamejLabel.setText("Full Name");
+        fnamejLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        fnamejLabel.setForeground(new java.awt.Color(0, 0, 204));
+        fnamejLabel.setText("NAME");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 1;
@@ -132,9 +132,9 @@ public class SignUpJFrame extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(14, 142, 0, 0);
         detailsjPanel.add(fnamejLabel, gridBagConstraints);
 
-        contactjLabel.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        contactjLabel.setForeground(new java.awt.Color(61, 64, 91));
-        contactjLabel.setText("Contact Number");
+        contactjLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        contactjLabel.setForeground(new java.awt.Color(0, 0, 204));
+        contactjLabel.setText("PHONE NUMBER");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 3;
@@ -144,9 +144,9 @@ public class SignUpJFrame extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(21, 142, 0, 0);
         detailsjPanel.add(contactjLabel, gridBagConstraints);
 
-        usernamejLabel.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        usernamejLabel.setForeground(new java.awt.Color(61, 64, 91));
-        usernamejLabel.setText("Username");
+        usernamejLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        usernamejLabel.setForeground(new java.awt.Color(0, 0, 204));
+        usernamejLabel.setText("USERNAME");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 9;
@@ -156,9 +156,9 @@ public class SignUpJFrame extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(29, 142, 0, 0);
         detailsjPanel.add(usernamejLabel, gridBagConstraints);
 
-        passwordjLabel.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        passwordjLabel.setForeground(new java.awt.Color(61, 64, 91));
-        passwordjLabel.setText("Password");
+        passwordjLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        passwordjLabel.setForeground(new java.awt.Color(0, 0, 204));
+        passwordjLabel.setText("PASSWORD");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 11;
@@ -175,11 +175,11 @@ public class SignUpJFrame extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 125;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(11, 27, 0, 0);
-        detailsjPanel.add(nameJTextField, gridBagConstraints);
+        detailsjPanel.add(txt_name, gridBagConstraints);
 
-        contactTextField.addActionListener(new java.awt.event.ActionListener() {
+        txt_phoneNo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                contactTextFieldActionPerformed(evt);
+                txt_phoneNoActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -190,7 +190,7 @@ public class SignUpJFrame extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 125;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(18, 27, 0, 0);
-        detailsjPanel.add(contactTextField, gridBagConstraints);
+        detailsjPanel.add(txt_phoneNo, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 3;
         gridBagConstraints.gridy = 9;
@@ -199,23 +199,23 @@ public class SignUpJFrame extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 125;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(26, 27, 0, 0);
-        detailsjPanel.add(usernameJTextField, gridBagConstraints);
+        detailsjPanel.add(txt_username, gridBagConstraints);
 
-        signupjButton.setBackground(new java.awt.Color(129, 178, 154));
-        signupjButton.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        signupjButton.setForeground(new java.awt.Color(61, 64, 91));
-        signupjButton.setText("Sign Up");
-        signupjButton.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_signUp.setBackground(new java.awt.Color(0, 0, 204));
+        bt_signUp.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        bt_signUp.setForeground(java.awt.Color.white);
+        bt_signUp.setText("SIGN UP");
+        bt_signUp.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                signupjButtonMouseEntered(evt);
+                bt_signUpMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                signupjButtonMouseExited(evt);
+                bt_signUpMouseExited(evt);
             }
         });
-        signupjButton.addActionListener(new java.awt.event.ActionListener() {
+        bt_signUp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                signupjButtonActionPerformed(evt);
+                bt_signUpActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -225,11 +225,11 @@ public class SignUpJFrame extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 16;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(18, 51, 20, 0);
-        detailsjPanel.add(signupjButton, gridBagConstraints);
+        detailsjPanel.add(bt_signUp, gridBagConstraints);
 
-        passwordJPasswordField.addActionListener(new java.awt.event.ActionListener() {
+        txt_password.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                passwordJPasswordFieldActionPerformed(evt);
+                txt_passwordActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -240,12 +240,12 @@ public class SignUpJFrame extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 125;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(18, 27, 0, 0);
-        detailsjPanel.add(passwordJPasswordField, gridBagConstraints);
+        detailsjPanel.add(txt_password, gridBagConstraints);
 
-        networkJComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        networkJComboBox.addActionListener(new java.awt.event.ActionListener() {
+        cb_city.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cb_city.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                networkJComboBoxActionPerformed(evt);
+                cb_cityActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -256,11 +256,11 @@ public class SignUpJFrame extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 74;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(27, 27, 0, 0);
-        detailsjPanel.add(networkJComboBox, gridBagConstraints);
+        detailsjPanel.add(cb_city, gridBagConstraints);
 
-        jLabel2.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(61, 64, 91));
-        jLabel2.setText("City");
+        jLabel2.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 204));
+        jLabel2.setText("CITY");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 7;
@@ -277,13 +277,16 @@ public class SignUpJFrame extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(20, 10, 0, 106);
         detailsjPanel.add(jLabel3, gridBagConstraints);
 
-        btn_Back.setText("Back");
-        btn_Back.addActionListener(new java.awt.event.ActionListener() {
+        bt_Back.setBackground(new java.awt.Color(0, 0, 204));
+        bt_Back.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        bt_Back.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Back.setText("BACK");
+        bt_Back.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_BackActionPerformed(evt);
+                bt_BackActionPerformed(evt);
             }
         });
-        detailsjPanel.add(btn_Back, new java.awt.GridBagConstraints());
+        detailsjPanel.add(bt_Back, new java.awt.GridBagConstraints());
 
         getContentPane().add(detailsjPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 1380, 560));
 
@@ -291,7 +294,7 @@ public class SignUpJFrame extends javax.swing.JFrame {
         jPanel1.setLayout(new java.awt.GridBagLayout());
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 826, -1));
 
-        jPanel2.setBackground(new java.awt.Color(244, 241, 222));
+        jPanel2.setBackground(new java.awt.Color(153, 204, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton1.setFont(new java.awt.Font("Songti SC", 1, 36)); // NOI18N
@@ -313,29 +316,29 @@ public class SignUpJFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void signupjButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_signupjButtonMouseEntered
-        signupjButton.setForeground(Color.WHITE);
-    }//GEN-LAST:event_signupjButtonMouseEntered
+    private void bt_signUpMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_signUpMouseEntered
+        bt_signUp.setForeground(Color.WHITE);
+    }//GEN-LAST:event_bt_signUpMouseEntered
 
-    private void signupjButtonMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_signupjButtonMouseExited
-        signupjButton.setForeground(Color.BLACK);
-    }//GEN-LAST:event_signupjButtonMouseExited
+    private void bt_signUpMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_signUpMouseExited
+        bt_signUp.setForeground(Color.BLACK);
+    }//GEN-LAST:event_bt_signUpMouseExited
 
-    private void signupjButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signupjButtonActionPerformed
+    private void bt_signUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_signUpActionPerformed
 
-        if(nameJTextField.getText().isEmpty() || contactTextField.getText().isEmpty() ||
-            "ssgetText()".isEmpty() || usernameJTextField.getText().isEmpty() ||
-            passwordJPasswordField.getText().isEmpty())
+        if(txt_name.getText().isEmpty() || txt_phoneNo.getText().isEmpty() ||
+            "ssgetText()".isEmpty() || txt_username.getText().isEmpty() ||
+            txt_password.getText().isEmpty())
         {
             JOptionPane.showMessageDialog(null, "Please fill all details", "Info", JOptionPane.INFORMATION_MESSAGE);
         }else{
 
-            Network network = (Network) networkJComboBox.getSelectedItem();
+            Network network = (Network) cb_city.getSelectedItem();
 
-            String username = usernameJTextField.getText();
-            String password = String.valueOf(passwordJPasswordField.getPassword());
-            String name = nameJTextField.getText();
-            String contactno=contactTextField.getText();
+            String username = txt_username.getText();
+            String password = String.valueOf(txt_password.getPassword());
+            String name = txt_name.getText();
+            String contactno=txt_phoneNo.getText();
             //long contact=Long.parseLong(contactno);
          //   String email="aaa@gmail.com";
 
@@ -351,13 +354,13 @@ public class SignUpJFrame extends javax.swing.JFrame {
             int length= contactno.length();
             if(length<10||length>10)
             {
-                contactTextField.setEditable(true);
+                txt_phoneNo.setEditable(true);
                 JOptionPane.showMessageDialog(null, "Contact should be 10 digits!", "Warning", JOptionPane.INFORMATION_MESSAGE);
                 return;
             }
             else
             {
-                contactTextField.setEditable(false);
+                txt_phoneNo.setEditable(false);
 
             }
 
@@ -393,7 +396,7 @@ public class SignUpJFrame extends javax.swing.JFrame {
                     }
                     else{
                         JOptionPane.showMessageDialog(null, "Password should have a minimum length of 8 and contain atleast 1 Uppercase, 1 Lowercase, 1 Special character and 1 Digit ");
-                        passwordJPasswordField.setText("");
+                        txt_password.setText("");
                         return;
                     }
                 }
@@ -410,7 +413,7 @@ public class SignUpJFrame extends javax.swing.JFrame {
                     }
                     else{
                         JOptionPane.showMessageDialog(null, "Password should have a minimum length of 8 and contain atleast 1 Uppercase, 1 Lowercase, 1 Special character and 1 Digit ");
-                        passwordJPasswordField.setText("");
+                        txt_password.setText("");
                         return;
                     }
 
@@ -424,7 +427,7 @@ public class SignUpJFrame extends javax.swing.JFrame {
                     }
                     else{
                         JOptionPane.showMessageDialog(null, "Password should have a minimum length of 8 and contain atleast 1 Uppercase, 1 Lowercase, 1 Special character and 1 Digit ");
-                        passwordJPasswordField.setText("");
+                        txt_password.setText("");
                         return;
                     }
                 }
@@ -441,15 +444,15 @@ public class SignUpJFrame extends javax.swing.JFrame {
             s.setVisible(true);
         }
 
-    }//GEN-LAST:event_signupjButtonActionPerformed
+    }//GEN-LAST:event_bt_signUpActionPerformed
 
-    private void passwordJPasswordFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordJPasswordFieldActionPerformed
+    private void txt_passwordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_passwordActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_passwordJPasswordFieldActionPerformed
+    }//GEN-LAST:event_txt_passwordActionPerformed
 
-    private void networkJComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_networkJComboBoxActionPerformed
+    private void cb_cityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_cityActionPerformed
 
-    }//GEN-LAST:event_networkJComboBoxActionPerformed
+    }//GEN-LAST:event_cb_cityActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         this.dispose();
@@ -457,9 +460,9 @@ public class SignUpJFrame extends javax.swing.JFrame {
         eng.setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void contactTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contactTextFieldActionPerformed
+    private void txt_phoneNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_phoneNoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_contactTextFieldActionPerformed
+    }//GEN-LAST:event_txt_phoneNoActionPerformed
 
     private void BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackActionPerformed
         // TODO add your handling code here:
@@ -467,12 +470,12 @@ public class SignUpJFrame extends javax.swing.JFrame {
         
     }//GEN-LAST:event_BackActionPerformed
 
-    private void btn_BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_BackActionPerformed
+    private void bt_BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_BackActionPerformed
         // TODO add your handling code here:
          dB4OUtil.storeSystem(system);
             MainJFrame s = new MainJFrame();
             s.setVisible(true);
-    }//GEN-LAST:event_btn_BackActionPerformed
+    }//GEN-LAST:event_bt_BackActionPerformed
 
     /**
      * @param args the command line arguments
@@ -522,8 +525,9 @@ public static boolean isNumber(String price){
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Back;
-    private javax.swing.JButton btn_Back;
-    private javax.swing.JTextField contactTextField;
+    private javax.swing.JButton bt_Back;
+    private javax.swing.JButton bt_signUp;
+    private javax.swing.JComboBox cb_city;
     private javax.swing.JLabel contactjLabel;
     private javax.swing.JPanel detailsjPanel;
     private javax.swing.JLabel fnamejLabel;
@@ -533,12 +537,11 @@ public static boolean isNumber(String price){
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JTextField nameJTextField;
-    private javax.swing.JComboBox networkJComboBox;
-    private javax.swing.JPasswordField passwordJPasswordField;
     private javax.swing.JLabel passwordjLabel;
-    private javax.swing.JButton signupjButton;
-    private javax.swing.JTextField usernameJTextField;
+    private javax.swing.JTextField txt_name;
+    private javax.swing.JPasswordField txt_password;
+    private javax.swing.JTextField txt_phoneNo;
+    private javax.swing.JTextField txt_username;
     private javax.swing.JLabel usernamejLabel;
     // End of variables declaration//GEN-END:variables
 }

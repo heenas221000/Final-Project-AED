@@ -13,11 +13,19 @@ import java.util.Date;
  */
 public class CaseReporterWorkRequest extends WorkRequest{
       
-    private String UserName;
+    private String userName;
     private String relation;
     private String assaultType;
     private String location;
     private Integer Age;
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
 
    
     private Date doi;
@@ -27,7 +35,7 @@ public class CaseReporterWorkRequest extends WorkRequest{
     private String email;
     private DrWorkRequest doctorWorkRequest;
     private CounsellorWorkRequest counsellorWorkRequest;
-    private AttorneyWorkRequest attorneyWorkRequest;
+    private LawyerWorkRequest lawyerWorkRequest;
     private CaretakerWorkRequest caretakerWorkRequest;
     private PsychiatristWorkRequest hpWorkRequest;
 
@@ -47,12 +55,12 @@ public class CaseReporterWorkRequest extends WorkRequest{
         this.counsellorWorkRequest = counsellorWorkRequest;
     }
 
-    public AttorneyWorkRequest getAttorneyWorkRequest() {
-        return attorneyWorkRequest;
+    public LawyerWorkRequest getLawyerWorkRequest() {
+        return lawyerWorkRequest;
     }
 
-    public void setAttorneyWorkRequest(AttorneyWorkRequest attorneyWorkRequest) {
-        this.attorneyWorkRequest = attorneyWorkRequest;
+    public void setLawyerWorkRequest(LawyerWorkRequest lawyerWorkRequest) {
+        this.lawyerWorkRequest = lawyerWorkRequest;
     }
 
     public CaretakerWorkRequest getCaretakerWorkRequest() {
@@ -83,9 +91,7 @@ public class CaseReporterWorkRequest extends WorkRequest{
         this.email = email;
     }
 
-    public String getUserName() {
-        return UserName;
-    }
+    
 
     public Integer getAge() {
         return Age;
@@ -95,9 +101,7 @@ public class CaseReporterWorkRequest extends WorkRequest{
         this.Age = Age;
     }
 
-    public void setUserName(String UserName) {
-        this.UserName = UserName;
-    }
+   
 
     public void setRelation(String relation) {
         this.relation = relation;

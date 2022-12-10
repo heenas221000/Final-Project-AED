@@ -60,17 +60,17 @@ public class LabRequestJPanel extends javax.swing.JPanel {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        tb_ManageLab = new javax.swing.JTable();
+        bt_Assign = new javax.swing.JButton();
+        bt_View = new javax.swing.JButton();
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(153, 204, 255));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Manage Requests");
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tb_ManageLab.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -89,42 +89,46 @@ public class LabRequestJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(tb_ManageLab);
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButton1.setText("Assign Request");
-        jButton1.setBorderPainted(false);
-        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_Assign.setBackground(new java.awt.Color(0, 0, 204));
+        bt_Assign.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        bt_Assign.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Assign.setText("Assign Request");
+        bt_Assign.setBorderPainted(false);
+        bt_Assign.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton1MouseEntered(evt);
+                bt_AssignMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton1MouseExited(evt);
+                bt_AssignMouseExited(evt);
             }
         });
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        bt_Assign.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                bt_AssignActionPerformed(evt);
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButton2.setText("View Request");
-        jButton2.setBorderPainted(false);
-        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_View.setBackground(new java.awt.Color(0, 0, 204));
+        bt_View.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        bt_View.setForeground(new java.awt.Color(255, 255, 255));
+        bt_View.setText("View Request");
+        bt_View.setBorderPainted(false);
+        bt_View.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton2MouseClicked(evt);
+                bt_ViewMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButton2MouseEntered(evt);
+                bt_ViewMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButton2MouseExited(evt);
+                bt_ViewMouseExited(evt);
             }
         });
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        bt_View.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                bt_ViewActionPerformed(evt);
             }
         });
 
@@ -137,9 +141,9 @@ public class LabRequestJPanel extends javax.swing.JPanel {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 432, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton1)
+                        .addComponent(bt_Assign)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton2)))
+                        .addComponent(bt_View)))
                 .addGap(109, 109, 109))
             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
@@ -152,8 +156,8 @@ public class LabRequestJPanel extends javax.swing.JPanel {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 239, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(bt_Assign)
+                    .addComponent(bt_View))
                 .addGap(142, 142, 142))
         );
 
@@ -179,49 +183,49 @@ public class LabRequestJPanel extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseEntered
-        jButton1.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1MouseEntered
+    private void bt_AssignMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_AssignMouseEntered
+        bt_Assign.setForeground(new Color(0,128,128));        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_AssignMouseEntered
 
-    private void jButton1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseExited
-        jButton1.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1MouseExited
+    private void bt_AssignMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_AssignMouseExited
+        bt_Assign.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_AssignMouseExited
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void bt_AssignActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_AssignActionPerformed
         // TODO add your handling code here:
-        int selectedRow = jTable1.getSelectedRow();
+        int selectedRow = tb_ManageLab.getSelectedRow();
 
         if (selectedRow < 0){
             return;
         }
 
-        WorkRequest request = (LabAssistantWorkRequest)jTable1.getValueAt(selectedRow, 2);
+        WorkRequest request = (LabAssistantWorkRequest)tb_ManageLab.getValueAt(selectedRow, 2);
         request.setReceiver(userAccount);
         request.setStatus("Accepted");
         populateTable();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_bt_AssignActionPerformed
 
-    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+    private void bt_ViewMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ViewMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2MouseClicked
+    }//GEN-LAST:event_bt_ViewMouseClicked
 
-    private void jButton2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseEntered
-        jButton2.setForeground(new Color(0,128,128));            // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2MouseEntered
+    private void bt_ViewMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ViewMouseEntered
+        bt_View.setForeground(new Color(0,128,128));            // TODO add your handling code here:
+    }//GEN-LAST:event_bt_ViewMouseEntered
 
-    private void jButton2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseExited
-        jButton1.setForeground(Color.black);         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2MouseExited
+    private void bt_ViewMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ViewMouseExited
+        bt_Assign.setForeground(Color.black);         // TODO add your handling code here:
+    }//GEN-LAST:event_bt_ViewMouseExited
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void bt_ViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_ViewActionPerformed
         // TODO add your handling code here:
-        int selectedRow = jTable1.getSelectedRow();
+        int selectedRow = tb_ManageLab.getSelectedRow();
 
         if (selectedRow < 0){
             return;
         }
 
-        LabAssistantWorkRequest request = (LabAssistantWorkRequest)jTable1.getValueAt(selectedRow, 2);
+        LabAssistantWorkRequest request = (LabAssistantWorkRequest)tb_ManageLab.getValueAt(selectedRow, 2);
 
         if (request.getReceiver()!=userAccount){
             JOptionPane.showMessageDialog(this, "You cannot view the report of this case. Access Denied.");
@@ -233,10 +237,10 @@ public class LabRequestJPanel extends javax.swing.JPanel {
             layout.next(userProcessContainer);
 
         }
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_bt_ViewActionPerformed
 private void populateTable() {
         
-        DefaultTableModel model= (DefaultTableModel) jTable1.getModel();
+        DefaultTableModel model= (DefaultTableModel) tb_ManageLab.getModel();
         Object[] row=new Object[4];
         model.setRowCount(0);
         
@@ -258,11 +262,11 @@ private void populateTable() {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton bt_Assign;
+    private javax.swing.JButton bt_View;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable tb_ManageLab;
     // End of variables declaration//GEN-END:variables
 }
