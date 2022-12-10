@@ -53,23 +53,27 @@ public class MainJFrame extends javax.swing.JFrame {
         setBackground(new java.awt.Color(255, 255, 255));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        TopPanel.setBackground(new java.awt.Color(153, 204, 255));
+        TopPanel.setBackground(new java.awt.Color(129, 178, 154));
         TopPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        NamejLabel.setFont(new java.awt.Font("Songti SC", 1, 48)); // NOI18N
-        NamejLabel.setForeground(new java.awt.Color(0, 0, 204));
-        NamejLabel.setText("#SPEAKOUT AT WORKPLACE");
-        TopPanel.add(NamejLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 10, 780, 80));
+        NamejLabel.setFont(new java.awt.Font("Monaco", 1, 48)); // NOI18N
+        NamejLabel.setForeground(new java.awt.Color(61, 64, 91));
+        NamejLabel.setText("Women Abuse Reporting System");
+        TopPanel.add(NamejLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 10, 780, 80));
 
         getContentPane().add(TopPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 4, 1410, 110));
 
-        jPanel1.setBackground(new java.awt.Color(36, 125, 155));
+<<<<<<< Updated upstream
+        jPanel1.setBackground(new java.awt.Color(244, 241, 222));
+=======
+        jPanel1.setBackground(new java.awt.Color(210, 232, 255));
+>>>>>>> Stashed changes
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setBackground(new java.awt.Color(244, 241, 222));
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, -230, 1320, 830));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-380, -230, 1590, 830));
 
-        SignupjButton.setBackground(new java.awt.Color(153, 204, 255));
+        SignupjButton.setBackground(new java.awt.Color(129, 178, 154));
         SignupjButton.setFont(new java.awt.Font("Songti SC", 1, 24)); // NOI18N
         SignupjButton.setForeground(new java.awt.Color(0, 0, 204));
         SignupjButton.setText("SIGN UP DETAILS");
@@ -81,12 +85,13 @@ public class MainJFrame extends javax.swing.JFrame {
                 SignupjButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(SignupjButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 30, 290, -1));
+        jPanel1.add(SignupjButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 30, 430, -1));
 
-        SigninjButton.setBackground(new java.awt.Color(102, 204, 255));
+        SigninjButton.setBackground(new java.awt.Color(129, 178, 154));
         SigninjButton.setFont(new java.awt.Font("Songti SC", 1, 24)); // NOI18N
         SigninjButton.setForeground(new java.awt.Color(0, 0, 204));
         SigninjButton.setText("SIGN IN DETAILS");
+        SigninjButton.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(102, 153, 255), null));
         SigninjButton.setBorderPainted(false);
         SigninjButton.setContentAreaFilled(false);
         SigninjButton.addActionListener(new java.awt.event.ActionListener() {
@@ -94,10 +99,15 @@ public class MainJFrame extends javax.swing.JFrame {
                 SigninjButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(SigninjButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 80, 300, -1));
+<<<<<<< Updated upstream
+        jPanel1.add(SigninjButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 80, 170, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 10, 1390, 580));
+=======
+        jPanel1.add(SigninjButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 80, 520, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Image/image.png"))); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 1290, 470));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 1140, 380));
+>>>>>>> Stashed changes
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 113, 1410, 750));
 
@@ -138,10 +148,6 @@ public class MainJFrame extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(MainJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
