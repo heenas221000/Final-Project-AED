@@ -74,7 +74,7 @@ public class sysadminJPanel extends javax.swing.JPanel {
         jPanel1.setInheritsPopupMenu(true);
 
         lblWelcomeSysAdmin.setBackground(new java.awt.Color(0, 51, 204));
-        lblWelcomeSysAdmin.setFont(new java.awt.Font("Songti SC", 1, 24)); // NOI18N
+        lblWelcomeSysAdmin.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N
         lblWelcomeSysAdmin.setForeground(new java.awt.Color(0, 0, 204));
         lblWelcomeSysAdmin.setText("WELCOME SYSTEM ADMIN");
 

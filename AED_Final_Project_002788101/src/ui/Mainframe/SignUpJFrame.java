@@ -106,8 +106,8 @@ public class SignUpJFrame extends javax.swing.JFrame {
         detailsjPanel.setBackground(new java.awt.Color(204, 204, 255));
         detailsjPanel.setLayout(new java.awt.GridBagLayout());
 
-        jLabel1.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(224, 122, 95));
+        jLabel1.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 204));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("ENTER YOUR DETAILS HERE");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -120,8 +120,8 @@ public class SignUpJFrame extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(21, 142, 0, 0);
         detailsjPanel.add(jLabel1, gridBagConstraints);
 
-        fnamejLabel.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        fnamejLabel.setForeground(new java.awt.Color(61, 64, 91));
+        fnamejLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        fnamejLabel.setForeground(new java.awt.Color(0, 0, 204));
         fnamejLabel.setText("NAME");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -132,8 +132,8 @@ public class SignUpJFrame extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(14, 142, 0, 0);
         detailsjPanel.add(fnamejLabel, gridBagConstraints);
 
-        contactjLabel.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        contactjLabel.setForeground(new java.awt.Color(61, 64, 91));
+        contactjLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        contactjLabel.setForeground(new java.awt.Color(0, 0, 204));
         contactjLabel.setText("PHONE NUMBER");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -144,8 +144,8 @@ public class SignUpJFrame extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(21, 142, 0, 0);
         detailsjPanel.add(contactjLabel, gridBagConstraints);
 
-        usernamejLabel.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        usernamejLabel.setForeground(new java.awt.Color(61, 64, 91));
+        usernamejLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        usernamejLabel.setForeground(new java.awt.Color(0, 0, 204));
         usernamejLabel.setText("USERNAME");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -156,8 +156,8 @@ public class SignUpJFrame extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(29, 142, 0, 0);
         detailsjPanel.add(usernamejLabel, gridBagConstraints);
 
-        passwordjLabel.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        passwordjLabel.setForeground(new java.awt.Color(61, 64, 91));
+        passwordjLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        passwordjLabel.setForeground(new java.awt.Color(0, 0, 204));
         passwordjLabel.setText("PASSWORD");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -201,10 +201,10 @@ public class SignUpJFrame extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(26, 27, 0, 0);
         detailsjPanel.add(usernameJTextField, gridBagConstraints);
 
-        signupjButton.setBackground(new java.awt.Color(129, 178, 154));
-        signupjButton.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        signupjButton.setForeground(new java.awt.Color(61, 64, 91));
-        signupjButton.setText("Sign Up");
+        signupjButton.setBackground(new java.awt.Color(0, 0, 204));
+        signupjButton.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        signupjButton.setForeground(java.awt.Color.white);
+        signupjButton.setText("SIGN UP");
         signupjButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 signupjButtonMouseEntered(evt);
@@ -258,8 +258,8 @@ public class SignUpJFrame extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(27, 27, 0, 0);
         detailsjPanel.add(networkJComboBox, gridBagConstraints);
 
-        jLabel2.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(61, 64, 91));
+        jLabel2.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 204));
         jLabel2.setText("CITY");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -277,6 +277,9 @@ public class SignUpJFrame extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(20, 10, 0, 106);
         detailsjPanel.add(jLabel3, gridBagConstraints);
 
+        btn_Back.setBackground(new java.awt.Color(0, 0, 204));
+        btn_Back.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        btn_Back.setForeground(null);
         btn_Back.setText("BACK");
         btn_Back.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
