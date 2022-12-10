@@ -72,12 +72,12 @@ public class CaseReporter extends javax.swing.JPanel {
 
         jVolunteerSplitPanel.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
-        jPanel09.setBackground(new java.awt.Color(129, 178, 154));
+        jPanel09.setBackground(new java.awt.Color(153, 204, 255));
         jPanel09.setLayout(new java.awt.GridBagLayout());
 
-        lblCaseReporter.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        lblCaseReporter.setForeground(new java.awt.Color(61, 64, 91));
-        lblCaseReporter.setText("Welcome Case Reporter");
+        lblCaseReporter.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N
+        lblCaseReporter.setForeground(new java.awt.Color(0, 0, 204));
+        lblCaseReporter.setText("WELCOME CASE REPORTER");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -86,9 +86,9 @@ public class CaseReporter extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(16, 112, 0, 0);
         jPanel09.add(lblCaseReporter, gridBagConstraints);
 
-        btnViewStatus.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        btnViewStatus.setForeground(new java.awt.Color(61, 64, 91));
-        btnViewStatus.setText("View Status");
+        btnViewStatus.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        btnViewStatus.setForeground(new java.awt.Color(0, 0, 204));
+        btnViewStatus.setText("VIEW STATUS");
         btnViewStatus.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnViewStatus.setBorderPainted(false);
         btnViewStatus.setContentAreaFilled(false);
@@ -114,9 +114,9 @@ public class CaseReporter extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(11, 47, 11, 84);
         jPanel09.add(btnViewStatus, gridBagConstraints);
 
-        btnReport.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        btnReport.setForeground(new java.awt.Color(61, 64, 91));
-        btnReport.setText("Report");
+        btnReport.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        btnReport.setForeground(new java.awt.Color(0, 0, 204));
+        btnReport.setText("REPORT");
         btnReport.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnReport.setBorderPainted(false);
         btnReport.setContentAreaFilled(false);
@@ -143,7 +143,7 @@ public class CaseReporter extends javax.swing.JPanel {
 
         jVolunteerSplitPanel.setTopComponent(jPanel09);
 
-        jPanel10.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel10.setBackground(new java.awt.Color(204, 204, 255));
         jPanel10.setLayout(new java.awt.GridBagLayout());
         jVolunteerSplitPanel.setRightComponent(jPanel10);
 
