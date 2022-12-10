@@ -78,8 +78,8 @@ public class CaseReportCJPanel extends javax.swing.JPanel {
         txtTypeofAssault = new javax.swing.JTextField();
         txtDate = new javax.swing.JTextField();
         txtSuspectType = new javax.swing.JTextField();
-        btnSendInvite = new javax.swing.JButton();
-        btnBack = new javax.swing.JButton();
+        bt_SendInvite = new javax.swing.JButton();
+        bt_Back = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(153, 204, 255));
 
@@ -250,39 +250,39 @@ public class CaseReportCJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(16, 0, 0, 82);
         jPanel1.add(txtSuspectType, gridBagConstraints);
 
-        btnSendInvite.setBackground(new java.awt.Color(0, 0, 204));
-        btnSendInvite.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        btnSendInvite.setForeground(new java.awt.Color(255, 255, 255));
-        btnSendInvite.setText("SEND INVITE");
-        btnSendInvite.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_SendInvite.setBackground(new java.awt.Color(0, 0, 204));
+        bt_SendInvite.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_SendInvite.setForeground(new java.awt.Color(255, 255, 255));
+        bt_SendInvite.setText("SEND INVITE");
+        bt_SendInvite.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnSendInviteMouseEntered(evt);
+                bt_SendInviteMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnSendInviteMouseExited(evt);
+                bt_SendInviteMouseExited(evt);
             }
         });
-        btnSendInvite.addActionListener(new java.awt.event.ActionListener() {
+        bt_SendInvite.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSendInviteActionPerformed(evt);
+                bt_SendInviteActionPerformed(evt);
             }
         });
 
-        btnBack.setBackground(new java.awt.Color(0, 0, 204));
-        btnBack.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(255, 255, 255));
-        btnBack.setText("BACK");
-        btnBack.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_Back.setBackground(new java.awt.Color(0, 0, 204));
+        bt_Back.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_Back.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Back.setText("BACK");
+        bt_Back.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnBackMouseEntered(evt);
+                bt_BackMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnBackMouseExited(evt);
+                bt_BackMouseExited(evt);
             }
         });
-        btnBack.addActionListener(new java.awt.event.ActionListener() {
+        bt_Back.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBackActionPerformed(evt);
+                bt_BackActionPerformed(evt);
             }
         });
 
@@ -292,24 +292,24 @@ public class CaseReportCJPanel extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(32, 32, 32)
-                .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(bt_Back, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(127, 127, 127)
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(488, 488, 488))
             .addGroup(layout.createSequentialGroup()
                 .addGap(519, 519, 519)
-                .addComponent(btnSendInvite)
+                .addComponent(bt_SendInvite)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(20, 20, 20)
-                .addComponent(btnBack)
+                .addComponent(bt_Back)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 385, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnSendInvite)
+                .addComponent(bt_SendInvite)
                 .addGap(21, 21, 21))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -326,15 +326,15 @@ public class CaseReportCJPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtTypeofAssaultActionPerformed
 
-    private void btnSendInviteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSendInviteMouseEntered
-        btnSendInvite.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_btnSendInviteMouseEntered
+    private void bt_SendInviteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_SendInviteMouseEntered
+        bt_SendInvite.setForeground(new Color(0,128,128));        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_SendInviteMouseEntered
 
-    private void btnSendInviteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSendInviteMouseExited
-        btnSendInvite.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnSendInviteMouseExited
+    private void bt_SendInviteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_SendInviteMouseExited
+        bt_SendInvite.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_SendInviteMouseExited
 
-    private void btnSendInviteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSendInviteActionPerformed
+    private void bt_SendInviteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_SendInviteActionPerformed
 
         String FromEmail="sexualawareness.help@gmail.com";
         String FromEmailPass="Fin@lProject21";
@@ -370,17 +370,17 @@ public class CaseReportCJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(this, "Incorrect E-mail id.Invitation cannot be been sent.");
 
         }        // TODO add your handling code here:
-    }//GEN-LAST:event_btnSendInviteActionPerformed
+    }//GEN-LAST:event_bt_SendInviteActionPerformed
 
-    private void btnBackMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackMouseEntered
-        btnBack.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBackMouseEntered
+    private void bt_BackMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_BackMouseEntered
+        bt_Back.setForeground(new Color(0,128,128));        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_BackMouseEntered
 
-    private void btnBackMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackMouseExited
-        btnBack.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBackMouseExited
+    private void bt_BackMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_BackMouseExited
+        bt_Back.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_BackMouseExited
 
-    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+    private void bt_BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_BackActionPerformed
         userProcessContainer.remove(this);
         Component[] componentArray = userProcessContainer.getComponents();
         Component component = componentArray[componentArray.length - 1];
@@ -390,7 +390,7 @@ public class CaseReportCJPanel extends javax.swing.JPanel {
         layout.previous(userProcessContainer);
 
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnBackActionPerformed
+    }//GEN-LAST:event_bt_BackActionPerformed
 
     private void txtDateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDateActionPerformed
         // TODO add your handling code here:
@@ -408,8 +408,8 @@ public class CaseReportCJPanel extends javax.swing.JPanel {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBack;
-    private javax.swing.JButton btnSendInvite;
+    private javax.swing.JButton bt_Back;
+    private javax.swing.JButton bt_SendInvite;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblDate;
     private javax.swing.JLabel lblName;

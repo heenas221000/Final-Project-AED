@@ -28,13 +28,13 @@
                   <Component id="jScrollPane1" alignment="0" pref="0" max="32767" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="btnAssignRequest" linkSize="1" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnViewReport" linkSize="1" alignment="0" max="32767" attributes="0"/>
+                          <Component id="bt_AssignRequest" linkSize="1" alignment="0" max="32767" attributes="0"/>
+                          <Component id="bt_ViewReport" linkSize="1" alignment="0" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace pref="82" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="btnEncounters" linkSize="1" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnCaseComplete" linkSize="1" alignment="0" max="32767" attributes="0"/>
+                          <Component id="bt_Encounters" linkSize="1" alignment="0" max="32767" attributes="0"/>
+                          <Component id="bt_CaseComplete" linkSize="1" alignment="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -51,13 +51,13 @@
               <Component id="jScrollPane1" min="-2" pref="137" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="btnAssignRequest" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btnEncounters" linkSize="2" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                  <Component id="bt_AssignRequest" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="bt_Encounters" linkSize="2" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="btnCaseComplete" linkSize="2" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
-                  <Component id="btnViewReport" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="bt_CaseComplete" linkSize="2" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                  <Component id="bt_ViewReport" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="25" max="32767" attributes="0"/>
           </Group>
@@ -101,7 +101,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="btnAssignRequest">
+    <Component class="javax.swing.JButton" name="bt_AssignRequest">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="0" red="0" type="rgb"/>
@@ -115,12 +115,12 @@
         <Property name="text" type="java.lang.String" value="ASSIGN REQUEST"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAssignRequestMouseEntered"/>
-        <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnAssignRequestMouseExited"/>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAssignRequestActionPerformed"/>
+        <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="bt_AssignRequestMouseEntered"/>
+        <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="bt_AssignRequestMouseExited"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bt_AssignRequestActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnViewReport">
+    <Component class="javax.swing.JButton" name="bt_ViewReport">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="0" red="0" type="rgb"/>
@@ -134,12 +134,12 @@
         <Property name="text" type="java.lang.String" value="VIEW REPORT"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnViewReportMouseEntered"/>
-        <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnViewReportMouseExited"/>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnViewReportActionPerformed"/>
+        <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="bt_ViewReportMouseEntered"/>
+        <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="bt_ViewReportMouseExited"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bt_ViewReportActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnEncounters">
+    <Component class="javax.swing.JButton" name="bt_Encounters">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="0" red="0" type="rgb"/>
@@ -153,12 +153,12 @@
         <Property name="text" type="java.lang.String" value="ENCOUNTER"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnEncountersMouseEntered"/>
-        <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnEncountersMouseExited"/>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEncountersActionPerformed"/>
+        <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="bt_EncountersMouseEntered"/>
+        <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="bt_EncountersMouseExited"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bt_EncountersActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnCaseComplete">
+    <Component class="javax.swing.JButton" name="bt_CaseComplete">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="0" red="0" type="rgb"/>
@@ -172,9 +172,9 @@
         <Property name="text" type="java.lang.String" value="CASE COMPLETE"/>
       </Properties>
       <Events>
-        <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnCaseCompleteMouseEntered"/>
-        <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnCaseCompleteMouseExited"/>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCaseCompleteActionPerformed"/>
+        <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="bt_CaseCompleteMouseEntered"/>
+        <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="bt_CaseCompleteMouseExited"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bt_CaseCompleteActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

@@ -66,8 +66,8 @@ public class CounsellorEncounterJPanel extends javax.swing.JPanel {
         lblName = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblCounsellorEncounterDetails = new javax.swing.JTable();
-        btnUpdate = new javax.swing.JButton();
-        btnBack = new javax.swing.JButton();
+        bt_Update = new javax.swing.JButton();
+        bt_Back = new javax.swing.JButton();
         lblEncounterNo = new javax.swing.JLabel();
         txtEncounterNo = new javax.swing.JTextField();
         lblMinutesofMeeting = new javax.swing.JLabel();
@@ -100,39 +100,39 @@ public class CounsellorEncounterJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblCounsellorEncounterDetails);
 
-        btnUpdate.setBackground(new java.awt.Color(0, 0, 204));
-        btnUpdate.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        btnUpdate.setForeground(new java.awt.Color(255, 255, 255));
-        btnUpdate.setText("UPDATE");
-        btnUpdate.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_Update.setBackground(new java.awt.Color(0, 0, 204));
+        bt_Update.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_Update.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Update.setText("UPDATE");
+        bt_Update.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnUpdateMouseEntered(evt);
+                bt_UpdateMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnUpdateMouseExited(evt);
+                bt_UpdateMouseExited(evt);
             }
         });
-        btnUpdate.addActionListener(new java.awt.event.ActionListener() {
+        bt_Update.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnUpdateActionPerformed(evt);
+                bt_UpdateActionPerformed(evt);
             }
         });
 
-        btnBack.setBackground(new java.awt.Color(0, 0, 204));
-        btnBack.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(255, 255, 255));
-        btnBack.setText("BACK");
-        btnBack.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_Back.setBackground(new java.awt.Color(0, 0, 204));
+        bt_Back.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_Back.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Back.setText("BACK");
+        bt_Back.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnBackMouseEntered(evt);
+                bt_BackMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnBackMouseExited(evt);
+                bt_BackMouseExited(evt);
             }
         });
-        btnBack.addActionListener(new java.awt.event.ActionListener() {
+        bt_Back.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBackActionPerformed(evt);
+                bt_BackActionPerformed(evt);
             }
         });
 
@@ -166,7 +166,7 @@ public class CounsellorEncounterJPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(70, 70, 70)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnUpdate)
+                    .addComponent(bt_Update)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblName)
@@ -182,14 +182,14 @@ public class CounsellorEncounterJPanel extends javax.swing.JPanel {
                 .addGap(62, 62, 62))
             .addGroup(layout.createSequentialGroup()
                 .addGap(32, 32, 32)
-                .addComponent(btnBack)
+                .addComponent(bt_Back)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(30, 30, 30)
-                .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(bt_Back, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(26, 26, 26)
                 .addComponent(lblHeader, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -211,20 +211,20 @@ public class CounsellorEncounterJPanel extends javax.swing.JPanel {
                             .addComponent(lblMinutesofMeeting)
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(28, 28, 28)
-                        .addComponent(btnUpdate)
+                        .addComponent(bt_Update)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnUpdateMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnUpdateMouseEntered
-        btnUpdate.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_btnUpdateMouseEntered
+    private void bt_UpdateMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_UpdateMouseEntered
+        bt_Update.setForeground(new Color(0,128,128));        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_UpdateMouseEntered
 
-    private void btnUpdateMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnUpdateMouseExited
-        btnUpdate.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnUpdateMouseExited
+    private void bt_UpdateMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_UpdateMouseExited
+        bt_Update.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_UpdateMouseExited
 
-    private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
+    private void bt_UpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_UpdateActionPerformed
 
         if(txtEncounterNo.getText().equalsIgnoreCase("") && txtAreaMinutesofMeeting.getText().equalsIgnoreCase(""))
         {
@@ -284,17 +284,17 @@ public class CounsellorEncounterJPanel extends javax.swing.JPanel {
         }
 
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnUpdateActionPerformed
+    }//GEN-LAST:event_bt_UpdateActionPerformed
 
-    private void btnBackMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackMouseEntered
-        btnBack.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBackMouseEntered
+    private void bt_BackMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_BackMouseEntered
+        bt_Back.setForeground(new Color(0,128,128));        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_BackMouseEntered
 
-    private void btnBackMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBackMouseExited
-        btnBack.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnBackMouseExited
+    private void bt_BackMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_BackMouseExited
+        bt_Back.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_BackMouseExited
 
-    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+    private void bt_BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_BackActionPerformed
         userProcessContainer.remove(this);
         Component[] componentArray = userProcessContainer.getComponents();
         Component component = componentArray[componentArray.length - 1];
@@ -303,7 +303,7 @@ public class CounsellorEncounterJPanel extends javax.swing.JPanel {
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnBackActionPerformed
+    }//GEN-LAST:event_bt_BackActionPerformed
 
     private void txtEncounterNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEncounterNoActionPerformed
         // TODO add your handling code here:
@@ -324,8 +324,8 @@ public class CounsellorEncounterJPanel extends javax.swing.JPanel {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBack;
-    private javax.swing.JButton btnUpdate;
+    private javax.swing.JButton bt_Back;
+    private javax.swing.JButton bt_Update;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel lblEncounterNo;

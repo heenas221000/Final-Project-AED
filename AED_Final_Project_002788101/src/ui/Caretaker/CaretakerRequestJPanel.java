@@ -64,10 +64,10 @@ public class CaretakerRequestJPanel extends javax.swing.JPanel {
         lblHeader = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblCaretakerManageRequest = new javax.swing.JTable();
-        btnAssignRequest = new javax.swing.JButton();
-        btnViewCaseReport = new javax.swing.JButton();
-        btnEncounter = new javax.swing.JButton();
-        btnCaseComplete = new javax.swing.JButton();
+        bt_AssignRequest = new javax.swing.JButton();
+        bt_ViewCaseReport = new javax.swing.JButton();
+        bt_Encounter = new javax.swing.JButton();
+        bt_CaseComplete = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(153, 204, 255));
 
@@ -97,75 +97,75 @@ public class CaretakerRequestJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblCaretakerManageRequest);
 
-        btnAssignRequest.setBackground(new java.awt.Color(0, 0, 204));
-        btnAssignRequest.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        btnAssignRequest.setForeground(new java.awt.Color(255, 255, 255));
-        btnAssignRequest.setText("ASSIGN REQUEST");
-        btnAssignRequest.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_AssignRequest.setBackground(new java.awt.Color(0, 0, 204));
+        bt_AssignRequest.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_AssignRequest.setForeground(new java.awt.Color(255, 255, 255));
+        bt_AssignRequest.setText("ASSIGN REQUEST");
+        bt_AssignRequest.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnAssignRequestMouseEntered(evt);
+                bt_AssignRequestMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnAssignRequestMouseExited(evt);
+                bt_AssignRequestMouseExited(evt);
             }
         });
-        btnAssignRequest.addActionListener(new java.awt.event.ActionListener() {
+        bt_AssignRequest.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAssignRequestActionPerformed(evt);
+                bt_AssignRequestActionPerformed(evt);
             }
         });
 
-        btnViewCaseReport.setBackground(new java.awt.Color(0, 0, 204));
-        btnViewCaseReport.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        btnViewCaseReport.setForeground(new java.awt.Color(255, 255, 255));
-        btnViewCaseReport.setText("VIEW CASE REPORT");
-        btnViewCaseReport.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_ViewCaseReport.setBackground(new java.awt.Color(0, 0, 204));
+        bt_ViewCaseReport.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_ViewCaseReport.setForeground(new java.awt.Color(255, 255, 255));
+        bt_ViewCaseReport.setText("VIEW CASE REPORT");
+        bt_ViewCaseReport.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnViewCaseReportMouseEntered(evt);
+                bt_ViewCaseReportMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnViewCaseReportMouseExited(evt);
+                bt_ViewCaseReportMouseExited(evt);
             }
         });
-        btnViewCaseReport.addActionListener(new java.awt.event.ActionListener() {
+        bt_ViewCaseReport.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnViewCaseReportActionPerformed(evt);
+                bt_ViewCaseReportActionPerformed(evt);
             }
         });
 
-        btnEncounter.setBackground(new java.awt.Color(0, 0, 204));
-        btnEncounter.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        btnEncounter.setForeground(new java.awt.Color(255, 255, 255));
-        btnEncounter.setText("ENCOUNTERS");
-        btnEncounter.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_Encounter.setBackground(new java.awt.Color(0, 0, 204));
+        bt_Encounter.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_Encounter.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Encounter.setText("ENCOUNTERS");
+        bt_Encounter.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnEncounterMouseEntered(evt);
+                bt_EncounterMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnEncounterMouseExited(evt);
+                bt_EncounterMouseExited(evt);
             }
         });
-        btnEncounter.addActionListener(new java.awt.event.ActionListener() {
+        bt_Encounter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEncounterActionPerformed(evt);
+                bt_EncounterActionPerformed(evt);
             }
         });
 
-        btnCaseComplete.setBackground(new java.awt.Color(0, 0, 204));
-        btnCaseComplete.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        btnCaseComplete.setForeground(new java.awt.Color(255, 255, 255));
-        btnCaseComplete.setText("CASE COMPLETE");
-        btnCaseComplete.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_CaseComplete.setBackground(new java.awt.Color(0, 0, 204));
+        bt_CaseComplete.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_CaseComplete.setForeground(new java.awt.Color(255, 255, 255));
+        bt_CaseComplete.setText("CASE COMPLETE");
+        bt_CaseComplete.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnCaseCompleteMouseEntered(evt);
+                bt_CaseCompleteMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnCaseCompleteMouseExited(evt);
+                bt_CaseCompleteMouseExited(evt);
             }
         });
-        btnCaseComplete.addActionListener(new java.awt.event.ActionListener() {
+        bt_CaseComplete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCaseCompleteActionPerformed(evt);
+                bt_CaseCompleteActionPerformed(evt);
             }
         });
 
@@ -179,12 +179,12 @@ public class CaretakerRequestJPanel extends javax.swing.JPanel {
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 524, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btnViewCaseReport, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnAssignRequest, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(bt_ViewCaseReport, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(bt_AssignRequest, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btnCaseComplete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnEncounter, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(bt_CaseComplete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(bt_Encounter, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addGap(149, 149, 149))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
@@ -200,25 +200,25 @@ public class CaretakerRequestJPanel extends javax.swing.JPanel {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(33, 33, 33)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnCaseComplete)
-                    .addComponent(btnAssignRequest))
+                    .addComponent(bt_CaseComplete)
+                    .addComponent(bt_AssignRequest))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnViewCaseReport)
-                    .addComponent(btnEncounter))
+                    .addComponent(bt_ViewCaseReport)
+                    .addComponent(bt_Encounter))
                 .addGap(89, 89, 89))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnAssignRequestMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAssignRequestMouseEntered
-        btnAssignRequest.setForeground(new Color(0,128,128));         // TODO add your handling code here:
-    }//GEN-LAST:event_btnAssignRequestMouseEntered
+    private void bt_AssignRequestMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_AssignRequestMouseEntered
+        bt_AssignRequest.setForeground(new Color(0,128,128));         // TODO add your handling code here:
+    }//GEN-LAST:event_bt_AssignRequestMouseEntered
 
-    private void btnAssignRequestMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAssignRequestMouseExited
-        btnAssignRequest.setForeground(Color.black);         // TODO add your handling code here:
-    }//GEN-LAST:event_btnAssignRequestMouseExited
+    private void bt_AssignRequestMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_AssignRequestMouseExited
+        bt_AssignRequest.setForeground(Color.black);         // TODO add your handling code here:
+    }//GEN-LAST:event_bt_AssignRequestMouseExited
 
-    private void btnAssignRequestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAssignRequestActionPerformed
+    private void bt_AssignRequestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_AssignRequestActionPerformed
 
         int selectedRow = tblCaretakerManageRequest.getSelectedRow();
         WorkRequest request = (CaretakerWorkRequest)tblCaretakerManageRequest.getValueAt(selectedRow, 2);
@@ -232,17 +232,17 @@ public class CaretakerRequestJPanel extends javax.swing.JPanel {
         }
 
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnAssignRequestActionPerformed
+    }//GEN-LAST:event_bt_AssignRequestActionPerformed
 
-    private void btnViewCaseReportMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnViewCaseReportMouseEntered
-        btnViewCaseReport.setForeground(new Color(0,128,128));         // TODO add your handling code here:
-    }//GEN-LAST:event_btnViewCaseReportMouseEntered
+    private void bt_ViewCaseReportMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ViewCaseReportMouseEntered
+        bt_ViewCaseReport.setForeground(new Color(0,128,128));         // TODO add your handling code here:
+    }//GEN-LAST:event_bt_ViewCaseReportMouseEntered
 
-    private void btnViewCaseReportMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnViewCaseReportMouseExited
-        btnViewCaseReport.setForeground(Color.black);         // TODO add your handling code here:
-    }//GEN-LAST:event_btnViewCaseReportMouseExited
+    private void bt_ViewCaseReportMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ViewCaseReportMouseExited
+        bt_ViewCaseReport.setForeground(Color.black);         // TODO add your handling code here:
+    }//GEN-LAST:event_bt_ViewCaseReportMouseExited
 
-    private void btnViewCaseReportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewCaseReportActionPerformed
+    private void bt_ViewCaseReportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_ViewCaseReportActionPerformed
 
         int selectedRow = tblCaretakerManageRequest.getSelectedRow();
         String sta=tblCaretakerManageRequest.getValueAt(selectedRow, 2).toString();
@@ -272,17 +272,17 @@ public class CaretakerRequestJPanel extends javax.swing.JPanel {
 
         }
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnViewCaseReportActionPerformed
+    }//GEN-LAST:event_bt_ViewCaseReportActionPerformed
 
-    private void btnEncounterMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEncounterMouseEntered
-        btnEncounter.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_btnEncounterMouseEntered
+    private void bt_EncounterMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_EncounterMouseEntered
+        bt_Encounter.setForeground(new Color(0,128,128));        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_EncounterMouseEntered
 
-    private void btnEncounterMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEncounterMouseExited
-        btnEncounter.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnEncounterMouseExited
+    private void bt_EncounterMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_EncounterMouseExited
+        bt_Encounter.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_EncounterMouseExited
 
-    private void btnEncounterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEncounterActionPerformed
+    private void bt_EncounterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_EncounterActionPerformed
 
         int selectedRow = tblCaretakerManageRequest.getSelectedRow();
 
@@ -309,17 +309,17 @@ public class CaretakerRequestJPanel extends javax.swing.JPanel {
             }
             // }
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnEncounterActionPerformed
+    }//GEN-LAST:event_bt_EncounterActionPerformed
 
-    private void btnCaseCompleteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCaseCompleteMouseEntered
-        btnCaseComplete.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCaseCompleteMouseEntered
+    private void bt_CaseCompleteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_CaseCompleteMouseEntered
+        bt_CaseComplete.setForeground(new Color(0,128,128));        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_CaseCompleteMouseEntered
 
-    private void btnCaseCompleteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCaseCompleteMouseExited
-        btnCaseComplete.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCaseCompleteMouseExited
+    private void bt_CaseCompleteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_CaseCompleteMouseExited
+        bt_CaseComplete.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_CaseCompleteMouseExited
 
-    private void btnCaseCompleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCaseCompleteActionPerformed
+    private void bt_CaseCompleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_CaseCompleteActionPerformed
         int selectedRow = tblCaretakerManageRequest.getSelectedRow();
 
         String sts="Waiting";
@@ -339,7 +339,7 @@ public class CaretakerRequestJPanel extends javax.swing.JPanel {
             populateTable();
         }
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnCaseCompleteActionPerformed
+    }//GEN-LAST:event_bt_CaseCompleteActionPerformed
     
     
      private void populateTable() {
@@ -379,10 +379,10 @@ public class CaretakerRequestJPanel extends javax.swing.JPanel {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAssignRequest;
-    private javax.swing.JButton btnCaseComplete;
-    private javax.swing.JButton btnEncounter;
-    private javax.swing.JButton btnViewCaseReport;
+    private javax.swing.JButton bt_AssignRequest;
+    private javax.swing.JButton bt_CaseComplete;
+    private javax.swing.JButton bt_Encounter;
+    private javax.swing.JButton bt_ViewCaseReport;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblHeader;
     private javax.swing.JTable tblCaretakerManageRequest;

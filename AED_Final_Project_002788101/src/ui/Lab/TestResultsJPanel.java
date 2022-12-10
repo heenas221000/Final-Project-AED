@@ -39,9 +39,9 @@ public class TestResultsJPanel extends javax.swing.JPanel {
     }
     
     private void PopulateReport() {
-        jTextField1.setText(request.getSender().toString());
-        jTextField2.setText(request.getDoctorWorkRequest().getCaseReporterWorkRequest().getChildName());
-        jTextField3.setText(request.getReceiver().toString());
+        txt_DName.setText(request.getSender().toString());
+        txt_PName.setText(request.getDoctorWorkRequest().getCaseReporterWorkRequest().getChildName());
+        txt_OfficialName.setText(request.getReceiver().toString());
         PopulateTable();
     }
 
@@ -58,18 +58,18 @@ public class TestResultsJPanel extends javax.swing.JPanel {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txt_DName = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        txt_PName = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jButton1 = new javax.swing.JButton();
+        tb_TestReport = new javax.swing.JTable();
+        bt_submit = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
-        jTextField4 = new javax.swing.JTextField();
+        txt_OfficialName = new javax.swing.JTextField();
+        bt_back = new javax.swing.JButton();
+        txt_UpdateTest = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        bt_update = new javax.swing.JButton();
 
         jPanel1.setBackground(new java.awt.Color(153, 204, 255));
 
@@ -83,21 +83,21 @@ public class TestResultsJPanel extends javax.swing.JPanel {
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel2.setText("Doctor Name:");
 
-        jTextField1.setEnabled(false);
+        txt_DName.setEnabled(false);
 
         jLabel3.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 0, 204));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel3.setText("Patient Name:");
 
-        jTextField2.setEnabled(false);
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        txt_PName.setEnabled(false);
+        txt_PName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                txt_PNameActionPerformed(evt);
             }
         });
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tb_TestReport.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
                 {null, null},
@@ -116,16 +116,16 @@ public class TestResultsJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(tb_TestReport);
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 204));
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Submit");
-        jButton1.setBorderPainted(false);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        bt_submit.setBackground(new java.awt.Color(0, 0, 204));
+        bt_submit.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        bt_submit.setForeground(new java.awt.Color(255, 255, 255));
+        bt_submit.setText("Submit");
+        bt_submit.setBorderPainted(false);
+        bt_submit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                bt_submitActionPerformed(evt);
             }
         });
 
@@ -133,16 +133,16 @@ public class TestResultsJPanel extends javax.swing.JPanel {
         jLabel4.setForeground(new java.awt.Color(0, 0, 204));
         jLabel4.setText("Lab Official Name:");
 
-        jTextField3.setEnabled(false);
+        txt_OfficialName.setEnabled(false);
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 204));
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Back");
-        jButton2.setBorderPainted(false);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        bt_back.setBackground(new java.awt.Color(0, 0, 204));
+        bt_back.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        bt_back.setForeground(new java.awt.Color(255, 255, 255));
+        bt_back.setText("Back");
+        bt_back.setBorderPainted(false);
+        bt_back.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                bt_backActionPerformed(evt);
             }
         });
 
@@ -151,14 +151,14 @@ public class TestResultsJPanel extends javax.swing.JPanel {
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jLabel5.setText("Update Test Result");
 
-        jButton3.setBackground(new java.awt.Color(0, 0, 204));
-        jButton3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Update");
-        jButton3.setBorderPainted(false);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        bt_update.setBackground(new java.awt.Color(0, 0, 204));
+        bt_update.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        bt_update.setForeground(new java.awt.Color(255, 255, 255));
+        bt_update.setText("Update");
+        bt_update.setBorderPainted(false);
+        bt_update.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                bt_updateActionPerformed(evt);
             }
         });
 
@@ -169,13 +169,13 @@ public class TestResultsJPanel extends javax.swing.JPanel {
             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(35, 35, 35)
-                .addComponent(jButton2)
+                .addComponent(bt_back)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton1)
-                    .addComponent(jButton3)
+                    .addComponent(bt_submit)
+                    .addComponent(bt_update)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel4)
@@ -185,10 +185,10 @@ public class TestResultsJPanel extends javax.swing.JPanel {
                                 .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 143, Short.MAX_VALUE)))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField4)
-                            .addComponent(jTextField2)
-                            .addComponent(jTextField1)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(txt_UpdateTest)
+                            .addComponent(txt_PName)
+                            .addComponent(txt_DName)
+                            .addComponent(txt_OfficialName, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(29, 29, 29)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 224, Short.MAX_VALUE)
                 .addGap(83, 83, 83))
@@ -197,7 +197,7 @@ public class TestResultsJPanel extends javax.swing.JPanel {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(33, 33, 33)
-                .addComponent(jButton2)
+                .addComponent(bt_back)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -205,26 +205,26 @@ public class TestResultsJPanel extends javax.swing.JPanel {
                         .addGap(60, 60, 60)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel3)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txt_PName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel5)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txt_UpdateTest, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
-                        .addComponent(jButton3)
+                        .addComponent(bt_update)
                         .addGap(17, 17, 17)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel4)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(txt_OfficialName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(jLabel2)
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(txt_DName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(98, 98, 98)))
-                .addComponent(jButton1)
+                .addComponent(bt_submit)
                 .addGap(149, 149, 149))
         );
 
@@ -245,45 +245,45 @@ public class TestResultsJPanel extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void txt_PNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_PNameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_txt_PNameActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void bt_submitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_submitActionPerformed
         // TODO add your handling code here:
         request.setStatus("Processed");
         JOptionPane.showMessageDialog(null, "Request Processed.");
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_bt_submitActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void bt_backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_backActionPerformed
         // TODO add your handling code here:
         Component[] componentArray = userProcessContainer.getComponents();
         Component component = componentArray[componentArray.length - 1];
         //CaseRequestJPanel sysAdminwjp = (CaseRequestJPanel) component;
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_bt_backActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void bt_updateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_updateActionPerformed
         // TODO add your handling code here:
-        int selectedRow = jTable1.getSelectedRow();
+        int selectedRow = tb_TestReport.getSelectedRow();
 
         if (selectedRow < 0){
             return;
         }
 
-        LabTest request = (LabTest)jTable1.getValueAt(selectedRow, 0);
+        LabTest request = (LabTest)tb_TestReport.getValueAt(selectedRow, 0);
 
-        request.setResult(jTextField4.getText());
+        request.setResult(txt_UpdateTest.getText());
         PopulateTable();
-        jTextField4.setText("");
-    }//GEN-LAST:event_jButton3ActionPerformed
+        txt_UpdateTest.setText("");
+    }//GEN-LAST:event_bt_updateActionPerformed
 private void initListners() {
-        jTable1.getSelectionModel().addListSelectionListener(new ListSelectionListener(){
+        tb_TestReport.getSelectionModel().addListSelectionListener(new ListSelectionListener(){
         public void valueChanged(ListSelectionEvent event) {
-           int selectedRow = jTable1.getSelectedRow();
+           int selectedRow = tb_TestReport.getSelectedRow();
              if (selectedRow >= 0) {
-                  LabTest  L  = (LabTest) jTable1.getValueAt(selectedRow, 0);
+                  LabTest  L  = (LabTest) tb_TestReport.getValueAt(selectedRow, 0);
                  /*if(L!=null){
                      jTextField4.setText(L.getResult());
                  }*/
@@ -292,7 +292,7 @@ private void initListners() {
     });
     }
  private void PopulateTable() {
-        DefaultTableModel model= (DefaultTableModel) jTable1.getModel();
+        DefaultTableModel model= (DefaultTableModel) tb_TestReport.getModel();
         Object[] row=new Object[2];
         model.setRowCount(0);
         
@@ -308,9 +308,9 @@ private void initListners() {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton bt_back;
+    private javax.swing.JButton bt_submit;
+    private javax.swing.JButton bt_update;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -318,10 +318,10 @@ private void initListners() {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTable tb_TestReport;
+    private javax.swing.JTextField txt_DName;
+    private javax.swing.JTextField txt_OfficialName;
+    private javax.swing.JTextField txt_PName;
+    private javax.swing.JTextField txt_UpdateTest;
     // End of variables declaration//GEN-END:variables
 }

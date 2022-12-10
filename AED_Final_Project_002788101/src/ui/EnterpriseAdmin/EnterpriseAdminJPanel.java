@@ -46,9 +46,9 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
         jSplitPane1 = new javax.swing.JSplitPane();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        btnManageOrg = new javax.swing.JButton();
-        btnManageEmployee = new javax.swing.JButton();
-        btnManageEmployeeAccess = new javax.swing.JButton();
+        bt_ManageOrg = new javax.swing.JButton();
+        bt_ManageEmployee = new javax.swing.JButton();
+        bt_ManageEmployeeAccess = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         txtFieldEnterpriseName = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
@@ -73,22 +73,22 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(11, 198, 0, 0);
         jPanel2.add(jLabel1, gridBagConstraints);
 
-        btnManageOrg.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        btnManageOrg.setForeground(new java.awt.Color(51, 102, 255));
-        btnManageOrg.setText("Manage Organization(s)");
-        btnManageOrg.setBorderPainted(false);
-        btnManageOrg.setContentAreaFilled(false);
-        btnManageOrg.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_ManageOrg.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
+        bt_ManageOrg.setForeground(new java.awt.Color(51, 102, 255));
+        bt_ManageOrg.setText("Manage Organization(s)");
+        bt_ManageOrg.setBorderPainted(false);
+        bt_ManageOrg.setContentAreaFilled(false);
+        bt_ManageOrg.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnManageOrgMouseExited(evt);
+                bt_ManageOrgMouseExited(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnManageOrgMouseEntered(evt);
+                bt_ManageOrgMouseEntered(evt);
             }
         });
-        btnManageOrg.addActionListener(new java.awt.event.ActionListener() {
+        bt_ManageOrg.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnManageOrgActionPerformed(evt);
+                bt_ManageOrgActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -96,24 +96,24 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
         gridBagConstraints.gridy = 3;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(6, 84, 0, 0);
-        jPanel2.add(btnManageOrg, gridBagConstraints);
+        jPanel2.add(bt_ManageOrg, gridBagConstraints);
 
-        btnManageEmployee.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        btnManageEmployee.setForeground(new java.awt.Color(51, 102, 255));
-        btnManageEmployee.setText("Manage Employee");
-        btnManageEmployee.setBorderPainted(false);
-        btnManageEmployee.setContentAreaFilled(false);
-        btnManageEmployee.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_ManageEmployee.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
+        bt_ManageEmployee.setForeground(new java.awt.Color(51, 102, 255));
+        bt_ManageEmployee.setText("Manage Employee");
+        bt_ManageEmployee.setBorderPainted(false);
+        bt_ManageEmployee.setContentAreaFilled(false);
+        bt_ManageEmployee.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnManageEmployeeMouseExited(evt);
+                bt_ManageEmployeeMouseExited(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnManageEmployeeMouseEntered(evt);
+                bt_ManageEmployeeMouseEntered(evt);
             }
         });
-        btnManageEmployee.addActionListener(new java.awt.event.ActionListener() {
+        bt_ManageEmployee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnManageEmployeeActionPerformed(evt);
+                bt_ManageEmployeeActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -122,24 +122,24 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
         gridBagConstraints.gridwidth = 3;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(6, 6, 0, 0);
-        jPanel2.add(btnManageEmployee, gridBagConstraints);
+        jPanel2.add(bt_ManageEmployee, gridBagConstraints);
 
-        btnManageEmployeeAccess.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        btnManageEmployeeAccess.setForeground(new java.awt.Color(51, 102, 255));
-        btnManageEmployeeAccess.setText("Manage User");
-        btnManageEmployeeAccess.setBorderPainted(false);
-        btnManageEmployeeAccess.setContentAreaFilled(false);
-        btnManageEmployeeAccess.addMouseListener(new java.awt.event.MouseAdapter() {
+        bt_ManageEmployeeAccess.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
+        bt_ManageEmployeeAccess.setForeground(new java.awt.Color(51, 102, 255));
+        bt_ManageEmployeeAccess.setText("Manage User");
+        bt_ManageEmployeeAccess.setBorderPainted(false);
+        bt_ManageEmployeeAccess.setContentAreaFilled(false);
+        bt_ManageEmployeeAccess.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnManageEmployeeAccessMouseExited(evt);
+                bt_ManageEmployeeAccessMouseExited(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnManageEmployeeAccessMouseEntered(evt);
+                bt_ManageEmployeeAccessMouseEntered(evt);
             }
         });
-        btnManageEmployeeAccess.addActionListener(new java.awt.event.ActionListener() {
+        bt_ManageEmployeeAccess.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnManageEmployeeAccessActionPerformed(evt);
+                bt_ManageEmployeeAccessActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -148,7 +148,7 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
         gridBagConstraints.gridwidth = 6;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(6, 6, 0, 110);
-        jPanel2.add(btnManageEmployeeAccess, gridBagConstraints);
+        jPanel2.add(bt_ManageEmployeeAccess, gridBagConstraints);
 
         jLabel2.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(51, 102, 255));
@@ -207,44 +207,44 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(98, 57, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnManageOrgMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnManageOrgMouseExited
-        btnManageOrg.setForeground(Color.white);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnManageOrgMouseExited
+    private void bt_ManageOrgMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageOrgMouseExited
+        bt_ManageOrg.setForeground(Color.white);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_ManageOrgMouseExited
 
-    private void btnManageOrgMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnManageOrgMouseEntered
-        btnManageOrg.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnManageOrgMouseEntered
+    private void bt_ManageOrgMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageOrgMouseEntered
+        bt_ManageOrg.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_ManageOrgMouseEntered
 
-    private void btnManageOrgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageOrgActionPerformed
+    private void bt_ManageOrgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_ManageOrgActionPerformed
         ManageOrganizationsJPanel manageorganizationsJPanel=new ManageOrganizationsJPanel(userProcessContainer,enterprise, system,enterprise.getOrganizationDirectory());
         jSplitPane1.setBottomComponent(manageorganizationsJPanel);
-    }//GEN-LAST:event_btnManageOrgActionPerformed
+    }//GEN-LAST:event_bt_ManageOrgActionPerformed
 
-    private void btnManageEmployeeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnManageEmployeeMouseExited
-        btnManageEmployee.setForeground(Color.white);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnManageEmployeeMouseExited
+    private void bt_ManageEmployeeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageEmployeeMouseExited
+        bt_ManageEmployee.setForeground(Color.white);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_ManageEmployeeMouseExited
 
-    private void btnManageEmployeeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnManageEmployeeMouseEntered
-        btnManageEmployee.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnManageEmployeeMouseEntered
+    private void bt_ManageEmployeeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageEmployeeMouseEntered
+        bt_ManageEmployee.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_ManageEmployeeMouseEntered
 
-    private void btnManageEmployeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageEmployeeActionPerformed
+    private void bt_ManageEmployeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_ManageEmployeeActionPerformed
         ManageEmployeeJPanel manageemployeeJPanel=new ManageEmployeeJPanel(userProcessContainer,enterprise, system,enterprise.getOrganizationDirectory());
         jSplitPane1.setBottomComponent(manageemployeeJPanel);
-    }//GEN-LAST:event_btnManageEmployeeActionPerformed
+    }//GEN-LAST:event_bt_ManageEmployeeActionPerformed
 
-    private void btnManageEmployeeAccessMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnManageEmployeeAccessMouseExited
-        btnManageEmployeeAccess.setForeground(Color.white);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnManageEmployeeAccessMouseExited
+    private void bt_ManageEmployeeAccessMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageEmployeeAccessMouseExited
+        bt_ManageEmployeeAccess.setForeground(Color.white);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_ManageEmployeeAccessMouseExited
 
-    private void btnManageEmployeeAccessMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnManageEmployeeAccessMouseEntered
-        btnManageEmployeeAccess.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnManageEmployeeAccessMouseEntered
+    private void bt_ManageEmployeeAccessMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_ManageEmployeeAccessMouseEntered
+        bt_ManageEmployeeAccess.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_ManageEmployeeAccessMouseEntered
 
-    private void btnManageEmployeeAccessActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnManageEmployeeAccessActionPerformed
+    private void bt_ManageEmployeeAccessActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_ManageEmployeeAccessActionPerformed
         ManageUsersJPanel manageuserJPanel=new ManageUsersJPanel(userProcessContainer,enterprise, system);
         jSplitPane1.setBottomComponent(manageuserJPanel);
-    }//GEN-LAST:event_btnManageEmployeeAccessActionPerformed
+    }//GEN-LAST:event_bt_ManageEmployeeAccessActionPerformed
 
     private void txtFieldEnterpriseNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFieldEnterpriseNameActionPerformed
         // TODO add your handling code here:
@@ -252,9 +252,9 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnManageEmployee;
-    private javax.swing.JButton btnManageEmployeeAccess;
-    private javax.swing.JButton btnManageOrg;
+    private javax.swing.JButton bt_ManageEmployee;
+    private javax.swing.JButton bt_ManageEmployeeAccess;
+    private javax.swing.JButton bt_ManageOrg;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
