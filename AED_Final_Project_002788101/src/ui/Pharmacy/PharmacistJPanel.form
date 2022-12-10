@@ -44,10 +44,16 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="cc" red="99" type="rgb"/>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="cc" green="0" red="0" type="rgb"/>
 =======
+>>>>>>> Stashed changes
+=======
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="cc" green="0" red="0" type="rgb"/>
 >>>>>>> Stashed changes
             </Property>
             <Property name="toolTipText" type="java.lang.String" value=""/>
@@ -64,7 +70,11 @@
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                   <Font name="Monaco" size="24" style="1"/>
+=======
+                  <Font name="Songti SC" size="28" style="1"/>
+>>>>>>> Stashed changes
 =======
                   <Font name="Songti SC" size="28" style="1"/>
 >>>>>>> Stashed changes
@@ -74,9 +84,13 @@
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 <Property name="text" type="java.lang.String" value="WELCOME PHARMACIST"/>
 =======
                 <Property name="text" type="java.lang.String" value="WELCOME PSYCHIATRIST"/>
+>>>>>>> Stashed changes
+=======
+                <Property name="text" type="java.lang.String" value="WELCOME PHARMACIST"/>
 >>>>>>> Stashed changes
                 <Property name="horizontalTextPosition" type="int" value="0"/>
               </Properties>
@@ -92,7 +106,11 @@
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               <Color blue="ff" green="cc" red="99" type="rgb"/>
+=======
+              <Color blue="ff" green="cc" red="cc" type="rgb"/>
+>>>>>>> Stashed changes
 =======
               <Color blue="ff" green="cc" red="cc" type="rgb"/>
 >>>>>>> Stashed changes

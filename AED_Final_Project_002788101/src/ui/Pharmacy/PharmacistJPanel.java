@@ -57,10 +57,14 @@ public class PharmacistJPanel extends javax.swing.JPanel {
 
         jPanel3.setBackground(new java.awt.Color(153, 204, 255));
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
         jPanel3.setForeground(new java.awt.Color(0, 0, 204));
         jPanel3.setToolTipText("");
         jPanel3.setLayout(new java.awt.GridBagLayout());
 
+<<<<<<< Updated upstream
         jLabel2.setFont(new java.awt.Font("Monaco", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 204));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -74,13 +78,23 @@ public class PharmacistJPanel extends javax.swing.JPanel {
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("WELCOME PSYCHIATRIST");
 >>>>>>> Stashed changes
+=======
+        jLabel2.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 204));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("WELCOME PHARMACIST");
+>>>>>>> Stashed changes
         jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanel3.add(jLabel2, new java.awt.GridBagConstraints());
 
         jSplitPane1.setTopComponent(jPanel3);
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         jPanel4.setBackground(new java.awt.Color(153, 204, 255));
+=======
+        jPanel4.setBackground(new java.awt.Color(204, 204, 255));
+>>>>>>> Stashed changes
 =======
         jPanel4.setBackground(new java.awt.Color(204, 204, 255));
 >>>>>>> Stashed changes
