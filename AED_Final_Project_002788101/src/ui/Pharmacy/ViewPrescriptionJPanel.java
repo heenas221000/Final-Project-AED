@@ -241,7 +241,7 @@ public class ViewPrescriptionJPanel extends javax.swing.JPanel {
 
     private void populatereport() {
         txt_Date.setText(request.getRequestDate().toString());
-        txt_PatientName.setText(request.getDoctorWorkRequest().getCaseReporterWorkRequest().getChildName());
+        txt_PatientName.setText(request.getDoctorWorkRequest().getCaseReporterWorkRequest().getUserName());
         txt_DocName.setText(request.getSender().toString());
         populatetable();
     }
@@ -267,7 +267,7 @@ public class ViewPrescriptionJPanel extends javax.swing.JPanel {
         String FromEmailPass="Fin@lProject21";
         String Subject = "Sign up successful";
         String ema=request.getEmail();
-        String nv=request.getChildName();
+        String nv=request.getUserName();
         Properties properties=new Properties();
         properties.put("mail.smtp.auth", "true");
         properties.put("mail.smtp.starttls.enable", "true");

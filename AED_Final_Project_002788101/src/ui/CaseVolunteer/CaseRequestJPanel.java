@@ -442,7 +442,7 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
          for(CaseReporterWorkRequest request : organization.getWorkQueue().getCaseReporterWorkRequestList())
          {
          
-            row[0] = request.getChildName();
+            row[0] = request.getUserName();
             row[1] = request.getLocation();
             row[2] = request;
             if (request.getReceiver()==null){

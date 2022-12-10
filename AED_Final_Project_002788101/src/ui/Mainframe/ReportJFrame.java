@@ -315,7 +315,7 @@ public class ReportJFrame extends javax.swing.JFrame {
         request.setStatus("Waiting");
         request.setSender(userAccount);
 
-        request.setChildName(txt_Name.getText());
+        request.setUserName(txt_Name.getText());
         //for choosing relations
 
         String em=txt_email.getText();
@@ -375,7 +375,7 @@ public class ReportJFrame extends javax.swing.JFrame {
         request.setNameofsuspect(txt_Suspect.getText());
 
         if(request.getDoi()!=null && request.getLocation()!=null && request.getRelation()!=null && request.getSuspecttype()!=null
-            && request.getChildName()!=null && request.getAssaultType()!=null){
+            && request.getUserName()!=null && request.getAssaultType()!=null){
 
             Enterprise e=network.getEnterpriseDirectory().searchEnterprisebyType(Enterprise.EnterpriseType.NGO);
             Organization org = null;

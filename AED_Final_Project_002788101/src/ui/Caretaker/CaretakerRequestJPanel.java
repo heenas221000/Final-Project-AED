@@ -350,7 +350,7 @@ public class CaretakerRequestJPanel extends javax.swing.JPanel {
          for(CaretakerWorkRequest request : organization.getWorkQueue().getCaretakerworkRequestList())
          {
          
-            row[0]=request.getCaseReporterWorkRequest().getChildName();
+            row[0]=request.getCaseReporterWorkRequest().getUserName();
             row[1] = request.getCaseReporterWorkRequest().getDoi();
             row[2] = request;
             if (request.getReceiver()==null){

@@ -343,7 +343,7 @@ private void populateTable() {
          for(LawyerWorkRequest request : organization.getWorkQueue().getLawyerworkRequestList())
          {
          
-            row[0]=request.getCaseReporterWorkRequest().getChildName();
+            row[0]=request.getCaseReporterWorkRequest().getUserName();
             row[1] = request.getCaseReporterWorkRequest().getDoi();
             row[2] = request;
             if (request.getReceiver()==null){

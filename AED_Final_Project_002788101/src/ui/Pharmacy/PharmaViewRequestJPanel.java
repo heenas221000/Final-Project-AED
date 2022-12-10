@@ -213,7 +213,7 @@ public class PharmaViewRequestJPanel extends javax.swing.JPanel {
          for(PharmacistWorkRequest request : Organization.getWorkQueue().getPharmacistWorkRequest())
          {
          
-            row[0]=request.getDoctorWorkRequest().getCaseReporterWorkRequest().getChildName();
+            row[0]=request.getDoctorWorkRequest().getCaseReporterWorkRequest().getUserName();
             row[1] = request.getSender();
             row[2] = request;
             if (request.getReceiver()==null){

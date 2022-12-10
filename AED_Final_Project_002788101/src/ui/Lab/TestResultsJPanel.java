@@ -40,7 +40,7 @@ public class TestResultsJPanel extends javax.swing.JPanel {
     
     private void PopulateReport() {
         txt_DName.setText(request.getSender().toString());
-        txt_PName.setText(request.getDoctorWorkRequest().getCaseReporterWorkRequest().getChildName());
+        txt_PName.setText(request.getDoctorWorkRequest().getCaseReporterWorkRequest().getUserName());
         txt_OfficialName.setText(request.getReceiver().toString());
         PopulateTable();
     }

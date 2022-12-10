@@ -13,11 +13,19 @@ import java.util.Date;
  */
 public class CaseReporterWorkRequest extends WorkRequest{
       
-    private String childName;
+    private String userName;
     private String relation;
     private String assaultType;
     private String location;
     private Integer Age;
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
 
    
     private Date doi;
@@ -83,9 +91,7 @@ public class CaseReporterWorkRequest extends WorkRequest{
         this.email = email;
     }
 
-    public String getChildName() {
-        return childName;
-    }
+    
 
     public Integer getAge() {
         return Age;
@@ -95,9 +101,7 @@ public class CaseReporterWorkRequest extends WorkRequest{
         this.Age = Age;
     }
 
-    public void setChildName(String childName) {
-        this.childName = childName;
-    }
+   
 
     public void setRelation(String relation) {
         this.relation = relation;

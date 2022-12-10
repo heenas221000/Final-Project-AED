@@ -587,7 +587,7 @@ public class CaseReportJPanel extends javax.swing.JPanel {
 
     }//GEN-LAST:event_bt_ReqCaretakerActionPerformed
 private void PopulateInfo() {
-        txtVictimName.setText(request.getChildName());
+        txtVictimName.setText(request.getUserName());
         txtVolunteerName.setText(request.getRelation());
         txtTypeofAssault.setText(request.getAssaultType());
         txtLocation.setText(request.getLocation());

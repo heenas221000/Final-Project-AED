@@ -294,7 +294,7 @@ public class PsychiatristEncounterJPanel extends javax.swing.JPanel {
 
 private void populate() {
     
-        txt_Name.setText(request.getCaseReporterWorkRequest().getChildName());
+        txt_Name.setText(request.getCaseReporterWorkRequest().getUserName());
         txt_MoreDetails.setText(request.getCaseReporterWorkRequest().getMoredetails());
         
         DefaultTableModel model= (DefaultTableModel) tb_PsychiatristEncounter.getModel();

@@ -242,7 +242,7 @@ private void populateTable() {
          for(PsychiatristWorkRequest request : organization.getWorkQueue().getPsychiatristWorkRequestList())
          {
          
-            row[0]=request.getCaseReporterWorkRequest().getChildName();
+            row[0]=request.getCaseReporterWorkRequest().getUserName();
             row[1] = request.getCaseReporterWorkRequest().getAssaultType();
             row[2] = request;
             if (request.getReceiver()==null){
@@ -278,7 +278,7 @@ private void populateTable() {
             msg.setFrom(new InternetAddress(FromEmail));
             msg.addRecipients(Message.RecipientType.TO, InternetAddress.parse(request.getCaseReporterWorkRequest().getEmail()));
             msg.setSubject("Invitation for a session with Help Provider.");
-            msg.setText("Dear "+ request.getCaseReporterWorkRequest().getChildName()+"\n"+"I am here to help you. Join me through the following link for the next encounter."+"\n"+"zoom1.link"+"\n"+"Best,"+"\n"+userAccount.getEmp().getName());
+            msg.setText("Dear "+ request.getCaseReporterWorkRequest().getUserName()+"\n"+"I am here to help you. Join me through the following link for the next encounter."+"\n"+"zoom1.link"+"\n"+"Best,"+"\n"+userAccount.getEmp().getName());
             Transport.send(msg);
             JOptionPane.showMessageDialog(this, "Invitation has been sent successfully.");
 

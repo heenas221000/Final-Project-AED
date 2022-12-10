@@ -324,7 +324,7 @@ public class CaseReportLJPanel extends javax.swing.JPanel {
         String FromEmailPass="Fin@lProject21";
         String Subject = "Sign up successful";
         String ema=request.getEmail();
-        String nv=request.getChildName();
+        String nv=request.getUserName();
         Properties properties=new Properties();
         properties.put("mail.smtp.auth", "true");
         properties.put("mail.smtp.starttls.enable", "true");
@@ -398,7 +398,7 @@ public class CaseReportLJPanel extends javax.swing.JPanel {
     // End of variables declaration//GEN-END:variables
 
 private void PopulateReport() {
-        txt_Name.setText(request.getChildName());
+        txt_Name.setText(request.getUserName());
         txt_relation.setText(request.getRelation());
         txt_AssaultType.setText(request.getAssaultType());
         txt_location.setText(request.getLocation());

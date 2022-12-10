@@ -345,7 +345,7 @@ public class CounsellorRequestJPanel extends javax.swing.JPanel {
          
              //request.getHelpSeekerWorkRequest().getSender().getEmployee().getEmail();
             
-             row[0]=request.getHswr().getChildName();
+             row[0]=request.getHswr().getUserName();
             row[1] = request.getHswr().getDoi();
             row[2] = request;
             if (request.getReceiver()==null){

@@ -314,7 +314,7 @@ public class RequestLabTestJPanel extends javax.swing.JPanel {
 
     private void populateform() {
         txt_DName.setText(labrequest.getSender().toString());
-        txt_PName.setText(labrequest.getDoctorWorkRequest().getCaseReporterWorkRequest().getChildName());
+        txt_PName.setText(labrequest.getDoctorWorkRequest().getCaseReporterWorkRequest().getUserName());
         Date date = new Date();
         txt_date.setText(date.toString());
         

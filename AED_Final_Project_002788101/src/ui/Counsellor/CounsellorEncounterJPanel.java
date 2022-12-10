@@ -310,7 +310,7 @@ public class CounsellorEncounterJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_txtEncounterNoActionPerformed
     private void populateName() {
         
-        txtName.setText(request.getHswr().getChildName());
+        txtName.setText(request.getHswr().getUserName());
        
         
         DefaultTableModel model= (DefaultTableModel) tblCounsellorEncounterDetails.getModel();

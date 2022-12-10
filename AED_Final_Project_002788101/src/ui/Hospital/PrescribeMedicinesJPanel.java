@@ -347,7 +347,7 @@ public class PrescribeMedicinesJPanel extends javax.swing.JPanel {
         pRequest.setRequestDate(date);
         txt_date.setText(date.toString());
         txt_DName.setText(pRequest.getSender().toString());
-        txt_PName.setText(pRequest.getDoctorWorkRequest().getCaseReporterWorkRequest().getChildName());
+        txt_PName.setText(pRequest.getDoctorWorkRequest().getCaseReporterWorkRequest().getUserName());
         populatetable();
         
     }
