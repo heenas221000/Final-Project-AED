@@ -143,19 +143,10 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         });
         jPanel2.add(txt_Name, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 160, 120, -1));
 
-        bt_CreateEmployee.setBackground(new java.awt.Color(0, 0, 204));
         bt_CreateEmployee.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_CreateEmployee.setForeground(new java.awt.Color(255, 255, 255));
+        bt_CreateEmployee.setForeground(new java.awt.Color(0, 0, 204));
         bt_CreateEmployee.setText("CREATE EMPLOYEE");
         bt_CreateEmployee.setBorderPainted(false);
-        bt_CreateEmployee.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                bt_CreateEmployeeMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                bt_CreateEmployeeMouseExited(evt);
-            }
-        });
         bt_CreateEmployee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt_CreateEmployeeActionPerformed(evt);
@@ -171,19 +162,10 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
         });
         jPanel2.add(cb_org, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 120, 20));
 
-        bt_Delete.setBackground(new java.awt.Color(0, 0, 204));
         bt_Delete.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_Delete.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Delete.setForeground(new java.awt.Color(0, 0, 204));
         bt_Delete.setText("DELETE EMPLOYEE");
         bt_Delete.setBorderPainted(false);
-        bt_Delete.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                bt_DeleteMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                bt_DeleteMouseExited(evt);
-            }
-        });
         bt_Delete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt_DeleteActionPerformed(evt);
@@ -199,14 +181,6 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
     private void txt_NameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_NameActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txt_NameActionPerformed
-
-    private void bt_CreateEmployeeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_CreateEmployeeMouseExited
-        bt_CreateEmployee.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_CreateEmployeeMouseExited
-
-    private void bt_CreateEmployeeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_CreateEmployeeMouseEntered
-        bt_CreateEmployee.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_CreateEmployeeMouseEntered
 
     private void bt_CreateEmployeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_CreateEmployeeActionPerformed
         // TODO add your handling code here:
@@ -231,14 +205,6 @@ public class ManageEmployeeJPanel extends javax.swing.JPanel {
             populateTable(organization);
         }
     }//GEN-LAST:event_cb_orgActionPerformed
-
-    private void bt_DeleteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_DeleteMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_DeleteMouseExited
-
-    private void bt_DeleteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_DeleteMouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_DeleteMouseEntered
 
     private void bt_DeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_DeleteActionPerformed
         // TODO add your handling code here:

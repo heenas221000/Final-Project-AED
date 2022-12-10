@@ -171,19 +171,10 @@ public class ManageOrganizationsJPanel extends javax.swing.JPanel {
         lblOrgType.setText("ORGANIZATION TYPE");
         jPanel2.add(lblOrgType, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 83, -1, 26));
 
-        bt_add.setBackground(new java.awt.Color(0, 0, 204));
         bt_add.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_add.setForeground(new java.awt.Color(255, 255, 255));
+        bt_add.setForeground(new java.awt.Color(0, 0, 204));
         bt_add.setText("ADD");
         bt_add.setBorderPainted(false);
-        bt_add.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                bt_addMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                bt_addMouseExited(evt);
-            }
-        });
         bt_add.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt_addActionPerformed(evt);
@@ -194,19 +185,10 @@ public class ManageOrganizationsJPanel extends javax.swing.JPanel {
         cb_Org.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jPanel2.add(cb_Org, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 80, 155, 30));
 
-        bt_Delete.setBackground(new java.awt.Color(0, 0, 204));
         bt_Delete.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_Delete.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Delete.setForeground(new java.awt.Color(0, 0, 204));
         bt_Delete.setText("DELETE");
         bt_Delete.setBorderPainted(false);
-        bt_Delete.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                bt_DeleteMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                bt_DeleteMouseExited(evt);
-            }
-        });
         bt_Delete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt_DeleteActionPerformed(evt);
@@ -219,28 +201,12 @@ public class ManageOrganizationsJPanel extends javax.swing.JPanel {
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 880, 480));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void bt_addMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_addMouseExited
-        bt_add.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_addMouseExited
-
-    private void bt_addMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_addMouseEntered
-        bt_add.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_addMouseEntered
-
     private void bt_addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_addActionPerformed
         // TODO add your handling code here:
         Organization.Type type = (Organization.Type) cb_Org.getSelectedItem();
         directory.createOrganization(type);
         populateTable();
     }//GEN-LAST:event_bt_addActionPerformed
-
-    private void bt_DeleteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_DeleteMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_DeleteMouseExited
-
-    private void bt_DeleteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_DeleteMouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_DeleteMouseEntered
 
     private void bt_DeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_DeleteActionPerformed
         // TODO add your handling code here:

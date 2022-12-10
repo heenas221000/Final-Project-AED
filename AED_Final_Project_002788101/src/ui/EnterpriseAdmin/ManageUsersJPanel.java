@@ -175,19 +175,10 @@ public class ManageUsersJPanel extends javax.swing.JPanel {
         jLabel6.setText("PASSWORD");
         jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, 160, -1));
 
-        bt_Create.setBackground(new java.awt.Color(0, 0, 204));
         bt_Create.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_Create.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Create.setForeground(new java.awt.Color(0, 0, 204));
         bt_Create.setText("CREATE");
         bt_Create.setBorderPainted(false);
-        bt_Create.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                bt_CreateMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                bt_CreateMouseExited(evt);
-            }
-        });
         bt_Create.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt_CreateActionPerformed(evt);
@@ -210,19 +201,10 @@ public class ManageUsersJPanel extends javax.swing.JPanel {
         jPanel2.add(cb_role, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 200, 140, 30));
         jPanel2.add(txt_Password, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 280, 140, -1));
 
-        bt_delete.setBackground(new java.awt.Color(0, 0, 204));
         bt_delete.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_delete.setForeground(new java.awt.Color(255, 255, 255));
+        bt_delete.setForeground(new java.awt.Color(0, 0, 204));
         bt_delete.setText("DELETE");
         bt_delete.setBorderPainted(false);
-        bt_delete.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                bt_deleteMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                bt_deleteMouseExited(evt);
-            }
-        });
         bt_delete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt_deleteActionPerformed(evt);
@@ -234,14 +216,6 @@ public class ManageUsersJPanel extends javax.swing.JPanel {
 
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 460));
     }// </editor-fold>//GEN-END:initComponents
-
-    private void bt_CreateMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_CreateMouseExited
-        //  jButton1.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_CreateMouseExited
-
-    private void bt_CreateMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_CreateMouseEntered
-        //  jButton1.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_CreateMouseEntered
 
     private void bt_CreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_CreateActionPerformed
         // TODO add your handling code here:
@@ -278,14 +252,6 @@ public class ManageUsersJPanel extends javax.swing.JPanel {
             populateRoleComboBox(organization);
         }
     }//GEN-LAST:event_cb_orgActionPerformed
-
-    private void bt_deleteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_deleteMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_deleteMouseExited
-
-    private void bt_deleteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_deleteMouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_deleteMouseEntered
 
     private void bt_deleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_deleteActionPerformed
         // TODO add your handling code here:

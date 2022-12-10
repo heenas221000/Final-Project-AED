@@ -307,10 +307,9 @@ public class ReportJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(11, 23, 0, 0);
         jPanel1.add(dateOfIncident, gridBagConstraints);
 
-        bt_Report.setBackground(new java.awt.Color(0, 0, 204));
         bt_Report.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        bt_Report.setForeground(new java.awt.Color(255, 255, 255));
-        bt_Report.setText("Report");
+        bt_Report.setForeground(new java.awt.Color(0, 0, 204));
+        bt_Report.setText("REPORT");
         bt_Report.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt_ReportActionPerformed(evt);
@@ -359,7 +358,7 @@ public class ReportJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(1, 280, 0, 0);
         jPanel1.add(lblAgeofUser, gridBagConstraints);
 
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 950, 730));
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1030, 730));
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtUserNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUserNameActionPerformed
