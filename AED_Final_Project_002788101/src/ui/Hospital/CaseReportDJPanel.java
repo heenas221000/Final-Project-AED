@@ -96,37 +96,45 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
 
         jPanel2.setBackground(new java.awt.Color(153, 204, 255));
 
-        namesurvivorjLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        namesurvivorjLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        namesurvivorjLabel.setForeground(new java.awt.Color(0, 0, 204));
         namesurvivorjLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        namesurvivorjLabel.setText("Name of Survivor : ");
+        namesurvivorjLabel.setText("NAME OF SURVIVOR");
 
-        relationjLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        relationjLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        relationjLabel.setForeground(new java.awt.Color(0, 0, 204));
         relationjLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        relationjLabel.setText("Relation with Survivor : ");
+        relationjLabel.setText("RELATION WITH SURVIVOR");
 
-        typejLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        typejLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        typejLabel.setForeground(new java.awt.Color(0, 0, 204));
         typejLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        typejLabel.setText("Type of Sexual Assault : ");
+        typejLabel.setText("TYPE OF ASSAULT");
 
-        locationjLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        locationjLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        locationjLabel.setForeground(new java.awt.Color(0, 0, 204));
         locationjLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        locationjLabel.setText("Location of Incident :");
+        locationjLabel.setText("LOCATION OF INCIDENT");
 
-        timejLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        timejLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        timejLabel.setForeground(new java.awt.Color(0, 0, 204));
         timejLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        timejLabel.setText("Date of Incident :");
+        timejLabel.setText("DATE OF INCIDENT");
 
-        detailsjLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        detailsjLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        detailsjLabel.setForeground(new java.awt.Color(0, 0, 204));
         detailsjLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        detailsjLabel.setText("More Details : ");
+        detailsjLabel.setText("MORE DETAILS");
 
-        suspecttypejLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        suspecttypejLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        suspecttypejLabel.setForeground(new java.awt.Color(0, 0, 204));
         suspecttypejLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        suspecttypejLabel.setText("Suspect :");
+        suspecttypejLabel.setText("SUSPECT");
 
-        namesuspectjLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        namesuspectjLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        namesuspectjLabel.setForeground(new java.awt.Color(0, 0, 204));
         namesuspectjLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        namesuspectjLabel.setText("Name of Suspect : ");
+        namesuspectjLabel.setText("NAME OF SUSPECT");
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -146,8 +154,9 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
             }
         });
 
-        jButton1.setBackground(new java.awt.Color(102, 153, 255));
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton1.setBackground(new java.awt.Color(0, 0, 204));
+        jButton1.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("REQUEST LAB ");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -163,8 +172,9 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(153, 153, 255));
-        jButton3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton3.setBackground(new java.awt.Color(0, 0, 204));
+        jButton3.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("VIEW LAB TEST");
         jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -180,8 +190,9 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(102, 153, 255));
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton2.setBackground(new java.awt.Color(0, 0, 204));
+        jButton2.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("PRESCRIBE MEDICINES");
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -197,8 +208,9 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
             }
         });
 
-        jButton4.setBackground(new java.awt.Color(0, 153, 255));
-        jButton4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton4.setBackground(new java.awt.Color(0, 0, 204));
+        jButton4.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setText("SEND INVITE");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -206,8 +218,9 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
             }
         });
 
-        jButton5.setBackground(new java.awt.Color(51, 153, 255));
-        jButton5.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        jButton5.setBackground(new java.awt.Color(0, 0, 204));
+        jButton5.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        jButton5.setForeground(new java.awt.Color(255, 255, 255));
         jButton5.setText("BACK");
         jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -260,15 +273,16 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
                                 .addComponent(jTextField3, javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jTextField7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 161, Short.MAX_VALUE))))))
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(30, 30, 30)
                 .addComponent(jButton5)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(12, 12, 12)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(namesurvivorjLabel)
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
