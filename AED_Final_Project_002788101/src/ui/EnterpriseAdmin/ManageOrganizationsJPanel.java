@@ -131,16 +131,16 @@ public class ManageOrganizationsJPanel extends javax.swing.JPanel {
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(153, 204, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBackground(new java.awt.Color(153, 204, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Monaco", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(230, 126, 34));
+        jLabel1.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 204));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Manage Organization(s)");
+        jLabel1.setText("MANAGE ORGANIZATION(S)");
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 16, 656, 41));
 
         tableOrg.setModel(new javax.swing.table.DefaultTableModel(
@@ -166,21 +166,22 @@ public class ManageOrganizationsJPanel extends javax.swing.JPanel {
 
         jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 80, 210, 98));
 
-        lblOrgType.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        lblOrgType.setText("Organization Type:");
+        lblOrgType.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lblOrgType.setForeground(new java.awt.Color(0, 0, 204));
+        lblOrgType.setText("ORGANIZATION TYPE");
         jPanel2.add(lblOrgType, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 83, -1, 26));
 
-        btnAddOrg.setBackground(new java.awt.Color(51, 102, 255));
-        btnAddOrg.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnAddOrg.setBackground(new java.awt.Color(0, 0, 204));
+        btnAddOrg.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         btnAddOrg.setForeground(new java.awt.Color(255, 255, 255));
-        btnAddOrg.setText("Add Organization");
+        btnAddOrg.setText("ADD");
         btnAddOrg.setBorderPainted(false);
         btnAddOrg.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnAddOrgMouseExited(evt);
-            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnAddOrgMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnAddOrgMouseExited(evt);
             }
         });
         btnAddOrg.addActionListener(new java.awt.event.ActionListener() {
@@ -188,22 +189,22 @@ public class ManageOrganizationsJPanel extends javax.swing.JPanel {
                 btnAddOrgActionPerformed(evt);
             }
         });
-        jPanel2.add(btnAddOrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 140, -1, -1));
+        jPanel2.add(btnAddOrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 140, -1, -1));
 
         comboBoxOrgType.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel2.add(comboBoxOrgType, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 80, 155, -1));
+        jPanel2.add(comboBoxOrgType, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 80, 155, 30));
 
-        btnDltOrg.setBackground(new java.awt.Color(51, 102, 255));
-        btnDltOrg.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        btnDltOrg.setBackground(new java.awt.Color(0, 0, 204));
+        btnDltOrg.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
         btnDltOrg.setForeground(new java.awt.Color(255, 255, 255));
-        btnDltOrg.setText("Delete Organization");
+        btnDltOrg.setText("DELETE");
         btnDltOrg.setBorderPainted(false);
         btnDltOrg.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnDltOrgMouseExited(evt);
-            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnDltOrgMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnDltOrgMouseExited(evt);
             }
         });
         btnDltOrg.addActionListener(new java.awt.event.ActionListener() {
@@ -211,9 +212,9 @@ public class ManageOrganizationsJPanel extends javax.swing.JPanel {
                 btnDltOrgActionPerformed(evt);
             }
         });
-        jPanel2.add(btnDltOrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 140, -1, -1));
+        jPanel2.add(btnDltOrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, -1, -1));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(75, 38, -1, -1));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(75, 38, -1, 200));
 
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 880, 480));
     }// </editor-fold>//GEN-END:initComponents
