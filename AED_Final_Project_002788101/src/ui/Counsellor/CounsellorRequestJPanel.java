@@ -58,12 +58,12 @@ public class CounsellorRequestJPanel extends javax.swing.JPanel {
         btnEncounters = new javax.swing.JButton();
         btnCaseComplete = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(244, 241, 222));
+        setBackground(new java.awt.Color(153, 204, 255));
 
-        lblHeader.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        lblHeader.setForeground(new java.awt.Color(61, 64, 91));
+        lblHeader.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N
+        lblHeader.setForeground(new java.awt.Color(0, 0, 204));
         lblHeader.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblHeader.setText("Manage Requests");
+        lblHeader.setText("MANAGE REQUESTS");
 
         tblManageCounsellorRequestDetails.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -86,9 +86,10 @@ public class CounsellorRequestJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblManageCounsellorRequestDetails);
 
-        btnAssignRequest.setBackground(new java.awt.Color(129, 178, 154));
-        btnAssignRequest.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        btnAssignRequest.setText("Assign Request");
+        btnAssignRequest.setBackground(new java.awt.Color(0, 0, 204));
+        btnAssignRequest.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btnAssignRequest.setForeground(new java.awt.Color(255, 255, 255));
+        btnAssignRequest.setText("ASSIGN REQUEST");
         btnAssignRequest.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnAssignRequestMouseEntered(evt);
@@ -103,9 +104,10 @@ public class CounsellorRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnViewReport.setBackground(new java.awt.Color(129, 178, 154));
-        btnViewReport.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        btnViewReport.setText("View Report");
+        btnViewReport.setBackground(new java.awt.Color(0, 0, 204));
+        btnViewReport.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btnViewReport.setForeground(new java.awt.Color(255, 255, 255));
+        btnViewReport.setText("VIEW REPORT");
         btnViewReport.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnViewReportMouseEntered(evt);
@@ -120,9 +122,10 @@ public class CounsellorRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnEncounters.setBackground(new java.awt.Color(129, 178, 154));
-        btnEncounters.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        btnEncounters.setText("Encounters");
+        btnEncounters.setBackground(new java.awt.Color(0, 0, 204));
+        btnEncounters.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btnEncounters.setForeground(new java.awt.Color(255, 255, 255));
+        btnEncounters.setText("ENCOUNTER");
         btnEncounters.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnEncountersMouseEntered(evt);
@@ -137,9 +140,10 @@ public class CounsellorRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnCaseComplete.setBackground(new java.awt.Color(129, 178, 154));
-        btnCaseComplete.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        btnCaseComplete.setText(" Case Complete");
+        btnCaseComplete.setBackground(new java.awt.Color(0, 0, 204));
+        btnCaseComplete.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        btnCaseComplete.setForeground(new java.awt.Color(255, 255, 255));
+        btnCaseComplete.setText("CASE COMPLETE");
         btnCaseComplete.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btnCaseCompleteMouseEntered(evt);
@@ -167,7 +171,7 @@ public class CounsellorRequestJPanel extends javax.swing.JPanel {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(btnAssignRequest, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnViewReport, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 98, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 82, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(btnEncounters, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnCaseComplete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
@@ -182,8 +186,8 @@ public class CounsellorRequestJPanel extends javax.swing.JPanel {
                 .addGap(78, 78, 78)
                 .addComponent(lblHeader, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(41, 41, 41)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(112, 112, 112)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(72, 72, 72)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAssignRequest)
                     .addComponent(btnEncounters, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -191,7 +195,7 @@ public class CounsellorRequestJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnCaseComplete, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnViewReport))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(25, Short.MAX_VALUE))
         );
 
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btnAssignRequest, btnCaseComplete, btnEncounters, btnViewReport});
