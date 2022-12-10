@@ -95,7 +95,7 @@ public class MainJFrame extends javax.swing.JFrame {
         });
         jPanel1.add(SigninjButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 80, 170, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("/Users/hetal/Desktop/image.png")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Image/image.png"))); // NOI18N
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 10, 1390, 580));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 113, 1410, 750));
