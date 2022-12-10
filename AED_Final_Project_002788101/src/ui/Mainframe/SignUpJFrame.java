@@ -297,9 +297,10 @@ public class SignUpJFrame extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(153, 204, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setFont(new java.awt.Font("Monaco", 1, 36)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(61, 64, 91));
-        jButton1.setText("Women Rescue Volunteer");
+        jButton1.setFont(new java.awt.Font("Songti SC", 1, 36)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 0, 204));
+        jButton1.setText("COMPLAINANT DETAILS");
+        jButton1.setToolTipText("");
         jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
