@@ -47,6 +47,7 @@ public class MainJFrame extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         SignupjButton = new javax.swing.JButton();
         SigninjButton = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -66,7 +67,7 @@ public class MainJFrame extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setBackground(new java.awt.Color(244, 241, 222));
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -230, 1070, 830));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -230, 1450, 830));
 
         SignupjButton.setBackground(new java.awt.Color(129, 178, 154));
         SignupjButton.setFont(new java.awt.Font("Monaco", 1, 24)); // NOI18N
@@ -93,6 +94,9 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
         jPanel1.add(SigninjButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 80, 170, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/Image/image.png"))); // NOI18N
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 10, 1390, 580));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 113, 1410, 750));
 
@@ -152,6 +156,7 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JButton SignupjButton;
     private javax.swing.JPanel TopPanel;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
