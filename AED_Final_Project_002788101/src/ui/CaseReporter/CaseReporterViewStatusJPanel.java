@@ -183,19 +183,10 @@ public class CaseReporterViewStatusJPanel extends javax.swing.JPanel {
         jPanel2.add(txtPsych, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 266, 120, 30));
         jPanel2.add(txtPsychStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 320, 120, 30));
 
-        bt_CheckStatus.setBackground(new java.awt.Color(0, 0, 204));
         bt_CheckStatus.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_CheckStatus.setForeground(new java.awt.Color(255, 255, 255));
+        bt_CheckStatus.setForeground(new java.awt.Color(0, 0, 204));
         bt_CheckStatus.setText("CHECK STATUS");
         bt_CheckStatus.setBorderPainted(false);
-        bt_CheckStatus.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                bt_CheckStatusMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                bt_CheckStatusMouseExited(evt);
-            }
-        });
         bt_CheckStatus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt_CheckStatusActionPerformed(evt);
@@ -221,14 +212,6 @@ public class CaseReporterViewStatusJPanel extends javax.swing.JPanel {
 
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -16, 1020, 590));
     }// </editor-fold>//GEN-END:initComponents
-
-    private void bt_CheckStatusMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_CheckStatusMouseEntered
-        bt_CheckStatus.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_CheckStatusMouseEntered
-
-    private void bt_CheckStatusMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_CheckStatusMouseExited
-        bt_CheckStatus.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_CheckStatusMouseExited
 
     private void bt_CheckStatusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_CheckStatusActionPerformed
         popStatusTable();

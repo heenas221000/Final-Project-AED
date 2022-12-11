@@ -61,7 +61,7 @@ public class CaretakerJPanel extends javax.swing.JPanel {
 
         jSplitPane1.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
-        jPanel2.setBackground(new java.awt.Color(153, 204, 255));
+        jPanel2.setBackground(new java.awt.Color(204, 204, 255));
         jPanel2.setForeground(new java.awt.Color(0, 0, 204));
         jPanel2.setLayout(new java.awt.GridBagLayout());
 
@@ -77,7 +77,7 @@ public class CaretakerJPanel extends javax.swing.JPanel {
 
         jSplitPane1.setTopComponent(jPanel2);
 
-        jPanel3.setBackground(new java.awt.Color(204, 204, 255));
+        jPanel3.setBackground(new java.awt.Color(153, 204, 255));
         jPanel3.setLayout(new java.awt.GridBagLayout());
         jSplitPane1.setRightComponent(jPanel3);
 

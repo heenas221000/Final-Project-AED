@@ -72,7 +72,7 @@ public class CaseReporter extends javax.swing.JPanel {
 
         jVolunteerSplitPanel.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
-        jPanel09.setBackground(new java.awt.Color(153, 204, 255));
+        jPanel09.setBackground(new java.awt.Color(204, 204, 255));
         jPanel09.setLayout(new java.awt.GridBagLayout());
 
         lblCaseReporter.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N
@@ -143,7 +143,7 @@ public class CaseReporter extends javax.swing.JPanel {
 
         jVolunteerSplitPanel.setTopComponent(jPanel09);
 
-        jPanel10.setBackground(new java.awt.Color(204, 204, 255));
+        jPanel10.setBackground(new java.awt.Color(153, 204, 255));
         jPanel10.setLayout(new java.awt.GridBagLayout());
         jVolunteerSplitPanel.setRightComponent(jPanel10);
 

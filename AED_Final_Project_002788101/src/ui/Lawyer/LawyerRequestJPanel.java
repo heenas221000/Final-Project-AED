@@ -95,9 +95,8 @@ public class LawyerRequestJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tb_LawyerManageRequest);
 
-        bt_AssignRequest.setBackground(new java.awt.Color(0, 0, 204));
-        bt_AssignRequest.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        bt_AssignRequest.setForeground(new java.awt.Color(255, 255, 255));
+        bt_AssignRequest.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_AssignRequest.setForeground(new java.awt.Color(0, 0, 204));
         bt_AssignRequest.setText("ASSIGN REQUEST");
         bt_AssignRequest.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -113,9 +112,8 @@ public class LawyerRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        bt_ViewCase.setBackground(new java.awt.Color(0, 0, 204));
-        bt_ViewCase.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        bt_ViewCase.setForeground(new java.awt.Color(255, 255, 255));
+        bt_ViewCase.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_ViewCase.setForeground(new java.awt.Color(0, 0, 204));
         bt_ViewCase.setText("VIEW CASE REPORT");
         bt_ViewCase.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -131,9 +129,8 @@ public class LawyerRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        bt_Encounter.setBackground(new java.awt.Color(0, 0, 204));
-        bt_Encounter.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        bt_Encounter.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Encounter.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_Encounter.setForeground(new java.awt.Color(0, 0, 204));
         bt_Encounter.setText("ENCOUNTER");
         bt_Encounter.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -149,9 +146,8 @@ public class LawyerRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        bt_CaseComplete.setBackground(new java.awt.Color(0, 0, 204));
-        bt_CaseComplete.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        bt_CaseComplete.setForeground(new java.awt.Color(255, 255, 255));
+        bt_CaseComplete.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_CaseComplete.setForeground(new java.awt.Color(0, 0, 204));
         bt_CaseComplete.setText("CASE COMPLETE");
         bt_CaseComplete.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -191,7 +187,7 @@ public class LawyerRequestJPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(29, 29, 29)
                 .addComponent(lblHeader, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(33, 33, 33)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

@@ -95,6 +95,9 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
         txtCaretakerReceiver = new javax.swing.JLabel();
         txtCaretakerStatus = new javax.swing.JLabel();
 
+        setBackground(null);
+        setForeground(new java.awt.Color(0, 0, 204));
+
         jPanel1.setBackground(new java.awt.Color(153, 204, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -129,9 +132,8 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 80, 490, 130));
 
-        bt_AssignRequest.setBackground(new java.awt.Color(0, 0, 204));
         bt_AssignRequest.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_AssignRequest.setForeground(new java.awt.Color(255, 255, 255));
+        bt_AssignRequest.setForeground(new java.awt.Color(0, 0, 204));
         bt_AssignRequest.setText("ASSIGN REQUEST");
         bt_AssignRequest.setBorderPainted(false);
         bt_AssignRequest.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -150,9 +152,8 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
         });
         jPanel1.add(bt_AssignRequest, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 89, 170, 40));
 
-        bt_ViewCaseReport.setBackground(new java.awt.Color(0, 0, 204));
         bt_ViewCaseReport.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_ViewCaseReport.setForeground(new java.awt.Color(255, 255, 255));
+        bt_ViewCaseReport.setForeground(new java.awt.Color(0, 0, 204));
         bt_ViewCaseReport.setText("VIEW CASE REPORT");
         bt_ViewCaseReport.setBorderPainted(false);
         bt_ViewCaseReport.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -171,9 +172,8 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
         });
         jPanel1.add(bt_ViewCaseReport, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 170, 40));
 
-        bt_CheckStatus.setBackground(new java.awt.Color(0, 0, 204));
         bt_CheckStatus.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_CheckStatus.setForeground(new java.awt.Color(255, 255, 255));
+        bt_CheckStatus.setForeground(new java.awt.Color(0, 0, 204));
         bt_CheckStatus.setText("CHECK STATUS");
         bt_CheckStatus.setBorderPainted(false);
         bt_CheckStatus.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);

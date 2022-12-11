@@ -17,8 +17,6 @@ import business.WorkQueue.CounsellorWorkRequest;
 import business.WorkQueue.DrWorkRequest;
 import business.WorkQueue.PsychiatristWorkRequest;
 import business.WorkQueue.CaseReporterWorkRequest;
-import business.WorkQueue.Child;
-import business.WorkQueue.Children;
 import business.WorkQueue.LawyerWorkRequest;
 import business.WorkQueue.CaretakerWorkRequest;
 import business.WorkQueue.WorkRequest;
@@ -240,9 +238,8 @@ public class CaseReportJPanel extends javax.swing.JPanel {
 
         jPanel1.add(lblDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 62, -1, -1));
 
-        bt_Back.setBackground(new java.awt.Color(0, 0, 204));
         bt_Back.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        bt_Back.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Back.setForeground(new java.awt.Color(0, 0, 204));
         bt_Back.setText("BACK");
         bt_Back.setBorderPainted(false);
         bt_Back.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -267,9 +264,8 @@ public class CaseReportJPanel extends javax.swing.JPanel {
 
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 35, 770, 500));
 
-        bt_ReqLawyer.setBackground(new java.awt.Color(0, 0, 204));
         bt_ReqLawyer.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        bt_ReqLawyer.setForeground(new java.awt.Color(255, 255, 255));
+        bt_ReqLawyer.setForeground(new java.awt.Color(0, 0, 204));
         bt_ReqLawyer.setText("REQUEST LAWYER");
         bt_ReqLawyer.setBorderPainted(false);
         bt_ReqLawyer.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -287,9 +283,8 @@ public class CaseReportJPanel extends javax.swing.JPanel {
         });
         add(bt_ReqLawyer, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 170, 200, 40));
 
-        bt_ReqCounsellar.setBackground(new java.awt.Color(0, 0, 204));
         bt_ReqCounsellar.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        bt_ReqCounsellar.setForeground(new java.awt.Color(255, 255, 255));
+        bt_ReqCounsellar.setForeground(new java.awt.Color(0, 0, 204));
         bt_ReqCounsellar.setText("REQUEST COUNSELLOR");
         bt_ReqCounsellar.setBorderPainted(false);
         bt_ReqCounsellar.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -307,9 +302,8 @@ public class CaseReportJPanel extends javax.swing.JPanel {
         });
         add(bt_ReqCounsellar, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 400, 200, 40));
 
-        bt_ReqDoc.setBackground(new java.awt.Color(0, 0, 204));
         bt_ReqDoc.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        bt_ReqDoc.setForeground(new java.awt.Color(255, 255, 255));
+        bt_ReqDoc.setForeground(new java.awt.Color(0, 0, 204));
         bt_ReqDoc.setText("REQUEST DOCTOR");
         bt_ReqDoc.setBorderPainted(false);
         bt_ReqDoc.setPreferredSize(new java.awt.Dimension(190, 25));
@@ -328,9 +322,8 @@ public class CaseReportJPanel extends javax.swing.JPanel {
         });
         add(bt_ReqDoc, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 250, 200, 40));
 
-        bt_ReqPsych.setBackground(new java.awt.Color(0, 0, 204));
         bt_ReqPsych.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        bt_ReqPsych.setForeground(new java.awt.Color(255, 255, 255));
+        bt_ReqPsych.setForeground(new java.awt.Color(0, 0, 204));
         bt_ReqPsych.setText("REQUEST PSYCHIATRIST");
         bt_ReqPsych.setBorderPainted(false);
         bt_ReqPsych.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -348,9 +341,8 @@ public class CaseReportJPanel extends javax.swing.JPanel {
         });
         add(bt_ReqPsych, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 330, 200, 38));
 
-        bt_ReqCaretaker.setBackground(new java.awt.Color(0, 0, 204));
         bt_ReqCaretaker.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        bt_ReqCaretaker.setForeground(new java.awt.Color(255, 255, 255));
+        bt_ReqCaretaker.setForeground(new java.awt.Color(0, 0, 204));
         bt_ReqCaretaker.setText("REQUEST CARETAKER");
         bt_ReqCaretaker.setBorderPainted(false);
         bt_ReqCaretaker.addMouseListener(new java.awt.event.MouseAdapter() {

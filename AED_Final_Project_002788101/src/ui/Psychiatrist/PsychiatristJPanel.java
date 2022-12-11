@@ -57,7 +57,7 @@ public class PsychiatristJPanel extends javax.swing.JPanel {
 
         jSplitPane1.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
-        jPanel1.setBackground(new java.awt.Color(153, 204, 255));
+        jPanel1.setBackground(new java.awt.Color(204, 204, 255));
         jPanel1.setLayout(new java.awt.GridBagLayout());
 
         lblHeader.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N

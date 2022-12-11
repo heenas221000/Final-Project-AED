@@ -250,27 +250,19 @@ public class CaseReportCJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(16, 0, 0, 82);
         jPanel1.add(txtSuspectType, gridBagConstraints);
 
-        bt_SendInvite.setBackground(new java.awt.Color(0, 0, 204));
+        bt_SendInvite.setBackground(new java.awt.Color(153, 204, 255));
         bt_SendInvite.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_SendInvite.setForeground(new java.awt.Color(255, 255, 255));
+        bt_SendInvite.setForeground(new java.awt.Color(153, 204, 255));
         bt_SendInvite.setText("SEND INVITE");
-        bt_SendInvite.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                bt_SendInviteMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                bt_SendInviteMouseExited(evt);
-            }
-        });
+        bt_SendInvite.setBorder(null);
         bt_SendInvite.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt_SendInviteActionPerformed(evt);
             }
         });
 
-        bt_Back.setBackground(new java.awt.Color(0, 0, 204));
         bt_Back.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_Back.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Back.setForeground(new java.awt.Color(0, 0, 204));
         bt_Back.setText("BACK");
         bt_Back.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -306,7 +298,7 @@ public class CaseReportCJPanel extends javax.swing.JPanel {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addComponent(bt_Back)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 385, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(bt_SendInvite)
@@ -325,14 +317,6 @@ public class CaseReportCJPanel extends javax.swing.JPanel {
     private void txtTypeofAssaultActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTypeofAssaultActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtTypeofAssaultActionPerformed
-
-    private void bt_SendInviteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_SendInviteMouseEntered
-        bt_SendInvite.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_SendInviteMouseEntered
-
-    private void bt_SendInviteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_SendInviteMouseExited
-        bt_SendInvite.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_SendInviteMouseExited
 
     private void bt_SendInviteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_SendInviteActionPerformed
 

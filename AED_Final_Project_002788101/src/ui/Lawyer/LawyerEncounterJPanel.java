@@ -81,7 +81,8 @@ public class LawyerEncounterJPanel extends javax.swing.JPanel {
         lblHeader.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblHeader.setText("ENCOUNTERS");
 
-        lblName.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblName.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lblName.setForeground(new java.awt.Color(0, 0, 204));
         lblName.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblName.setText("NAME");
 
@@ -98,9 +99,8 @@ public class LawyerEncounterJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tb_encounter);
 
-        bt_Update.setBackground(new java.awt.Color(0, 0, 204));
-        bt_Update.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        bt_Update.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Update.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_Update.setForeground(new java.awt.Color(0, 0, 204));
         bt_Update.setText("UPDATE");
         bt_Update.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -116,9 +116,8 @@ public class LawyerEncounterJPanel extends javax.swing.JPanel {
             }
         });
 
-        bt_Back.setBackground(new java.awt.Color(0, 0, 204));
-        bt_Back.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        bt_Back.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Back.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_Back.setForeground(new java.awt.Color(0, 0, 204));
         bt_Back.setText("BACK");
         bt_Back.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -134,11 +133,13 @@ public class LawyerEncounterJPanel extends javax.swing.JPanel {
             }
         });
 
-        lblEncounterNo.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblEncounterNo.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lblEncounterNo.setForeground(new java.awt.Color(0, 0, 204));
         lblEncounterNo.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblEncounterNo.setText("ENCOUNTER NO");
 
-        lblMinutes.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
+        lblMinutes.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lblMinutes.setForeground(new java.awt.Color(0, 0, 204));
         lblMinutes.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblMinutes.setText("DETAILS OF ENCOUNTER");
 
@@ -174,7 +175,7 @@ public class LawyerEncounterJPanel extends javax.swing.JPanel {
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(txt_EncounterNo, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(txt_Name, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 71, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(45, 45, 45))
         );
@@ -205,7 +206,7 @@ public class LawyerEncounterJPanel extends javax.swing.JPanel {
                                 .addComponent(lblMinutes)))))
                 .addGap(28, 28, 28)
                 .addComponent(bt_Update)
-                .addContainerGap(149, Short.MAX_VALUE))
+                .addContainerGap(143, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

@@ -50,12 +50,12 @@ public class SignInJFrame extends javax.swing.JFrame {
         jSplitPane1 = new javax.swing.JSplitPane();
         jPanel1 = new javax.swing.JPanel();
         UsernamejLabel = new javax.swing.JLabel();
-        userNameJTextField = new javax.swing.JTextField();
+        txt_Username = new javax.swing.JTextField();
         PasswordjLabel = new javax.swing.JLabel();
-        passwordField = new javax.swing.JPasswordField();
-        loginJButton = new javax.swing.JButton();
-        logoutJButton = new javax.swing.JButton();
-        btn_SignUp = new javax.swing.JButton();
+        txt_password = new javax.swing.JPasswordField();
+        bt_login = new javax.swing.JButton();
+        bt_logout = new javax.swing.JButton();
+        bt_back = new javax.swing.JButton();
         container = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
@@ -73,12 +73,12 @@ public class SignInJFrame extends javax.swing.JFrame {
         UsernamejLabel.setText("USERNAME");
         jPanel1.add(UsernamejLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 140, 22));
 
-        userNameJTextField.addActionListener(new java.awt.event.ActionListener() {
+        txt_Username.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                userNameJTextFieldActionPerformed(evt);
+                txt_UsernameActionPerformed(evt);
             }
         });
-        jPanel1.add(userNameJTextField, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 78, 140, 30));
+        jPanel1.add(txt_Username, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 78, 140, 30));
 
         PasswordjLabel.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         PasswordjLabel.setForeground(new java.awt.Color(0, 0, 204));
@@ -86,45 +86,45 @@ public class SignInJFrame extends javax.swing.JFrame {
         PasswordjLabel.setText("PASSWORD");
         jPanel1.add(PasswordjLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 130, 21));
 
-        passwordField.addActionListener(new java.awt.event.ActionListener() {
+        txt_password.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                passwordFieldActionPerformed(evt);
+                txt_passwordActionPerformed(evt);
             }
         });
-        jPanel1.add(passwordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 140, 30));
+        jPanel1.add(txt_password, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 140, 30));
 
-        loginJButton.setBackground(new java.awt.Color(0, 0, 204));
-        loginJButton.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        loginJButton.setForeground(new java.awt.Color(255, 255, 255));
-        loginJButton.setText("SIGN IN");
-        loginJButton.addActionListener(new java.awt.event.ActionListener() {
+        bt_login.setBackground(new java.awt.Color(255, 255, 204));
+        bt_login.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        bt_login.setForeground(new java.awt.Color(0, 51, 204));
+        bt_login.setText("SIGN IN");
+        bt_login.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                loginJButtonActionPerformed(evt);
+                bt_loginActionPerformed(evt);
             }
         });
-        jPanel1.add(loginJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 130, -1));
+        jPanel1.add(bt_login, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 130, -1));
 
-        logoutJButton.setBackground(new java.awt.Color(0, 0, 204));
-        logoutJButton.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        logoutJButton.setForeground(new java.awt.Color(255, 255, 255));
-        logoutJButton.setText("SIGN OUT");
-        logoutJButton.addActionListener(new java.awt.event.ActionListener() {
+        bt_logout.setBackground(new java.awt.Color(255, 255, 204));
+        bt_logout.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        bt_logout.setForeground(new java.awt.Color(0, 0, 204));
+        bt_logout.setText("SIGN OUT");
+        bt_logout.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                logoutJButtonActionPerformed(evt);
+                bt_logoutActionPerformed(evt);
             }
         });
-        jPanel1.add(logoutJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, 130, -1));
+        jPanel1.add(bt_logout, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, 130, -1));
 
-        btn_SignUp.setBackground(new java.awt.Color(0, 0, 204));
-        btn_SignUp.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
-        btn_SignUp.setForeground(new java.awt.Color(255, 255, 255));
-        btn_SignUp.setText("BACK");
-        btn_SignUp.addActionListener(new java.awt.event.ActionListener() {
+        bt_back.setBackground(new java.awt.Color(255, 255, 204));
+        bt_back.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        bt_back.setForeground(new java.awt.Color(0, 0, 153));
+        bt_back.setText("BACK");
+        bt_back.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_SignUpActionPerformed(evt);
+                bt_backActionPerformed(evt);
             }
         });
-        jPanel1.add(btn_SignUp, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 410, 130, 30));
+        jPanel1.add(bt_back, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, 130, -1));
 
         jSplitPane1.setLeftComponent(jPanel1);
 
@@ -157,20 +157,20 @@ public class SignInJFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void userNameJTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userNameJTextFieldActionPerformed
+    private void txt_UsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_UsernameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_userNameJTextFieldActionPerformed
+    }//GEN-LAST:event_txt_UsernameActionPerformed
 
-    private void passwordFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordFieldActionPerformed
+    private void txt_passwordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_passwordActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_passwordFieldActionPerformed
+    }//GEN-LAST:event_txt_passwordActionPerformed
 
-    private void loginJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginJButtonActionPerformed
+    private void bt_loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_loginActionPerformed
         // TODO add your handling code here:
 
-        String userName = userNameJTextField.getText();
+        String userName = txt_Username.getText();
         // Get Password
-        char[] passwordCharArray = passwordField.getPassword();
+        char[] passwordCharArray = txt_password.getPassword();
         String password = String.valueOf(passwordCharArray);
 
         //Step1: Check in the system admin user account directory if you have the user
@@ -223,21 +223,21 @@ public class SignInJFrame extends javax.swing.JFrame {
             layout.next(container);
         }
 
-        loginJButton.setEnabled(false);
-        logoutJButton.setEnabled(true);
-        userNameJTextField.setEnabled(false);
-        passwordField.setEnabled(false);
-    }//GEN-LAST:event_loginJButtonActionPerformed
+        bt_login.setEnabled(false);
+        bt_logout.setEnabled(true);
+        txt_Username.setEnabled(false);
+        txt_password.setEnabled(false);
+    }//GEN-LAST:event_bt_loginActionPerformed
 
-    private void logoutJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutJButtonActionPerformed
+    private void bt_logoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_logoutActionPerformed
         // TODO add your handling code here:
-        logoutJButton.setEnabled(false);
-        userNameJTextField.setEnabled(true);
-        passwordField.setEnabled(true);
-        loginJButton.setEnabled(true);
+        bt_logout.setEnabled(false);
+        txt_Username.setEnabled(true);
+        txt_password.setEnabled(true);
+        bt_login.setEnabled(true);
 
-        userNameJTextField.setText("");
-        passwordField.setText("");
+        txt_Username.setText("");
+        txt_password.setText("");
 
         container.removeAll();
 ////        SigninPageImgJpanel blankJP = new SigninPageImgJpanel();
@@ -245,7 +245,7 @@ public class SignInJFrame extends javax.swing.JFrame {
 //        CardLayout crdLyt = (CardLayout) container.getLayout();
         //crdLyt.next(container);
         dB4OUtil.storeSystem(system);
-    }//GEN-LAST:event_logoutJButtonActionPerformed
+    }//GEN-LAST:event_bt_logoutActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         this.dispose();
@@ -253,12 +253,12 @@ public class SignInJFrame extends javax.swing.JFrame {
         engi.setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void btn_SignUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_SignUpActionPerformed
+    private void bt_backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_backActionPerformed
         // TODO add your handling code here:
         dB4OUtil.storeSystem(system);
             MainJFrame s = new MainJFrame();
             s.setVisible(true);
-    }//GEN-LAST:event_btn_SignUpActionPerformed
+    }//GEN-LAST:event_bt_backActionPerformed
 
     /**
      * @param args the command line arguments
@@ -287,8 +287,6 @@ public class SignInJFrame extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -301,15 +299,15 @@ public class SignInJFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel PasswordjLabel;
     private javax.swing.JLabel UsernamejLabel;
-    private javax.swing.JButton btn_SignUp;
+    private javax.swing.JButton bt_back;
+    private javax.swing.JButton bt_login;
+    private javax.swing.JButton bt_logout;
     private javax.swing.JPanel container;
     private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSplitPane jSplitPane1;
-    private javax.swing.JButton loginJButton;
-    private javax.swing.JButton logoutJButton;
-    private javax.swing.JPasswordField passwordField;
-    private javax.swing.JTextField userNameJTextField;
+    private javax.swing.JTextField txt_Username;
+    private javax.swing.JPasswordField txt_password;
     // End of variables declaration//GEN-END:variables
 }

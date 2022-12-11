@@ -57,7 +57,7 @@ public class PharmaViewRequestJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(153, 204, 255));
 
         lblHeader.setBackground(new java.awt.Color(129, 178, 154));
-        lblHeader.setFont(new java.awt.Font("Monaco", 1, 24)); // NOI18N
+        lblHeader.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N
         lblHeader.setForeground(new java.awt.Color(0, 0, 204));
         lblHeader.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblHeader.setText("MANAGE REQUESTS");
@@ -83,9 +83,8 @@ public class PharmaViewRequestJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tb_PharmaView);
 
-        bt_AssignRequest.setBackground(new java.awt.Color(0, 0, 204));
-        bt_AssignRequest.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        bt_AssignRequest.setForeground(new java.awt.Color(255, 255, 255));
+        bt_AssignRequest.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_AssignRequest.setForeground(new java.awt.Color(0, 0, 204));
         bt_AssignRequest.setText("ASSIGN REQUEST");
         bt_AssignRequest.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -101,9 +100,8 @@ public class PharmaViewRequestJPanel extends javax.swing.JPanel {
             }
         });
 
-        bt_View.setBackground(new java.awt.Color(0, 0, 204));
-        bt_View.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        bt_View.setForeground(new java.awt.Color(255, 255, 255));
+        bt_View.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_View.setForeground(new java.awt.Color(0, 0, 204));
         bt_View.setText("VIEW");
         bt_View.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {

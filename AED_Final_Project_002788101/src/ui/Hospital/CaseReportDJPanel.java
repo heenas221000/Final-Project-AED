@@ -88,8 +88,8 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
         bt_ReqLab = new javax.swing.JButton();
         bt_ViewLab = new javax.swing.JButton();
         bt_PrescribeMeds = new javax.swing.JButton();
-        bt_SendInvite = new javax.swing.JButton();
         bt_back = new javax.swing.JButton();
+        bt_SendInvite = new javax.swing.JButton();
 
         jPanel1.setBackground(new java.awt.Color(153, 204, 255));
         jPanel1.setLayout(new java.awt.GridBagLayout());
@@ -154,9 +154,8 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
             }
         });
 
-        bt_ReqLab.setBackground(new java.awt.Color(0, 0, 204));
         bt_ReqLab.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_ReqLab.setForeground(new java.awt.Color(255, 255, 255));
+        bt_ReqLab.setForeground(new java.awt.Color(0, 0, 204));
         bt_ReqLab.setText("REQUEST LAB ");
         bt_ReqLab.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -172,9 +171,8 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
             }
         });
 
-        bt_ViewLab.setBackground(new java.awt.Color(0, 0, 204));
         bt_ViewLab.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_ViewLab.setForeground(new java.awt.Color(255, 255, 255));
+        bt_ViewLab.setForeground(new java.awt.Color(0, 0, 204));
         bt_ViewLab.setText("VIEW LAB TEST");
         bt_ViewLab.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -190,9 +188,8 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
             }
         });
 
-        bt_PrescribeMeds.setBackground(new java.awt.Color(0, 0, 204));
         bt_PrescribeMeds.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_PrescribeMeds.setForeground(new java.awt.Color(255, 255, 255));
+        bt_PrescribeMeds.setForeground(new java.awt.Color(0, 0, 204));
         bt_PrescribeMeds.setText("PRESCRIBE MEDICINES");
         bt_PrescribeMeds.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -208,19 +205,8 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
             }
         });
 
-        bt_SendInvite.setBackground(new java.awt.Color(0, 0, 204));
-        bt_SendInvite.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_SendInvite.setForeground(new java.awt.Color(255, 255, 255));
-        bt_SendInvite.setText("SEND INVITE");
-        bt_SendInvite.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bt_SendInviteActionPerformed(evt);
-            }
-        });
-
-        bt_back.setBackground(new java.awt.Color(0, 0, 204));
         bt_back.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_back.setForeground(new java.awt.Color(255, 255, 255));
+        bt_back.setForeground(new java.awt.Color(0, 0, 204));
         bt_back.setText("BACK");
         bt_back.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -241,11 +227,10 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(0, 142, Short.MAX_VALUE)
+                .addGap(0, 99, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(bt_SendInvite)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(127, 127, 127)
                         .addComponent(bt_ReqLab)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(bt_ViewLab)
@@ -320,8 +305,7 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(bt_ReqLab)
                     .addComponent(bt_ViewLab)
-                    .addComponent(bt_PrescribeMeds)
-                    .addComponent(bt_SendInvite))
+                    .addComponent(bt_PrescribeMeds))
                 .addContainerGap())
         );
 
@@ -334,6 +318,17 @@ public class CaseReportDJPanel extends javax.swing.JPanel {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(33, 24, 182, 146);
         jPanel1.add(jPanel2, gridBagConstraints);
+
+        bt_SendInvite.setBackground(new java.awt.Color(153, 204, 255));
+        bt_SendInvite.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_SendInvite.setForeground(new java.awt.Color(153, 204, 255));
+        bt_SendInvite.setText("SEND INVITE");
+        bt_SendInvite.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt_SendInviteActionPerformed(evt);
+            }
+        });
+        jPanel1.add(bt_SendInvite, new java.awt.GridBagConstraints());
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
