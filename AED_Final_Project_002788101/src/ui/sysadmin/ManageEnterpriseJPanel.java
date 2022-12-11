@@ -11,7 +11,6 @@ import business.Enterprise.Enterprise;
 import business.Network.Network;
 import java.awt.CardLayout;
 import java.awt.Component;
-
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
@@ -44,7 +43,7 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
      */
     
     private void populateTable() {
-        DefaultTableModel model = (DefaultTableModel) tableEnterprises.getModel();
+        DefaultTableModel model = (DefaultTableModel) tb_Enterprise.getModel();
 
         model.setRowCount(0);
         for (Network network : system.getNetworkList()) {
@@ -61,17 +60,17 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
 
     @SuppressWarnings("unchecked")
     private void populateComboBox() {
-        comboBoxNetworkName.removeAllItems();
-        comboBoxEnterpriseType.removeAllItems();
+        cb_network.removeAllItems();
+        cb_enterprise.removeAllItems();
 
         for (Network network : system.getNetworkList()) {
-            comboBoxNetworkName.addItem(network);
+            cb_network.addItem(network);
         }
 
         for (Enterprise.EnterpriseType type : Enterprise.EnterpriseType.values()) {
             if (!type.getValue().equals(Enterprise.EnterpriseType.CaseReporter.getValue())){
                  if (!type.getValue().equals(Enterprise.EnterpriseType.Psychiatrist.getValue())){
-                comboBoxEnterpriseType.addItem(type);
+                cb_enterprise.addItem(type);
             }}
         }
 
@@ -83,27 +82,27 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
 
         lblManageEnterprises = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tableEnterprises = new javax.swing.JTable();
+        tb_Enterprise = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        btnSubmit = new javax.swing.JButton();
+        bt_Submit = new javax.swing.JButton();
         lblNetworkName = new javax.swing.JLabel();
-        txtEnterpriseName = new javax.swing.JTextField();
-        comboBoxNetworkName = new javax.swing.JComboBox();
-        comboBoxEnterpriseType = new javax.swing.JComboBox();
-        btnDelete = new javax.swing.JButton();
+        txt_Name = new javax.swing.JTextField();
+        cb_network = new javax.swing.JComboBox();
+        cb_enterprise = new javax.swing.JComboBox();
+        bt_Delete = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(153, 204, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblManageEnterprises.setBackground(new java.awt.Color(255, 255, 255));
-        lblManageEnterprises.setFont(new java.awt.Font("Monaco", 1, 24)); // NOI18N
-        lblManageEnterprises.setForeground(new java.awt.Color(230, 126, 34));
+        lblManageEnterprises.setFont(new java.awt.Font("Songti SC", 1, 28)); // NOI18N
+        lblManageEnterprises.setForeground(new java.awt.Color(0, 0, 204));
         lblManageEnterprises.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblManageEnterprises.setText("Manage Enterprises");
+        lblManageEnterprises.setText("MANAGE ENTERPRISES");
         add(lblManageEnterprises, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 40, 628, 40));
 
-        tableEnterprises.setModel(new javax.swing.table.DefaultTableModel(
+        tb_Enterprise.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
                 {null, null, null},
@@ -122,129 +121,130 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(tableEnterprises);
+        jScrollPane1.setViewportView(tb_Enterprise);
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 120, 430, 130));
 
-        jLabel2.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        jLabel2.setText("Enterprise Type:");
+        jLabel2.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 204));
+        jLabel2.setText("ENTERPRISE");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 162, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        jLabel3.setText("Network:");
+        jLabel3.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 204));
+        jLabel3.setText("NETWORK");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 121, -1, -1));
 
-        btnSubmit.setBackground(new java.awt.Color(51, 102, 255));
-        btnSubmit.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        btnSubmit.setForeground(new java.awt.Color(255, 255, 255));
-        btnSubmit.setText("Submit");
-        btnSubmit.setBorderPainted(false);
-        btnSubmit.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnSubmitMouseExited(evt);
-            }
+        bt_Submit.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_Submit.setForeground(new java.awt.Color(0, 0, 204));
+        bt_Submit.setText("SUBMIT");
+        bt_Submit.setBorderPainted(false);
+        bt_Submit.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnSubmitMouseEntered(evt);
+                bt_SubmitMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                bt_SubmitMouseExited(evt);
             }
         });
-        btnSubmit.addActionListener(new java.awt.event.ActionListener() {
+        bt_Submit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSubmitActionPerformed(evt);
+                bt_SubmitActionPerformed(evt);
             }
         });
-        add(btnSubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 258, 120, -1));
+        add(bt_Submit, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 260, 90, -1));
 
-        lblNetworkName.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        lblNetworkName.setText("Name:");
+        lblNetworkName.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
+        lblNetworkName.setForeground(new java.awt.Color(0, 0, 204));
+        lblNetworkName.setText("NAME");
         add(lblNetworkName, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 211, -1, -1));
-        add(txtEnterpriseName, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 200, 120, -1));
+        add(txt_Name, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 200, 120, -1));
 
-        comboBoxNetworkName.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        comboBoxNetworkName.addActionListener(new java.awt.event.ActionListener() {
+        cb_network.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cb_network.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                comboBoxNetworkNameActionPerformed(evt);
+                cb_networkActionPerformed(evt);
             }
         });
-        add(comboBoxNetworkName, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 120, 120, -1));
+        add(cb_network, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 120, 120, -1));
 
-        comboBoxEnterpriseType.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        comboBoxEnterpriseType.addActionListener(new java.awt.event.ActionListener() {
+        cb_enterprise.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cb_enterprise.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                comboBoxEnterpriseTypeActionPerformed(evt);
+                cb_enterpriseActionPerformed(evt);
             }
         });
-        add(comboBoxEnterpriseType, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 160, 120, -1));
+        add(cb_enterprise, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 160, 120, -1));
 
-        btnDelete.setBackground(new java.awt.Color(51, 102, 255));
-        btnDelete.setFont(new java.awt.Font("Monaco", 1, 14)); // NOI18N
-        btnDelete.setForeground(new java.awt.Color(255, 255, 255));
-        btnDelete.setText("Delete");
-        btnDelete.setBorderPainted(false);
-        btnDelete.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnDeleteMouseExited(evt);
-            }
+        bt_Delete.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_Delete.setForeground(new java.awt.Color(0, 0, 204));
+        bt_Delete.setText("DELETE");
+        bt_Delete.setBorderPainted(false);
+        bt_Delete.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnDeleteMouseEntered(evt);
+                bt_DeleteMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                bt_DeleteMouseExited(evt);
             }
         });
-        btnDelete.addActionListener(new java.awt.event.ActionListener() {
+        bt_Delete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDeleteActionPerformed(evt);
+                bt_DeleteActionPerformed(evt);
             }
         });
-        add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 260, -1, -1));
+        add(bt_Delete, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 260, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnSubmitMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSubmitMouseEntered
-             btnSubmit.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_btnSubmitMouseEntered
+    private void bt_SubmitMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_SubmitMouseEntered
+             bt_Submit.setForeground(new Color(0,128,128));        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_SubmitMouseEntered
 
-    private void btnSubmitMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSubmitMouseExited
-             btnSubmit.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_btnSubmitMouseExited
+    private void bt_SubmitMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_SubmitMouseExited
+             bt_Submit.setForeground(Color.black);        // TODO add your handling code here:
+    }//GEN-LAST:event_bt_SubmitMouseExited
 
-    private void btnSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitActionPerformed
+    private void bt_SubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_SubmitActionPerformed
         // TODO add your handling code here:
-        if( txtEnterpriseName.getText().isEmpty())
+        if( txt_Name.getText().isEmpty())
         {
             JOptionPane.showMessageDialog(null, "please enter all mandatory fields");
             return;
         }
         
-        Network network = (Network) comboBoxNetworkName.getSelectedItem();
-        Enterprise.EnterpriseType type = (Enterprise.EnterpriseType) comboBoxEnterpriseType.getSelectedItem();
+        Network network = (Network) cb_network.getSelectedItem();
+        Enterprise.EnterpriseType type = (Enterprise.EnterpriseType) cb_enterprise.getSelectedItem();
 
         if (network == null || type == null) {
             JOptionPane.showMessageDialog(null, "Invalid Input!");
             return;
         }
 
-        String name = txtEnterpriseName.getText();
+        String name = txt_Name.getText();
 
         Enterprise enterprise = network.getEnterpriseDirectory().createAndAddEnterprise(name, type);
 
         populateTable();
-        txtEnterpriseName.setText("");
-    }//GEN-LAST:event_btnSubmitActionPerformed
+        txt_Name.setText("");
+    }//GEN-LAST:event_bt_SubmitActionPerformed
 
-    private void btnDeleteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteMouseEntered
+    private void bt_DeleteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_DeleteMouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnDeleteMouseEntered
+    }//GEN-LAST:event_bt_DeleteMouseEntered
 
-    private void btnDeleteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDeleteMouseExited
+    private void bt_DeleteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_DeleteMouseExited
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnDeleteMouseExited
+    }//GEN-LAST:event_bt_DeleteMouseExited
 
-    private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
+    private void bt_DeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_DeleteActionPerformed
         // TODO add your handling code here:
         
-        int selectedRow = tableEnterprises.getSelectedRow();
+        int selectedRow = tb_Enterprise.getSelectedRow();
         if (selectedRow < 0) {
             JOptionPane.showMessageDialog(null, "Please select a row to delete!", "Warning", JOptionPane.WARNING_MESSAGE);
         }
         else{
-            Enterprise p = (Enterprise) tableEnterprises.getValueAt(selectedRow, 0);
+            Enterprise p = (Enterprise) tb_Enterprise.getValueAt(selectedRow, 0);
             for (Network network : system.getNetworkList()) {
                 for (Enterprise enterprise : network.getEnterpriseDirectory().getEnterpriseList()) {
                    
@@ -259,28 +259,28 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(null, "You have successfully deleted the account");
             populateTable();
         }
-    }//GEN-LAST:event_btnDeleteActionPerformed
+    }//GEN-LAST:event_bt_DeleteActionPerformed
 
-    private void comboBoxEnterpriseTypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBoxEnterpriseTypeActionPerformed
+    private void cb_enterpriseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_enterpriseActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_comboBoxEnterpriseTypeActionPerformed
+    }//GEN-LAST:event_cb_enterpriseActionPerformed
 
-    private void comboBoxNetworkNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBoxNetworkNameActionPerformed
+    private void cb_networkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb_networkActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_comboBoxNetworkNameActionPerformed
+    }//GEN-LAST:event_cb_networkActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnDelete;
-    private javax.swing.JButton btnSubmit;
-    private javax.swing.JComboBox comboBoxEnterpriseType;
-    private javax.swing.JComboBox comboBoxNetworkName;
+    private javax.swing.JButton bt_Delete;
+    private javax.swing.JButton bt_Submit;
+    private javax.swing.JComboBox cb_enterprise;
+    private javax.swing.JComboBox cb_network;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblManageEnterprises;
     private javax.swing.JLabel lblNetworkName;
-    private javax.swing.JTable tableEnterprises;
-    private javax.swing.JTextField txtEnterpriseName;
+    private javax.swing.JTable tb_Enterprise;
+    private javax.swing.JTextField txt_Name;
     // End of variables declaration//GEN-END:variables
 }
