@@ -246,14 +246,6 @@ public class CaseReportLJPanel extends javax.swing.JPanel {
         bt_SendInvite.setForeground(new java.awt.Color(153, 204, 255));
         bt_SendInvite.setText("SEND INVITE");
         bt_SendInvite.setBorder(null);
-        bt_SendInvite.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                bt_SendInviteMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                bt_SendInviteMouseExited(evt);
-            }
-        });
         bt_SendInvite.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bt_SendInviteActionPerformed(evt);
@@ -316,14 +308,6 @@ public class CaseReportLJPanel extends javax.swing.JPanel {
     private void txt_AssaultTypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_AssaultTypeActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txt_AssaultTypeActionPerformed
-
-    private void bt_SendInviteMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_SendInviteMouseEntered
-        bt_SendInvite.setForeground(new Color(0,128,128));        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_SendInviteMouseEntered
-
-    private void bt_SendInviteMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bt_SendInviteMouseExited
-        bt_SendInvite.setForeground(Color.black);        // TODO add your handling code here:
-    }//GEN-LAST:event_bt_SendInviteMouseExited
 
     private void bt_SendInviteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_SendInviteActionPerformed
 
