@@ -58,7 +58,7 @@ public class EnterpriseAdminJPanel extends javax.swing.JPanel {
 
         jSplitPane1.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
-        jPanel2.setBackground(new java.awt.Color(153, 204, 255));
+        jPanel2.setBackground(new java.awt.Color(204, 204, 255));
         jPanel2.setForeground(new java.awt.Color(51, 102, 255));
         jPanel2.setLayout(new java.awt.GridBagLayout());
 

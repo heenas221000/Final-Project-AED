@@ -60,7 +60,7 @@ public class CaseVolunteerJPanel extends javax.swing.JPanel {
 
         CaseVolunteerSplitJPanel.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
-        jPanel2.setBackground(new java.awt.Color(153, 204, 255));
+        jPanel2.setBackground(new java.awt.Color(204, 204, 255));
         jPanel2.setForeground(new java.awt.Color(61, 64, 91));
         jPanel2.setLayout(new java.awt.GridBagLayout());
 
@@ -76,7 +76,7 @@ public class CaseVolunteerJPanel extends javax.swing.JPanel {
 
         CaseVolunteerSplitJPanel.setTopComponent(jPanel2);
 
-        jPanel3.setBackground(new java.awt.Color(204, 204, 255));
+        jPanel3.setBackground(new java.awt.Color(153, 204, 255));
         jPanel3.setLayout(new java.awt.GridBagLayout());
         CaseVolunteerSplitJPanel.setRightComponent(jPanel3);
 
