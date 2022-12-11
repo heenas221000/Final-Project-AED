@@ -152,7 +152,7 @@ public class ManageEnterpriseJPanel extends javax.swing.JPanel {
                 bt_SubmitActionPerformed(evt);
             }
         });
-        add(bt_Submit, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 260, 90, -1));
+        add(bt_Submit, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 260, 100, -1));
 
         lblNetworkName.setFont(new java.awt.Font("Songti SC", 1, 18)); // NOI18N
         lblNetworkName.setForeground(new java.awt.Color(0, 0, 204));
