@@ -81,9 +81,8 @@ public class CaseReportRJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(153, 204, 255));
 
-        bt_Back.setBackground(new java.awt.Color(0, 0, 204));
         bt_Back.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_Back.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Back.setForeground(new java.awt.Color(0, 0, 204));
         bt_Back.setText("BACK");
         bt_Back.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -260,10 +259,11 @@ public class CaseReportRJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(16, 0, 0, 82);
         jPanel1.add(txtSuspectType, gridBagConstraints);
 
-        bt_SendInvite.setBackground(new java.awt.Color(0, 0, 204));
+        bt_SendInvite.setBackground(new java.awt.Color(153, 204, 255));
         bt_SendInvite.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_SendInvite.setForeground(new java.awt.Color(255, 255, 255));
+        bt_SendInvite.setForeground(new java.awt.Color(153, 204, 255));
         bt_SendInvite.setText("SEND INVITE");
+        bt_SendInvite.setBorder(null);
         bt_SendInvite.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 bt_SendInviteMouseEntered(evt);
@@ -285,13 +285,13 @@ public class CaseReportRJPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(307, 307, 307)
-                        .addComponent(bt_SendInvite))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(32, 32, 32)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 730, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(bt_Back))))
+                            .addComponent(bt_Back)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(190, 190, 190)
+                        .addComponent(bt_SendInvite)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
