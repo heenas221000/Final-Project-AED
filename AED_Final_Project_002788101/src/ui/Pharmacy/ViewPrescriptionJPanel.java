@@ -235,7 +235,9 @@ public class ViewPrescriptionJPanel extends javax.swing.JPanel {
     private void bt_processActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_processActionPerformed
 
         request.setStatus("Processed");
-        sendInvite(request.getDoctorWorkRequest().getCaseReporterWorkRequest());
+        //sendInvite(request.getDoctorWorkRequest().getCaseReporterWorkRequest());
+        JOptionPane.showMessageDialog(this, "The Prescription has been processed");
+        
 
         //JOptionPane.showMessageDialog(null,"Medicines are ready for pick-up");
     }//GEN-LAST:event_bt_processActionPerformed

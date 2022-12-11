@@ -17,8 +17,6 @@ import business.WorkQueue.CounsellorWorkRequest;
 import business.WorkQueue.DrWorkRequest;
 import business.WorkQueue.PsychiatristWorkRequest;
 import business.WorkQueue.CaseReporterWorkRequest;
-import business.WorkQueue.Child;
-import business.WorkQueue.Children;
 import business.WorkQueue.LawyerWorkRequest;
 import business.WorkQueue.CaretakerWorkRequest;
 import business.WorkQueue.WorkRequest;

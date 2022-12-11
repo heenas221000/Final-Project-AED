@@ -250,9 +250,11 @@ public class CaseReportCJPanel extends javax.swing.JPanel {
         gridBagConstraints.insets = new java.awt.Insets(16, 0, 0, 82);
         jPanel1.add(txtSuspectType, gridBagConstraints);
 
+        bt_SendInvite.setBackground(new java.awt.Color(153, 204, 255));
         bt_SendInvite.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_SendInvite.setForeground(new java.awt.Color(0, 0, 204));
+        bt_SendInvite.setForeground(new java.awt.Color(153, 204, 255));
         bt_SendInvite.setText("SEND INVITE");
+        bt_SendInvite.setBorder(null);
         bt_SendInvite.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 bt_SendInviteMouseEntered(evt);
@@ -304,7 +306,7 @@ public class CaseReportCJPanel extends javax.swing.JPanel {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addComponent(bt_Back)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 385, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(bt_SendInvite)

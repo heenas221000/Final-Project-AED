@@ -80,9 +80,8 @@ public class CaretakerEncounterJPanel extends javax.swing.JPanel {
         txtAreaMinutes.setRows(5);
         jScrollPane2.setViewportView(txtAreaMinutes);
 
-        bt_Back.setBackground(new java.awt.Color(0, 0, 204));
         bt_Back.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_Back.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Back.setForeground(new java.awt.Color(0, 0, 204));
         bt_Back.setText("BACK");
         bt_Back.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -119,9 +118,8 @@ public class CaretakerEncounterJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblEncounterDetails);
 
-        bt_Update.setBackground(new java.awt.Color(0, 0, 204));
         bt_Update.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
-        bt_Update.setForeground(new java.awt.Color(255, 255, 255));
+        bt_Update.setForeground(new java.awt.Color(0, 0, 204));
         bt_Update.setText("UPDATE");
         bt_Update.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
