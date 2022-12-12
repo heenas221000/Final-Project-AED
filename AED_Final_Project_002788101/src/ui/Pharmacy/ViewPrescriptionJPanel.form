@@ -48,7 +48,10 @@
                                           <Component id="txt_DocName" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <Component id="bt_process" min="-2" pref="107" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="bt_PDF" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="bt_process" alignment="1" max="32767" attributes="0"/>
+                                  </Group>
                               </Group>
                               <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
                               <Component id="jScrollPane1" min="-2" pref="200" max="-2" attributes="0"/>
@@ -90,7 +93,9 @@
                   </Group>
                   <Component id="jScrollPane1" alignment="0" min="-2" pref="152" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="105" max="32767" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="bt_PDF" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="61" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -223,6 +228,20 @@
         </Property>
         <Property name="text" type="java.lang.String" value="PATIENT&apos;S NAME"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="bt_PDF">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Songti SC" size="14" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="cc" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="GENERATE PDF"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bt_PDFActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

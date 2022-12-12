@@ -18,6 +18,12 @@ import business.WorkQueue.PsychiatristWorkRequest;
 import business.WorkQueue.WorkRequest;
 import java.awt.CardLayout;
 import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.print.PageFormat;
+import java.awt.print.Printable;
+import java.awt.print.PrinterException;
+import java.awt.print.PrinterJob;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableModel;
@@ -94,6 +100,7 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
         txtCaretakerDate = new javax.swing.JLabel();
         txtCaretakerReceiver = new javax.swing.JLabel();
         txtCaretakerStatus = new javax.swing.JLabel();
+        btn_GeneratePDF = new javax.swing.JButton();
 
         setBackground(null);
         setForeground(new java.awt.Color(0, 0, 204));
@@ -249,6 +256,16 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
         jPanel1.add(txtCaretakerDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 270, 94, 27));
         jPanel1.add(txtCaretakerReceiver, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 300, 100, 24));
         jPanel1.add(txtCaretakerStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 350, 100, 30));
+
+        btn_GeneratePDF.setFont(new java.awt.Font("Songti SC", 1, 13)); // NOI18N
+        btn_GeneratePDF.setForeground(new java.awt.Color(0, 0, 204));
+        btn_GeneratePDF.setText("GENERATE PDF");
+        btn_GeneratePDF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_GeneratePDFActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btn_GeneratePDF, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 430, 160, 40));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -433,6 +450,44 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
         
         
     }//GEN-LAST:event_bt_CheckStatusActionPerformed
+
+    private void btn_GeneratePDFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_GeneratePDFActionPerformed
+        // TODO add your handling code here:
+        
+        PrinterJob job = PrinterJob.getPrinterJob();
+            job.setJobName("Print Data");
+            
+            job.setPrintable(new Printable(){
+            public int print(Graphics pg,PageFormat pf, int pageNum){
+                    pf.setOrientation(PageFormat.LANDSCAPE);
+                 if(pageNum > 0){
+                    return Printable.NO_SUCH_PAGE;
+                }
+                
+                Graphics2D g2 = (Graphics2D)pg;
+                g2.translate(pf.getImageableX(), pf.getImageableY());
+                g2.scale(0.47,0.47);
+                
+                jPanel1.print(g2);
+         
+               
+                return Printable.PAGE_EXISTS;
+                         
+                
+            }
+    });
+            boolean ok = job.printDialog();
+        if(ok){
+        try{
+            
+        job.print();
+        }
+        catch (PrinterException ex){
+	ex.printStackTrace();
+}
+        }
+        
+    }//GEN-LAST:event_btn_GeneratePDFActionPerformed
     private void popTable() {
         
         DefaultTableModel model= (DefaultTableModel) tblCaseRequest.getModel();
@@ -460,6 +515,7 @@ public class CaseRequestJPanel extends javax.swing.JPanel {
     private javax.swing.JButton bt_AssignRequest;
     private javax.swing.JButton bt_CheckStatus;
     private javax.swing.JButton bt_ViewCaseReport;
+    private javax.swing.JButton btn_GeneratePDF;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblCaretaker;

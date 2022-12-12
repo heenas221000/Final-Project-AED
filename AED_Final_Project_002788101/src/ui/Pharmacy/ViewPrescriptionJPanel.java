@@ -12,6 +12,12 @@ import business.WorkQueue.PharmacistWorkRequest;
 import java.awt.CardLayout;
 import java.awt.Color;
 import java.awt.Component;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.print.PageFormat;
+import java.awt.print.Printable;
+import java.awt.print.PrinterException;
+import java.awt.print.PrinterJob;
 import java.util.Properties;
 import javax.mail.Message;
 import javax.mail.PasswordAuthentication;
@@ -65,6 +71,7 @@ public class ViewPrescriptionJPanel extends javax.swing.JPanel {
         bt_process = new javax.swing.JButton();
         txt_PatientName = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
+        bt_PDF = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(153, 204, 255));
 
@@ -146,6 +153,15 @@ public class ViewPrescriptionJPanel extends javax.swing.JPanel {
         jLabel5.setForeground(new java.awt.Color(0, 0, 204));
         jLabel5.setText("PATIENT'S NAME");
 
+        bt_PDF.setFont(new java.awt.Font("Songti SC", 1, 14)); // NOI18N
+        bt_PDF.setForeground(new java.awt.Color(0, 0, 204));
+        bt_PDF.setText("GENERATE PDF");
+        bt_PDF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt_PDFActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -173,7 +189,9 @@ public class ViewPrescriptionJPanel extends javax.swing.JPanel {
                                             .addComponent(txt_PatientName, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
                                             .addComponent(txt_Date, javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(txt_DocName)))
-                                    .addComponent(bt_process, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(bt_PDF, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(bt_process, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                                 .addGap(48, 48, 48)
                                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 67, Short.MAX_VALUE)))
@@ -203,7 +221,9 @@ public class ViewPrescriptionJPanel extends javax.swing.JPanel {
                         .addGap(18, 18, 18)
                         .addComponent(bt_process))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(105, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(bt_PDF)
+                .addContainerGap(61, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -241,6 +261,43 @@ public class ViewPrescriptionJPanel extends javax.swing.JPanel {
 
         //JOptionPane.showMessageDialog(null,"Medicines are ready for pick-up");
     }//GEN-LAST:event_bt_processActionPerformed
+
+    private void bt_PDFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_PDFActionPerformed
+        // TODO add your handling code here:
+        PrinterJob job = PrinterJob.getPrinterJob();
+            job.setJobName("Print Data");
+            
+            job.setPrintable(new Printable(){
+            public int print(Graphics pg,PageFormat pf, int pageNum){
+                    pf.setOrientation(PageFormat.LANDSCAPE);
+                 if(pageNum > 0){
+                    return Printable.NO_SUCH_PAGE;
+                }
+                
+                Graphics2D g2 = (Graphics2D)pg;
+                g2.translate(pf.getImageableX(), pf.getImageableY());
+                g2.scale(0.47,0.47);
+                
+                jScrollPane1.print(g2);
+         
+               
+                return Printable.PAGE_EXISTS;
+                         
+                
+            }
+    });
+            boolean ok = job.printDialog();
+        if(ok){
+        try{
+            
+        job.print();
+        }
+        catch (PrinterException ex){
+	ex.printStackTrace();
+}
+        }
+        
+    }//GEN-LAST:event_bt_PDFActionPerformed
 
     private void populatereport() {
         txt_Date.setText(request.getRequestDate().toString());
@@ -303,6 +360,7 @@ public class ViewPrescriptionJPanel extends javax.swing.JPanel {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton bt_PDF;
     private javax.swing.JButton bt_back;
     private javax.swing.JButton bt_process;
     private javax.swing.JLabel jLabel1;
