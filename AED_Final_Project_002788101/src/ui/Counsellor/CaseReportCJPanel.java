@@ -368,7 +368,7 @@ public class CaseReportCJPanel extends javax.swing.JPanel {
         userProcessContainer.remove(this);
         Component[] componentArray = userProcessContainer.getComponents();
         Component component = componentArray[componentArray.length - 1];
-        LawyerJPanel sysAdminwjp = (LawyerJPanel) component;
+        CounsellorJPanel sysAdminwjp = (CounsellorJPanel) component;
         //sysAdminwjp.populateTree();
         CardLayout layout = (CardLayout) userProcessContainer.getLayout();
         layout.previous(userProcessContainer);
